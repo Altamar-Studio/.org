@@ -136,6 +136,7 @@ function ensureFirebase() {
             resolve();
         } catch (e) {
             console.error("Error al cargar Firebase:", e);
+            resolve();
         }
     });
     return firebasePromise;

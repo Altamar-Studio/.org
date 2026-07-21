@@ -28,6 +28,7 @@
     <!-- Google Fonts & Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Homemade+Apple&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="responsive.css" rel="stylesheet" />
     
     <style>
         .text-handwritten { font-family: 'Homemade Apple', cursive; }
@@ -92,24 +93,66 @@
                     <a class="hover:opacity-100 transition-opacity" href="blog.html">Blog</a>
                 </div>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 sm:gap-4">
                 <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center cursor-pointer">
                     <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
                     <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
                 </button>
                 <!-- Inyectado por updateNavUI() de auth.js -->
+                <button id="mobile-menu-toggle" aria-label="Abrir menú" class="md:hidden w-9 h-9 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-80 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-[24px]">menu</span>
+                </button>
             </div>
         </nav>
     </header>
 
+    <!-- MENÚ MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu-drawer" class="fixed inset-0 z-[100] bg-neutral-950/85 backdrop-blur-2xl hidden flex-col justify-between p-6 pointer-events-auto transition-all duration-300 opacity-0">
+        <div class="flex items-center justify-between pb-4 border-b border-white/10">
+            <a class="flex items-center gap-2.5" href="index.html">
+                <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert" alt="EA Logo">
+                <span class="font-bold tracking-tight text-white text-lg">Estudi<span class="text-neutral-400">ando</span></span>
+            </a>
+            <button id="mobile-menu-close" aria-label="Cerrar menú" class="w-9 h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors">
+                <span class="material-symbols-outlined text-[22px]">close</span>
+            </button>
+        </div>
+        <div class="flex flex-col gap-2 py-6 text-base font-medium text-white/90">
+            <a class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between" href="biblioteca.html">
+                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-blue-400">menu_book</span> Biblioteca</span>
+                <span class="material-symbols-outlined opacity-40">chevron_right</span>
+            </a>
+            <a class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between" href="aprendizaje.html">
+                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-emerald-400">school</span> Aprendizaje</span>
+                <span class="material-symbols-outlined opacity-40">chevron_right</span>
+            </a>
+            <a class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between" href="idiomas.html">
+                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-purple-400">translate</span> Idiomas</span>
+                <span class="material-symbols-outlined opacity-40">chevron_right</span>
+            </a>
+            <a class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between" href="blog.html">
+                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-amber-400">article</span> Blog</span>
+                <span class="material-symbols-outlined opacity-40">chevron_right</span>
+            </a>
+            <a id="mobile-foros-link" class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between bg-white/10 text-white font-bold" href="foros.html">
+                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-cyan-400">forum</span> Foros</span>
+                <span class="material-symbols-outlined opacity-40">chevron_right</span>
+            </a>
+        </div>
+        <div class="flex flex-col gap-3 pt-4 border-t border-white/10" id="mobile-drawer-auth">
+            <a class="w-full text-center py-3 rounded-full text-white font-medium bg-white/10 hover:bg-white/20 transition-colors block" href="login.html">Iniciar sesión</a>
+            <a class="w-full text-center py-3 rounded-full text-black bg-white font-bold hover:bg-gray-200 transition-colors block" href="registro.html">Registrarse</a>
+        </div>
+    </div>
+
     <!-- Main Content -->
-    <main class="pt-32 flex-grow flex flex-col max-w-[90%] 2xl:max-w-[1600px] mx-auto w-full px-6 mb-24">
+    <main class="pt-32 flex-grow flex flex-col max-w-[90%] 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 mb-24">
         
         <!-- Título Principal -->
         <div class="mb-12 mt-8 border-b border-black/10 dark:border-white/10 pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6 transition-colors animate-fade-in">
             <div>
-                <h1 class="text-5xl md:text-7xl font-serif font-medium tracking-tight text-ea-dark dark:text-white">
-                    Foros de <br><span class="text-handwritten text-5xl md:text-7xl italic font-normal">Charla</span>.
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-serif font-medium tracking-tight text-ea-dark dark:text-white">
+                    Foros de <br><span class="text-handwritten text-3xl sm:text-5xl md:text-7xl italic font-normal">Charla</span>.
                 </h1>
             </div>
             <div class="max-w-xs text-sm font-medium opacity-60 leading-relaxed">

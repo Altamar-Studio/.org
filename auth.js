@@ -432,6 +432,44 @@ function updateNavUI() {
         }
     }
 
+    const mobileDrawer = document.getElementById('mobile-menu-drawer');
+    if (mobileDrawer) {
+        let mobileForosLink = mobileDrawer.querySelector('#mobile-foros-link');
+        if (user) {
+            if (mobileForosLink) mobileForosLink.classList.remove('hidden');
+        } else {
+            if (mobileForosLink) mobileForosLink.classList.add('hidden');
+        }
+        
+        const mobileAuthContainer = mobileDrawer.querySelector('#mobile-drawer-auth');
+        if (mobileAuthContainer) {
+            if (user) {
+                mobileAuthContainer.innerHTML = `
+                    <div class="flex items-center gap-3 p-3 bg-white/10 rounded-2xl mb-2">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-base shadow-sm">
+                            ${user.avatar ? `<img src="${user.avatar}" class="w-10 h-10 rounded-full object-cover w-full h-full" />` : user.username.charAt(0).toUpperCase()}
+                        </div>
+                        <div class="text-left flex-grow">
+                            <span class="block text-sm font-bold text-white leading-tight">${user.username}</span>
+                            <span class="text-[10px] text-white/60 font-bold uppercase tracking-wider">${user.university}</span>
+                        </div>
+                    </div>
+                    <button onclick="openUserProfile()" class="w-full text-center py-3 rounded-full text-white font-medium bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">person</span> Ver Perfil
+                    </button>
+                    <button onclick="logout()" class="w-full text-center py-3 rounded-full text-red-400 font-bold bg-red-500/10 hover:bg-red-500/20 transition-colors flex items-center justify-center gap-2 mt-1">
+                        <span class="material-symbols-outlined text-[18px]">logout</span> Cerrar sesión
+                    </button>
+                `;
+            } else {
+                mobileAuthContainer.innerHTML = `
+                    <a class="w-full text-center py-3 rounded-full text-white font-medium bg-white/10 hover:bg-white/20 transition-colors block" href="login.html">Iniciar sesión</a>
+                    <a class="w-full text-center py-3 rounded-full text-black bg-white font-bold hover:bg-gray-200 transition-colors block" href="registro.html">Registrarse</a>
+                `;
+            }
+        }
+    }
+
     const rightNavContainer = document.querySelector('header nav div.flex.items-center.gap-4');
     if (rightNavContainer) {
         const existingProfileMenu = document.getElementById('profile-menu-container');
@@ -844,6 +882,49 @@ function togglePasswordVisibility(inputId, btn) {
     }
 }
 
+function initMobileMenu() {
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const closeBtn = document.getElementById('mobile-menu-close');
+
+    if (toggleBtn && drawer) {
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            drawer.classList.remove('hidden');
+            drawer.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            requestAnimationFrame(() => {
+                drawer.classList.remove('opacity-0');
+                drawer.classList.add('opacity-100');
+            });
+        });
+
+        const closeDrawer = () => {
+            drawer.classList.remove('opacity-100');
+            drawer.classList.add('opacity-0');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                drawer.classList.remove('flex');
+                drawer.classList.add('hidden');
+            }, 300);
+        };
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeDrawer);
+        }
+
+        drawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeDrawer);
+        });
+
+        drawer.addEventListener('click', (e) => {
+            if (e.target === drawer) {
+                closeDrawer();
+            }
+        });
+    }
+}
+
 // Exponer funciones globales para compatibilidad de los HTML antiguos
 window.getCurrentUser = getCurrentUser;
 window.login = login;
@@ -858,10 +939,13 @@ window.selectPresetAvatar = selectPresetAvatar;
 window.handleProfileImageUpload = handleProfileImageUpload;
 window.saveUserProfile = saveUserProfile;
 window.togglePasswordVisibility = togglePasswordVisibility;
+window.initMobileMenu = initMobileMenu;
 
 document.addEventListener('DOMContentLoaded', () => {
     updateNavUI();
+    initMobileMenu();
 });
 if (document.readyState === 'interactive' || document.readyState === 'complete') {
     updateNavUI();
+    initMobileMenu();
 }

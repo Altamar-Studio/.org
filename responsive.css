@@ -1,0 +1,456 @@
+/* =========================================================
+   responsive.css — EstudiandoAndo
+   Capa adaptativa global para PC, Tablet y Celular.
+   Solo AÑADE reglas; NO sobreescribe ni elimina nada existente.
+   ========================================================= */
+
+/* -------------------------------------------------------
+   0. BASE OVERRIDES — Prevent horizontal overflow globally
+   ------------------------------------------------------- */
+html, body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Smooth-scroll for anchored navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure images never exceed their container */
+img, video, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better touch targets for mobile */
+@media (pointer: coarse) {
+    a, button, [role="button"], input, select, textarea {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    /* Exceptions for inline text links and very small icon buttons */
+    .text-xs a, p a, li a,
+    nav a span.text-\[9px\] {
+        min-height: unset;
+        min-width: unset;
+    }
+}
+
+/* -------------------------------------------------------
+   1. MOBILE-FIRST (≤ 639px) — Smartphones
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    /* Safer padding on the sides */
+    .max-w-\[90\%\] {
+        max-width: 94% !important;
+    }
+
+    /* Hero title: ensure no overflow */
+    #hero-text h1.text-serif {
+        font-size: 2.25rem !important;
+        line-height: 1.15 !important;
+    }
+
+    /* Handwritten accent font on mobile */
+    #hero-text h1 .text-handwritten {
+        font-size: 2rem !important;
+        display: block;
+        margin-top: 0.25rem;
+    }
+
+    /* Body paragraphs don't get too wide */
+    p {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* University ticker — smaller text on phones */
+    .animate-infinite-scroll .text-lg {
+        font-size: 0.85rem !important;
+    }
+    .animate-infinite-scroll > div {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 0.65rem !important;
+        padding-bottom: 0.65rem !important;
+    }
+
+    /* Feature cards: tighter padding on small screens */
+    .feature-card {
+        padding: 1.25rem !important;
+        border-radius: 1.25rem !important;
+    }
+
+    /* Ecosystem cards heading */
+    .feature-card h3 {
+        font-size: 1.25rem !important;
+    }
+
+    /* Footer grid: stack to 1 column */
+    footer .grid.grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Bottom mobile nav — pad for safe-area on notched devices */
+    nav.fixed.bottom-0 {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+        height: auto;
+        min-height: 4rem;
+    }
+
+    /* Ensure main has bottom padding so content isn't hidden behind bottom nav */
+    main {
+        padding-bottom: 5rem !important;
+    }
+
+    /* Democratización box — tighter mobile spacing */
+    .rounded-\[48px\] {
+        border-radius: 1.5rem !important;
+        padding: 2.5rem 1.25rem !important;
+    }
+
+    /* Avatars row — smaller avatars on mobile */
+    .avatar-pop {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    /* Cards on aprendizaje/biblioteca grids */
+    .grid.gap-8 {
+        gap: 1rem !important;
+    }
+
+    /* Blog article cards */
+    article .rounded-\[32px\] {
+        border-radius: 1.25rem !important;
+    }
+
+    /* Simulador: fixed top bar adjustments */
+    .fixed.top-0.left-0.right-0 {
+        font-size: 0.75rem;
+    }
+}
+
+/* -------------------------------------------------------
+   2. SMALL TABLETS (640px – 767px)
+   ------------------------------------------------------- */
+@media (min-width: 640px) and (max-width: 767px) {
+    .max-w-\[90\%\] {
+        max-width: 92% !important;
+    }
+
+    /* Feature card padding */
+    .feature-card {
+        padding: 1.5rem !important;
+    }
+
+    /* Footer keeps 2-col */
+    footer .grid.grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    main {
+        padding-bottom: 5rem !important;
+    }
+}
+
+/* -------------------------------------------------------
+   3. TABLETS (768px – 1023px)
+   ------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Hero section: 2-column but keep the mascot restrained */
+    .hero-mascot-container {
+        max-width: 280px !important;
+    }
+
+    /* Ecosystem grid: 2 columns for tablets */
+    .grid.lg\:grid-cols-12 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .grid.lg\:grid-cols-12 > .lg\:col-span-8,
+    .grid.lg\:grid-cols-12 > .lg\:col-span-4,
+    .grid.lg\:grid-cols-12 > .lg\:col-span-6,
+    .grid.lg\:grid-cols-12 > .lg\:col-span-7,
+    .grid.lg\:grid-cols-12 > .lg\:col-span-5 {
+        grid-column: span 1 !important;
+    }
+
+    /* Footer columns: 3 across on tablets */
+    footer .grid.grid-cols-2.md\:grid-cols-5 {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* -------------------------------------------------------
+   4. SMALL LAPTOPS / LARGE TABLETS (1024px – 1279px)
+   ------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Hero mascot shouldn't dominate — cap its visual footprint */
+    .hero-mascot-container {
+        max-width: 320px !important;
+    }
+}
+
+/* -------------------------------------------------------
+   5. HERO SECTION — Desktop proportions fix
+   Ensures elegant, balanced text sizes and mascot scale.
+   ------------------------------------------------------- */
+
+/* Fluid typographic scaling using modern CSS clamp() */
+#hero-text h1.text-serif {
+    font-size: clamp(2.25rem, 3.8vw + 0.5rem, 4.5rem) !important;
+    line-height: 1.1 !important;
+    font-weight: 500;
+}
+
+#hero-text h1 .text-handwritten {
+    font-size: clamp(1.85rem, 3.2vw + 0.5rem, 4rem) !important;
+}
+
+/* Section titles across the site */
+section h2.text-serif {
+    font-size: clamp(1.85rem, 2.5vw + 0.5rem, 2.75rem) !important;
+}
+
+@media (min-width: 1024px) {
+    #hero-section {
+        grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+        gap: 2rem !important;
+    }
+    
+    #hero-text {
+        grid-column: span 7 / span 7 !important;
+    }
+    
+    #hero-mascot {
+        grid-column: span 5 / span 5 !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .hero-mascot-container {
+        max-width: 340px !important;
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-mascot-container {
+        max-width: 380px !important;
+    }
+}
+
+/* -------------------------------------------------------
+   6. MOBILE MENU DRAWER — refinements
+   ------------------------------------------------------- */
+#mobile-menu-drawer {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#mobile-menu-drawer.open {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+/* Safe-area support for drawer on notched phones */
+@supports (padding: env(safe-area-inset-top)) {
+    #mobile-menu-drawer {
+        padding-top: calc(1.5rem + env(safe-area-inset-top));
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    }
+}
+
+/* -------------------------------------------------------
+   7. BOTTOM NAVIGATION BAR — Safe area
+   ------------------------------------------------------- */
+@supports (padding: env(safe-area-inset-bottom)) {
+    nav.fixed.bottom-0 {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+}
+
+/* -------------------------------------------------------
+   8. SIMULADOR UV — Responsive enhancements
+   ------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* Question nav grid on mobile: 6 columns instead of 10 */
+    .simulador-question-grid {
+        grid-template-columns: repeat(6, 1fr) !important;
+    }
+    
+    /* Results cards stack on mobile */
+    .simulador-results-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* -------------------------------------------------------
+   9. LECCION PAGE — Bottom bar safe area
+   ------------------------------------------------------- */
+@media (max-width: 767px) {
+    /* Make the fixed check bar account for bottom nav */
+    .leccion-bottom-bar {
+        bottom: 4rem !important;
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+}
+
+/* -------------------------------------------------------
+   10. LOGIN & REGISTRO — card layout on mobile
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    /* Auth card: ensure it doesn't overflow viewport width */
+    .auth-card {
+        max-width: 100% !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 1.5rem !important;
+    }
+    
+    /* Blue left panel on login — hide background on tiny screens to save space */
+    .auth-banner {
+        min-height: 120px !important;
+        padding: 1.5rem !important;
+    }
+}
+
+/* -------------------------------------------------------
+   11. FOROS PAGE — Chat bubbles and layout
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    .foro-message-bubble {
+        max-width: 88% !important;
+        font-size: 0.875rem !important;
+    }
+    
+    .foro-input-bar {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+
+/* -------------------------------------------------------
+   12. IDIOMAS PAGE — Language tabs responsive
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    /* Language tabs wrap and center on mobile */
+    .idiomas-tabs {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+        justify-content: center !important;
+    }
+    
+    .idiomas-tabs > * {
+        flex: 0 0 auto;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* -------------------------------------------------------
+   13. BIBLIOTECA — Book cards grid
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    .biblioteca-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .biblioteca-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* -------------------------------------------------------
+   14. BLOG — Article cards responsive
+   ------------------------------------------------------- */
+@media (max-width: 639px) {
+    .blog-article-card {
+        border-radius: 1.25rem !important;
+    }
+    
+    .blog-article-card img {
+        height: 160px !important;
+        object-fit: cover;
+    }
+}
+
+/* -------------------------------------------------------
+   15. DARK-MODE SPECIFIC FIXES
+   ------------------------------------------------------- */
+.dark .watermark-text {
+    color: rgba(255, 255, 255, 0.015);
+}
+
+/* -------------------------------------------------------
+   16. PRINT STYLES — Clean output for students
+   ------------------------------------------------------- */
+@media print {
+    header, footer, nav.fixed, #mobile-menu-drawer,
+    #mobile-menu-toggle, .animate-float {
+        display: none !important;
+    }
+    
+    main {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* -------------------------------------------------------
+   17. LANDSCAPE PHONE (short viewport + wide)
+   ------------------------------------------------------- */
+@media (max-height: 500px) and (orientation: landscape) {
+    /* Reduce hero height so content is immediately visible */
+    #hero-section {
+        min-height: auto !important;
+    }
+    
+    /* Reduce the mascot even further */
+    #hero-mascot img {
+        max-height: 200px !important;
+    }
+    
+    /* Bottom nav goes even thinner */
+    nav.fixed.bottom-0 {
+        height: 3rem !important;
+        min-height: unset;
+    }
+    nav.fixed.bottom-0 span.text-\[9px\] {
+        display: none !important;
+    }
+}
+
+/* -------------------------------------------------------
+   18. ULTRA-WIDE MONITORS (≥ 2560px)
+   ------------------------------------------------------- */
+@media (min-width: 2560px) {
+    .max-w-\[90\%\] {
+        max-width: 1800px !important;
+    }
+}
+
+/* -------------------------------------------------------
+   19. ACCESSIBILITY — Reduced motion
+   ------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .animate-float {
+        animation: none !important;
+    }
+    .animate-infinite-scroll {
+        animation: none !important;
+    }
+}

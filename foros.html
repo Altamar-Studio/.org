@@ -442,6 +442,128 @@
         };
 
         let activeUnsubscribe = null;
+        let isUsingLocalChat = false;
+        let localChatInterval = null;
+
+        // Base de datos de chat local simulada (Fallback)
+        function getLocalChatMessages(forumId) {
+            try {
+                const allMessages = JSON.parse(localStorage.getItem('ea_mock_chat_all_messages') || '{}');
+                if (!allMessages[forumId]) {
+                    allMessages[forumId] = DEFAULT_CHAT[forumId] || [];
+                    localStorage.setItem('ea_mock_chat_all_messages', JSON.stringify(allMessages));
+                }
+                return allMessages[forumId].map(m => ({
+                    ...m,
+                    date: new Date(m.date)
+                }));
+            } catch(e) {
+                return DEFAULT_CHAT[forumId] || [];
+            }
+        }
+
+        function saveLocalChatMessage(forumId, message) {
+            try {
+                const allMessages = JSON.parse(localStorage.getItem('ea_mock_chat_all_messages') || '{}');
+                if (!allMessages[forumId]) {
+                    allMessages[forumId] = DEFAULT_CHAT[forumId] || [];
+                }
+                allMessages[forumId].push(message);
+                localStorage.setItem('ea_mock_chat_all_messages', JSON.stringify(allMessages));
+            } catch(e) {
+                console.error("Error guardando mensaje local:", e);
+            }
+        }
+
+        // Renderizar mensajes de chat
+        function displayMessages(messages) {
+            const container = document.getElementById('chat-messages-container');
+            if (!container) return;
+            container.innerHTML = '';
+            
+            if (messages.length === 0) {
+                container.innerHTML = `
+                    <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4">
+                        Aún no hay mensajes en este chat. ¡Inicia la conversación!
+                    </div>
+                `;
+                return;
+            }
+
+            const currentUser = getCurrentUser();
+            const isAdmin = currentUser && currentUser.role === 'admin';
+
+            messages.forEach((msg) => {
+                let uniConfig = universitiesList.find(u => u.code === msg.uni) || { color: '#6366F1' };
+                const avatarHtml = msg.avatar 
+                    ? `<img src="${msg.avatar}" class="w-8 h-8 rounded-full object-cover shadow-sm" />` 
+                    : `<div class="w-8 h-8 rounded-full bg-neutral-200 dark:bg-neutral-800 text-ea-dark dark:text-white font-bold flex items-center justify-center text-xs shadow-sm">${msg.author.charAt(0).toUpperCase()}</div>`;
+                
+                const isMsgAuthor = currentUser && currentUser.username === msg.author;
+                const showDeleteBtn = isAdmin || isMsgAuthor;
+
+                container.innerHTML += `
+                    <div class="flex items-start gap-3 select-none hover:bg-black/5 dark:hover:bg-white/5 p-2 rounded-xl transition-all">
+                        <button onclick="showUserProfileCard('${msg.author}')" class="flex-shrink-0 focus:outline-none hover:scale-105 active:scale-95 transition-transform" title="Ver perfil de ${msg.author}">
+                            ${avatarHtml}
+                        </button>
+                        
+                        <div class="flex-grow min-w-0">
+                            <div class="flex items-center justify-between gap-2 mb-1">
+                                <div class="flex items-center gap-1.5 min-w-0 font-sans">
+                                    <button onclick="showUserProfileCard('${msg.author}')" class="font-bold text-xs truncate dark:text-white text-ea-dark hover:underline focus:outline-none text-left">
+                                        ${msg.author}
+                                    </button>
+                                    <span class="text-[8px] font-black px-1.5 py-0.5 rounded-full text-white uppercase tracking-wider scale-90" style="background-color: ${uniConfig.color};">
+                                        ${msg.uni}
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[8px] opacity-40 font-bold tracking-wider">${formatChatTime(msg.date)}</span>
+                                    ${showDeleteBtn ? `
+                                    <button onclick="deleteChatMessage('${msg.id || ''}', '${msg.author}', ${msg.date.getTime()})" class="text-red-500 hover:text-red-700 opacity-60 hover:opacity-100 transition-opacity p-0.5 focus:outline-none flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Eliminar mensaje">
+                                        <span class="material-symbols-outlined text-[14px]">delete</span>
+                                    </button>
+                                    ` : ''}
+                                </div>
+                            </div>
+                            <p class="text-xs opacity-75 font-medium leading-relaxed dark:text-neutral-300 break-words">${msg.text}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.scrollTop = container.scrollHeight;
+        }
+
+        // Carga y suscripción local de chat
+        function loadLocalChat(forumId) {
+            isUsingLocalChat = true;
+            if (activeUnsubscribe) {
+                activeUnsubscribe();
+                activeUnsubscribe = null;
+            }
+            
+            const container = document.getElementById('chat-messages-container');
+            if (!container) return;
+            
+            const chatTitle = document.getElementById('chat-forum-name');
+            const chatCount = document.getElementById('chat-count');
+            if (chatTitle) chatTitle.innerText = forumId;
+            
+            const numActivos = Math.floor(Math.random() * 8) + 5;
+            if (chatCount) chatCount.innerText = `${numActivos} activos`;
+            
+            const messages = getLocalChatMessages(forumId);
+            displayMessages(messages);
+            
+            if (localChatInterval) clearInterval(localChatInterval);
+            localChatInterval = setInterval(() => {
+                if (selectedForumId === forumId && isUsingLocalChat) {
+                    displayMessages(getLocalChatMessages(forumId));
+                }
+            }, 3000);
+        }
 
         // Carga y suscripción en tiempo real con Firestore
         async function selectForum(forumId) {
@@ -456,13 +578,6 @@
                 if (chevron) chevron.style.transform = 'rotate(0deg)';
             }
             
-            await ensureFirebase();
-            const db = window.firebase.firestore();
-
-            if (activeUnsubscribe) {
-                activeUnsubscribe();
-            }
-
             const container = document.getElementById('chat-messages-container');
             if (!container) return;
 
@@ -477,89 +592,54 @@
             const chatCount = document.getElementById('chat-count');
             if (chatTitle) chatTitle.innerText = forumId;
 
-            // Escuchar cambios en tiempo real
-            activeUnsubscribe = db.collection("forum_messages")
-                .where("channel", "==", forumId)
-                .orderBy("timestamp", "asc")
-                .limit(100)
-                .onSnapshot((snapshot) => {
-                    container.innerHTML = '';
-                    const messages = [];
-                    
-                    snapshot.forEach((doc) => {
-                        const data = doc.data();
-                        messages.push({
-                            id: doc.id,
-                            author: data.author,
-                            uni: data.uni,
-                            avatar: data.avatar,
-                            text: data.text,
-                            date: data.timestamp ? data.timestamp.toDate() : new Date()
+            try {
+                await ensureFirebase();
+                if (!window.firebase || !window.firebase.apps.length) {
+                    throw new Error("Firebase no está cargado");
+                }
+                const db = window.firebase.firestore();
+
+                if (activeUnsubscribe) {
+                    activeUnsubscribe();
+                }
+
+                // Escuchar cambios en tiempo real
+                activeUnsubscribe = db.collection("forum_messages")
+                    .where("channel", "==", forumId)
+                    .orderBy("timestamp", "asc")
+                    .limit(100)
+                    .onSnapshot((snapshot) => {
+                        isUsingLocalChat = false;
+                        if (localChatInterval) {
+                            clearInterval(localChatInterval);
+                            localChatInterval = null;
+                        }
+                        const messages = [];
+                        
+                        snapshot.forEach((doc) => {
+                            const data = doc.data();
+                            messages.push({
+                                id: doc.id,
+                                author: data.author,
+                                uni: data.uni,
+                                avatar: data.avatar,
+                                text: data.text,
+                                date: data.timestamp ? data.timestamp.toDate() : new Date()
+                            });
                         });
+
+                        const numActivos = Math.floor(Math.random() * 8) + 5;
+                        if (chatCount) chatCount.innerText = `${numActivos} activos`;
+
+                        displayMessages(messages);
+                    }, (error) => {
+                        console.warn("Firestore snapshot error, falling back to local chat:", error);
+                        loadLocalChat(forumId);
                     });
-
-                    // Simular contador de usuarios activos específico del foro
-                    const numActivos = Math.floor(Math.random() * 8) + 5;
-                    if (chatCount) chatCount.innerText = `${numActivos} activos`;
-
-                    if (messages.length === 0) {
-                        container.innerHTML = `
-                            <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4">
-                                Aún no hay mensajes en este chat. ¡Inicia la conversación!
-                            </div>
-                        `;
-                        return;
-                    }
-
-                    const currentUser = getCurrentUser();
-                    const isAdmin = currentUser && currentUser.role === 'admin';
-
-                    messages.forEach((msg) => {
-                        let uniConfig = universitiesList.find(u => u.code === msg.uni) || { color: '#6366F1' };
-                        const avatarHtml = msg.avatar 
-                            ? `<img src="${msg.avatar}" class="w-8 h-8 rounded-full object-cover shadow-sm" />` 
-                            : `<div class="w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-500 text-white font-bold flex items-center justify-center text-xs shadow-sm">${msg.author.charAt(0).toUpperCase()}</div>`;
-
-                        container.innerHTML += `
-                            <div class="bg-black/5 dark:bg-white/5 p-3.5 rounded-2xl animate-fade-in flex items-start gap-3 text-left">
-                                <button onclick="showUserProfileCard('${msg.author}')" class="flex-shrink-0 focus:outline-none hover:scale-105 active:scale-95 transition-transform" title="Ver perfil de ${msg.author}">
-                                    ${avatarHtml}
-                                </button>
-                                
-                                <div class="flex-grow min-w-0">
-                                    <div class="flex items-center justify-between gap-2 mb-1">
-                                        <div class="flex items-center gap-1.5 min-w-0 font-sans">
-                                            <button onclick="showUserProfileCard('${msg.author}')" class="font-bold text-xs truncate dark:text-white text-ea-dark hover:underline focus:outline-none text-left">
-                                                ${msg.author}
-                                            </button>
-                                            <span class="text-[8px] font-black px-1.5 py-0.5 rounded-full text-white uppercase tracking-wider scale-90" style="background-color: ${uniConfig.color};">
-                                                ${msg.uni}
-                                            </span>
-                                        </div>
-                                        <div class="flex items-center gap-2">
-                                            <span class="text-[8px] opacity-40 font-bold tracking-wider">${formatChatTime(msg.date)}</span>
-                                            ${isAdmin ? `
-                                            <button onclick="deleteChatMessage('${msg.id}')" class="text-red-500 hover:text-red-700 opacity-60 hover:opacity-100 transition-opacity p-0.5 focus:outline-none flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Eliminar mensaje">
-                                                <span class="material-symbols-outlined text-[14px]">delete</span>
-                                            </button>
-                                            ` : ''}
-                                        </div>
-                                    </div>
-                                    <p class="text-xs opacity-75 font-medium leading-relaxed dark:text-neutral-300 break-words">${msg.text}</p>
-                                </div>
-                            </div>
-                        `;
-                    });
-
-                    container.scrollTop = container.scrollHeight;
-                }, (error) => {
-                    console.error("Error en Snapshot de foro:", error);
-                    container.innerHTML = `
-                        <div class="py-16 text-center text-red-500 opacity-65 italic text-xs font-semibold px-4">
-                            Error al cargar el foro. Asegúrate de que la base de datos de Firestore esté creada.
-                        </div>
-                    `;
-                });
+            } catch(e) {
+                console.warn("Firebase not ready/offline, falling back to local chat:", e);
+                loadLocalChat(forumId);
+            }
         }
 
         function formatChatTime(date) {
@@ -577,12 +657,25 @@
             if (!currentUser) return;
 
             const text = input.value.trim();
-            input.value = ''; // Limpiar campo inmediatamente para feedback rápido de UX
+            input.value = ''; // Limpiar campo inmediatamente
 
-            await ensureFirebase();
-            const db = window.firebase.firestore();
+            const localMsg = {
+                author: currentUser.username,
+                uni: currentUser.university,
+                avatar: currentUser.avatar || '',
+                text: text,
+                date: new Date()
+            };
+
+            if (isUsingLocalChat) {
+                saveLocalChatMessage(selectedForumId, localMsg);
+                displayMessages(getLocalChatMessages(selectedForumId));
+                return;
+            }
 
             try {
+                await ensureFirebase();
+                const db = window.firebase.firestore();
                 await db.collection("forum_messages").add({
                     author: currentUser.username,
                     uni: currentUser.university,
@@ -592,8 +685,10 @@
                     timestamp: window.firebase.firestore.FieldValue.serverTimestamp()
                 });
             } catch (err) {
-                console.error("Error al enviar mensaje:", err);
-                alert("Error al enviar el mensaje. Revisa las reglas de seguridad de Firestore.");
+                console.warn("Error al enviar mensaje, conmutando a chat local:", err);
+                isUsingLocalChat = true;
+                saveLocalChatMessage(selectedForumId, localMsg);
+                loadLocalChat(selectedForumId);
             }
         }
 
@@ -612,58 +707,78 @@
             modal.classList.remove('hidden');
             modal.classList.add('flex');
 
-            await ensureFirebase();
-            const db = window.firebase.firestore();
-
             try {
-                const snapshot = await db.collection("users").where("username", "==", username).limit(1).get();
-                if (!snapshot.empty) {
-                    const data = snapshot.docs[0].data();
-                    if (data.avatar) {
-                        avatarEl.innerHTML = `<img src="${data.avatar}" class="w-full h-full object-cover" />`;
-                    } else {
-                        avatarEl.innerHTML = username.charAt(0).toUpperCase();
-                    }
-                    document.getElementById('user-card-uni').innerText = data.university;
-                    document.getElementById('user-card-age').innerText = `${data.age || 20} Años`;
-                    
-                    if (data.bio) {
-                        bioEl.innerText = data.bio;
+                await ensureFirebase();
+                if (window.firebase && window.firebase.apps.length) {
+                    const db = window.firebase.firestore();
+                    const snapshot = await db.collection("users").where("username", "==", username).limit(1).get();
+                    if (!snapshot.empty) {
+                        const data = snapshot.docs[0].data();
+                        avatarEl.innerHTML = data.avatar ? `<img src="${data.avatar}" class="w-16 h-16 rounded-full object-cover" />` : username.charAt(0).toUpperCase();
+                        document.getElementById('user-card-uni').innerText = data.university || 'EstudiandoAndo';
+                        document.getElementById('user-card-age').innerText = `${data.age} Años`;
+                        bioEl.innerText = data.bio || '¡Hola! Estoy preparándome para mis exámenes con la comunidad.';
                         bioEl.classList.remove('opacity-40', 'italic');
-                    } else {
-                        bioEl.innerText = 'Este usuario aún no tiene biografía.';
-                        bioEl.classList.add('opacity-40', 'italic');
+                        return;
                     }
-                } else {
-                    // Fallback para cuentas demo estáticas predefinidas
-                    const mocks = {
-                        'Zahir': '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.',
-                        'Eduardo': 'Estudiante de la UNAM enfocado en medicina y desarrollo científico. ¡Repasando historia universal!',
-                        'Laura_Poli': 'Estudiante del IPN. Entusiasta de las matemáticas y la física aplicada. Siempre lista para un reto.',
-                        'Carlos_UV': 'Estudiante de la UV. Aficionado de la lectura y la tecnología médica. Futuro doctor.',
-                        'Fer_Ciencias': 'Preparándome para ingresar a la Facultad de Ciencias de la UNAM.',
-                        'Estudiante_UNAM': 'Futura psicóloga de la UNAM. Interesada en comportamiento humano y neurociencia.',
-                        'Teacher_Sam': 'Asesor oficial de inglés de EstudiandoAndo. Pregúntame sobre vocabulario y gramática.'
-                    };
-                    
-                    const listUnis = {
-                        'Zahir': 'UV', 'Eduardo': 'UNAM', 'Laura_Poli': 'IPN', 'Carlos_UV': 'UV', 
-                        'Fer_Ciencias': 'UNAM', 'Estudiante_UNAM': 'UNAM', 'Teacher_Sam': 'EXANI II'
-                    };
-                    
-                    avatarEl.innerHTML = username.charAt(0).toUpperCase();
-                    document.getElementById('user-card-uni').innerText = listUnis[username] || 'EstudiandoAndo';
-                    document.getElementById('user-card-age').innerText = `20 Años`;
-                    bioEl.innerText = mocks[username] || 'Estudiante preparándose para el examen de ingreso.';
-                    bioEl.classList.remove('opacity-40', 'italic');
                 }
+                
+                // Fallback para mock local
+                const localUsers = JSON.parse(localStorage.getItem('ea_mock_users') || '[]');
+                const foundLocal = localUsers.find(u => u.username === username);
+                if (foundLocal) {
+                    avatarEl.innerHTML = foundLocal.avatar ? `<img src="${foundLocal.avatar}" class="w-16 h-16 rounded-full object-cover" />` : username.charAt(0).toUpperCase();
+                    document.getElementById('user-card-uni').innerText = foundLocal.university;
+                    document.getElementById('user-card-age').innerText = `${foundLocal.age} Años`;
+                    bioEl.innerText = foundLocal.bio || '¡Hola! Estoy preparándome para mis exámenes.';
+                    bioEl.classList.remove('opacity-40', 'italic');
+                    return;
+                }
+
+                // Fallback para cuentas estáticas demo
+                const mocks = {
+                    'Zahir': '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.',
+                    'Eduardo': 'Estudiante de la UNAM enfocado en medicina y desarrollo científico. ¡Repasando historia universal!',
+                    'Laura_Poli': 'Estudiante del IPN. Entusiasta de las matemáticas y la física aplicada. Siempre lista para un reto.',
+                    'Carlos_UV': 'Estudiante de la UV. Aficionado de la lectura y la tecnología médica. Futuro doctor.',
+                    'Fer_Ciencias': 'Preparándome para ingresar a la Facultad de Ciencias de la UNAM.',
+                    'Estudiante_UNAM': 'Futura psicóloga de la UNAM. Interesada en comportamiento humano y neurociencia.',
+                    'Teacher_Sam': 'Asesor oficial de inglés de EstudiandoAndo. Pregúntame sobre vocabulario y gramática.'
+                };
+                
+                const listUnis = {
+                    'Zahir': 'UV', 'Eduardo': 'UNAM', 'Laura_Poli': 'IPN', 'Carlos_UV': 'UV', 
+                    'Fer_Ciencias': 'UNAM', 'Estudiante_UNAM': 'UNAM', 'Teacher_Sam': 'EXANI II'
+                };
+                
+                avatarEl.innerHTML = username.charAt(0).toUpperCase();
+                document.getElementById('user-card-uni').innerText = listUnis[username] || 'EstudiandoAndo';
+                document.getElementById('user-card-age').innerText = `20 Años`;
+                bioEl.innerText = mocks[username] || 'Estudiante preparándose para el examen de ingreso.';
+                bioEl.classList.remove('opacity-40', 'italic');
             } catch (err) {
                 console.error("Error cargando perfil del usuario:", err);
             }
         }
 
-        async function deleteChatMessage(messageId) {
+        async function deleteChatMessage(messageId, author, dateTimestamp) {
             if (confirm('¿Estás seguro de que deseas eliminar este mensaje?')) {
+                if (isUsingLocalChat) {
+                    try {
+                        const allMessages = JSON.parse(localStorage.getItem('ea_mock_chat_all_messages') || '{}');
+                        if (allMessages[selectedForumId]) {
+                            allMessages[selectedForumId] = allMessages[selectedForumId].filter(m => 
+                                !(m.author === author && new Date(m.date).getTime() === dateTimestamp)
+                            );
+                            localStorage.setItem('ea_mock_chat_all_messages', JSON.stringify(allMessages));
+                            displayMessages(getLocalChatMessages(selectedForumId));
+                        }
+                    } catch(e) {
+                        console.error(e);
+                    }
+                    return;
+                }
+
                 await ensureFirebase();
                 const db = window.firebase.firestore();
                 try {

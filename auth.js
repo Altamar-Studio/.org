@@ -117,7 +117,8 @@ function ensureFirebase() {
                                 avatar: data.avatar || user.photoURL || '',
                                 bio: data.bio || '',
                                 role: data.role || 'user',
-                                uid: user.uid
+                                uid: user.uid,
+                                isLocal: false // Sesión del servidor de Firebase
                             };
                             localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
                             updateNavUI();
@@ -126,7 +127,9 @@ function ensureFirebase() {
                         console.error("Error sincronizando perfil:", e);
                     }
                 } else {
-                    if (localStorage.getItem(SESSION_KEY)) {
+                    // Solo cerrar sesión si no es una sesión local offline activa
+                    const current = getCurrentUser();
+                    if (current && !current.isLocal) {
                         localStorage.removeItem(SESSION_KEY);
                         updateNavUI();
                     }
@@ -219,7 +222,8 @@ async function login(identifier, password) {
                 avatar: '',
                 bio: '¡Hola! Soy Zahir, creador de EstudiandoAndo. (Modo Local)',
                 role: 'admin',
-                uid: 'mock-zahir-uid-admin'
+                uid: 'mock-zahir-uid-admin',
+                isLocal: true
             };
             localStorage.setItem(SESSION_KEY, JSON.stringify(localAdminUser));
             return { success: true };
@@ -240,7 +244,7 @@ async function login(identifier, password) {
                 // Verificar en usuarios locales primero como redundancia
                 const mockUser = getMockUsers().find(u => u.username_lowercase === email && u.password === password);
                 if (mockUser) {
-                    const sessionUser = { ...mockUser };
+                    const sessionUser = { ...mockUser, isLocal: true };
                     delete sessionUser.password;
                     localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
                     return { success: true };
@@ -269,31 +273,38 @@ async function login(identifier, password) {
             avatar: data.avatar || user.photoURL || '',
             bio: data.bio || '',
             role: data.role || 'user',
-            uid: user.uid
+            uid: user.uid,
+            isLocal: false
         };
         localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
         return { success: true };
     } catch (e) {
-        console.error("Error al iniciar sesión en Firebase, intentando local fallback:", e);
+        console.error("Error al iniciar sesión en Firebase:", e);
         
-        // Intentar iniciar sesión desde usuarios locales de respaldo
+        // Si es un error de credenciales explícito en Firebase, NO conmutar a local (a menos que sea por red u offline)
+        if (e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential') {
+            return { success: false, message: 'Usuario/correo o contraseña incorrectos.' };
+        } else if (e.code === 'auth/invalid-email') {
+            return { success: false, message: 'El formato de correo no es válido.' };
+        } else if (e.code === 'auth/user-disabled') {
+            return { success: false, message: 'Esta cuenta de usuario ha sido inhabilitada.' };
+        }
+        
+        // Si falló por red o inicialización, hacer fallback a la base de datos local
+        console.warn("Fallo de infraestructura Firebase, conmutando a login local offline de respaldo.");
         const cleanId = emailInput;
         const mockUser = getMockUsers().find(u => 
             (u.username_lowercase === cleanId || u.email.toLowerCase() === cleanId) && u.password === password
         );
         if (mockUser) {
-            const sessionUser = { ...mockUser };
+            const sessionUser = { ...mockUser, isLocal: true };
             delete sessionUser.password;
             localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
             return { success: true };
         }
 
         let msg = 'Usuario o contraseña incorrectos.';
-        if (e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential') {
-            msg = 'Usuario/correo o contraseña incorrectos.';
-        } else if (e.code === 'auth/invalid-email') {
-            msg = 'El formato de correo no es válido.';
-        } else if (e.code === 'auth/network-request-failed') {
+        if (e.code === 'auth/network-request-failed') {
             msg = 'Error de red. Revisa tu conexión a internet.';
         }
         return { success: false, message: msg };
@@ -398,19 +409,31 @@ async function register(username, email, password, university, birthdate) {
         saveMockUser(localUser);
         return { success: true };
     } catch (e) {
-        console.error("Error al registrar en Firebase, usando base de datos local de respaldo:", e);
+        console.error("Error al registrar en Firebase:", e);
         
-        // Comprobar disponibilidad local
+        // Si es un error de validación de Firebase Auth, reportarlo directamente
+        if (e.code === 'auth/email-already-in-use') {
+            return { success: false, message: 'El correo electrónico ya está registrado por otra cuenta.' };
+        } else if (e.code === 'auth/invalid-email') {
+            return { success: false, message: 'El formato del correo electrónico no es válido.' };
+        } else if (e.code === 'auth/weak-password') {
+            return { success: false, message: 'La contraseña es muy débil. Debe tener al menos 6 caracteres.' };
+        } else if (e.code === 'auth/operation-not-allowed') {
+            return { success: false, message: 'El registro por correo y contraseña no está habilitado en tu consola de Firebase.' };
+        }
+        
+        // Si es un error de infraestructura, red o reglas bloqueadas, hacer fallback local
+        console.warn("Fallo de infraestructura Firebase, conmutando a registro local offline de respaldo.");
+        
         const existsLocally = getMockUsers().some(u => u.username_lowercase === cleanUsername.toLowerCase());
         if (existsLocally) {
             return { success: false, message: 'El nombre de usuario ya está registrado localmente.' };
         }
         
-        // Registrar en mock database
         saveMockUser(localUser);
         
-        // Iniciar sesión inmediatamente
-        const sessionUser = { ...localUser };
+        // Iniciar sesión inmediatamente en modo local
+        const sessionUser = { ...localUser, isLocal: true };
         delete sessionUser.password;
         localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
         return { success: true };
@@ -912,29 +935,45 @@ async function saveUserProfile() {
     const bioText = document.getElementById('profile-modal-bio').value;
     
     await ensureFirebase();
-    const currentUser = window.firebase.auth().currentUser;
-    if (currentUser) {
-        try {
-            await window.firebase.firestore().collection("users").doc(currentUser.uid).update({
-                avatar: selectedAvatarDataUrl,
-                bio: bioText
-            });
-            
-            user.avatar = selectedAvatarDataUrl;
-            user.bio = bioText;
-            localStorage.setItem(SESSION_KEY, JSON.stringify(user));
-            
-            closeUserProfile();
-            updateNavUI();
-            
-            window.dispatchEvent(new CustomEvent('profileUpdated'));
-        } catch (e) {
-            console.error("Error saving profile:", e);
-            alert("Hubo un error al guardar los cambios en el servidor.");
+    let savedOnServer = false;
+    try {
+        if (window.firebase && window.firebase.apps.length) {
+            const currentUser = window.firebase.auth().currentUser;
+            if (currentUser) {
+                await window.firebase.firestore().collection("users").doc(currentUser.uid).update({
+                    avatar: selectedAvatarDataUrl,
+                    bio: bioText
+                });
+                savedOnServer = true;
+            }
         }
-    } else {
-        alert("Sesión no activa en Firebase.");
+    } catch (e) {
+        console.warn("Error al guardar perfil en Firebase, usando guardado local:", e);
     }
+    
+    // Guardar cambios en el almacenamiento local siempre
+    user.avatar = selectedAvatarDataUrl;
+    user.bio = bioText;
+    localStorage.setItem(SESSION_KEY, JSON.stringify(user));
+    
+    // Actualizar también en la lista ea_mock_users
+    try {
+        const localUsers = JSON.parse(localStorage.getItem('ea_mock_users') || '[]');
+        const updatedUsers = localUsers.map(u => {
+            if (u.username === user.username) {
+                return { ...u, avatar: selectedAvatarDataUrl, bio: bioText };
+            }
+            return u;
+        });
+        localStorage.setItem('ea_mock_users', JSON.stringify(updatedUsers));
+    } catch (err) {
+        console.error("Error al actualizar la lista local de usuarios:", err);
+    }
+    
+    closeUserProfile();
+    updateNavUI();
+    
+    window.dispatchEvent(new CustomEvent('profileUpdated'));
 }
 
 // Función para alternar visibilidad de contraseña

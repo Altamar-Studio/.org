@@ -1,0 +1,786 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 1,
+  "title": "Saudações e Apresentações",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Por favor'",
+          "phrase": "Por favor",
+          "answer": "Por favor",
+          "target_vocab": "por favor",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Por favor'",
+          "explanation": "Se escribe 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Oi",
+              "right": "Hola (informal)"
+            },
+            {
+              "left": "Obrigado",
+              "right": "Gracias"
+            },
+            {
+              "left": "Sim",
+              "right": "Sí"
+            },
+            {
+              "left": "Não",
+              "right": "No"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde no'",
+          "answer": "Ele responde não",
+          "options": [
+            "Ele",
+            "responde",
+            "não"
+          ],
+          "target_vocab": "não",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde no'",
+          "explanation": "La estructura correcta es: 'Ele responde não'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Por favor'",
+          "answer": "Por favor",
+          "distractors": [
+            "Como você está?",
+            "Oi",
+            "Bom dia"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'Por favor' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ele responde _____",
+          "answer": "não",
+          "options": [
+            "não",
+            "por favor",
+            "como você está?",
+            "bom dia"
+          ],
+          "target_vocab": "não",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde no'",
+          "explanation": "La palabra correcta es 'não'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Adiós'",
+          "phrase": "Adiós",
+          "answer": "Tchau",
+          "target_vocab": "tchau",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Adiós'",
+          "explanation": "Se escribe 'Tchau'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Encantado'",
+          "answer": "Prazer em conhecer",
+          "distractors": [
+            "Como você está?",
+            "Oi",
+            "Bom dia"
+          ],
+          "target_vocab": "prazer em conhecer",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Encantado'",
+          "explanation": "'Prazer em conhecer' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde gracias'",
+          "answer": "Ele responde obrigado",
+          "options": [
+            "Ele",
+            "responde",
+            "obrigado"
+          ],
+          "target_vocab": "obrigado",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde gracias'",
+          "explanation": "La estructura correcta es: 'Ele responde obrigado'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Por favor'",
+          "answer": "Por favor",
+          "distractors": [
+            "Sim",
+            "Tchau",
+            "Prazer em conhecer"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'Por favor' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde adiós'",
+          "answer": "Ele responde tchau",
+          "options": [
+            "Ele",
+            "responde",
+            "tchau"
+          ],
+          "target_vocab": "tchau",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde adiós'",
+          "explanation": "La estructura correcta es: 'Ele responde tchau'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Sí'",
+          "phrase": "Sí",
+          "answer": "Sim",
+          "target_vocab": "sim",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Sí'",
+          "explanation": "Se escribe 'Sim'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Por favor'",
+          "answer": "Por favor",
+          "distractors": [
+            "Prazer em conhecer",
+            "Bom dia",
+            "Tchau"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'Por favor' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Por favor'",
+          "answer": "Por favor",
+          "distractors": [
+            "Prazer em conhecer",
+            "Oi",
+            "Meu nome é"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'Por favor' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde adiós'",
+          "answer": "Ele responde tchau",
+          "options": [
+            "Ele",
+            "responde",
+            "tchau"
+          ],
+          "target_vocab": "tchau",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde adiós'",
+          "explanation": "La estructura correcta es: 'Ele responde tchau'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Prazer em conhecer",
+              "right": "Encantado"
+            },
+            {
+              "left": "Bom dia",
+              "right": "Hola / Buenos días"
+            },
+            {
+              "left": "Não",
+              "right": "No"
+            },
+            {
+              "left": "Meu nome é",
+              "right": "Me llamo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Adiós'",
+          "answer": "Tchau",
+          "distractors": [
+            "Prazer em conhecer",
+            "Meu nome é",
+            "Oi"
+          ],
+          "target_vocab": "tchau",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Adiós'",
+          "explanation": "'Tchau' significa 'Adiós'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Me llamo'",
+          "phrase": "Me llamo",
+          "answer": "Meu nome é",
+          "target_vocab": "meu nome é",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Me llamo'",
+          "explanation": "Se escribe 'Meu nome é'.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde hola (informal)'",
+          "answer": "Ele responde oi",
+          "options": [
+            "Ele",
+            "responde",
+            "oi"
+          ],
+          "target_vocab": "oi",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde hola (informal)'",
+          "explanation": "La estructura correcta es: 'Ele responde oi'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ele responde _____",
+          "answer": "oi",
+          "options": [
+            "oi",
+            "não",
+            "como você está?",
+            "por favor"
+          ],
+          "target_vocab": "oi",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde hola (informal)'",
+          "explanation": "La palabra correcta es 'oi'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo no'",
+          "answer": "Eu digo não",
+          "options": [
+            "Eu",
+            "digo",
+            "não"
+          ],
+          "target_vocab": "não",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo no'",
+          "explanation": "La estructura correcta es: 'Eu digo não'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : '¿Cómo estás?'",
+          "answer": "Como você está?",
+          "distractors": [
+            "Prazer em conhecer",
+            "Obrigado",
+            "Não"
+          ],
+          "target_vocab": "como você está?",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: '¿Cómo estás?'",
+          "explanation": "'Como você está?' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde me llamo'",
+          "answer": "Ele responde meu nome é",
+          "options": [
+            "Ele",
+            "responde",
+            "meu",
+            "nome",
+            "é"
+          ],
+          "target_vocab": "meu nome é",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde me llamo'",
+          "explanation": "La estructura correcta es: 'Ele responde meu nome é'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo gracias'",
+          "answer": "Eu digo obrigado",
+          "options": [
+            "Eu",
+            "digo",
+            "obrigado"
+          ],
+          "target_vocab": "obrigado",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Eu digo obrigado'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Bom dia",
+              "right": "Hola / Buenos días"
+            },
+            {
+              "left": "Sim",
+              "right": "Sí"
+            },
+            {
+              "left": "Meu nome é",
+              "right": "Me llamo"
+            },
+            {
+              "left": "Como você está?",
+              "right": "¿Cómo estás?"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo hola (informal)'",
+          "answer": "Eu digo oi",
+          "options": [
+            "Eu",
+            "digo",
+            "oi"
+          ],
+          "target_vocab": "oi",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo hola (informal)'",
+          "explanation": "La estructura correcta es: 'Eu digo oi'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'No'",
+          "answer": "Não",
+          "distractors": [
+            "Sim",
+            "Meu nome é",
+            "Bom dia"
+          ],
+          "target_vocab": "não",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'No'",
+          "explanation": "'Não' significa 'No'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : '¿Cómo estás?'",
+          "answer": "Como você está?",
+          "distractors": [
+            "Prazer em conhecer",
+            "Por favor",
+            "Oi"
+          ],
+          "target_vocab": "como você está?",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: '¿Cómo estás?'",
+          "explanation": "'Como você está?' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : '¿Cómo estás?'",
+          "phrase": "¿Cómo estás?",
+          "answer": "Como você está?",
+          "target_vocab": "como você está?",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: '¿Cómo estás?'",
+          "explanation": "Se escribe 'Como você está?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ele responde _____",
+          "answer": "por favor",
+          "options": [
+            "por favor",
+            "obrigado",
+            "como você está?",
+            "meu nome é"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde por favor'",
+          "explanation": "La palabra correcta es 'por favor'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Adiós'",
+          "phrase": "Adiós",
+          "answer": "Tchau",
+          "target_vocab": "tchau",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Adiós'",
+          "explanation": "Se escribe 'Tchau'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : '¿Cómo estás?'",
+          "answer": "Como você está?",
+          "distractors": [
+            "Prazer em conhecer",
+            "Oi",
+            "Não"
+          ],
+          "target_vocab": "como você está?",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: '¿Cómo estás?'",
+          "explanation": "'Como você está?' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Sí'",
+          "phrase": "Sí",
+          "answer": "Sim",
+          "target_vocab": "sim",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Sí'",
+          "explanation": "Se escribe 'Sim'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde hola (informal)'",
+          "answer": "Ele responde oi",
+          "options": [
+            "Ele",
+            "responde",
+            "oi"
+          ],
+          "target_vocab": "oi",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde hola (informal)'",
+          "explanation": "La estructura correcta es: 'Ele responde oi'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Sí'",
+          "answer": "Sim",
+          "distractors": [
+            "Tchau",
+            "Por favor",
+            "Não"
+          ],
+          "target_vocab": "sim",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Sí'",
+          "explanation": "'Sim' significa 'Sí'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde gracias'",
+          "answer": "Ele responde obrigado",
+          "options": [
+            "Ele",
+            "responde",
+            "obrigado"
+          ],
+          "target_vocab": "obrigado",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde gracias'",
+          "explanation": "La estructura correcta es: 'Ele responde obrigado'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Hola (informal)'",
+          "phrase": "Hola (informal)",
+          "answer": "Oi",
+          "target_vocab": "oi",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: 'Hola (informal)'",
+          "explanation": "Se escribe 'Oi'.",
+          "image": "contenido/img/vocab_hello.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ele responde _____",
+          "answer": "prazer em conhecer",
+          "options": [
+            "prazer em conhecer",
+            "sim",
+            "tchau",
+            "obrigado"
+          ],
+          "target_vocab": "prazer em conhecer",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde encantado'",
+          "explanation": "La palabra correcta es 'prazer em conhecer'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Oi",
+              "right": "Hola (informal)"
+            },
+            {
+              "left": "Prazer em conhecer",
+              "right": "Encantado"
+            },
+            {
+              "left": "Como você está?",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "Meu nome é",
+              "right": "Me llamo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Encantado'",
+          "answer": "Prazer em conhecer",
+          "distractors": [
+            "Não",
+            "Tchau",
+            "Obrigado"
+          ],
+          "target_vocab": "prazer em conhecer",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Encantado'",
+          "explanation": "'Prazer em conhecer' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Él responde encantado'",
+          "answer": "Ele responde prazer em conhecer",
+          "options": [
+            "Ele",
+            "responde",
+            "prazer",
+            "em",
+            "conhecer"
+          ],
+          "target_vocab": "prazer em conhecer",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde encantado'",
+          "explanation": "La estructura correcta es: 'Ele responde prazer em conhecer'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo me llamo'",
+          "answer": "Eu digo meu nome é",
+          "options": [
+            "Eu",
+            "digo",
+            "meu",
+            "nome",
+            "é"
+          ],
+          "target_vocab": "meu nome é",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo me llamo'",
+          "explanation": "La estructura correcta es: 'Eu digo meu nome é'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Obrigado",
+              "right": "Gracias"
+            },
+            {
+              "left": "Tchau",
+              "right": "Adiós"
+            },
+            {
+              "left": "Por favor",
+              "right": "Por favor"
+            },
+            {
+              "left": "Como você está?",
+              "right": "¿Cómo estás?"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : '¿Cómo estás?'",
+          "phrase": "¿Cómo estás?",
+          "answer": "Como você está?",
+          "target_vocab": "como você está?",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: '¿Cómo estás?'",
+          "explanation": "Se escribe 'Como você está?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo hola / buenos días'",
+          "answer": "Eu digo bom dia",
+          "options": [
+            "Eu",
+            "digo",
+            "bom",
+            "dia"
+          ],
+          "target_vocab": "bom dia",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo hola / buenos días'",
+          "explanation": "La estructura correcta es: 'Eu digo bom dia'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Hola / Buenos días'",
+          "answer": "Bom dia",
+          "distractors": [
+            "Por favor",
+            "Como você está?",
+            "Tchau"
+          ],
+          "target_vocab": "bom dia",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Hola / Buenos días'",
+          "explanation": "'Bom dia' significa 'Hola / Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : '¿Cómo estás?'",
+          "phrase": "¿Cómo estás?",
+          "answer": "Como você está?",
+          "target_vocab": "como você está?",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en portugués: '¿Cómo estás?'",
+          "explanation": "Se escribe 'Como você está?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo digo gracias'",
+          "answer": "Eu digo obrigado",
+          "options": [
+            "Eu",
+            "digo",
+            "obrigado"
+          ],
+          "target_vocab": "obrigado",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Eu digo obrigado'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Sí'",
+          "answer": "Sim",
+          "distractors": [
+            "Tchau",
+            "Por favor",
+            "Oi"
+          ],
+          "target_vocab": "sim",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Sí'",
+          "explanation": "'Sim' significa 'Sí'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'No'",
+          "answer": "Não",
+          "distractors": [
+            "Bom dia",
+            "Tchau",
+            "Prazer em conhecer"
+          ],
+          "target_vocab": "não",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'No'",
+          "explanation": "'Não' significa 'No'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ele responde _____",
+          "answer": "por favor",
+          "options": [
+            "por favor",
+            "meu nome é",
+            "prazer em conhecer",
+            "bom dia"
+          ],
+          "target_vocab": "por favor",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde por favor'",
+          "explanation": "La palabra correcta es 'por favor'."
+        }
+      ]
+    }
+  ]
+}

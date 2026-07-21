@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blog Comunitario | EstudiandoAndo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-cream': '#F9F9F9',
+                        'ea-dark': '#0A0A0A',
+                        'ea-gray-light': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-serif { font-family: 'Cormorant Garamond', serif; }
+        .text-handwritten { font-family: 'Homemade Apple', cursive; }
+        
+        /* Scrollbar invisible */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Hover Zoom effect */
+        .img-container {
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .img-container img {
+            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .article-card:hover .img-container img {
+            transform: scale(1.04);
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+    </style>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+<script src="auth.js"></script>
+</head>
+<body class="antialiased bg-ea-bg dark:bg-neutral-950 text-ea-dark dark:text-white selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black flex flex-col min-h-screen transition-colors duration-300">
+
+    <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2" href="index.html">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class='hover:opacity-100 transition-opacity' href='biblioteca.html'>Biblioteca</a>
+                    <a class='hover:opacity-100 transition-opacity' href='aprendizaje.html'>Aprendizaje</a>
+                    <a class="hover:opacity-100 transition-opacity" href="idiomas.html">Idiomas</a>
+                    <a class="text-black dark:text-white font-bold opacity-100 transition-colors" href="blog.html">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <a class="text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block" href="login.html">Iniciar sesión</a>
+                <a class="bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 rounded-full text-sm font-bold shadow-sm hover:bg-neutral-800 dark:hover:bg-gray-200 transition-colors" href="registro.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 flex-grow flex flex-col max-w-[90%] 2xl:max-w-[1600px] mx-auto w-full px-6 mb-20">
+        
+        <!-- Título principal -->
+        <div class="mb-16 mt-8 border-b border-black/10 dark:border-white/10 pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6 transition-colors animate-fade-in">
+            <div>
+                <h1 class="text-5xl md:text-7xl text-serif font-medium tracking-tight">
+                    El Blog <br><span class="text-handwritten text-5xl md:text-7xl italic">Comunitario</span>.
+                </h1>
+            </div>
+            <div class="max-w-xs text-sm font-medium opacity-60 leading-relaxed">
+                Avisos oficiales de la comunidad de EstudiandoAndo, consejos pedagógicos y convocatorias publicadas de forma manual por nuestro equipo académico.
+            </div>
+        </div>
+
+        <!-- Artículo Destacado (Hero Section) -->
+        <div id="hero-article" class="mb-20 animate-fade-in animate-delay-1 opacity-0" style="animation-fill-mode: forwards;">
+            <!-- Inyectado por JS -->
+        </div>
+
+        <!-- Filtros y Grid de Artículos -->
+        <div class="flex flex-col lg:flex-row gap-10 animate-fade-in animate-delay-2 opacity-0" style="animation-fill-mode: forwards;">
+            
+            <!-- Barra Lateral con Filtros y Widget de Sugerencias -->
+            <aside class="w-full lg:w-80 flex-shrink-0 flex flex-col gap-8">
+                <!-- Selector de Categorías -->
+                <div class="bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] p-6 flex flex-col gap-2.5">
+                    <h3 class="text-xs font-bold uppercase tracking-widest opacity-40 mb-2 px-1">Categorías</h3>
+                    <div class="flex flex-row lg:flex-col gap-2.5 overflow-x-auto no-scrollbar pb-2 lg:pb-0" id="categories-container">
+                        <!-- Generado dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Contenedor de herramientas de administrador (se inyecta dinámicamente) -->
+                <div id="admin-tools-container" class="hidden flex-col gap-6"></div>
+
+                <!-- Widget: Proponer Entrada (Comunidad) -->
+                <div class="relative overflow-hidden bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[32px] p-8 flex flex-col gap-5 shadow-sm group hover:shadow-md transition-all">
+                    <!-- Glassmorphic accent blur -->
+                    <div class="absolute -right-16 -top-16 w-32 h-32 rounded-full bg-blue-600/10 dark:bg-blue-400/10 blur-xl pointer-events-none group-hover:scale-125 transition-transform duration-700"></div>
+                    
+                    <div class="w-12 h-12 rounded-2xl bg-blue-600/10 dark:bg-blue-400/10 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                        <span class="material-symbols-outlined text-2xl">rate_review</span>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <h4 class="font-serif text-2xl font-bold tracking-tight text-ea-dark dark:text-white leading-snug">¿Tienes un aviso para la comunidad?</h4>
+                        <p class="text-xs opacity-65 leading-relaxed font-medium">
+                            Los administradores pueden revisar y publicar avisos sugeridos por estudiantes destacados o avisos de asambleas y convocatorias locales.
+                        </p>
+                    </div>
+                    
+                    <button onclick="abrirModalPropuesta()" class="w-full bg-blue-600 text-white dark:bg-blue-500 py-4 rounded-2xl text-xs font-bold shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 active:scale-[0.98] transition-all" style="box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);">
+                        Proponer Entrada
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Grid de Artículos Principal -->
+            <div class="flex-grow">
+                <div class="flex items-center gap-3 mb-8 border-b border-black/5 dark:border-white/5 pb-4 transition-colors">
+                    <span class="material-symbols-outlined opacity-40 text-[20px]">feed</span>
+                    <h2 id="current-category-title" class="text-sm font-bold uppercase tracking-widest opacity-60">Todas las Publicaciones</h2>
+                </div>
+
+                <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Inyectado por JS -->
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="bg-white dark:bg-neutral-950 py-20 px-6 border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-[90%] 2xl:max-w-[1650px] mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="cropped_assets/logo_combined.png" class="h-16 w-auto object-contain dark:invert" alt="EA Logo">
+                    </div>
+                    <p class="text-xs opacity-50 font-medium leading-relaxed max-w-xs">
+                        Elevando el estándar de la educación digital en México de forma gratuita y libre de distracciones.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Plataforma</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="biblioteca.html">Biblioteca Virtual</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="aprendizaje.html">Simuladores de Admisión</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="idiomas.html">Cursos Idiomas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Comunidad</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="foros.html">Foros de Charla</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="blog.html">Blog Oficial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Redes</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.tiktok.com/@estudiando_ando.org?_r=1&_t=ZS-98CbOv3uH8E" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.instagram.com/estudiandoando_org?igsh=MWZveTB2ZnVybWZnOQ==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.facebook.com/share/g/1GbheNa2cb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Grupo de Facebook</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://discord.gg/SzurPrJZcR" target="_blank" rel="noopener noreferrer">Servidor de Discord</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://chat.whatsapp.com/Kz5w8TAh44FBHHDoA3rAss" target="_blank" rel="noopener noreferrer">Grupo de WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Legal</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Privacidad</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-black/5 pt-10 pb-20 md:pb-0">
+                <p class="text-xs opacity-40 font-bold tracking-tight">© EstudiandoAndo 2026. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra de Navegación Móvil -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl border-t border-black/10 dark:border-white/10 h-16 flex items-center justify-around px-1 md:hidden shadow-lg transition-colors">
+        <a href="index.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="text-[9px] font-bold tracking-tight">Inicio</span>
+        </a>
+        <a href="biblioteca.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">local_library</span>
+            <span class="text-[9px] font-bold tracking-tight">Biblioteca</span>
+        </a>
+        <a href="aprendizaje.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">psychology</span>
+            <span class="text-[9px] font-bold tracking-tight">Aprendizaje</span>
+        </a>
+        <a href="idiomas.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">language</span>
+            <span class="text-[9px] font-bold tracking-tight">Idiomas</span>
+        </a>
+        <a href="blog.html" class="flex flex-col items-center gap-0.5 opacity-100 text-black dark:text-white transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">feed</span>
+            <span class="text-[9px] font-bold tracking-tight">Blog</span>
+        </a>
+    </nav>
+
+    <!-- Visor del Artículo Completo (Lectura) -->
+    <div id="article-reader" class="fixed inset-0 z-[100] hidden bg-ea-cream dark:bg-neutral-950 overflow-y-auto animate-fade-in">
+        <!-- Contenedor del Lector -->
+        <div class="max-w-4xl mx-auto px-6 py-20">
+            <!-- Botón Volver -->
+            <button onclick="closePost()" class="inline-flex items-center gap-2 text-sm font-bold opacity-60 hover:opacity-100 transition-opacity mb-10 group">
+                <span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+                Volver al Blog
+            </button>
+
+            <!-- Cabecera del Artículo -->
+            <div id="reader-header">
+                <!-- Inyectado dinámicamente -->
+            </div>
+
+            <!-- Imagen Destacada del Artículo -->
+            <div class="my-10 rounded-[32px] overflow-hidden shadow-md h-64 sm:h-[400px]">
+                <img id="reader-image" src="" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Contenido del Artículo -->
+            <article id="reader-body" class="prose dark:prose-invert max-w-none text-neutral-600 dark:text-neutral-300 font-medium text-base sm:text-lg leading-relaxed space-y-6">
+                <!-- Inyectado dinámicamente -->
+            </article>
+        </div>
+    </div>
+
+    <!-- Modal: Proponer Entrada -->
+    <div id="proposal-modal" class="fixed inset-0 z-[110] hidden items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" onclick="cerrarModalPropuesta()"></div>
+        <!-- Contenido Modal -->
+        <div class="relative bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[32px] p-8 max-w-lg w-full shadow-2xl animate-fade-in flex flex-col">
+            
+            <!-- Header -->
+            <div class="flex justify-between items-start mb-6">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold tracking-tight">Proponer Entrada</h3>
+                    <p class="text-xs opacity-60 font-medium mt-1">Sugerencia para el blog de la comunidad EstudiandoAndo</p>
+                </div>
+                <button onclick="cerrarModalPropuesta()" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-65">
+                    <span class="material-symbols-outlined text-[20px]">close</span>
+                </button>
+            </div>
+            
+            <!-- Form -->
+            <form id="proposal-form" onsubmit="enviarPropuesta(event)" class="space-y-4 text-left">
+                <!-- Nombre y Rol -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-bold opacity-50 mb-1.5 uppercase tracking-widest">Tu Nombre</label>
+                        <input type="text" required id="prop-author" placeholder="Ej: Alan Gómez" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold opacity-50 mb-1.5 uppercase tracking-widest">Matrícula o Rol</label>
+                        <input type="text" required id="prop-role" placeholder="Ej: UV-2024-Estudiante" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                    </div>
+                </div>
+                
+                <!-- Título y Categoría -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-bold opacity-50 mb-1.5 uppercase tracking-widest">Título del aviso</label>
+                        <input type="text" required id="prop-title" placeholder="Ej: Reunión de estudio grupal" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold opacity-50 mb-1.5 uppercase tracking-widest">Categoría</label>
+                        <select id="prop-category" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                            <option value="Comunidad">Comunidad 📣</option>
+                            <option value="Convocatorias">Convocatorias 🎓</option>
+                            <option value="Idiomas">Idiomas 🌐</option>
+                            <option value="Consejos">Consejos 💡</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contenido -->
+                <div>
+                    <label class="block text-[10px] font-bold opacity-50 mb-1.5 uppercase tracking-widest">Contenido Completo</label>
+                    <textarea required id="prop-content" rows="4" placeholder="Escribe aquí toda la información detallada que deseas proponer..." class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-blue-600 text-white dark:bg-blue-500 py-4 rounded-2xl text-xs font-bold shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 active:scale-[0.98] transition-all mt-4" style="box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);">
+                    Enviar Propuesta
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Redactar Noticia (Admin) -->
+    <div id="admin-noticia-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-6 sm:p-8 rounded-[32px] shadow-2xl max-w-3xl w-full animate-pop text-left relative flex flex-col max-h-[90vh]">
+            <button onclick="cerrarModalAdminNoticia()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-[18px] text-ea-dark dark:text-white">close</span>
+            </button>
+            
+            <!-- Modal Tabs -->
+            <div class="flex items-center gap-4 border-b border-black/5 dark:border-white/5 pb-4 mb-6">
+                <button type="button" onclick="changeAdminModalTab('write')" id="admin-tab-write" class="font-serif text-xl font-bold border-b-2 border-green-600 pb-1 text-ea-dark dark:text-white focus:outline-none">Redactar</button>
+                <button type="button" onclick="changeAdminModalTab('preview')" id="admin-tab-preview" class="font-serif text-xl font-bold text-ea-dark/40 dark:text-white/40 pb-1 focus:outline-none hover:text-ea-dark dark:hover:text-white transition-colors">Vista Previa</button>
+            </div>
+            
+            <!-- Modal Content Wrapper (Forms / Preview) -->
+            <div class="overflow-y-auto no-scrollbar flex-grow pr-1">
+                <!-- WRITING CONTAINER -->
+                <form id="admin-write-container" onsubmit="publicarNoticiaAdmin(event)" class="space-y-5">
+                    <!-- Título -->
+                    <div class="space-y-2">
+                        <label for="admin-post-title" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Título de la Entrada</label>
+                        <input type="text" id="admin-post-title" required placeholder="Ej: Nueva convocatoria de la UV para el ciclo..." class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 text-ea-dark dark:text-white placeholder:opacity-50">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Categoría -->
+                        <div class="space-y-2">
+                            <label for="admin-post-category" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Categoría</label>
+                            <select id="admin-post-category" required class="w-full bg-white dark:bg-neutral-800 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 text-ea-dark dark:text-white cursor-pointer">
+                                <option value="Comunidad">Comunidad</option>
+                                <option value="Convocatorias">Convocatorias</option>
+                                <option value="Idiomas">Idiomas</option>
+                                <option value="Consejos">Consejos</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Etiqueta/Tag -->
+                        <div class="space-y-2">
+                            <label for="admin-post-tag" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Etiqueta (Tag)</label>
+                            <input type="text" id="admin-post-tag" required placeholder="Ej: Oficial, UV, UNAM, Tips" class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 text-ea-dark dark:text-white placeholder:opacity-50">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Tiempo de Lectura -->
+                        <div class="space-y-2">
+                            <label for="admin-post-time" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Tiempo de Lectura</label>
+                            <input type="text" id="admin-post-time" required placeholder="Ej: 3 min de lectura" class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 text-ea-dark dark:text-white placeholder:opacity-50">
+                        </div>
+                        
+                        <!-- Autor -->
+                        <div class="space-y-2">
+                            <label for="admin-post-author" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Autor</label>
+                            <input type="text" id="admin-post-author" value="Zahir (Administrador Principal)" readonly class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm opacity-60 text-ea-dark dark:text-white focus:outline-none cursor-not-allowed">
+                        </div>
+                    </div>
+                    
+                    <!-- Imagen Selector -->
+                    <div class="space-y-2">
+                        <label class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Imagen de Portada</label>
+                        <div class="flex flex-col gap-3 p-4 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl">
+                            <!-- Selector de Modo -->
+                            <div class="flex items-center gap-3 border-b border-black/5 dark:border-white/5 pb-2">
+                                <button type="button" id="img-mode-upload" onclick="toggleImgMode('upload')" class="text-[10px] uppercase tracking-wider font-bold text-green-600 border-b-2 border-green-600 pb-0.5 focus:outline-none transition-all">Subir archivo</button>
+                                <button type="button" id="img-mode-link" onclick="toggleImgMode('link')" class="text-[10px] uppercase tracking-wider font-bold opacity-50 focus:outline-none hover:opacity-85 transition-all">Enlace Web</button>
+                            </div>
+                            
+                            <!-- Subir Archivo -->
+                            <div id="img-upload-container" class="space-y-3">
+                                <div class="flex items-center gap-3">
+                                    <label class="flex-grow flex items-center justify-center gap-2 bg-white dark:bg-neutral-800 border border-black/10 dark:border-white/10 px-4 py-3 rounded-xl text-xs font-bold cursor-pointer hover:bg-neutral-50 dark:hover:bg-neutral-750 transition-colors">
+                                        <span class="material-symbols-outlined text-[18px]">upload</span>
+                                        <span>Seleccionar archivo...</span>
+                                        <input type="file" id="admin-post-image-file" accept="image/*" onchange="handlePostImageUpload(event)" class="hidden">
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Enlace URL -->
+                            <div id="img-link-container" class="hidden">
+                                <input type="url" id="admin-post-image-url" oninput="handlePostImageUrlInput(event)" placeholder="https://images.unsplash.com/photo-..." class="w-full bg-white dark:bg-neutral-800 border border-black/10 dark:border-white/10 rounded-xl p-3 text-xs focus:outline-none focus:ring-2 focus:ring-green-500/50 text-ea-dark dark:text-white">
+                            </div>
+                            
+                            <!-- Preview Thumbnail Box -->
+                            <div id="admin-post-img-preview-box" class="hidden items-center gap-3 bg-white dark:bg-neutral-800 p-2.5 rounded-xl border border-black/5 dark:border-white/5">
+                                <div class="w-14 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-neutral-100 dark:bg-neutral-900 border border-black/5 dark:border-white/5">
+                                    <img id="admin-post-img-preview" src="" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex-grow min-w-0">
+                                    <span class="block text-[8px] font-bold opacity-45 uppercase tracking-wider">Vista previa</span>
+                                    <span id="admin-post-img-filename" class="block text-xs font-semibold truncate opacity-75 dark:text-neutral-300">imagen.jpg</span>
+                                </div>
+                                <button type="button" onclick="clearSelectedPostImage()" class="w-7 h-7 rounded-full bg-red-500/10 hover:bg-red-500/20 text-red-500 flex items-center justify-center transition-colors">
+                                    <span class="material-symbols-outlined text-[14px]">delete</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resumen breve -->
+                    <div class="space-y-2">
+                        <label for="admin-post-excerpt" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Resumen Breve (Excerpt)</label>
+                        <textarea id="admin-post-excerpt" required maxlength="250" placeholder="Escribe un párrafo introductorio..." class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 resize-none h-20 text-ea-dark dark:text-white placeholder:opacity-50"></textarea>
+                    </div>
+                    
+                    <!-- Contenido Completo -->
+                    <div class="space-y-2">
+                        <label for="admin-post-content" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Contenido Completo (HTML Soportado)</label>
+                        <textarea id="admin-post-content" required placeholder="Escribe el cuerpo del artículo aquí..." class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-green-500/50 resize-none h-44 text-ea-dark dark:text-white placeholder:opacity-50"></textarea>
+                    </div>
+                    
+                    <div class="border-t border-black/5 dark:border-white/5 pt-4 mt-6 flex justify-end gap-3">
+                        <button type="button" onclick="cerrarModalAdminNoticia()" class="bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-ea-dark dark:text-white transition-colors">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors">
+                            Publicar Entrada
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- PREVIEW CONTAINER -->
+                <div id="admin-preview-container" class="hidden space-y-6">
+                    <div class="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-[24px] overflow-hidden p-6 space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span id="preview-category" class="bg-green-600/15 text-green-600 dark:text-green-400 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">CATEGORÍA</span>
+                            <span id="preview-tag" class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">TAG</span>
+                        </div>
+                        <h2 id="preview-title" class="font-serif text-2xl font-bold leading-snug text-ea-dark dark:text-white">Título de Ejemplo</h2>
+                        <div class="flex items-center gap-4 text-[10px] opacity-50 uppercase tracking-wider font-bold border-b border-black/5 dark:border-white/5 pb-4">
+                            <span class="dark:text-neutral-300">Por: Zahir (Admin Principal)</span>
+                            <span class="dark:text-neutral-500">•</span>
+                            <span id="preview-time" class="dark:text-neutral-300">3 min de lectura</span>
+                        </div>
+                        <div class="w-full h-44 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 border border-black/5 dark:border-white/5">
+                            <img id="preview-image" src="" class="w-full h-full object-cover">
+                        </div>
+                        <p id="preview-excerpt" class="text-xs font-bold opacity-75 italic leading-relaxed text-ea-dark dark:text-white"></p>
+                        <div id="preview-body" class="text-xs opacity-70 leading-relaxed space-y-3 text-ea-dark dark:text-neutral-300">
+                            Contenido del artículo...
+                        </div>
+                    </div>
+                    <div class="flex justify-end pt-2">
+                        <button type="button" onclick="changeAdminModalTab('write')" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors">
+                            Volver a Editar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ========================================================
+        BASE DE DATOS CURADA DE ENTRADAS DEL BLOG (MANUAL)
+        ======================================================== */
+        const DEFAULT_BLOG_POSTS = [
+            {
+                id: 1,
+                title: "Lanzamiento oficial de EstudiandoAndo 2.0 y su nueva Biblioteca Virtual",
+                excerpt: "Estamos muy emocionados de presentar la versión 2.0 de nuestra plataforma educativa. Rediseñamos completamente la experiencia de estudio para hacerla más intuitiva, unificamos el sistema de progreso en múltiples idiomas e integramos una biblioteca de guías en formato eBook interactivo en 3D para tu preparación.",
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 2), // Hace 2 horas
+                category: "Comunidad",
+                tag: "Actualización",
+                author: "Coordinación General",
+                readingTime: "3 min de lectura",
+                featured: true,
+                content: `
+                    <p>Nos complace darles la bienvenida oficialmente a EstudiandoAndo 2.0. Este proyecto nació con el sueño de democratizar el acceso a la preparación para exámenes de admisión universitaria en México, y hoy damos un paso gigante hacia esa meta.</p>
+                    <p>En esta nueva actualización, nos hemos enfocado en rediseñar cada aspecto de la interfaz de usuario bajo la filosofía de diseño 'Glassmorphism', aportando una estética moderna, limpia y sumamente fluida. Hemos incorporado transiciones de deceleración física para cambios de pestaña sumamente suaves y coherentes.</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Principales Novedades de la Versión 2.0:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Biblioteca Virtual Dividida:</strong> Ahora puedes consultar de forma independiente tanto las guías oficiales para el examen de ingreso de 14 universidades mexicanas, como las nuevas guías de estudio de lenguas extranjeras.</li>
+                        <li><strong>Multi-idiomas con Enfoque CEFR:</strong> Integra un sistema interactivo enfocado en los niveles A1 a B2+, permitiéndote evaluar tu vocabulario, gramática y comprensión de forma de manera dinámica.</li>
+                        <li><strong>Persistencia de Progreso:</strong> A través de nuestro motor local, tu progreso en cada lección y unidad se guardará en tu perfil para que nunca pierdas el ritmo.</li>
+                    </ul>
+                    <p>Este es solo el comienzo de una serie de actualizaciones diseñadas para asegurar que tu camino hacia la educación superior sea lo más óptimo e interactivo posible. ¡A estudiar se ha dicho!</p>
+                `
+            },
+            {
+                id: 2,
+                title: "Convocatoria UNAM Licenciatura 2026: Todo lo que debes saber antes del registro",
+                excerpt: "La Universidad Nacional Autónoma de México ha publicado las fechas oficiales para el concurso de selección de ingreso a nivel Licenciatura 2026. Te desglosamos paso a paso los requisitos de registro, sedes de examen y la documentación que debes preparar.",
+                image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 24), // Hace 1 día
+                category: "Convocatorias",
+                tag: "UNAM",
+                author: "Comité de Admisión",
+                readingTime: "5 min de lectura",
+                featured: false,
+                content: `
+                    <p>La Universidad Nacional Autónoma de México (UNAM) ha publicado su cronograma oficial para el concurso de selección del ciclo escolar 2026. La preparación temprana es la clave fundamental para asegurar un lugar en cualquiera de las carreras de alta demanda.</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Fechas Clave del Proceso:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Publicación de Convocatoria:</strong> Enero 2026.</li>
+                        <li><strong>Registro de Aspirantes por Internet:</strong> Finales de Enero a principios de Febrero 2026.</li>
+                        <li><strong>Aplicación del Examen de Selección:</strong> Mediados de Mayo a principios de Junio 2026.</li>
+                        <li><strong>Publicación de Resultados oficiales:</strong> Julio 2026.</li>
+                    </ul>
+                    <p>El examen consta de 120 preguntas de opción múltiple que abarcan materias troncales como Matemáticas, Física, Química, Biología, Historia Universal, Historia de México, Geografía, Literatura y Español. Recuerda repasar los módulos especializados según el Área Académica de tu carrera (Área 1: Ciencias Físico-Matemáticas y de las Ingenierías, Área 2: Ciencias Biológicas, Químicas y de la Salud, Área 3: Ciencias Sociales, o Área 4: Humanidades y de las Artes).</p>
+                `
+            },
+            {
+                id: 3,
+                title: "Las guías interactivas de Idiomas ya están disponibles en tu biblioteca digital",
+                excerpt: "Ya puedes consultar de forma totalmente gratuita los eBooks oficiales de Inglés, Francés, Portugués y Japonés desde tu panel de biblioteca. Cada guía recopila el temario oficial del marco de referencia CEFR estructurado por unidades con audios y simulaciones.",
+                image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 48), // Hace 2 días
+                category: "Idiomas",
+                tag: "Recursos",
+                author: "Área de Lenguas",
+                readingTime: "4 min de lectura",
+                featured: false,
+                content: `
+                    <p>El dominio de una lengua extranjera no es solo un requisito académico para muchas titulaciones universitarias, sino también una habilidad competitiva de enorme valor en el plano profesional. Hoy habilitamos en la Biblioteca de Idiomas los primeros eBooks oficiales.</p>
+                    <p>Las guías de estudio han sido desarrolladas por expertos pedagogos en lenguas extranjeras alineadas al Marco Común Europeo de Referencia para las lenguas (MCER/CEFR). Abarcan los niveles iniciales de dominio (A1-, A1, A2) e intermedios (B1, B2).</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Idiomas Habilitados:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Inglés 🇺🇸:</strong> Enfoque integral en gramática, comprensión lectora y auditiva, y redacción.</li>
+                        <li><strong>Francés 🇫🇷:</strong> Conjugación y vocabulario básico e intermedio con audios y diálogos de práctica.</li>
+                        <li><strong>Portugués 🇧🇷:</strong> Diseñado especialmente para hispanohablantes para acelerar la comprensión conversacional.</li>
+                        <li><strong>Japonés 🇯🇵:</strong> Introducción a silabarios básicos (Hiragana, Katakana) e ideogramas esenciales (Kanji).</li>
+                    </ul>
+                    <p>Accede de manera directa a la biblioteca virtual, selecciona tu idioma en el menú lateral e inicia hoy mismo tu camino hacia el dominio de un nuevo idioma de forma interactiva.</p>
+                `
+            },
+            {
+                id: 4,
+                title: "Primer Concurso Nacional de Simulacros: ¡Prepárate y gana una beca anual!",
+                excerpt: "Únete a nuestro simulacro nacional en línea este fin de semana. Mide tus conocimientos bajo el tiempo oficial del examen de ingreso real y compite por premios de suscripción completa y mentorías académicas uno a uno.",
+                image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 96), // Hace 4 días
+                category: "Comunidad",
+                tag: "Eventos",
+                author: "Gestión Estudiantil",
+                readingTime: "3 min de lectura",
+                featured: false,
+                content: `
+                    <p>¿Quieres medir tu preparación bajo condiciones reales de examen? El Comité Académico de EstudiandoAndo presenta el Primer Concurso Nacional de Simulacros de Admisión en Línea, diseñado para evaluar tu nivel en tiempo real.</p>
+                    <p>El simulacro nacional tendrá la misma cantidad de reactivos, distribución de materias y restricciones de tiempo que los exámenes oficiales de CENEVAL EXANI-II, UNAM e IPN.</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Premios y Reconocimientos:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>1er al 3er Lugar:</strong> Membresía Premium por un año en EstudiandoAndo, kit de libros de preparación impresos y 5 sesiones de mentoría uno a uno con expertos de admisión.</li>
+                        <li><strong>4to al 10mo Lugar:</strong> Membresía Premium semestral y acceso prioritario a los talleres de resolución de reactivos complejos.</li>
+                        <li><strong>Todos los Participantes:</strong> Reporte diagnóstico detallado por área de conocimiento con recomendaciones de estudio automatizadas.</li>
+                    </ul>
+                    <p>El registro estará abierto hasta el viernes por la noche en la sección de simulacros. ¡Demuestra tus conocimientos y asegura tu preparación!</p>
+                `
+            },
+            {
+                id: 5,
+                title: "5 técnicas de estudio científicamente probadas para retener más información",
+                excerpt: "El método Feynman, la repetición espaciada y la auto-evaluación activa (active recall) son herramientas fundamentales para dominar temarios extensos de admisión. Descubre cómo integrarlas a tu rutina diaria con nuestra app.",
+                image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 120), // Hace 5 días
+                category: "Consejos",
+                tag: "Metodología",
+                author: "Dra. Laura Montes",
+                readingTime: "6 min de lectura",
+                featured: false,
+                content: `
+                    <p>Estudiar de forma inteligente es mucho más eficaz que estudiar de forma intensa. A menudo, los alumnos dedican largas jornadas de lectura pasiva que resultan poco eficaces al momento de resolver problemas complejos bajo presión de tiempo.</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Las 3 Técnicas de Estudio de Alto Rendimiento:</h3>
+                    <ol class="list-decimal pl-6 space-y-3">
+                        <li><strong>Active Recall (Recuerdo Activo):</strong> En lugar de releer tus apuntes o libros, ponte a prueba. Cierra el libro y escribe todo lo que recuerdes o responde cuestionarios de práctica. Esto fortalece las conexiones neuronales de retención.</li>
+                        <li><strong>Repetición Espaciada:</strong> Repasa la información en intervalos de tiempo crecientes (e.g. 1 día después, 3 días después, una semana después, un mes después) para evitar la curva del olvido.</li>
+                        <li><strong>El Método Feynman:</strong> Explica el tema de estudio en tus propias palabras a alguien más o simula enseñarlo a un niño. Si encuentras lagunas o conceptos difíciles de simplificar, es ahí donde debes enfocar tu repaso.</li>
+                    </ol>
+                    <p>Integra estas técnicas de manera progresiva en tus rutinas de estudio y notarás una mejora sustancial en tu velocidad de resolución de reactivos.</p>
+                `
+            },
+            {
+                id: 6,
+                title: "IPN 2026: Nuevas carreras tecnológicas que se incorporan a la oferta académica",
+                excerpt: "El Instituto Politécnico Nacional abre espacio para ingenierías enfocadas en Inteligencia Artificial y Ciberseguridad. Conoce el cupo disponible y los planteles donde se impartirán estas nuevas licenciaturas.",
+                image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                date: new Date(Date.now() - 1000 * 60 * 60 * 168), // Hace 7 días
+                category: "Convocatorias",
+                tag: "IPN",
+                author: "Orientación Vocacional",
+                readingTime: "4 min de lectura",
+                featured: false,
+                content: `
+                    <p>El Instituto Politécnico Nacional (IPN) continúa innovando y expandiendo su oferta educativa a nivel superior para el ciclo escolar 2026, incorporando nuevas especialidades alineadas a las necesidades del desarrollo tecnológico actual.</p>
+                    <h3 class="text-2xl font-serif font-bold text-ea-dark dark:text-white mt-8 mb-4">Nuevas Licenciaturas e Ingenierías Habilitadas:</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Ingeniería en Inteligencia Artificial:</strong> Enfocada en aprendizaje automático, procesamiento de lenguaje natural y desarrollo de agentes autónomos.</li>
+                        <li><strong>Licenciatura en Ciencia de Datos:</strong> Preparación en análisis estadístico masivo, Big Data y modelos predictivos para la toma de decisiones.</li>
+                        <li><strong>Ingeniería en Ciberseguridad:</strong> Especialización en defensa de infraestructuras críticas, análisis forense digital y criptografía aplicada.</li>
+                    </ul>
+                    <p>Estas carreras se impartirán en campus especializados de la Ciudad de México y en los nuevos planteles foráneos del Politécnico. Revisa los módulos específicos de ciencias exactas del examen de admisión para enfocar tu preparación.</p>
+                `
+            }
+        ];
+
+        const BLOG_POSTS_KEY = 'ea_blog_posts';
+
+        function getBlogPosts() {
+            const data = localStorage.getItem(BLOG_POSTS_KEY);
+            if (!data) {
+                localStorage.setItem(BLOG_POSTS_KEY, JSON.stringify(DEFAULT_BLOG_POSTS));
+                return DEFAULT_BLOG_POSTS;
+            }
+            try {
+                const parsed = JSON.parse(data);
+                parsed.forEach(p => {
+                    p.date = new Date(p.date);
+                });
+                return parsed;
+            } catch (e) {
+                return DEFAULT_BLOG_POSTS;
+            }
+        }
+
+        function saveBlogPosts(posts) {
+            localStorage.setItem(BLOG_POSTS_KEY, JSON.stringify(posts));
+        }
+
+        let blogPosts = getBlogPosts();
+
+        // Variables DOM
+        const heroArticleContainer = document.getElementById('hero-article');
+        const blogGridContainer = document.getElementById('blog-grid');
+        const currentCategoryTitle = document.getElementById('current-category-title');
+
+        /* ========================================================
+        CONFIGURACIÓN DE CATEGORÍAS Y TEMAS
+        ======================================================== */
+        const categoriesConfig = {
+            'ALL': { color: '#6366F1', label: 'Todo el contenido', subtitle: 'Todas las publicaciones', count: 6, icon: 'all_inclusive' },
+            'Comunidad': { color: '#F59E0B', label: 'Comunidad 📣', subtitle: 'Avisos y novedades', count: 2, icon: 'groups' },
+            'Convocatorias': { color: '#8B5CF6', label: 'Convocatorias 🎓', subtitle: 'Fechas y procesos', count: 2, icon: 'school' },
+            'Idiomas': { color: '#10B981', label: 'Idiomas 🌐', subtitle: 'Estudios extranjeros', count: 1, icon: 'translate' },
+            'Consejos': { color: '#3B82F6', label: 'Consejos 💡', subtitle: 'Técnicas de estudio', count: 1, icon: 'psychology' }
+        };
+
+        /* ========================================================
+        RENDERIZAR FILTROS DE CATEGORÍA
+        ======================================================== */
+        function renderCategoryFilters() {
+            const container = document.getElementById('categories-container');
+            if (!container) return;
+            
+            container.innerHTML = Object.keys(categoriesConfig).map(key => {
+                const config = categoriesConfig[key];
+                return `
+                    <button onclick="filterBlog('${key}')" id="filter-${key}" 
+                        class="group w-auto lg:w-full text-left px-4 py-3 lg:p-4 rounded-2xl font-bold text-xs lg:text-sm transition-all flex items-center justify-between gap-3 flex-shrink-0 border border-black/5 dark:border-white/5 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md hover:translate-x-0.5 active:scale-[0.99]">
+                        <span class="flex items-center gap-3.5 min-w-0">
+                            <!-- Category Badge Icon Box -->
+                            <span class="w-9 h-9 rounded-xl flex items-center justify-center text-white flex-shrink-0 shadow-sm transition-transform group-hover:scale-105" style="background-color: ${config.color}; box-shadow: 0 4px 10px ${config.color}35;">
+                                <span class="material-symbols-outlined text-[18px]">${config.icon}</span>
+                            </span>
+                            <!-- Title + Subtitle stack on Desktop -->
+                            <span class="hidden lg:block min-w-0 text-left">
+                                <span class="block font-bold text-sm text-ea-dark dark:text-white truncate">${config.label}</span>
+                                <span class="block text-[10px] opacity-40 font-medium truncate">${config.subtitle}</span>
+                            </span>
+                            <!-- Label on Mobile horizontal bar -->
+                            <span class="lg:hidden font-bold text-sm text-ea-dark dark:text-white">${config.label}</span>
+                        </span>
+                        <!-- Counter Badge -->
+                        <span class="hidden lg:block text-[10px] font-black opacity-45 bg-black/5 dark:bg-white/10 px-2.5 py-1 rounded-full group-hover:opacity-75 transition-opacity">${config.count}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        /* ========================================================
+        FORMATO DE FECHAS
+        ======================================================== */
+        function formatDate(date) {
+            const now = new Date();
+            const diffTime = Math.abs(now - date);
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays === 0) return 'Hoy';
+            if (diffDays === 1) return 'Ayer';
+            if (diffDays < 7) return `Hace ${diffDays} días`;
+            
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return date.toLocaleDateString('es-MX', options);
+        }
+
+        /* ========================================================
+        RENDERIZAR ENTRADA DESTACADA (HERO)
+        ======================================================== */
+        function renderHero(post) {
+            if (!heroArticleContainer) return;
+            if (!post) {
+                heroArticleContainer.innerHTML = '';
+                heroArticleContainer.classList.add('hidden');
+                return;
+            }
+            heroArticleContainer.classList.remove('hidden');
+
+            const currentUser = getCurrentUser();
+            const isAdmin = currentUser && currentUser.role === 'admin';
+
+            heroArticleContainer.innerHTML = `
+                <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[32px] overflow-hidden flex flex-col lg:flex-row transition-all hover:shadow-md p-6 lg:p-8 gap-8 items-center animate-fade-in">
+                    
+                    <!-- Imagen Widescreen -->
+                    <div class="w-full lg:w-3/5 img-container h-64 sm:h-80 md:h-[400px] shadow-sm relative cursor-pointer" onclick="openPost(${post.id})">
+                        <img src="${post.image}" alt="${post.title}" class="object-cover w-full h-full">
+                    </div>
+
+                    <!-- Datos del Post -->
+                    <div class="w-full lg:w-2/5 flex flex-col justify-center">
+                        <div class="flex flex-wrap items-center gap-3 mb-4">
+                            <span class="bg-black dark:bg-white text-white dark:text-black px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">${post.category}</span>
+                            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">${post.tag}</span>
+                            <span class="bg-blue-600 text-white px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest rounded-full animate-pulse">Destacado</span>
+                            ${isAdmin ? `
+                            <button onclick="eliminarArticuloAdmin(event, ${post.id})" class="bg-red-600 hover:bg-red-700 text-white px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-widest rounded-full flex items-center gap-1 shadow-sm active:scale-[0.97] transition-all cursor-pointer" title="Eliminar artículo permanentemente">
+                                <span class="material-symbols-outlined text-[12px]">delete</span>
+                                <span>Eliminar</span>
+                            </button>
+                            ` : ''}
+                        </div>
+                        
+                        <h2 class="text-3xl sm:text-4xl text-serif font-bold leading-tight mb-5 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer" onclick="openPost(${post.id})">
+                            ${post.title}
+                        </h2>
+                        
+                        <p class="text-sm opacity-60 font-medium leading-relaxed mb-6 line-clamp-4">
+                            ${post.excerpt}
+                        </p>
+                        
+                        <!-- Footer del Post -->
+                        <div class="flex flex-col gap-2.5 border-t border-black/15 dark:border-white/15 pt-5 mt-auto text-xs font-bold opacity-50 uppercase tracking-widest">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-[16px]">person</span>
+                                <span>Por: ${post.author}</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                                    <span>Publicado: ${formatDate(post.date)}</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-blue-600 dark:text-blue-400">
+                                    <span class="material-symbols-outlined text-[16px]">schedule</span>
+                                    <span>${post.readingTime}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            `;
+        }
+
+        /* ========================================================
+        RENDERIZAR GRID DE ARTÍCULOS
+        ======================================================== */
+        function renderGrid(posts) {
+            if (!blogGridContainer) return;
+            blogGridContainer.innerHTML = '';
+
+            if (posts.length === 0) {
+                blogGridContainer.innerHTML = `
+                    <div class="col-span-full py-16 text-center opacity-40 italic font-serif text-lg animate-fade-in">
+                        No hay publicaciones en esta categoría por el momento.
+                    </div>
+                `;
+                return;
+            }
+
+            const currentUser = getCurrentUser();
+            const isAdmin = currentUser && currentUser.role === 'admin';
+
+            posts.forEach((post, index) => {
+                blogGridContainer.innerHTML += `
+                    <div onclick="openPost(${post.id})" class="article-card group cursor-pointer bg-white/50 dark:bg-neutral-900/50 backdrop-blur-md border border-black/10 dark:border-white/10 rounded-[32px] p-5 flex flex-col justify-between transition-all hover:shadow-md hover:scale-[1.01] animate-fade-in" style="animation-delay: ${index * 0.05}s">
+                        
+                        <div>
+                            <!-- Contenedor Imagen -->
+                            <div class="img-container h-48 mb-5">
+                                <img src="${post.image}" alt="${post.title}" class="object-cover w-full h-full">
+                            </div>
+
+                            <!-- Cabecera -->
+                            <div class="flex items-center justify-between gap-3 mb-3.5">
+                                <div class="flex items-center gap-3">
+                                    <span class="bg-black/5 dark:bg-white/10 text-black dark:text-white px-2.5 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest">${post.category}</span>
+                                    <span class="text-[10px] font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">${post.tag}</span>
+                                </div>
+                                ${isAdmin ? `
+                                <button onclick="eliminarArticuloAdmin(event, ${post.id})" class="w-7 h-7 rounded-full bg-red-500/10 hover:bg-red-500 hover:text-white text-red-500 flex items-center justify-center transition-all focus:outline-none shadow-sm active:scale-90 cursor-pointer" title="Eliminar artículo">
+                                    <span class="material-symbols-outlined text-[15px]">delete</span>
+                                </button>
+                                ` : ''}
+                            </div>
+
+                            <!-- Título y Texto -->
+                            <h3 class="text-xl sm:text-2xl text-serif font-bold leading-snug mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                ${post.title}
+                            </h3>
+                            <p class="text-xs opacity-60 font-medium leading-relaxed line-clamp-3 mb-5">
+                                ${post.excerpt}
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="border-t border-black/10 dark:border-white/10 pt-4 mt-auto">
+                            <div class="flex justify-between items-center text-[9px] font-bold opacity-50 uppercase tracking-widest">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">person</span> ${post.author.split(' ')[0]}</span>
+                                <span>${formatDate(post.date)}</span>
+                                <span class="text-blue-600 dark:text-blue-400 flex items-center gap-1"><span class="material-symbols-outlined text-[13px]">schedule</span> ${post.readingTime}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                `;
+            });
+        }
+
+        /* ========================================================
+        FILTRAR ENTRADAS
+        ======================================================== */
+        function filterBlog(categoryFilter) {
+            // 1. Desactivar todos los botones de filtro
+            Object.keys(categoriesConfig).forEach(key => {
+                const btn = document.getElementById(`filter-${key}`);
+                if (btn) {
+                    btn.className = "group w-auto lg:w-full text-left px-4 py-3 lg:p-4 rounded-2xl font-bold text-xs lg:text-sm transition-all flex items-center justify-between gap-3 flex-shrink-0 border border-black/5 dark:border-white/5 bg-white dark:bg-neutral-900 text-neutral-500 dark:text-neutral-400 whitespace-nowrap shadow-sm hover:shadow hover:text-black dark:hover:text-white hover:translate-x-0.5 active:scale-[0.99]";
+                    btn.style.backgroundColor = "";
+                    btn.style.borderColor = "";
+                    btn.style.color = "";
+                    btn.style.boxShadow = "";
+                }
+            });
+
+            // 2. Activar botón seleccionado con su respectivo tema de color
+            const btnActivo = document.getElementById(`filter-${categoryFilter}`);
+            const config = categoriesConfig[categoryFilter];
+            
+            if (btnActivo && config) {
+                const isDark = document.documentElement.classList.contains('dark');
+                btnActivo.className = "group w-auto lg:w-full text-left px-4 py-3 lg:p-4 rounded-2xl font-bold text-xs lg:text-sm transition-all flex items-center justify-between gap-3 flex-shrink-0 border whitespace-nowrap shadow-md scale-[1.01]";
+                
+                if (isDark) {
+                    btnActivo.style.backgroundColor = `${config.color}20`; // 12% opacity
+                    btnActivo.style.color = "white";
+                    btnActivo.style.borderColor = `${config.color}60`; // 35% opacity
+                    btnActivo.style.boxShadow = `0 10px 25px rgba(0, 0, 0, 0.3)`;
+                } else {
+                    btnActivo.style.backgroundColor = `${config.color}08`; // 5% opacity
+                    btnActivo.style.color = config.color;
+                    btnActivo.style.borderColor = `${config.color}35`; // 22% opacity
+                    btnActivo.style.boxShadow = `0 8px 24px ${config.color}15`;
+                }
+            }
+
+            // 3. Filtrar lógica
+            let filteredPosts = [...blogPosts];
+            if (categoryFilter !== 'ALL') {
+                filteredPosts = filteredPosts.filter(p => p.category === categoryFilter);
+            }
+
+            // Actualizar etiquetas
+            currentCategoryTitle.innerText = categoryFilter === 'ALL' ? "Todas las Publicaciones" : `Publicaciones de ${categoryFilter}`;
+
+            // Seleccionar hero y grid
+            if (filteredPosts.length > 0) {
+                const heroItem = filteredPosts[0];
+                const gridItems = filteredPosts.slice(1);
+                renderHero(heroItem);
+                renderGrid(gridItems);
+            } else {
+                renderHero(null);
+                renderGrid([]);
+            }
+        }
+
+        /* ========================================================
+        ACCIONES Y LECTURA
+        ======================================================== */
+        function openPost(postId) {
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+            
+            // Inyectar datos en la cabecera
+            document.getElementById('reader-header').innerHTML = `
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <span class="bg-black/5 dark:bg-white/10 text-black dark:text-white px-3.5 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest">${post.category}</span>
+                    <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">${post.tag}</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl text-serif font-bold leading-tight text-ea-dark dark:text-white tracking-tight mb-6">${post.title}</h1>
+                <div class="flex flex-wrap items-center gap-6 text-xs font-bold opacity-50 uppercase tracking-widest border-b border-black/10 dark:border-white/10 pb-6">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[16px]">person</span>
+                        <span>Por: ${post.author}</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[16px]">calendar_month</span>
+                        <span>Publicado: ${formatDate(post.date)}</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-600 dark:text-blue-400">
+                        <span class="material-symbols-outlined text-[16px]">schedule</span>
+                        <span>${post.readingTime}</span>
+                    </div>
+                </div>
+            `;
+            
+            // Inyectar imagen y cuerpo
+            document.getElementById('reader-image').src = post.image;
+            document.getElementById('reader-image').alt = post.title;
+            document.getElementById('reader-body').innerHTML = post.content;
+            
+            // Mostrar lector y bloquear scroll de fondo
+            const reader = document.getElementById('article-reader');
+            reader.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Desplazar lector al inicio en caso de re-apertura
+            reader.scrollTop = 0;
+        }
+
+        function closePost() {
+            const reader = document.getElementById('article-reader');
+            reader.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        /* ========================================================
+        CONTROL DEL MODAL DE PROPUESTA (COMUNIDAD)
+        ======================================================== */
+        const proposalModal = document.getElementById('proposal-modal');
+        const proposalForm = document.getElementById('proposal-form');
+
+        function abrirModalPropuesta() {
+            if (!proposalModal) return;
+            proposalModal.classList.remove('hidden');
+            proposalModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModalPropuesta() {
+            if (!proposalModal) return;
+            proposalModal.classList.add('hidden');
+            proposalModal.classList.remove('flex');
+            document.body.style.overflow = '';
+            if (proposalForm) proposalForm.reset();
+        }
+
+        function enviarPropuesta(event) {
+            event.preventDefault();
+            
+            const author = document.getElementById('prop-author').value;
+            const title = document.getElementById('prop-title').value;
+            
+            cerrarModalPropuesta();
+            
+            // Mostrar modal de confirmación premium simulado
+            alert(`¡Muchas gracias, ${author}!\n\nTu propuesta titulada "${title}" ha sido enviada con éxito al sistema de moderación de EstudiandoAndo. Se notificará a tu cuenta cuando sea revisada por un administrador.`);
+        }
+
+        /* ========================================================
+        CONTROL DE ADMINISTRACIÓN DE NOTICIAS
+        ======================================================== */
+        function initAdminTools() {
+            const currentUser = getCurrentUser();
+            const isAdmin = currentUser && currentUser.role === 'admin';
+            
+            const adminContainer = document.getElementById('admin-tools-container');
+            if (isAdmin && adminContainer) {
+                adminContainer.classList.remove('hidden');
+                adminContainer.classList.add('flex');
+                adminContainer.innerHTML = `
+                    <div class="relative overflow-hidden bg-white dark:bg-neutral-900 border border-green-200 dark:border-green-800/30 rounded-[32px] p-8 flex flex-col gap-5 shadow-sm">
+                        <div class="w-12 h-12 rounded-2xl bg-green-500/10 dark:bg-green-400/10 flex items-center justify-center text-green-600 dark:text-green-400">
+                            <span class="material-symbols-outlined text-2xl">admin_panel_settings</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-serif text-2xl font-bold tracking-tight text-ea-dark dark:text-white leading-snug">Panel de Admin</h4>
+                            <p class="text-xs opacity-65 leading-relaxed font-medium">
+                                Como Administrador Principal, puedes redactar y publicar noticias oficiales en este blog.
+                            </p>
+                        </div>
+                        <button onclick="abrirModalAdminNoticia()" class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl text-xs font-bold shadow-md active:scale-[0.98] transition-all cursor-pointer" style="box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);">
+                            Escribir Artículo
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        const adminModal = document.getElementById('admin-noticia-modal');
+        let selectedPostImageDataUrl = '';
+        let currentImgMode = 'upload'; // 'upload' o 'link'
+
+        function abrirModalAdminNoticia() {
+            if (!adminModal) return;
+            adminModal.classList.remove('hidden');
+            adminModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            changeAdminModalTab('write');
+            toggleImgMode('upload');
+        }
+
+        function cerrarModalAdminNoticia() {
+            if (!adminModal) return;
+            adminModal.classList.add('hidden');
+            adminModal.classList.remove('flex');
+            document.body.style.overflow = '';
+            
+            // Reset input values
+            document.getElementById('admin-post-title').value = '';
+            document.getElementById('admin-post-category').value = 'Comunidad';
+            document.getElementById('admin-post-tag').value = '';
+            document.getElementById('admin-post-time').value = '';
+            document.getElementById('admin-post-excerpt').value = '';
+            document.getElementById('admin-post-content').value = '';
+            
+            clearSelectedPostImage();
+            changeAdminModalTab('write');
+        }
+
+        // Alternar el modo de imagen (Archivo vs Enlace)
+        function toggleImgMode(mode) {
+            currentImgMode = mode;
+            const uploadBtn = document.getElementById('img-mode-upload');
+            const linkBtn = document.getElementById('img-mode-link');
+            const uploadCont = document.getElementById('img-upload-container');
+            const linkCont = document.getElementById('img-link-container');
+            
+            if (mode === 'upload') {
+                uploadBtn.className = "text-[10px] uppercase tracking-wider font-bold text-green-600 border-b-2 border-green-600 pb-0.5 focus:outline-none transition-all";
+                linkBtn.className = "text-[10px] uppercase tracking-wider font-bold opacity-50 focus:outline-none hover:opacity-85 transition-all";
+                uploadCont.classList.remove('hidden');
+                linkCont.classList.add('hidden');
+            } else {
+                linkBtn.className = "text-[10px] uppercase tracking-wider font-bold text-green-600 border-b-2 border-green-600 pb-0.5 focus:outline-none transition-all";
+                uploadBtn.className = "text-[10px] uppercase tracking-wider font-bold opacity-50 focus:outline-none hover:opacity-85 transition-all";
+                linkCont.classList.remove('hidden');
+                uploadCont.classList.add('hidden');
+            }
+        }
+
+        // Subir archivo de imagen y convertir a Base64
+        function handlePostImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            if (!file.type.startsWith('image/')) {
+                alert('Por favor, selecciona un archivo de imagen válido.');
+                return;
+            }
+            // Límite de 1MB para no saturar LocalStorage
+            if (file.size > 1024 * 1024) {
+                alert('La imagen es demasiado grande. El límite es de 1 MB para optimizar el almacenamiento.');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                selectedPostImageDataUrl = e.target.result;
+                
+                // Mostrar vista previa
+                document.getElementById('admin-post-img-preview').src = selectedPostImageDataUrl;
+                document.getElementById('admin-post-img-filename').innerText = file.name;
+                document.getElementById('admin-post-img-preview-box').classList.remove('hidden');
+                document.getElementById('admin-post-img-preview-box').classList.add('flex');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Manejar entrada de URL de imagen
+        function handlePostImageUrlInput(event) {
+            const val = event.target.value.trim();
+            if (!val) {
+                clearSelectedPostImage();
+                return;
+            }
+            selectedPostImageDataUrl = val;
+            
+            // Mostrar vista previa
+            document.getElementById('admin-post-img-preview').src = selectedPostImageDataUrl;
+            document.getElementById('admin-post-img-filename').innerText = 'Enlace Web';
+            document.getElementById('admin-post-img-preview-box').classList.remove('hidden');
+            document.getElementById('admin-post-img-preview-box').classList.add('flex');
+        }
+
+        // Limpiar la imagen seleccionada
+        function clearSelectedPostImage() {
+            selectedPostImageDataUrl = '';
+            document.getElementById('admin-post-image-file').value = '';
+            document.getElementById('admin-post-image-url').value = '';
+            document.getElementById('admin-post-img-preview').src = '';
+            document.getElementById('admin-post-img-preview-box').classList.remove('flex');
+            document.getElementById('admin-post-img-preview-box').classList.add('hidden');
+        }
+
+        // Cambiar entre pestañas del modal (Redactar vs Vista Previa)
+        function changeAdminModalTab(tab) {
+            const writeBtn = document.getElementById('admin-tab-write');
+            const previewBtn = document.getElementById('admin-tab-preview');
+            const writeContainer = document.getElementById('admin-write-container');
+            const previewContainer = document.getElementById('admin-preview-container');
+            
+            if (tab === 'write') {
+                writeBtn.className = "font-serif text-xl font-bold border-b-2 border-green-600 pb-1 text-ea-dark dark:text-white focus:outline-none";
+                previewBtn.className = "font-serif text-xl font-bold text-ea-dark/40 dark:text-white/40 pb-1 focus:outline-none hover:text-ea-dark dark:hover:text-white transition-colors";
+                writeContainer.classList.remove('hidden');
+                previewContainer.classList.add('hidden');
+            } else {
+                previewBtn.className = "font-serif text-xl font-bold border-b-2 border-green-600 pb-1 text-ea-dark dark:text-white focus:outline-none";
+                writeBtn.className = "font-serif text-xl font-bold text-ea-dark/40 dark:text-white/40 pb-1 focus:outline-none hover:text-ea-dark dark:hover:text-white transition-colors";
+                
+                // Compilar vista previa dinámicamente
+                const title = document.getElementById('admin-post-title').value.trim() || 'Título del Artículo';
+                const category = document.getElementById('admin-post-category').value;
+                const tag = document.getElementById('admin-post-tag').value.trim() || 'Oficial';
+                const time = document.getElementById('admin-post-time').value.trim() || '3 min de lectura';
+                const excerpt = document.getElementById('admin-post-excerpt').value.trim() || 'Resumen de prueba...';
+                const content = document.getElementById('admin-post-content').value.trim() || 'Contenido del artículo...';
+                
+                document.getElementById('preview-title').innerText = title;
+                document.getElementById('preview-category').innerText = category;
+                document.getElementById('preview-tag').innerText = tag;
+                document.getElementById('preview-time').innerText = time;
+                document.getElementById('preview-excerpt').innerText = excerpt;
+                
+                // Formatear contenido con párrafos HTML
+                document.getElementById('preview-body').innerHTML = content.split('\n').map(p => `<p class="mb-4">${p.trim()}</p>`).join('');
+                
+                // Imagen
+                const previewImg = document.getElementById('preview-image');
+                if (selectedPostImageDataUrl) {
+                    previewImg.src = selectedPostImageDataUrl;
+                } else {
+                    previewImg.src = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+                }
+                
+                writeContainer.classList.add('hidden');
+                previewContainer.classList.remove('hidden');
+            }
+        }
+
+        function publicarNoticiaAdmin(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('admin-post-title').value.trim();
+            const category = document.getElementById('admin-post-category').value;
+            const tag = document.getElementById('admin-post-tag').value.trim();
+            const readingTime = document.getElementById('admin-post-time').value.trim();
+            const excerpt = document.getElementById('admin-post-excerpt').value.trim();
+            const content = document.getElementById('admin-post-content').value.trim();
+            
+            let image = selectedPostImageDataUrl;
+            if (!image) {
+                image = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+            }
+            
+            const newPost = {
+                id: Date.now(), // Unique ID
+                title: title,
+                excerpt: excerpt,
+                image: image,
+                date: new Date(),
+                category: category,
+                tag: tag,
+                author: 'Zahir (Admin Principal)',
+                readingTime: readingTime,
+                featured: false,
+                content: content.split('\n').map(p => `<p class="mb-4">${p.trim()}</p>`).join('')
+            };
+            
+            // Add new post to database
+            blogPosts.unshift(newPost);
+            saveBlogPosts(blogPosts);
+            
+            // Recalcular cuentas de categorías
+            updateCategoryCounts();
+            
+            // Cerrar el modal
+            cerrarModalAdminNoticia();
+            
+            // Re-renderizar filtros y blog grid
+            renderCategoryFilters();
+            filterBlog('ALL');
+        }
+
+        function eliminarArticuloAdmin(event, postId) {
+            if (event) event.stopPropagation();
+            
+            const post = blogPosts.find(p => p.id === postId);
+            if (!post) return;
+            
+            if (confirm(`¿Estás seguro de que deseas eliminar permanentemente la publicación "${post.title}"?`)) {
+                blogPosts = blogPosts.filter(p => p.id !== postId);
+                saveBlogPosts(blogPosts);
+                
+                // Recalcular cuentas de categorías
+                updateCategoryCounts();
+                
+                // Re-renderizar filtros y blog grid
+                renderCategoryFilters();
+                filterBlog('ALL');
+            }
+        }
+
+        function updateCategoryCounts() {
+            categoriesConfig['ALL'].count = blogPosts.length;
+            Object.keys(categoriesConfig).forEach(cat => {
+                if (cat !== 'ALL') {
+                    categoriesConfig[cat].count = blogPosts.filter(p => p.category === cat).length;
+                }
+            });
+        }
+
+        // Inicializar UI al cargar
+        updateCategoryCounts();
+        initAdminTools();
+        renderCategoryFilters();
+        filterBlog('ALL');
+
+        // Dark mode listener
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            if (isDark) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+            
+            // Re-renderizar filtros activos con su respectivo color
+            const activeFilterId = document.querySelector('[id^="filter-"][style*="background-color"]')?.id;
+            if (activeFilterId) {
+                const activeCategory = activeFilterId.split('filter-')[1];
+                filterBlog(activeCategory);
+            }
+        });
+    </script>
+</body>
+</html>

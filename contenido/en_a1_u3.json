@@ -1,0 +1,788 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 3,
+  "title": "En la Ciudad",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Banco'",
+          "answer": "Bank",
+          "distractors": [
+            "Park",
+            "School",
+            "Hospital"
+          ],
+          "target_vocab": "bank",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Bank' significa 'Banco'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Supermercado'",
+          "answer": "Supermarket",
+          "distractors": [
+            "Park",
+            "Museum",
+            "Restaurant"
+          ],
+          "target_vocab": "supermarket",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Supermercado'",
+          "explanation": "'Supermarket' significa 'Supermercado'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un escuela aquí'",
+          "answer": "There is a school here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "school",
+            "here"
+          ],
+          "target_vocab": "school",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un escuela aquí'",
+          "explanation": "La estructura correcta es: 'There is a school here'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Restaurante'",
+          "phrase": "Restaurante",
+          "answer": "Restaurant",
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Restaurante'",
+          "explanation": "Se escribe 'Restaurant'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el parque?'",
+          "answer": "Where is the park",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "park"
+          ],
+          "target_vocab": "park",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el parque?'",
+          "explanation": "La estructura correcta es: 'Where is the park'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Museo'",
+          "answer": "Museum",
+          "distractors": [
+            "Supermarket",
+            "Hospital",
+            "School"
+          ],
+          "target_vocab": "museum",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Museo'",
+          "explanation": "'Museum' significa 'Museo'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Hospital",
+              "right": "Hospital"
+            },
+            {
+              "left": "School",
+              "right": "Escuela"
+            },
+            {
+              "left": "Bank",
+              "right": "Banco"
+            },
+            {
+              "left": "Museum",
+              "right": "Museo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "There is a _____ here",
+          "answer": "supermarket",
+          "options": [
+            "supermarket",
+            "school",
+            "bank",
+            "bus stop"
+          ],
+          "target_vocab": "supermarket",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un supermercado aquí'",
+          "explanation": "La palabra correcta es 'supermarket'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un calle aquí'",
+          "answer": "There is a street here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "street",
+            "here"
+          ],
+          "target_vocab": "street",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'There is a street here'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Supermercado'",
+          "phrase": "Supermercado",
+          "answer": "Supermarket",
+          "target_vocab": "supermarket",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Supermercado'",
+          "explanation": "Se escribe 'Supermarket'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Supermercado'",
+          "phrase": "Supermercado",
+          "answer": "Supermarket",
+          "target_vocab": "supermarket",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Supermercado'",
+          "explanation": "Se escribe 'Supermarket'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Train station",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Museum",
+              "right": "Museo"
+            },
+            {
+              "left": "Park",
+              "right": "Parque"
+            },
+            {
+              "left": "School",
+              "right": "Escuela"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Restaurante'",
+          "answer": "Restaurant",
+          "distractors": [
+            "Train station",
+            "Bank",
+            "Museum"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurant' significa 'Restaurante'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Restaurante'",
+          "answer": "Restaurant",
+          "distractors": [
+            "Park",
+            "Train station",
+            "Hospital"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurant' significa 'Restaurante'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el museo?'",
+          "answer": "Where is the museum",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "museum"
+          ],
+          "target_vocab": "museum",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el museo?'",
+          "explanation": "La estructura correcta es: 'Where is the museum'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Estación de tren'",
+          "answer": "Train station",
+          "distractors": [
+            "Supermarket",
+            "Museum",
+            "Hospital"
+          ],
+          "target_vocab": "train station",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Estación de tren'",
+          "explanation": "'Train station' significa 'Estación de tren'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el banco?'",
+          "answer": "Where is the bank",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "bank"
+          ],
+          "target_vocab": "bank",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el banco?'",
+          "explanation": "La estructura correcta es: 'Where is the bank'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Parque'",
+          "phrase": "Parque",
+          "answer": "Park",
+          "target_vocab": "park",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Parque'",
+          "explanation": "Se escribe 'Park'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un museo aquí'",
+          "answer": "There is a museum here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "museum",
+            "here"
+          ],
+          "target_vocab": "museum",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un museo aquí'",
+          "explanation": "La estructura correcta es: 'There is a museum here'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "There is a _____ here",
+          "answer": "school",
+          "options": [
+            "school",
+            "restaurant",
+            "park",
+            "street"
+          ],
+          "target_vocab": "school",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un escuela aquí'",
+          "explanation": "La palabra correcta es 'school'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Estación de tren'",
+          "answer": "Train station",
+          "distractors": [
+            "School",
+            "Supermarket",
+            "Restaurant"
+          ],
+          "target_vocab": "train station",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Estación de tren'",
+          "explanation": "'Train station' significa 'Estación de tren'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Museo'",
+          "answer": "Museum",
+          "distractors": [
+            "Supermarket",
+            "Park",
+            "Hospital"
+          ],
+          "target_vocab": "museum",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Museo'",
+          "explanation": "'Museum' significa 'Museo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Where is the _____",
+          "answer": "restaurant",
+          "options": [
+            "restaurant",
+            "bank",
+            "train station",
+            "bus stop"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el restaurante?'",
+          "explanation": "La palabra correcta es 'restaurant'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "School",
+              "right": "Escuela"
+            },
+            {
+              "left": "Bank",
+              "right": "Banco"
+            },
+            {
+              "left": "Hospital",
+              "right": "Hospital"
+            },
+            {
+              "left": "Train station",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "School",
+          "target_vocab": "school",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Escuela'",
+          "explanation": "Se escribe 'School'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Supermercado'",
+          "phrase": "Supermercado",
+          "answer": "Supermarket",
+          "target_vocab": "supermarket",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Supermercado'",
+          "explanation": "Se escribe 'Supermarket'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el hospital?'",
+          "answer": "Where is the hospital",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "hospital"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el hospital?'",
+          "explanation": "La estructura correcta es: 'Where is the hospital'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un calle aquí'",
+          "answer": "There is a street here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "street",
+            "here"
+          ],
+          "target_vocab": "street",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'There is a street here'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un restaurante aquí'",
+          "answer": "There is a restaurant here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "restaurant",
+            "here"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un restaurante aquí'",
+          "explanation": "La estructura correcta es: 'There is a restaurant here'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Restaurante'",
+          "answer": "Restaurant",
+          "distractors": [
+            "Bank",
+            "Supermarket",
+            "Train station"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurant' significa 'Restaurante'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un escuela aquí'",
+          "answer": "There is a school here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "school",
+            "here"
+          ],
+          "target_vocab": "school",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un escuela aquí'",
+          "explanation": "La estructura correcta es: 'There is a school here'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hospital'",
+          "answer": "Hospital",
+          "distractors": [
+            "Park",
+            "Street",
+            "Bank"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hospital' significa 'Hospital'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Museum",
+              "right": "Museo"
+            },
+            {
+              "left": "Train station",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Street",
+              "right": "Calle"
+            },
+            {
+              "left": "Bus stop",
+              "right": "Parada de autobús"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el parada de autobús?'",
+          "answer": "Where is the bus stop",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "bus",
+            "stop"
+          ],
+          "target_vocab": "bus stop",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el parada de autobús?'",
+          "explanation": "La estructura correcta es: 'Where is the bus stop'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el supermercado?'",
+          "answer": "Where is the supermarket",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "supermarket"
+          ],
+          "target_vocab": "supermarket",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el supermercado?'",
+          "explanation": "La estructura correcta es: 'Where is the supermarket'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Banco'",
+          "answer": "Bank",
+          "distractors": [
+            "Bus stop",
+            "Street",
+            "Museum"
+          ],
+          "target_vocab": "bank",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Bank' significa 'Banco'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Banco'",
+          "phrase": "Banco",
+          "answer": "Bank",
+          "target_vocab": "bank",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Banco'",
+          "explanation": "Se escribe 'Bank'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Escuela'",
+          "answer": "School",
+          "distractors": [
+            "Street",
+            "Bus stop",
+            "Supermarket"
+          ],
+          "target_vocab": "school",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Escuela'",
+          "explanation": "'School' significa 'Escuela'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Where is the _____",
+          "answer": "museum",
+          "options": [
+            "museum",
+            "supermarket",
+            "train station",
+            "bank"
+          ],
+          "target_vocab": "museum",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el museo?'",
+          "explanation": "La palabra correcta es 'museum'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Estación de tren'",
+          "phrase": "Estación de tren",
+          "answer": "Train station",
+          "target_vocab": "train station",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Estación de tren'",
+          "explanation": "Se escribe 'Train station'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hospital'",
+          "answer": "Hospital",
+          "distractors": [
+            "School",
+            "Museum",
+            "Street"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hospital' significa 'Hospital'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un escuela aquí'",
+          "answer": "There is a school here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "school",
+            "here"
+          ],
+          "target_vocab": "school",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un escuela aquí'",
+          "explanation": "La estructura correcta es: 'There is a school here'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "School",
+          "target_vocab": "school",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Escuela'",
+          "explanation": "Se escribe 'School'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Bank",
+              "right": "Banco"
+            },
+            {
+              "left": "Street",
+              "right": "Calle"
+            },
+            {
+              "left": "School",
+              "right": "Escuela"
+            },
+            {
+              "left": "Museum",
+              "right": "Museo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Parque'",
+          "answer": "Park",
+          "distractors": [
+            "School",
+            "Bank",
+            "Supermarket"
+          ],
+          "target_vocab": "park",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Parque'",
+          "explanation": "'Park' significa 'Parque'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Banco'",
+          "answer": "Bank",
+          "distractors": [
+            "Hospital",
+            "Train station",
+            "Supermarket"
+          ],
+          "target_vocab": "bank",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Bank' significa 'Banco'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Where is the _____",
+          "answer": "supermarket",
+          "options": [
+            "supermarket",
+            "hospital",
+            "park",
+            "street"
+          ],
+          "target_vocab": "supermarket",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el supermercado?'",
+          "explanation": "La palabra correcta es 'supermarket'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Restaurante'",
+          "phrase": "Restaurante",
+          "answer": "Restaurant",
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en inglés: 'Restaurante'",
+          "explanation": "Se escribe 'Restaurant'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Hay un supermercado aquí'",
+          "answer": "There is a supermarket here",
+          "options": [
+            "There",
+            "is",
+            "a",
+            "supermarket",
+            "here"
+          ],
+          "target_vocab": "supermarket",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un supermercado aquí'",
+          "explanation": "La estructura correcta es: 'There is a supermarket here'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Dónde está el parada de autobús?'",
+          "answer": "Where is the bus stop",
+          "options": [
+            "Where",
+            "is",
+            "the",
+            "bus",
+            "stop"
+          ],
+          "target_vocab": "bus stop",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el parada de autobús?'",
+          "explanation": "La estructura correcta es: 'Where is the bus stop'."
+        }
+      ]
+    }
+  ]
+}

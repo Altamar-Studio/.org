@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Practica Idiomas | EstudiandoAndo</title>
+    <meta name="description" content="Aprende idiomas con unidades temáticas interactivas. Niveles CEFR desde A1 hasta B2. Gramática, Listening, Reading, Speaking y Writing."/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-cream': '#F9F9F9',
+                        'ea-dark': '#0A0A0A',
+                        'ea-gray-light': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-serif { font-family: 'Cormorant Garamond', serif; }
+        .text-handwritten { font-family: 'Homemade Apple', cursive; }
+        
+        .highlight-gray {
+            background-color: #E5E7EB;
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+        
+        .btn-dark {
+            background-color: #0A0A0A;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-dark:hover {
+            background-color: #262626;
+            transform: translateY(-1px);
+        }
+        
+        .watermark-text {
+            font-size: 11vw;
+            line-height: 1;
+            color: rgba(0,0,0,0.02);
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        /* CEFR Stepper Styles */
+        .level-step {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .level-step:hover { transform: scale(1.1); }
+        .level-step.active { transform: scale(1.15); }
+        .level-step.active .level-circle {
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3), 0 0 20px rgba(59, 130, 246, 0.2);
+        }
+        
+        .level-connector {
+            height: 3px;
+            flex: 1;
+            min-width: 16px;
+            transition: background 0.3s ease;
+        }
+
+        /* Unit card hover */
+        .unit-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .unit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        /* Skill icons animation */
+        .skill-icon {
+            transition: all 0.2s ease;
+        }
+        .unit-card:hover .skill-icon {
+            transform: scale(1.15);
+        }
+
+        /* Fade-in animation for sections */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeInUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
+        }
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+    </style>
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+<script src="auth.js"></script>
+</head>
+<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
+
+    <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2" href="index.html">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class='hover:opacity-100 transition-opacity' href='biblioteca.html'>Biblioteca</a>
+                    <a class='hover:opacity-100 transition-opacity' href='aprendizaje.html'>Aprendizaje</a>
+                    <a class="hover:opacity-100 transition-opacity" href="idiomas.html">Idiomas</a>
+                    <a class="hover:opacity-100 transition-opacity" href="blog.html">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <a class="text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block" href="login.html">Iniciar sesión</a>
+                <a class="btn-dark dark:bg-white dark:text-black dark:hover:bg-gray-200 px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition-colors" href="registro.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="pt-32 pb-24 px-4 min-h-screen">
+        
+        <!-- Language Switcher Tabs -->
+        <div class="max-w-[90%] 2xl:max-w-[1600px] mx-auto mb-10 flex justify-center">
+            <div class="inline-flex bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 p-1.5 rounded-full shadow-sm flex-wrap justify-center gap-1">
+                <button id="lang-btn-en" onclick="selectLanguage('en')" class="px-5 py-2.5 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                    <span>🇺🇸</span> Inglés
+                </button>
+                <button id="lang-btn-fr" onclick="selectLanguage('fr')" class="px-5 py-2.5 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                    <span>🇫🇷</span> Francés
+                </button>
+                <button id="lang-btn-pt" onclick="selectLanguage('pt')" class="px-5 py-2.5 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                    <span>🇧🇷</span> Portugués
+                </button>
+                <button id="lang-btn-ja" onclick="selectLanguage('ja')" class="px-5 py-2.5 rounded-full text-sm font-bold transition-all flex items-center gap-2">
+                    <span>🇯🇵</span> Japonés
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Title -->
+        <section class="max-w-[90%] 2xl:max-w-[1600px] mx-auto mb-10 text-center animate-fade-in">
+            <h1 class="text-5xl md:text-7xl mb-6 tracking-tight text-ea-dark dark:text-white flex justify-center items-end gap-4 transition-colors">
+                <span class="font-serif">Practica</span>
+                <span id="hero-title-lang" class="font-handwritten text-6xl md:text-8xl -mb-3 tracking-normal font-normal">Inglés.</span>
+            </h1>
+            <p id="hero-description" class="text-sm md:text-base opacity-60 font-medium max-w-2xl mx-auto leading-relaxed mt-12">
+                <!-- Translated dynamically -->
+            </p>
+        </section>
+
+        <!-- UAPA Info Banner -->
+        <section class="max-w-[90%] 2xl:max-w-[1600px] mx-auto mb-14 animate-fade-in animate-delay-1">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 rounded-[24px] p-6 md:p-8 shadow-lg shadow-blue-500/10 relative overflow-hidden">
+                <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIi8+PC9zdmc+')] opacity-50"></div>
+                <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                        <span class="material-symbols-outlined text-white text-[28px]">school</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 id="banner-title" class="text-white font-bold text-lg mb-1"><!-- Localized --></h3>
+                        <p id="banner-text" class="text-white/80 text-sm leading-relaxed">
+                            <!-- Localized -->
+                        </p>
+                    </div>
+                    <div class="flex gap-3 flex-shrink-0 flex-wrap" id="banner-skills-container">
+                        <!-- Localized skill badges -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CEFR Level Stepper -->
+        <section class="max-w-[90%] 2xl:max-w-[1600px] mx-auto mb-14 animate-fade-in animate-delay-2">
+            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[28px] p-6 md:p-8 shadow-sm">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 text-[22px]">route</span>
+                    <h2 id="stepper-title" class="text-lg font-bold text-ea-dark dark:text-white">Selecciona tu Nivel</h2>
+                    <span id="stepper-meta" class="text-xs font-medium opacity-40 ml-auto hidden sm:block">Marco Común Europeo de Referencia (CEFR)</span>
+                </div>
+                
+                <div class="flex items-center justify-between overflow-x-auto pb-2" id="level-stepper">
+                    <!-- Levels rendered by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Units Grid -->
+        <section class="max-w-[90%] 2xl:max-w-[1600px] mx-auto mb-20 animate-fade-in animate-delay-3" id="units-section">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-ea-dark dark:text-white" id="level-title"><!-- Localized --></h2>
+                    <p class="text-sm opacity-50 mt-1" id="level-subtitle"><!-- Localized --></p>
+                </div>
+                <div id="overall-progress" class="hidden sm:flex items-center gap-3 bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 px-5 py-3 rounded-2xl shadow-sm">
+                    <div class="w-32 bg-gray-200 dark:bg-neutral-800 rounded-full h-2 overflow-hidden">
+                        <div id="overall-bar" class="bg-blue-600 h-full rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                    </div>
+                    <span id="overall-text" class="text-xs font-bold opacity-60">0%</span>
+                </div>
+            </div>
+
+            <div id="units-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+                <!-- Units rendered by JS -->
+            </div>
+
+            <!-- Coming Soon placeholder for other levels -->
+            <div id="coming-soon-level" class="hidden">
+                <div class="text-center py-24">
+                    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gray-100 dark:bg-neutral-800 mb-6">
+                        <span class="material-symbols-outlined text-[40px] opacity-30">construction</span>
+                    </div>
+                    <h3 id="coming-soon-title" class="text-2xl font-bold text-ea-dark dark:text-white mb-3">Próximamente Disponible</h3>
+                    <p id="coming-soon-desc" class="text-sm opacity-50 max-w-md mx-auto leading-relaxed">
+                        Estamos desarrollando el contenido de este nivel. Completa el nivel actual para desbloquear nuevos desafíos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+        <footer class="bg-white dark:bg-neutral-950 py-20 px-6 border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-[90%] 2xl:max-w-[1650px] mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="cropped_assets/logo_combined.png" class="h-16 w-auto object-contain dark:invert" alt="EA Logo">
+                    </div>
+                    <p class="text-xs opacity-50 font-medium leading-relaxed max-w-xs">
+                        Elevando el estándar de la educación digital en México de forma gratuita y libre de distracciones.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Plataforma</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="biblioteca.html">Biblioteca Virtual</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="aprendizaje.html">Simuladores de Admisión</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="idiomas.html">Cursos Idiomas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Comunidad</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="foros.html">Foros de Charla</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="blog.html">Blog Oficial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Redes</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.tiktok.com/@estudiando_ando.org?_r=1&_t=ZS-98CbOv3uH8E" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.instagram.com/estudiandoando_org?igsh=MWZveTB2ZnVybWZnOQ==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.facebook.com/share/g/1GbheNa2cb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Grupo de Facebook</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://discord.gg/SzurPrJZcR" target="_blank" rel="noopener noreferrer">Servidor de Discord</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://chat.whatsapp.com/Kz5w8TAh44FBHHDoA3rAss" target="_blank" rel="noopener noreferrer">Grupo de WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Legal</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Privacidad</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-black/5 pt-10 pb-20 md:pb-0">
+                <p class="text-xs opacity-40 font-bold tracking-tight">© EstudiandoAndo 2026. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra de Navegación Móvil -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl border-t border-black/10 dark:border-white/10 h-16 flex items-center justify-around px-1 md:hidden shadow-lg transition-colors">
+        <a href="index.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="text-[9px] font-bold tracking-tight">Inicio</span>
+        </a>
+        <a href="biblioteca.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">local_library</span>
+            <span class="text-[9px] font-bold tracking-tight">Biblioteca</span>
+        </a>
+        <a href="aprendizaje.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">psychology</span>
+            <span class="text-[9px] font-bold tracking-tight">Aprendizaje</span>
+        </a>
+        <a href="idiomas.html" class="flex flex-col items-center gap-0.5 opacity-100 text-black dark:text-white transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">language</span>
+            <span class="text-[9px] font-bold tracking-tight">Idiomas</span>
+        </a>
+        <a href="blog.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">feed</span>
+            <span class="text-[9px] font-bold tracking-tight">Blog</span>
+        </a>
+    </nav>
+
+    <script>
+        // Dark mode toggle
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+    <script src="userProfile.js"></script>
+    <script>
+    // ── Translation DB ──────────────────────────────────────────────────
+    const TRANSLATIONS = {
+        en: {
+            titleName: "Inglés.",
+            description: "Desarrolla tus habilidades en inglés a través de unidades temáticas autogestivas. Gramática, comprensión auditiva, lectura, producción oral y escrita — todo en un solo lugar.",
+            bannerTitle: "Unidades de Aprendizaje Interactivas",
+            bannerText: "Cada unidad es autogestiva e incluye <strong class=\"text-white\">Contenido gramatical</strong>, <strong class=\"text-white\">Listening</strong>, <strong class=\"text-white\">Reading</strong>, <strong class=\"text-white\">Speaking</strong> y <strong class=\"text-white\">Writing</strong> — con ejercicios interactivos y retroalimentación inmediata para que te autoevalúes.",
+            stepperTitle: "Selecciona tu Nivel",
+            stepperMeta: "Marco Común Europeo de Referencia (CEFR)",
+            levelHeaderPrefix: "Nivel",
+            levelSubtitleText: "unidades temáticas · 40 lecciones",
+            progressText: "Progreso Global",
+            comingSoonTitle: "Próximamente Disponible",
+            comingSoonDesc: "Estamos desarrollando el contenido de este nivel. Completa el nivel actual para desbloquear nuevos desafíos.",
+            levelNames: {
+                'a1-': "Beginner",
+                'a1+': "Elementary",
+                'a2-': "Pre-intermediate",
+                'a2+': "Low Intermediate",
+                'b1-': "Intermediate",
+                'b1+': "Upper Intermediate",
+                'b2-': "Advanced",
+                'b2+': "Upper Advanced"
+            },
+            skills: {
+                grammar: "Grammar",
+                listening: "Listening",
+                reading: "Reading",
+                speaking: "Speaking",
+                writing: "Writing"
+            },
+            badges: {
+                completed: "Completed",
+                in_progress: "In progress",
+                locked: "Locked"
+            },
+            actions: {
+                start: "Start",
+                continue: "Continue",
+                locked_desc: "Complete previous unit"
+            },
+            coursePage: "curso-ingles.html",
+            units: [
+                { id: 1, title: 'Greetings & Introductions', icon: '👋', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 2, title: 'Family & Relationships', icon: '👨‍👩‍👧‍👦', skills: ['grammar', 'reading', 'writing'] },
+                { id: 3, title: 'Around the City', icon: '🏙️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 4, title: 'Daily Routine', icon: '⏰', skills: ['grammar', 'speaking', 'writing'] },
+                { id: 5, title: 'Food & Drink', icon: '🍽️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 6, title: 'Clothes & Shopping', icon: '🛍️', skills: ['grammar', 'reading', 'writing'] },
+                { id: 7, title: 'Hobbies & Free Time', icon: '🎨', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 8, title: 'Future Plans', icon: '🚀', skills: ['grammar', 'writing', 'speaking'] }
+            ]
+        },
+        fr: {
+            titleName: "Francés.",
+            description: "Desarrolla tus habilidades en francés a través de unidades temáticas autogestivas. Gramática, comprensión auditiva, lectura, producción oral y escrita — todo en un solo lugar.",
+            bannerTitle: "Unidades de Aprendizaje Interactivas",
+            bannerText: "Cada unidad es autogestiva e incluye <strong class=\"text-white\">Contenido gramatical</strong>, <strong class=\"text-white\">Listening</strong>, <strong class=\"text-white\">Reading</strong>, <strong class=\"text-white\">Speaking</strong> y <strong class=\"text-white\">Writing</strong> — con ejercicios interactivos y retroalimentación inmediata para que te autoevalúes.",
+            stepperTitle: "Selecciona tu Nivel",
+            stepperMeta: "Marco Común Europeo de Referencia (CEFR)",
+            levelHeaderPrefix: "Nivel",
+            levelSubtitleText: "unidades temáticas · 40 lecciones",
+            progressText: "Progreso Global",
+            comingSoonTitle: "Próximamente Disponible",
+            comingSoonDesc: "Estamos desarrollando el contenido de este nivel. Completa el nivel actual para desbloquear nuevos desafíos.",
+            levelNames: {
+                'a1-': "Débutant",
+                'a1+': "Élémentaire",
+                'a2-': "Pré-intermédiaire",
+                'a2+': "Intermédiaire Bas",
+                'b1-': "Intermédiaire",
+                'b1+': "Intermédiaire Supérieur",
+                'b2-': "Avancé",
+                'b2+': "Avancé Supérieur"
+            },
+            skills: {
+                grammar: "Grammaire",
+                listening: "Écoute",
+                reading: "Lecture",
+                speaking: "Expression Orale",
+                writing: "Écriture"
+            },
+            badges: {
+                completed: "Terminé",
+                in_progress: "En cours",
+                locked: "Verrouillé"
+            },
+            actions: {
+                start: "Commencer",
+                continue: "Continuer",
+                locked_desc: "Complétez l'unité précédente"
+            },
+            coursePage: "curso-frances.html",
+            units: [
+                { id: 1, title: 'Les Salutations et Présentations', icon: '👋', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 2, title: 'La Famille et les Relations', icon: '👨‍👩‍👧‍👦', skills: ['grammar', 'reading', 'writing'] },
+                { id: 3, title: 'En Ville', icon: '🏙️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 4, title: 'La Routine Quotidienne', icon: '⏰', skills: ['grammar', 'speaking', 'writing'] },
+                { id: 5, title: 'La Nourriture et les Boissons', icon: '🍽️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 6, title: 'Les Vêtements et les Achats', icon: '🛍️', skills: ['grammar', 'reading', 'writing'] },
+                { id: 7, title: 'Les Loisirs et le Temps Libre', icon: '🎨', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 8, title: 'Projets d\'Avenir', icon: '🚀', skills: ['grammar', 'writing', 'speaking'] }
+            ]
+        },
+        pt: {
+            titleName: "Portugués.",
+            description: "Desarrolla tus habilidades en portugués a través de unidades temáticas autogestivas. Gramática, comprensión auditiva, lectura, producción oral y escrita — todo en un solo lugar.",
+            bannerTitle: "Unidades de Aprendizaje Interactivas",
+            bannerText: "Cada unidad es autogestiva e incluye <strong class=\"text-white\">Contenido gramatical</strong>, <strong class=\"text-white\">Listening</strong>, <strong class=\"text-white\">Reading</strong>, <strong class=\"text-white\">Speaking</strong> y <strong class=\"text-white\">Writing</strong> — con ejercicios interactivos y retroalimentación inmediata para que te autoevalúes.",
+            stepperTitle: "Selecciona tu Nivel",
+            stepperMeta: "Marco Común Europeo de Referencia (CEFR)",
+            levelHeaderPrefix: "Nivel",
+            levelSubtitleText: "unidades temáticas · 40 lecciones",
+            progressText: "Progreso Global",
+            comingSoonTitle: "Próximamente Disponible",
+            comingSoonDesc: "Estamos desarrollando el contenido de este nivel. Completa el nivel actual para desbloquear nuevos desafíos.",
+            levelNames: {
+                'a1-': "Iniciante",
+                'a1+': "Elementar",
+                'a2-': "Pré-intermediário",
+                'a2+': "Intermediário Baixo",
+                'b1-': "Intermediário",
+                'b1+': "Intermediário Alto",
+                'b2-': "Avançado",
+                'b2+': "Avançado Superior"
+            },
+            skills: {
+                grammar: "Gramática",
+                listening: "Escuta",
+                reading: "Leitura",
+                speaking: "Expressão Oral",
+                writing: "Escrita"
+            },
+            badges: {
+                completed: "Concluído",
+                in_progress: "Em progresso",
+                locked: "Bloqueado"
+            },
+            actions: {
+                start: "Começar",
+                continue: "Continuar",
+                locked_desc: "Conclua a unidade anterior"
+            },
+            coursePage: "curso-portugues.html",
+            units: [
+                { id: 1, title: 'Saudações e Apresentações', icon: '👋', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 2, title: 'Minha Família e Relacionamentos', icon: '👨‍👩‍👧‍👦', skills: ['grammar', 'reading', 'writing'] },
+                { id: 3, title: 'Na Cidade', icon: '🏙️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 4, title: 'Rotina Diária', icon: '⏰', skills: ['grammar', 'speaking', 'writing'] },
+                { id: 5, title: 'Comida e Bebida', icon: '🍽️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 6, title: 'Roupas e Compras', icon: '🛍️', skills: ['grammar', 'reading', 'writing'] },
+                { id: 7, title: 'Hobbies e Tempo Livre', icon: '🎨', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 8, title: 'Planos Futuros', icon: '🚀', skills: ['grammar', 'writing', 'speaking'] }
+            ]
+        },
+        ja: {
+            titleName: "Japonés.",
+            description: "Desarrolla tus habilidades en japonés a través de unidades temáticas autogestivas. Gramática, comprensión auditiva, lectura, producción oral y escrita — todo en un solo lugar.",
+            bannerTitle: "Unidades de Aprendizaje Interactivas",
+            bannerText: "Cada unidad es autogestiva e incluye <strong class=\"text-white\">Contenido gramatical</strong>, <strong class=\"text-white\">Listening</strong>, <strong class=\"text-white\">Reading</strong>, <strong class=\"text-white\">Speaking</strong> y <strong class=\"text-white\">Writing</strong> — con ejercicios interactivos y retroalimentación inmediata para que te autoevalúes.",
+            stepperTitle: "Selecciona tu Nivel",
+            stepperMeta: "Marco Común Europeo de Referencia (CEFR)",
+            levelHeaderPrefix: "Nivel",
+            levelSubtitleText: "unidades temáticas · 40 lecciones",
+            progressText: "Progreso Global",
+            comingSoonTitle: "Próximamente Disponible",
+            comingSoonDesc: "Estamos desarrollando el contenido de este nivel. Completa el nivel actual para desbloquear nuevos desafíos.",
+            levelNames: {
+                'a1-': "初級",
+                'a1+': "初中級",
+                'a2-': "中級準備",
+                'a2+': "中級下",
+                'b1-': "中級",
+                'b1+': "中級上",
+                'b2-': "上級",
+                'b2+': "上級上"
+            },
+            skills: {
+                grammar: "文法",
+                listening: "リスニング",
+                reading: "リーディング",
+                speaking: "スピーキング",
+                writing: "ライティング"
+            },
+            badges: {
+                completed: "完了",
+                in_progress: "進行中",
+                locked: "ロック中"
+            },
+            actions: {
+                start: "開始",
+                continue: "続ける",
+                locked_desc: "前のユニットを完了してください"
+            },
+            coursePage: "curso-japones.html",
+            units: [
+                { id: 1, title: '挨拶と自己紹介 (Aisatsu/Jikoshōkai)', icon: '👋', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 2, title: '家族と人間関係 (Kazoku/Kankei)', icon: '👨‍👩‍👧‍👦', skills: ['grammar', 'reading', 'writing'] },
+                { id: 3, title: '街の中で (Machi no Naka de)', icon: '🏙️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 4, title: '毎日の習慣 (Mainichi no Shūkan)', icon: '⏰', skills: ['grammar', 'speaking', 'writing'] },
+                { id: 5, title: '食べ物と飲み物 (Tabemono/Nomimono)', icon: '🍽️', skills: ['grammar', 'listening', 'reading'] },
+                { id: 6, title: '服と買い物 (Fuku/Kaimono)', icon: '🛍️', skills: ['grammar', 'reading', 'writing'] },
+                { id: 7, title: '趣味と余暇 (Shumi/Yoka)', icon: '🎨', skills: ['grammar', 'listening', 'speaking'] },
+                { id: 8, title: '将来の計画 (Shōrai no Keikaku)', icon: '🚀', skills: ['grammar', 'writing', 'speaking'] }
+            ]
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // State
+        let currentLang = localStorage.getItem('ea_idiomas_lang') || 'en';
+        let selectedLevel = 0;
+        const LESSONS_PER_UNIT = 5;
+
+        const LEVELS = [
+            { id: 'a1-', label: 'A1-', color: 'bg-blue-500', textColor: 'text-blue-600 dark:text-blue-400', available: true },
+            { id: 'a1+', label: 'A1+', color: 'bg-blue-600', textColor: 'text-blue-700 dark:text-blue-300', available: false },
+            { id: 'a2-', label: 'A2-', color: 'bg-cyan-500', textColor: 'text-cyan-600 dark:text-cyan-400', available: false },
+            { id: 'a2+', label: 'A2+', color: 'bg-teal-500', textColor: 'text-teal-600 dark:text-teal-400', available: false },
+            { id: 'b1-', label: 'B1-', color: 'bg-emerald-500', textColor: 'text-emerald-600 dark:text-emerald-400', available: false },
+            { id: 'b1+', label: 'B1+', color: 'bg-amber-500', textColor: 'text-amber-600 dark:text-amber-400', available: false },
+            { id: 'b2-', label: 'B2-', color: 'bg-orange-500', textColor: 'text-orange-600 dark:text-orange-400', available: false },
+            { id: 'b2+', label: 'B2+', color: 'bg-red-500', textColor: 'text-red-600 dark:text-red-400', available: false },
+        ];
+
+        // ── Language selection function ──────────────────────────────────
+        window.selectLanguage = function(langCode) {
+            currentLang = langCode;
+            localStorage.setItem('ea_idiomas_lang', langCode);
+            updateLanguageUI();
+        };
+
+        function updateLanguageUI() {
+            const db = TRANSLATIONS[currentLang];
+            if (!db) return;
+
+            // Highlight active button, dim inactive ones
+            ['en', 'fr', 'pt', 'ja'].forEach(lang => {
+                const btn = document.getElementById(`lang-btn-${lang}`);
+                if (btn) {
+                    if (lang === currentLang) {
+                        btn.className = "px-5 py-2.5 rounded-full text-sm font-bold bg-black dark:bg-white text-white dark:text-black shadow-sm transition-all flex items-center gap-2";
+                    } else {
+                        btn.className = "px-5 py-2.5 rounded-full text-sm font-bold text-ea-dark/60 dark:text-white/60 hover:text-ea-dark dark:hover:text-white transition-all flex items-center gap-2";
+                    }
+                }
+            });
+
+            // Update main translations (excluding "Practica" span)
+            const titleLangEl = document.getElementById('hero-title-lang');
+            if (titleLangEl) titleLangEl.textContent = db.titleName;
+
+            const descEl = document.getElementById('hero-description');
+            if (descEl) descEl.textContent = db.description;
+
+            const bannerTitleEl = document.getElementById('banner-title');
+            if (bannerTitleEl) bannerTitleEl.textContent = db.bannerTitle;
+
+            const bannerTextEl = document.getElementById('banner-text');
+            if (bannerTextEl) bannerTextEl.innerHTML = db.bannerText;
+
+            const stepperTitleEl = document.getElementById('stepper-title');
+            if (stepperTitleEl) stepperTitleEl.textContent = db.stepperTitle;
+
+            const stepperMetaEl = document.getElementById('stepper-meta');
+            if (stepperMetaEl) stepperMetaEl.textContent = db.stepperMeta;
+
+            const comingSoonTitleEl = document.getElementById('coming-soon-title');
+            if (comingSoonTitleEl) comingSoonTitleEl.textContent = db.comingSoonTitle;
+
+            const comingSoonDescEl = document.getElementById('coming-soon-desc');
+            if (comingSoonDescEl) comingSoonDescEl.textContent = db.comingSoonDesc;
+
+            // Skills container in UAPA banner
+            const skillsContainer = document.getElementById('banner-skills-container');
+            if (skillsContainer) {
+                skillsContainer.innerHTML = `
+                    <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">
+                        🎧 ${db.skills.listening}
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">
+                        📖 ${db.skills.reading}
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">
+                        🗣 ${db.skills.speaking}
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/20">
+                        ✍️ ${db.skills.writing}
+                    </span>
+                `;
+            }
+
+            renderStepper();
+            renderUnits();
+        }
+
+        // ── Stepper ──────────────────────────────────────────────────────
+        function renderStepper() {
+            const container = document.getElementById('level-stepper');
+            if (!container) return;
+            const db = TRANSLATIONS[currentLang];
+            let html = '';
+            
+            LEVELS.forEach((lvl, i) => {
+                if (i > 0) {
+                    const connColor = i <= selectedLevel 
+                        ? 'bg-blue-400 dark:bg-blue-600' 
+                        : 'bg-gray-200 dark:bg-neutral-700';
+                    html += `<div class="level-connector ${connColor}"></div>`;
+                }
+                const isActive = i === selectedLevel;
+                const isCompleted = i < selectedLevel;
+                const isPast = i <= selectedLevel;
+                const circleBase = lvl.available 
+                    ? (isActive 
+                        ? `${lvl.color} text-white shadow-lg` 
+                        : (isPast 
+                            ? `${lvl.color} text-white opacity-80` 
+                            : 'bg-gray-200 dark:bg-neutral-700 text-gray-500 dark:text-neutral-400'))
+                    : 'bg-gray-100 dark:bg-neutral-800 text-gray-400 dark:text-neutral-500 border border-gray-200 dark:border-neutral-700';
+                
+                const lvlName = db.levelNames[lvl.id] || "";
+                
+                html += `
+                    <div class="level-step flex flex-col items-center gap-2 flex-shrink-0 ${isActive ? 'active' : ''}" 
+                         data-level="${i}" onclick="selectLevel(${i})">
+                        <div class="level-circle w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center font-bold text-sm md:text-base transition-all ${circleBase}">
+                            ${isCompleted ? '<span class="material-symbols-outlined text-[20px]">check</span>' : lvl.label}
+                        </div>
+                        <span class="text-[10px] font-bold opacity-50 whitespace-nowrap hidden sm:block">${lvlName}</span>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        // ── Units Grid ───────────────────────────────────────────────────
+        function renderUnits() {
+            const grid = document.getElementById('units-grid');
+            const comingSoon = document.getElementById('coming-soon-level');
+            const titleEl = document.getElementById('level-title');
+            const subtitleEl = document.getElementById('level-subtitle');
+            const overallProgress = document.getElementById('overall-progress');
+            
+            const db = TRANSLATIONS[currentLang];
+            const lvl = LEVELS[selectedLevel];
+            const lvlName = db.levelNames[lvl.id] || "";
+            if (titleEl) titleEl.textContent = `${db.levelHeaderPrefix} ${lvl.label} · ${lvlName}`;
+            
+            if (!lvl.available) {
+                grid.classList.add('hidden');
+                comingSoon.classList.remove('hidden');
+                if (overallProgress) overallProgress.classList.add('hidden');
+                if (subtitleEl) subtitleEl.textContent = "";
+                return;
+            }
+
+            grid.classList.remove('hidden');
+            comingSoon.classList.add('hidden');
+            if (overallProgress) overallProgress.classList.remove('hidden');
+
+            const totalUnits = db.units.length;
+            const totalLessons = totalUnits * LESSONS_PER_UNIT;
+            if (subtitleEl) subtitleEl.textContent = `${totalUnits} ${db.levelSubtitleText}`;
+
+            // Calculate overall progress
+            let totalCompleted = 0;
+            for (let u = 1; u <= totalUnits; u++) {
+                totalCompleted += getUnitProgress(currentLang, 'a1', u.toString(), LESSONS_PER_UNIT);
+            }
+            const overallPct = Math.round((totalCompleted / totalLessons) * 100);
+            const overallBar = document.getElementById('overall-bar');
+            const overallText = document.getElementById('overall-text');
+            if (overallBar) setTimeout(() => { overallBar.style.width = `${overallPct}%`; }, 100);
+            if (overallText) overallText.textContent = `${overallPct}%`;
+
+            let html = '';
+            db.units.forEach((unit, idx) => {
+                const completed = getUnitProgress(currentLang, 'a1', unit.id.toString(), LESSONS_PER_UNIT);
+                const pct = Math.round((completed / LESSONS_PER_UNIT) * 100);
+                const isComplete = completed === LESSONS_PER_UNIT;
+                
+                // Determine lock state based on previous unit completion
+                let isLocked = false;
+                if (unit.id > 1) {
+                    const prevCompleted = getUnitProgress(currentLang, 'a1', (unit.id - 1).toString(), LESSONS_PER_UNIT);
+                    isLocked = prevCompleted < LESSONS_PER_UNIT;
+                }
+                if (completed > 0) isLocked = false;
+
+                const cardOpacity = isLocked ? 'opacity-60' : '';
+                const cardCursor = isLocked ? 'cursor-not-allowed' : 'cursor-pointer';
+                const linkHref = isLocked ? '#' : db.coursePage;
+
+                // Status badge
+                let statusBadge = '';
+                if (isComplete) {
+                    statusBadge = `<div class="absolute top-4 right-4 bg-emerald-500 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-sm flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[12px]">check_circle</span> ${db.badges.completed}
+                    </div>`;
+                } else if (completed > 0) {
+                    statusBadge = `<div class="absolute top-4 right-4 bg-blue-600 text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
+                        ${db.badges.in_progress}
+                    </div>`;
+                } else if (isLocked) {
+                    statusBadge = `<div class="absolute top-4 right-4 text-gray-400 dark:text-neutral-500">
+                        <span class="material-symbols-outlined text-[20px]">lock</span>
+                    </div>`;
+                }
+
+                // Skill badges
+                let skillsHtml = unit.skills.map(s => {
+                    const skillLabel = db.skills[s];
+                    const icon = s === 'grammar' ? '📚' : (s === 'listening' ? '🎧' : (s === 'reading' ? '📖' : (s === 'speaking' ? '🗣' : '✍️')));
+                    return `<span class="skill-icon inline-flex items-center gap-1 text-[11px] font-medium opacity-60 bg-gray-100 dark:bg-neutral-800 px-2.5 py-1 rounded-full">${icon} ${skillLabel}</span>`;
+                }).join('');
+
+                html += `
+                    <a href="${linkHref}" class="unit-card group relative bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-[24px] p-6 shadow-sm overflow-hidden flex flex-col ${cardOpacity} ${cardCursor}" ${isLocked ? 'onclick="event.preventDefault()"' : ''}>
+                        ${statusBadge}
+                        
+                        <!-- Unit number & icon -->
+                        <div class="flex items-start gap-4 mb-5">
+                            <div class="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-2xl border border-blue-100 dark:border-blue-800/40 flex-shrink-0">
+                                ${unit.icon}
+                            </div>
+                            <div class="flex-1 min-w-0 pt-1">
+                                <span class="text-[10px] font-bold opacity-30 uppercase tracking-widest block">${db.levelHeaderPrefix} ${unit.id}</span>
+                                <h3 class="font-bold text-base leading-tight text-ea-dark dark:text-white truncate">${unit.title}</h3>
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="flex flex-wrap gap-1.5 mb-5">
+                            ${skillsHtml}
+                        </div>
+
+                        <!-- Progress -->
+                        <div class="mt-auto">
+                            <div class="flex justify-between text-[11px] font-bold opacity-40 mb-1.5">
+                                <span>${completed}/${LESSONS_PER_UNIT} ${currentLang === 'ja' ? 'レッスン' : (currentLang === 'fr' ? 'leçons' : (currentLang === 'pt' ? 'lições' : 'lessons'))}</span>
+                                <span>${pct}%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 dark:bg-neutral-800 rounded-full h-2 overflow-hidden">
+                                <div class="h-full rounded-full transition-all duration-1000 ease-out ${isComplete ? 'bg-emerald-500' : 'bg-blue-600'}" style="width: ${pct}%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Action hint on hover -->
+                        ${!isLocked ? `
+                        <div class="mt-5 flex items-center justify-center gap-2 text-sm font-bold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="material-symbols-outlined text-[18px]">${completed > 0 ? 'play_arrow' : 'rocket_launch'}</span>
+                            ${completed > 0 ? db.actions.continue : db.actions.start}
+                        </div>` : `
+                        <div class="mt-5 flex items-center justify-center gap-2 text-sm font-medium opacity-30">
+                            <span class="material-symbols-outlined text-[16px]">lock</span>
+                            ${db.actions.locked_desc}
+                        </div>`}
+                    </a>
+                `;
+            });
+            
+            grid.innerHTML = html;
+        }
+
+        // ── Global function for stepper clicks ───────────────────────────
+        window.selectLevel = function(idx) {
+            selectedLevel = idx;
+            renderStepper();
+            renderUnits();
+            document.getElementById('units-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+
+        // ── Init ─────────────────────────────────────────────────────────
+        if (typeof updateUIHeaders === 'function') updateUIHeaders();
+        updateLanguageUI();
+    });
+    </script>
+</body>
+</html>

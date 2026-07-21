@@ -1,0 +1,772 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 5,
+  "title": "La Nourriture",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Pomme",
+            "Poisson",
+            "Salade"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero queso'",
+          "answer": "Je veux du fromage",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "fromage"
+          ],
+          "target_vocab": "fromage",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero queso'",
+          "explanation": "La estructura correcta es: 'Je veux du fromage'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Riz",
+              "right": "Arroz"
+            },
+            {
+              "left": "Pain",
+              "right": "Pan"
+            },
+            {
+              "left": "Poisson",
+              "right": "Pescado"
+            },
+            {
+              "left": "Pomme",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Leche'",
+          "answer": "Lait",
+          "distractors": [
+            "Fromage",
+            "Salade",
+            "Café"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Leche'",
+          "explanation": "'Lait' significa 'Leche'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Leche'",
+          "answer": "Lait",
+          "distractors": [
+            "Salade",
+            "Poisson",
+            "Pomme"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Leche'",
+          "explanation": "'Lait' significa 'Leche'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero ensalada'",
+          "answer": "Je veux du salade",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "salade"
+          ],
+          "target_vocab": "salade",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero ensalada'",
+          "explanation": "La estructura correcta es: 'Je veux du salade'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el arroz?'",
+          "answer": "Aimes-tu le riz ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "riz"
+          ],
+          "target_vocab": "riz",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el arroz?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le riz ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pescado'",
+          "phrase": "Pescado",
+          "answer": "Poisson",
+          "target_vocab": "poisson",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Pescado'",
+          "explanation": "Se escribe 'Poisson'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pescado'",
+          "phrase": "Pescado",
+          "answer": "Poisson",
+          "target_vocab": "poisson",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Pescado'",
+          "explanation": "Se escribe 'Poisson'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je veux du _____",
+          "answer": "poisson",
+          "options": [
+            "poisson",
+            "salade",
+            "riz",
+            "pain"
+          ],
+          "target_vocab": "poisson",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero pescado'",
+          "explanation": "La palabra correcta es 'poisson'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero pan'",
+          "answer": "Je veux du pain",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "pain"
+          ],
+          "target_vocab": "pain",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pan'",
+          "explanation": "La estructura correcta es: 'Je veux du pain'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je veux du _____",
+          "answer": "riz",
+          "options": [
+            "riz",
+            "poisson",
+            "lait",
+            "salade"
+          ],
+          "target_vocab": "riz",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero arroz'",
+          "explanation": "La palabra correcta es 'riz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Pain",
+            "Poulet",
+            "Riz"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Café'",
+          "phrase": "Café",
+          "answer": "Café",
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Café'",
+          "explanation": "Se escribe 'Café'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Arroz'",
+          "answer": "Riz",
+          "distractors": [
+            "Lait",
+            "Fromage",
+            "Eau"
+          ],
+          "target_vocab": "riz",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Arroz'",
+          "explanation": "'Riz' significa 'Arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Poulet",
+            "Pomme",
+            "Poisson"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pan'",
+          "phrase": "Pan",
+          "answer": "Pain",
+          "target_vocab": "pain",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Pan'",
+          "explanation": "Se escribe 'Pain'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Eau",
+              "right": "Agua"
+            },
+            {
+              "left": "Poisson",
+              "right": "Pescado"
+            },
+            {
+              "left": "Fromage",
+              "right": "Queso"
+            },
+            {
+              "left": "Pomme",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el pollo?'",
+          "answer": "Aimes-tu le poulet ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "poulet"
+          ],
+          "target_vocab": "poulet",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el pollo?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le poulet ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero pollo'",
+          "answer": "Je veux du poulet",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "poulet"
+          ],
+          "target_vocab": "poulet",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'Je veux du poulet'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Salade",
+          "target_vocab": "salade",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Ensalada'",
+          "explanation": "Se escribe 'Salade'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el pescado?'",
+          "answer": "Aimes-tu le poisson ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "poisson"
+          ],
+          "target_vocab": "poisson",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el pescado?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le poisson ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero arroz'",
+          "answer": "Je veux du riz",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "riz"
+          ],
+          "target_vocab": "riz",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero arroz'",
+          "explanation": "La estructura correcta es: 'Je veux du riz'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Aimes-tu le _____ ?",
+          "answer": "poisson",
+          "options": [
+            "poisson",
+            "poulet",
+            "pain",
+            "fromage"
+          ],
+          "target_vocab": "poisson",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el pescado?'",
+          "explanation": "La palabra correcta es 'poisson'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Agua'",
+          "phrase": "Agua",
+          "answer": "Eau",
+          "target_vocab": "eau",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Agua'",
+          "explanation": "Se escribe 'Eau'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Salade",
+              "right": "Ensalada"
+            },
+            {
+              "left": "Lait",
+              "right": "Leche"
+            },
+            {
+              "left": "Eau",
+              "right": "Agua"
+            },
+            {
+              "left": "Pomme",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pollo'",
+          "answer": "Poulet",
+          "distractors": [
+            "Fromage",
+            "Pain",
+            "Eau"
+          ],
+          "target_vocab": "poulet",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pollo'",
+          "explanation": "'Poulet' significa 'Pollo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero leche'",
+          "answer": "Je veux du lait",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "lait"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero leche'",
+          "explanation": "La estructura correcta es: 'Je veux du lait'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Arroz'",
+          "answer": "Riz",
+          "distractors": [
+            "Poisson",
+            "Café",
+            "Pomme"
+          ],
+          "target_vocab": "riz",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Arroz'",
+          "explanation": "'Riz' significa 'Arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ensalada'",
+          "answer": "Salade",
+          "distractors": [
+            "Pain",
+            "Fromage",
+            "Eau"
+          ],
+          "target_vocab": "salade",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Ensalada'",
+          "explanation": "'Salade' significa 'Ensalada'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Queso'",
+          "phrase": "Queso",
+          "answer": "Fromage",
+          "target_vocab": "fromage",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Queso'",
+          "explanation": "Se escribe 'Fromage'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Pain",
+              "right": "Pan"
+            },
+            {
+              "left": "Salade",
+              "right": "Ensalada"
+            },
+            {
+              "left": "Poisson",
+              "right": "Pescado"
+            },
+            {
+              "left": "Café",
+              "right": "Café"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el pollo?'",
+          "answer": "Aimes-tu le poulet ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "poulet"
+          ],
+          "target_vocab": "poulet",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el pollo?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le poulet ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Arroz'",
+          "phrase": "Arroz",
+          "answer": "Riz",
+          "target_vocab": "riz",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Arroz'",
+          "explanation": "Se escribe 'Riz'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero leche'",
+          "answer": "Je veux du lait",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "lait"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero leche'",
+          "explanation": "La estructura correcta es: 'Je veux du lait'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Manzana'",
+          "answer": "Pomme",
+          "distractors": [
+            "Poulet",
+            "Eau",
+            "Poisson"
+          ],
+          "target_vocab": "pomme",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Pomme' significa 'Manzana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Agua'",
+          "answer": "Eau",
+          "distractors": [
+            "Poisson",
+            "Café",
+            "Riz"
+          ],
+          "target_vocab": "eau",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Agua'",
+          "explanation": "'Eau' significa 'Agua'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ensalada'",
+          "answer": "Salade",
+          "distractors": [
+            "Lait",
+            "Pain",
+            "Pomme"
+          ],
+          "target_vocab": "salade",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Ensalada'",
+          "explanation": "'Salade' significa 'Ensalada'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el pan?'",
+          "answer": "Aimes-tu le pain ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "pain"
+          ],
+          "target_vocab": "pain",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el pan?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le pain ?'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je veux du _____",
+          "answer": "salade",
+          "options": [
+            "salade",
+            "café",
+            "pain",
+            "eau"
+          ],
+          "target_vocab": "salade",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero ensalada'",
+          "explanation": "La palabra correcta es 'salade'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Café'",
+          "phrase": "Café",
+          "answer": "Café",
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Café'",
+          "explanation": "Se escribe 'Café'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pan'",
+          "phrase": "Pan",
+          "answer": "Pain",
+          "target_vocab": "pain",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en francés: 'Pan'",
+          "explanation": "Se escribe 'Pain'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pescado'",
+          "answer": "Poisson",
+          "distractors": [
+            "Salade",
+            "Pain",
+            "Eau"
+          ],
+          "target_vocab": "poisson",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Poisson' significa 'Pescado'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero queso'",
+          "answer": "Je veux du fromage",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "fromage"
+          ],
+          "target_vocab": "fromage",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero queso'",
+          "explanation": "La estructura correcta es: 'Je veux du fromage'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Fromage",
+              "right": "Queso"
+            },
+            {
+              "left": "Salade",
+              "right": "Ensalada"
+            },
+            {
+              "left": "Pain",
+              "right": "Pan"
+            },
+            {
+              "left": "Pomme",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Te gusta el manzana?'",
+          "answer": "Aimes-tu le pomme ?",
+          "options": [
+            "Aimes-tu",
+            "le",
+            "pomme"
+          ],
+          "target_vocab": "pomme",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el manzana?'",
+          "explanation": "La estructura correcta es: 'Aimes-tu le pomme ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Quiero leche'",
+          "answer": "Je veux du lait",
+          "options": [
+            "Je",
+            "veux",
+            "du",
+            "lait"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero leche'",
+          "explanation": "La estructura correcta es: 'Je veux du lait'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Leche'",
+          "answer": "Lait",
+          "distractors": [
+            "Pain",
+            "Eau",
+            "Café"
+          ],
+          "target_vocab": "lait",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Leche'",
+          "explanation": "'Lait' significa 'Leche'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Aimes-tu le _____ ?",
+          "answer": "eau",
+          "options": [
+            "eau",
+            "fromage",
+            "pain",
+            "pomme"
+          ],
+          "target_vocab": "eau",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el agua?'",
+          "explanation": "La palabra correcta es 'eau'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Queso'",
+          "answer": "Fromage",
+          "distractors": [
+            "Pomme",
+            "Eau",
+            "Poulet"
+          ],
+          "target_vocab": "fromage",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Queso'",
+          "explanation": "'Fromage' significa 'Queso'."
+        }
+      ]
+    }
+  ]
+}

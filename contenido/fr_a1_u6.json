@@ -1,0 +1,773 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 6,
+  "title": "Les Vêtements",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Sombrero'",
+          "answer": "Chapeau",
+          "distractors": [
+            "Chaussettes",
+            "Veste",
+            "Jupe"
+          ],
+          "target_vocab": "chapeau",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Chapeau' significa 'Sombrero'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este sombrero?'",
+          "answer": "Combien coûte ce chapeau ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "chapeau"
+          ],
+          "target_vocab": "chapeau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este sombrero?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce chapeau ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Calcetines'",
+          "phrase": "Calcetines",
+          "answer": "Chaussettes",
+          "target_vocab": "chaussettes",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Calcetines'",
+          "explanation": "Se escribe 'Chaussettes'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este camisa?'",
+          "answer": "Combien coûte ce chemise ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "chemise"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce chemise ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pantalones'",
+          "answer": "Pantalon",
+          "distractors": [
+            "Manteau",
+            "Chemise",
+            "Chaussures"
+          ],
+          "target_vocab": "pantalon",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Pantalon' significa 'Pantalones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este pantalones?'",
+          "answer": "Combien coûte ce pantalon ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "pantalon"
+          ],
+          "target_vocab": "pantalon",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este pantalones?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce pantalon ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pantalones'",
+          "phrase": "Pantalones",
+          "answer": "Pantalon",
+          "target_vocab": "pantalon",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Pantalones'",
+          "explanation": "Se escribe 'Pantalon'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "J'aime ces _____",
+          "answer": "chemise",
+          "options": [
+            "chemise",
+            "chaussettes",
+            "pantalon",
+            "chapeau"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos camisa'",
+          "explanation": "La palabra correcta es 'chemise'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Abrigo'",
+          "answer": "Manteau",
+          "distractors": [
+            "Chemise",
+            "Chapeau",
+            "Chaussures"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Manteau' significa 'Abrigo'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Robe",
+              "right": "Vestido"
+            },
+            {
+              "left": "Chaussures",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Jupe",
+              "right": "Falda"
+            },
+            {
+              "left": "Pantalon",
+              "right": "Pantalones"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pantalones'",
+          "phrase": "Pantalones",
+          "answer": "Pantalon",
+          "target_vocab": "pantalon",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Pantalones'",
+          "explanation": "Se escribe 'Pantalon'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este falda?'",
+          "answer": "Combien coûte ce jupe ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "jupe"
+          ],
+          "target_vocab": "jupe",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce jupe ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Abrigo'",
+          "answer": "Manteau",
+          "distractors": [
+            "Jupe",
+            "Chaussures",
+            "Chapeau"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Manteau' significa 'Abrigo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me gustan esos falda'",
+          "answer": "J'aime ces jupe",
+          "options": [
+            "J'aime",
+            "ces",
+            "jupe"
+          ],
+          "target_vocab": "jupe",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos falda'",
+          "explanation": "La estructura correcta es: 'J'aime ces jupe'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Sombrero'",
+          "phrase": "Sombrero",
+          "answer": "Chapeau",
+          "target_vocab": "chapeau",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Sombrero'",
+          "explanation": "Se escribe 'Chapeau'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Robe",
+              "right": "Vestido"
+            },
+            {
+              "left": "Chemise",
+              "right": "Camisa"
+            },
+            {
+              "left": "Chaussettes",
+              "right": "Calcetines"
+            },
+            {
+              "left": "Jupe",
+              "right": "Falda"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Falda'",
+          "answer": "Jupe",
+          "distractors": [
+            "Chapeau",
+            "T-shirt",
+            "Pantalon"
+          ],
+          "target_vocab": "jupe",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Falda'",
+          "explanation": "'Jupe' significa 'Falda'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Camiseta'",
+          "answer": "T-shirt",
+          "distractors": [
+            "Veste",
+            "Chemise",
+            "Pantalon"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camiseta'",
+          "explanation": "'T-shirt' significa 'Camiseta'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este abrigo?'",
+          "answer": "Combien coûte ce manteau ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "manteau"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este abrigo?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce manteau ?'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Combien coûte ce _____ ?",
+          "answer": "chemise",
+          "options": [
+            "chemise",
+            "chaussures",
+            "veste",
+            "manteau"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La palabra correcta es 'chemise'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este abrigo?'",
+          "answer": "Combien coûte ce manteau ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "manteau"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este abrigo?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce manteau ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Calcetines'",
+          "answer": "Chaussettes",
+          "distractors": [
+            "Chapeau",
+            "T-shirt",
+            "Manteau"
+          ],
+          "target_vocab": "chaussettes",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Calcetines'",
+          "explanation": "'Chaussettes' significa 'Calcetines'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Robe",
+          "target_vocab": "robe",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Vestido'",
+          "explanation": "Se escribe 'Robe'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "J'aime ces _____",
+          "answer": "manteau",
+          "options": [
+            "manteau",
+            "jupe",
+            "pantalon",
+            "veste"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos abrigo'",
+          "explanation": "La palabra correcta es 'manteau'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me gustan esos abrigo'",
+          "answer": "J'aime ces manteau",
+          "options": [
+            "J'aime",
+            "ces",
+            "manteau"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos abrigo'",
+          "explanation": "La estructura correcta es: 'J'aime ces manteau'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Chemise",
+              "right": "Camisa"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Manteau",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Pantalon",
+              "right": "Pantalones"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Sombrero'",
+          "answer": "Chapeau",
+          "distractors": [
+            "Veste",
+            "Manteau",
+            "Chaussettes"
+          ],
+          "target_vocab": "chapeau",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Chapeau' significa 'Sombrero'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este falda?'",
+          "answer": "Combien coûte ce jupe ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "jupe"
+          ],
+          "target_vocab": "jupe",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce jupe ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Calcetines'",
+          "phrase": "Calcetines",
+          "answer": "Chaussettes",
+          "target_vocab": "chaussettes",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Calcetines'",
+          "explanation": "Se escribe 'Chaussettes'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pantalones'",
+          "answer": "Pantalon",
+          "distractors": [
+            "Chapeau",
+            "T-shirt",
+            "Chemise"
+          ],
+          "target_vocab": "pantalon",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Pantalon' significa 'Pantalones'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Zapatos'",
+          "answer": "Chaussures",
+          "distractors": [
+            "Robe",
+            "Chemise",
+            "Chaussettes"
+          ],
+          "target_vocab": "chaussures",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Chaussures' significa 'Zapatos'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pantalones'",
+          "answer": "Pantalon",
+          "distractors": [
+            "Chaussettes",
+            "Robe",
+            "Chapeau"
+          ],
+          "target_vocab": "pantalon",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Pantalon' significa 'Pantalones'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Camisa'",
+          "phrase": "Camisa",
+          "answer": "Chemise",
+          "target_vocab": "chemise",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Camisa'",
+          "explanation": "Se escribe 'Chemise'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Zapatos'",
+          "phrase": "Zapatos",
+          "answer": "Chaussures",
+          "target_vocab": "chaussures",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Zapatos'",
+          "explanation": "Se escribe 'Chaussures'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Abrigo'",
+          "answer": "Manteau",
+          "distractors": [
+            "Robe",
+            "T-shirt",
+            "Pantalon"
+          ],
+          "target_vocab": "manteau",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Manteau' significa 'Abrigo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este calcetines?'",
+          "answer": "Combien coûte ce chaussettes ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "chaussettes"
+          ],
+          "target_vocab": "chaussettes",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este calcetines?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce chaussettes ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este vestido?'",
+          "answer": "Combien coûte ce robe ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "robe"
+          ],
+          "target_vocab": "robe",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este vestido?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce robe ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me gustan esos sombrero'",
+          "answer": "J'aime ces chapeau",
+          "options": [
+            "J'aime",
+            "ces",
+            "chapeau"
+          ],
+          "target_vocab": "chapeau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos sombrero'",
+          "explanation": "La estructura correcta es: 'J'aime ces chapeau'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Combien coûte ce _____ ?",
+          "answer": "chemise",
+          "options": [
+            "chemise",
+            "pantalon",
+            "chapeau",
+            "chaussettes"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La palabra correcta es 'chemise'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Manteau",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Pantalon",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Chemise",
+              "right": "Camisa"
+            },
+            {
+              "left": "Veste",
+              "right": "Chaqueta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pantalones'",
+          "answer": "Pantalon",
+          "distractors": [
+            "Chaussures",
+            "T-shirt",
+            "Chaussettes"
+          ],
+          "target_vocab": "pantalon",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Pantalon' significa 'Pantalones'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pantalones'",
+          "phrase": "Pantalones",
+          "answer": "Pantalon",
+          "target_vocab": "pantalon",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Pantalones'",
+          "explanation": "Se escribe 'Pantalon'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Combien coûte ce _____ ?",
+          "answer": "chaussettes",
+          "options": [
+            "chaussettes",
+            "veste",
+            "pantalon",
+            "t-shirt"
+          ],
+          "target_vocab": "chaussettes",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este calcetines?'",
+          "explanation": "La palabra correcta es 'chaussettes'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Cuánto cuesta este falda?'",
+          "answer": "Combien coûte ce jupe ?",
+          "options": [
+            "Combien",
+            "coûte",
+            "ce",
+            "jupe"
+          ],
+          "target_vocab": "jupe",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'Combien coûte ce jupe ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Camisa'",
+          "answer": "Chemise",
+          "distractors": [
+            "Chaussettes",
+            "Manteau",
+            "Veste"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camisa'",
+          "explanation": "'Chemise' significa 'Camisa'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me gustan esos camiseta'",
+          "answer": "J'aime ces t-shirt",
+          "options": [
+            "J'aime",
+            "ces",
+            "t-shirt"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos camiseta'",
+          "explanation": "La estructura correcta es: 'J'aime ces t-shirt'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Camisa'",
+          "answer": "Chemise",
+          "distractors": [
+            "Chaussettes",
+            "T-shirt",
+            "Chaussures"
+          ],
+          "target_vocab": "chemise",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camisa'",
+          "explanation": "'Chemise' significa 'Camisa'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Chaussures",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Jupe",
+              "right": "Falda"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Manteau",
+              "right": "Abrigo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me gustan esos calcetines'",
+          "answer": "J'aime ces chaussettes",
+          "options": [
+            "J'aime",
+            "ces",
+            "chaussettes"
+          ],
+          "target_vocab": "chaussettes",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos calcetines'",
+          "explanation": "La estructura correcta es: 'J'aime ces chaussettes'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Camisa'",
+          "phrase": "Camisa",
+          "answer": "Chemise",
+          "target_vocab": "chemise",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en francés: 'Camisa'",
+          "explanation": "Se escribe 'Chemise'."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,778 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 2,
+  "title": "Mi Familia y Yo",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hermana'",
+          "answer": "Sister",
+          "distractors": [
+            "Grandfather",
+            "Aunt",
+            "Brother"
+          ],
+          "target_vocab": "sister",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermana'",
+          "explanation": "'Sister' significa 'Hermana'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "My _____ is tall",
+          "answer": "aunt",
+          "options": [
+            "aunt",
+            "family",
+            "cousin",
+            "mother"
+          ],
+          "target_vocab": "aunt",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi tía es alto'",
+          "explanation": "La palabra correcta es 'aunt'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Grandfather",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Cousin",
+              "right": "Primo/a"
+            },
+            {
+              "left": "Mother",
+              "right": "Madre"
+            },
+            {
+              "left": "Uncle",
+              "right": "Tío"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Primo/a'",
+          "phrase": "Primo/a",
+          "answer": "Cousin",
+          "target_vocab": "cousin",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Primo/a'",
+          "explanation": "Se escribe 'Cousin'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hermano'",
+          "answer": "Brother",
+          "distractors": [
+            "Father",
+            "Sister",
+            "Aunt"
+          ],
+          "target_vocab": "brother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermano'",
+          "explanation": "'Brother' significa 'Hermano'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Madre'",
+          "answer": "Mother",
+          "distractors": [
+            "Cousin",
+            "Uncle",
+            "Brother"
+          ],
+          "target_vocab": "mother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mother' significa 'Madre'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Sister",
+          "target_vocab": "sister",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Hermana'",
+          "explanation": "Se escribe 'Sister'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su hermano es amable'",
+          "answer": "Her brother is nice",
+          "options": [
+            "Her",
+            "brother",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "brother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermano es amable'",
+          "explanation": "La estructura correcta es: 'Her brother is nice'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi abuela es alto'",
+          "answer": "My grandmother is tall",
+          "options": [
+            "My",
+            "grandmother",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "grandmother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi abuela es alto'",
+          "explanation": "La estructura correcta es: 'My grandmother is tall'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su hermana es amable'",
+          "answer": "Her sister is nice",
+          "options": [
+            "Her",
+            "sister",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "sister",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermana es amable'",
+          "explanation": "La estructura correcta es: 'Her sister is nice'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Tío'",
+          "phrase": "Tío",
+          "answer": "Uncle",
+          "target_vocab": "uncle",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Tío'",
+          "explanation": "Se escribe 'Uncle'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi tía es alto'",
+          "answer": "My aunt is tall",
+          "options": [
+            "My",
+            "aunt",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "aunt",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi tía es alto'",
+          "explanation": "La estructura correcta es: 'My aunt is tall'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Madre'",
+          "answer": "Mother",
+          "distractors": [
+            "Family",
+            "Uncle",
+            "Cousin"
+          ],
+          "target_vocab": "mother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mother' significa 'Madre'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Abuelo'",
+          "phrase": "Abuelo",
+          "answer": "Grandfather",
+          "target_vocab": "grandfather",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Abuelo'",
+          "explanation": "Se escribe 'Grandfather'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Abuela'",
+          "answer": "Grandmother",
+          "distractors": [
+            "Cousin",
+            "Grandfather",
+            "Uncle"
+          ],
+          "target_vocab": "grandmother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuela'",
+          "explanation": "'Grandmother' significa 'Abuela'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Her _____ is nice",
+          "answer": "cousin",
+          "options": [
+            "cousin",
+            "grandfather",
+            "father",
+            "family"
+          ],
+          "target_vocab": "cousin",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su primo/a es amable'",
+          "explanation": "La palabra correcta es 'cousin'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su abuelo es amable'",
+          "answer": "Her grandfather is nice",
+          "options": [
+            "Her",
+            "grandfather",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "grandfather",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su abuelo es amable'",
+          "explanation": "La estructura correcta es: 'Her grandfather is nice'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Padre'",
+          "answer": "Father",
+          "distractors": [
+            "Cousin",
+            "Mother",
+            "Uncle"
+          ],
+          "target_vocab": "father",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Father' significa 'Padre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi madre es alto'",
+          "answer": "My mother is tall",
+          "options": [
+            "My",
+            "mother",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "mother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi madre es alto'",
+          "explanation": "La estructura correcta es: 'My mother is tall'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Cousin",
+              "right": "Primo/a"
+            },
+            {
+              "left": "Brother",
+              "right": "Hermano"
+            },
+            {
+              "left": "Uncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Family",
+              "right": "Familia"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Padre'",
+          "answer": "Father",
+          "distractors": [
+            "Grandmother",
+            "Family",
+            "Aunt"
+          ],
+          "target_vocab": "father",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Father' significa 'Padre'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hermano'",
+          "answer": "Brother",
+          "distractors": [
+            "Cousin",
+            "Family",
+            "Father"
+          ],
+          "target_vocab": "brother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermano'",
+          "explanation": "'Brother' significa 'Hermano'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Cousin",
+              "right": "Primo/a"
+            },
+            {
+              "left": "Aunt",
+              "right": "Tía"
+            },
+            {
+              "left": "Brother",
+              "right": "Hermano"
+            },
+            {
+              "left": "Grandmother",
+              "right": "Abuela"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Tía'",
+          "phrase": "Tía",
+          "answer": "Aunt",
+          "target_vocab": "aunt",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Tía'",
+          "explanation": "Se escribe 'Aunt'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "My _____ is tall",
+          "answer": "uncle",
+          "options": [
+            "uncle",
+            "brother",
+            "family",
+            "aunt"
+          ],
+          "target_vocab": "uncle",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi tío es alto'",
+          "explanation": "La palabra correcta es 'uncle'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi abuela es alto'",
+          "answer": "My grandmother is tall",
+          "options": [
+            "My",
+            "grandmother",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "grandmother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi abuela es alto'",
+          "explanation": "La estructura correcta es: 'My grandmother is tall'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su hermano es amable'",
+          "answer": "Her brother is nice",
+          "options": [
+            "Her",
+            "brother",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "brother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermano es amable'",
+          "explanation": "La estructura correcta es: 'Her brother is nice'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Sister",
+          "target_vocab": "sister",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Hermana'",
+          "explanation": "Se escribe 'Sister'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su abuela es amable'",
+          "answer": "Her grandmother is nice",
+          "options": [
+            "Her",
+            "grandmother",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "grandmother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su abuela es amable'",
+          "explanation": "La estructura correcta es: 'Her grandmother is nice'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Padre'",
+          "answer": "Father",
+          "distractors": [
+            "Cousin",
+            "Family",
+            "Grandmother"
+          ],
+          "target_vocab": "father",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Father' significa 'Padre'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi abuela es alto'",
+          "answer": "My grandmother is tall",
+          "options": [
+            "My",
+            "grandmother",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "grandmother",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi abuela es alto'",
+          "explanation": "La estructura correcta es: 'My grandmother is tall'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hermana'",
+          "answer": "Sister",
+          "distractors": [
+            "Grandfather",
+            "Aunt",
+            "Father"
+          ],
+          "target_vocab": "sister",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermana'",
+          "explanation": "'Sister' significa 'Hermana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Abuelo'",
+          "phrase": "Abuelo",
+          "answer": "Grandfather",
+          "target_vocab": "grandfather",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Abuelo'",
+          "explanation": "Se escribe 'Grandfather'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Cousin",
+              "right": "Primo/a"
+            },
+            {
+              "left": "Grandmother",
+              "right": "Abuela"
+            },
+            {
+              "left": "Mother",
+              "right": "Madre"
+            },
+            {
+              "left": "Family",
+              "right": "Familia"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Hermano'",
+          "answer": "Brother",
+          "distractors": [
+            "Family",
+            "Uncle",
+            "Aunt"
+          ],
+          "target_vocab": "brother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermano'",
+          "explanation": "'Brother' significa 'Hermano'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su tía es amable'",
+          "answer": "Her aunt is nice",
+          "options": [
+            "Her",
+            "aunt",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "aunt",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Her aunt is nice'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Familia'",
+          "phrase": "Familia",
+          "answer": "Family",
+          "target_vocab": "family",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Familia'",
+          "explanation": "Se escribe 'Family'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Tía'",
+          "answer": "Aunt",
+          "distractors": [
+            "Sister",
+            "Grandfather",
+            "Cousin"
+          ],
+          "target_vocab": "aunt",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tía'",
+          "explanation": "'Aunt' significa 'Tía'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Her _____ is nice",
+          "answer": "mother",
+          "options": [
+            "mother",
+            "family",
+            "father",
+            "brother"
+          ],
+          "target_vocab": "mother",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su madre es amable'",
+          "explanation": "La palabra correcta es 'mother'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Su familia es amable'",
+          "answer": "Her family is nice",
+          "options": [
+            "Her",
+            "family",
+            "is",
+            "nice"
+          ],
+          "target_vocab": "family",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su familia es amable'",
+          "explanation": "La estructura correcta es: 'Her family is nice'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Primo/a'",
+          "answer": "Cousin",
+          "distractors": [
+            "Mother",
+            "Aunt",
+            "Brother"
+          ],
+          "target_vocab": "cousin",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Primo/a'",
+          "explanation": "'Cousin' significa 'Primo/a'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi hermana es alto'",
+          "answer": "My sister is tall",
+          "options": [
+            "My",
+            "sister",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "sister",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi hermana es alto'",
+          "explanation": "La estructura correcta es: 'My sister is tall'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi tía es alto'",
+          "answer": "My aunt is tall",
+          "options": [
+            "My",
+            "aunt",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "aunt",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi tía es alto'",
+          "explanation": "La estructura correcta es: 'My aunt is tall'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Tío'",
+          "phrase": "Tío",
+          "answer": "Uncle",
+          "target_vocab": "uncle",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Tío'",
+          "explanation": "Se escribe 'Uncle'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Sister",
+          "target_vocab": "sister",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Hermana'",
+          "explanation": "Se escribe 'Sister'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Madre'",
+          "answer": "Mother",
+          "distractors": [
+            "Father",
+            "Family",
+            "Uncle"
+          ],
+          "target_vocab": "mother",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mother' significa 'Madre'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Abuelo'",
+          "answer": "Grandfather",
+          "distractors": [
+            "Family",
+            "Grandmother",
+            "Mother"
+          ],
+          "target_vocab": "grandfather",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuelo'",
+          "explanation": "'Grandfather' significa 'Abuelo'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Family",
+              "right": "Familia"
+            },
+            {
+              "left": "Uncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Cousin",
+              "right": "Primo/a"
+            },
+            {
+              "left": "Grandmother",
+              "right": "Abuela"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Mi familia es alto'",
+          "answer": "My family is tall",
+          "options": [
+            "My",
+            "family",
+            "is",
+            "tall"
+          ],
+          "target_vocab": "family",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi familia es alto'",
+          "explanation": "La estructura correcta es: 'My family is tall'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "My _____ is tall",
+          "answer": "father",
+          "options": [
+            "father",
+            "brother",
+            "cousin",
+            "mother"
+          ],
+          "target_vocab": "father",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi padre es alto'",
+          "explanation": "La palabra correcta es 'father'."
+        }
+      ]
+    }
+  ]
+}

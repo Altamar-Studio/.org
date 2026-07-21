@@ -1,0 +1,788 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 4,
+  "title": "Rotina Diária (Checkpoint 1)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Desayunar'",
+          "phrase": "Desayunar",
+          "answer": "Tomar café da manhã",
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Desayunar'",
+          "explanation": "Se escribe 'Tomar café da manhã'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Cenar'",
+          "answer": "Jantar",
+          "distractors": [
+            "Ir para o trabalho",
+            "Ir para casa",
+            "Ir dormir"
+          ],
+          "target_vocab": "jantar",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Cenar'",
+          "explanation": "'Jantar' significa 'Cenar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Tomar banho",
+              "right": "Bañarse"
+            },
+            {
+              "left": "Tomar café da manhã",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Jantar",
+              "right": "Cenar"
+            },
+            {
+              "left": "Acordar",
+              "right": "Despertar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero leer un libro'",
+          "answer": "Eu quero ler um livro",
+          "options": [
+            "Eu",
+            "quero",
+            "ler",
+            "um",
+            "livro"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero leer un libro'",
+          "explanation": "La estructura correcta es: 'Eu quero ler um livro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta leer un libro'",
+          "answer": "Ela gosta de ler um livro",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "ler",
+            "um",
+            "livro"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta leer un libro'",
+          "explanation": "La estructura correcta es: 'Ela gosta de ler um livro'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a dormir'",
+          "answer": "Ir dormir",
+          "distractors": [
+            "Acordar",
+            "Assistir TV",
+            "Jantar"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Ir dormir' significa 'Ir a dormir'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Ir a dormir'",
+          "phrase": "Ir a dormir",
+          "answer": "Ir dormir",
+          "target_vocab": "ir dormir",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Ir a dormir'",
+          "explanation": "Se escribe 'Ir dormir'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a dormir'",
+          "answer": "Ir dormir",
+          "distractors": [
+            "Ler um livro",
+            "Acordar",
+            "Tomar café da manhã"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Ir dormir' significa 'Ir a dormir'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero desayunar'",
+          "answer": "Eu quero tomar café da manhã",
+          "options": [
+            "Eu",
+            "quero",
+            "tomar",
+            "café",
+            "da",
+            "manhã"
+          ],
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero desayunar'",
+          "explanation": "La estructura correcta es: 'Eu quero tomar café da manhã'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "acordar",
+          "options": [
+            "acordar",
+            "ir para casa",
+            "ir para o trabalho",
+            "tomar café da manhã"
+          ],
+          "target_vocab": "acordar",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero despertar'",
+          "explanation": "La palabra correcta es 'acordar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Desayunar'",
+          "phrase": "Desayunar",
+          "answer": "Tomar café da manhã",
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Desayunar'",
+          "explanation": "Se escribe 'Tomar café da manhã'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta leer un libro'",
+          "answer": "Ela gosta de ler um livro",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "ler",
+            "um",
+            "livro"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta leer un libro'",
+          "explanation": "La estructura correcta es: 'Ela gosta de ler um livro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero bañarse'",
+          "answer": "Eu quero tomar banho",
+          "options": [
+            "Eu",
+            "quero",
+            "tomar",
+            "banho"
+          ],
+          "target_vocab": "tomar banho",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero bañarse'",
+          "explanation": "La estructura correcta es: 'Eu quero tomar banho'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Almorzar'",
+          "answer": "Almoçar",
+          "distractors": [
+            "Acordar",
+            "Tomar banho",
+            "Ler um livro"
+          ],
+          "target_vocab": "almoçar",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Almorzar'",
+          "explanation": "'Almoçar' significa 'Almorzar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Ir para o trabalho",
+              "right": "Ir a trabajar"
+            },
+            {
+              "left": "Tomar café da manhã",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Assistir TV",
+              "right": "Ver la tele"
+            },
+            {
+              "left": "Jantar",
+              "right": "Cenar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero desayunar'",
+          "answer": "Eu quero tomar café da manhã",
+          "options": [
+            "Eu",
+            "quero",
+            "tomar",
+            "café",
+            "da",
+            "manhã"
+          ],
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero desayunar'",
+          "explanation": "La estructura correcta es: 'Eu quero tomar café da manhã'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Desayunar'",
+          "answer": "Tomar café da manhã",
+          "distractors": [
+            "Ir para casa",
+            "Jantar",
+            "Ir dormir"
+          ],
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Desayunar'",
+          "explanation": "'Tomar café da manhã' significa 'Desayunar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Cenar'",
+          "answer": "Jantar",
+          "distractors": [
+            "Ir para o trabalho",
+            "Ir dormir",
+            "Ir para casa"
+          ],
+          "target_vocab": "jantar",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Cenar'",
+          "explanation": "'Jantar' significa 'Cenar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Bañarse'",
+          "phrase": "Bañarse",
+          "answer": "Tomar banho",
+          "target_vocab": "tomar banho",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Bañarse'",
+          "explanation": "Se escribe 'Tomar banho'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "ler um livro",
+          "options": [
+            "ler um livro",
+            "jantar",
+            "tomar banho",
+            "acordar"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero leer un libro'",
+          "explanation": "La palabra correcta es 'ler um livro'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Cenar'",
+          "phrase": "Cenar",
+          "answer": "Jantar",
+          "target_vocab": "jantar",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Cenar'",
+          "explanation": "Se escribe 'Jantar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Despertar'",
+          "answer": "Acordar",
+          "distractors": [
+            "Jantar",
+            "Assistir TV",
+            "Ir para casa"
+          ],
+          "target_vocab": "acordar",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Acordar' significa 'Despertar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Almoçar",
+              "right": "Almorzar"
+            },
+            {
+              "left": "Jantar",
+              "right": "Cenar"
+            },
+            {
+              "left": "Tomar café da manhã",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Tomar banho",
+              "right": "Bañarse"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Leer un libro'",
+          "answer": "Ler um livro",
+          "distractors": [
+            "Almoçar",
+            "Tomar banho",
+            "Acordar"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Leer un libro'",
+          "explanation": "'Ler um livro' significa 'Leer un libro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta almorzar'",
+          "answer": "Ela gosta de almoçar",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "almoçar"
+          ],
+          "target_vocab": "almoçar",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta almorzar'",
+          "explanation": "La estructura correcta es: 'Ela gosta de almoçar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a casa'",
+          "answer": "Ir para casa",
+          "distractors": [
+            "Almoçar",
+            "Tomar café da manhã",
+            "Ir para o trabalho"
+          ],
+          "target_vocab": "ir para casa",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a casa'",
+          "explanation": "'Ir para casa' significa 'Ir a casa'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero despertar'",
+          "answer": "Eu quero acordar",
+          "options": [
+            "Eu",
+            "quero",
+            "acordar"
+          ],
+          "target_vocab": "acordar",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero despertar'",
+          "explanation": "La estructura correcta es: 'Eu quero acordar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Almorzar'",
+          "phrase": "Almorzar",
+          "answer": "Almoçar",
+          "target_vocab": "almoçar",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Almorzar'",
+          "explanation": "Se escribe 'Almoçar'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "tomar café da manhã",
+          "options": [
+            "tomar café da manhã",
+            "tomar banho",
+            "ler um livro",
+            "ir para o trabalho"
+          ],
+          "target_vocab": "tomar café da manhã",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero desayunar'",
+          "explanation": "La palabra correcta es 'tomar café da manhã'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero almorzar'",
+          "answer": "Eu quero almoçar",
+          "options": [
+            "Eu",
+            "quero",
+            "almoçar"
+          ],
+          "target_vocab": "almoçar",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero almorzar'",
+          "explanation": "La estructura correcta es: 'Eu quero almoçar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Almorzar'",
+          "answer": "Almoçar",
+          "distractors": [
+            "Ir para o trabalho",
+            "Ir dormir",
+            "Tomar café da manhã"
+          ],
+          "target_vocab": "almoçar",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Almorzar'",
+          "explanation": "'Almoçar' significa 'Almorzar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Ir a dormir'",
+          "phrase": "Ir a dormir",
+          "answer": "Ir dormir",
+          "target_vocab": "ir dormir",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Ir a dormir'",
+          "explanation": "Se escribe 'Ir dormir'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Ir dormir",
+              "right": "Ir a dormir"
+            },
+            {
+              "left": "Acordar",
+              "right": "Despertar"
+            },
+            {
+              "left": "Tomar café da manhã",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Almoçar",
+              "right": "Almorzar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a casa'",
+          "answer": "Ir para casa",
+          "distractors": [
+            "Tomar banho",
+            "Almoçar",
+            "Ir para o trabalho"
+          ],
+          "target_vocab": "ir para casa",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a casa'",
+          "explanation": "'Ir para casa' significa 'Ir a casa'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Leer un libro'",
+          "phrase": "Leer un libro",
+          "answer": "Ler um livro",
+          "target_vocab": "ler um livro",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Leer un libro'",
+          "explanation": "Se escribe 'Ler um livro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero ir a dormir'",
+          "answer": "Eu quero ir dormir",
+          "options": [
+            "Eu",
+            "quero",
+            "ir",
+            "dormir"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero ir a dormir'",
+          "explanation": "La estructura correcta es: 'Eu quero ir dormir'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero leer un libro'",
+          "answer": "Eu quero ler um livro",
+          "options": [
+            "Eu",
+            "quero",
+            "ler",
+            "um",
+            "livro"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero leer un libro'",
+          "explanation": "La estructura correcta es: 'Eu quero ler um livro'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bañarse'",
+          "answer": "Tomar banho",
+          "distractors": [
+            "Ler um livro",
+            "Ir para casa",
+            "Ir dormir"
+          ],
+          "target_vocab": "tomar banho",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Bañarse'",
+          "explanation": "'Tomar banho' significa 'Bañarse'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta leer un libro'",
+          "answer": "Ela gosta de ler um livro",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "ler",
+            "um",
+            "livro"
+          ],
+          "target_vocab": "ler um livro",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta leer un libro'",
+          "explanation": "La estructura correcta es: 'Ela gosta de ler um livro'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "ir para o trabalho",
+          "options": [
+            "ir para o trabalho",
+            "ir dormir",
+            "tomar café da manhã",
+            "acordar"
+          ],
+          "target_vocab": "ir para o trabalho",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero ir a trabajar'",
+          "explanation": "La palabra correcta es 'ir para o trabalho'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ver la tele'",
+          "answer": "Assistir TV",
+          "distractors": [
+            "Ler um livro",
+            "Ir dormir",
+            "Tomar banho"
+          ],
+          "target_vocab": "assistir tv",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ver la tele'",
+          "explanation": "'Assistir TV' significa 'Ver la tele'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Leer un libro'",
+          "phrase": "Leer un libro",
+          "answer": "Ler um livro",
+          "target_vocab": "ler um livro",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Leer un libro'",
+          "explanation": "Se escribe 'Ler um livro'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ela gosta de _____",
+          "answer": "assistir tv",
+          "options": [
+            "assistir tv",
+            "ir para casa",
+            "ler um livro",
+            "ir dormir"
+          ],
+          "target_vocab": "assistir tv",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'A ella le gusta ver la tele'",
+          "explanation": "La palabra correcta es 'assistir tv'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a dormir'",
+          "answer": "Ir dormir",
+          "distractors": [
+            "Ir para o trabalho",
+            "Jantar",
+            "Acordar"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Ir dormir' significa 'Ir a dormir'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta ir a dormir'",
+          "answer": "Ela gosta de ir dormir",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "ir",
+            "dormir"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta ir a dormir'",
+          "explanation": "La estructura correcta es: 'Ela gosta de ir dormir'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Yo quiero despertar'",
+          "answer": "Eu quero acordar",
+          "options": [
+            "Eu",
+            "quero",
+            "acordar"
+          ],
+          "target_vocab": "acordar",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero despertar'",
+          "explanation": "La estructura correcta es: 'Eu quero acordar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Cenar'",
+          "phrase": "Cenar",
+          "answer": "Jantar",
+          "target_vocab": "jantar",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en portugués: 'Cenar'",
+          "explanation": "Se escribe 'Jantar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'A ella le gusta cenar'",
+          "answer": "Ela gosta de jantar",
+          "options": [
+            "Ela",
+            "gosta",
+            "de",
+            "jantar"
+          ],
+          "target_vocab": "jantar",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta cenar'",
+          "explanation": "La estructura correcta es: 'Ela gosta de jantar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Tomar banho",
+              "right": "Bañarse"
+            },
+            {
+              "left": "Jantar",
+              "right": "Cenar"
+            },
+            {
+              "left": "Tomar café da manhã",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Ir para o trabalho",
+              "right": "Ir a trabajar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir a dormir'",
+          "answer": "Ir dormir",
+          "distractors": [
+            "Almoçar",
+            "Ir para casa",
+            "Tomar banho"
+          ],
+          "target_vocab": "ir dormir",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Ir dormir' significa 'Ir a dormir'."
+        }
+      ]
+    }
+  ]
+}

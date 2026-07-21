@@ -1,0 +1,778 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 2,
+  "title": "Minha Família",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Tía'",
+          "phrase": "Tía",
+          "answer": "Tia",
+          "target_vocab": "tia",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Tía'",
+          "explanation": "Se escribe 'Tia'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su tía es amable'",
+          "answer": "Sua tia é gentil",
+          "options": [
+            "Sua",
+            "tia",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Sua tia é gentil'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Madre'",
+          "answer": "Mãe",
+          "distractors": [
+            "Tio",
+            "Irmão",
+            "Avô"
+          ],
+          "target_vocab": "mãe",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mãe' significa 'Madre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su hermana es amable'",
+          "answer": "Sua irmã é gentil",
+          "options": [
+            "Sua",
+            "irmã",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "irmã",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermana es amable'",
+          "explanation": "La estructura correcta es: 'Sua irmã é gentil'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Abuela'",
+          "answer": "Avó",
+          "distractors": [
+            "Tio",
+            "Primo",
+            "Família"
+          ],
+          "target_vocab": "avó",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuela'",
+          "explanation": "'Avó' significa 'Abuela'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Meu _____ é alto",
+          "answer": "avó",
+          "options": [
+            "avó",
+            "pai",
+            "mãe",
+            "tio"
+          ],
+          "target_vocab": "avó",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi abuela es alto'",
+          "explanation": "La palabra correcta es 'avó'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Primo",
+              "right": "Primo"
+            },
+            {
+              "left": "Irmã",
+              "right": "Hermana"
+            },
+            {
+              "left": "Tia",
+              "right": "Tía"
+            },
+            {
+              "left": "Mãe",
+              "right": "Madre"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi hermano es alto'",
+          "answer": "Meu irmão é alto",
+          "options": [
+            "Meu",
+            "irmão",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "irmão",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi hermano es alto'",
+          "explanation": "La estructura correcta es: 'Meu irmão é alto'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Padre'",
+          "phrase": "Padre",
+          "answer": "Pai",
+          "target_vocab": "pai",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Padre'",
+          "explanation": "Se escribe 'Pai'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Abuela'",
+          "answer": "Avó",
+          "distractors": [
+            "Irmão",
+            "Tio",
+            "Família"
+          ],
+          "target_vocab": "avó",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuela'",
+          "explanation": "'Avó' significa 'Abuela'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Tía'",
+          "answer": "Tia",
+          "distractors": [
+            "Avô",
+            "Irmão",
+            "Irmã"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tía'",
+          "explanation": "'Tia' significa 'Tía'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su tía es amable'",
+          "answer": "Sua tia é gentil",
+          "options": [
+            "Sua",
+            "tia",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Sua tia é gentil'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Tío'",
+          "phrase": "Tío",
+          "answer": "Tio",
+          "target_vocab": "tio",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Tío'",
+          "explanation": "Se escribe 'Tio'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Tia",
+              "right": "Tía"
+            },
+            {
+              "left": "Tio",
+              "right": "Tío"
+            },
+            {
+              "left": "Irmão",
+              "right": "Hermano"
+            },
+            {
+              "left": "Avô",
+              "right": "Abuelo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi hermano es alto'",
+          "answer": "Meu irmão é alto",
+          "options": [
+            "Meu",
+            "irmão",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "irmão",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi hermano es alto'",
+          "explanation": "La estructura correcta es: 'Meu irmão é alto'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Hermana'",
+          "answer": "Irmã",
+          "distractors": [
+            "Avó",
+            "Família",
+            "Mãe"
+          ],
+          "target_vocab": "irmã",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermana'",
+          "explanation": "'Irmã' significa 'Hermana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Abuela'",
+          "answer": "Avó",
+          "distractors": [
+            "Tio",
+            "Pai",
+            "Primo"
+          ],
+          "target_vocab": "avó",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuela'",
+          "explanation": "'Avó' significa 'Abuela'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Sua _____ é gentil",
+          "answer": "família",
+          "options": [
+            "família",
+            "tio",
+            "avô",
+            "primo"
+          ],
+          "target_vocab": "família",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su familia es amable'",
+          "explanation": "La palabra correcta es 'família'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi primo es alto'",
+          "answer": "Meu primo é alto",
+          "options": [
+            "Meu",
+            "primo",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "primo",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi primo es alto'",
+          "explanation": "La estructura correcta es: 'Meu primo é alto'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Padre'",
+          "phrase": "Padre",
+          "answer": "Pai",
+          "target_vocab": "pai",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Padre'",
+          "explanation": "Se escribe 'Pai'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi madre es alto'",
+          "answer": "Meu mãe é alto",
+          "options": [
+            "Meu",
+            "mãe",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "mãe",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi madre es alto'",
+          "explanation": "La estructura correcta es: 'Meu mãe é alto'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Primo'",
+          "answer": "Primo",
+          "distractors": [
+            "Família",
+            "Tio",
+            "Tia"
+          ],
+          "target_vocab": "primo",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Primo'",
+          "explanation": "'Primo' significa 'Primo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi abuelo es alto'",
+          "answer": "Meu avô é alto",
+          "options": [
+            "Meu",
+            "avô",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "avô",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi abuelo es alto'",
+          "explanation": "La estructura correcta es: 'Meu avô é alto'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Tía'",
+          "answer": "Tia",
+          "distractors": [
+            "Pai",
+            "Avô",
+            "Família"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tía'",
+          "explanation": "'Tia' significa 'Tía'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Hermano'",
+          "phrase": "Hermano",
+          "answer": "Irmão",
+          "target_vocab": "irmão",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Hermano'",
+          "explanation": "Se escribe 'Irmão'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Abuelo'",
+          "answer": "Avô",
+          "distractors": [
+            "Irmã",
+            "Pai",
+            "Família"
+          ],
+          "target_vocab": "avô",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuelo'",
+          "explanation": "'Avô' significa 'Abuelo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su tía es amable'",
+          "answer": "Sua tia é gentil",
+          "options": [
+            "Sua",
+            "tia",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Sua tia é gentil'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Irmã",
+          "target_vocab": "irmã",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Hermana'",
+          "explanation": "Se escribe 'Irmã'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Sua _____ é gentil",
+          "answer": "mãe",
+          "options": [
+            "mãe",
+            "família",
+            "irmão",
+            "avô"
+          ],
+          "target_vocab": "mãe",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su madre es amable'",
+          "explanation": "La palabra correcta es 'mãe'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Irmã",
+              "right": "Hermana"
+            },
+            {
+              "left": "Primo",
+              "right": "Primo"
+            },
+            {
+              "left": "Avó",
+              "right": "Abuela"
+            },
+            {
+              "left": "Pai",
+              "right": "Padre"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Padre'",
+          "answer": "Pai",
+          "distractors": [
+            "Tio",
+            "Primo",
+            "Família"
+          ],
+          "target_vocab": "pai",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Pai' significa 'Padre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su tío es amable'",
+          "answer": "Sua tio é gentil",
+          "options": [
+            "Sua",
+            "tio",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "tio",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tío es amable'",
+          "explanation": "La estructura correcta es: 'Sua tio é gentil'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Tío'",
+          "answer": "Tio",
+          "distractors": [
+            "Pai",
+            "Primo",
+            "Família"
+          ],
+          "target_vocab": "tio",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tío'",
+          "explanation": "'Tio' significa 'Tío'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Irmã",
+          "target_vocab": "irmã",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Hermana'",
+          "explanation": "Se escribe 'Irmã'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Tío'",
+          "phrase": "Tío",
+          "answer": "Tio",
+          "target_vocab": "tio",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Tío'",
+          "explanation": "Se escribe 'Tio'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Sua _____ é gentil",
+          "answer": "irmão",
+          "options": [
+            "irmão",
+            "família",
+            "primo",
+            "mãe"
+          ],
+          "target_vocab": "irmão",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su hermano es amable'",
+          "explanation": "La palabra correcta es 'irmão'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su hermano es amable'",
+          "answer": "Sua irmão é gentil",
+          "options": [
+            "Sua",
+            "irmão",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "irmão",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermano es amable'",
+          "explanation": "La estructura correcta es: 'Sua irmão é gentil'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Tío'",
+          "answer": "Tio",
+          "distractors": [
+            "Primo",
+            "Irmã",
+            "Irmão"
+          ],
+          "target_vocab": "tio",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tío'",
+          "explanation": "'Tio' significa 'Tío'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Su padre es amable'",
+          "answer": "Sua pai é gentil",
+          "options": [
+            "Sua",
+            "pai",
+            "é",
+            "gentil"
+          ],
+          "target_vocab": "pai",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su padre es amable'",
+          "explanation": "La estructura correcta es: 'Sua pai é gentil'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Tio",
+              "right": "Tío"
+            },
+            {
+              "left": "Avô",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Irmã",
+              "right": "Hermana"
+            },
+            {
+              "left": "Irmão",
+              "right": "Hermano"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Familia'",
+          "answer": "Família",
+          "distractors": [
+            "Irmã",
+            "Tio",
+            "Tia"
+          ],
+          "target_vocab": "família",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Familia'",
+          "explanation": "'Família' significa 'Familia'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Primo'",
+          "phrase": "Primo",
+          "answer": "Primo",
+          "target_vocab": "primo",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Primo'",
+          "explanation": "Se escribe 'Primo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Sua _____ é gentil",
+          "answer": "mãe",
+          "options": [
+            "mãe",
+            "família",
+            "avô",
+            "tia"
+          ],
+          "target_vocab": "mãe",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su madre es amable'",
+          "explanation": "La palabra correcta es 'mãe'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi tía es alto'",
+          "answer": "Meu tia é alto",
+          "options": [
+            "Meu",
+            "tia",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "tia",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi tía es alto'",
+          "explanation": "La estructura correcta es: 'Meu tia é alto'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi padre es alto'",
+          "answer": "Meu pai é alto",
+          "options": [
+            "Meu",
+            "pai",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "pai",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi padre es alto'",
+          "explanation": "La estructura correcta es: 'Meu pai é alto'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Tia",
+              "right": "Tía"
+            },
+            {
+              "left": "Avô",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Família",
+              "right": "Familia"
+            },
+            {
+              "left": "Mãe",
+              "right": "Madre"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Tío'",
+          "answer": "Tio",
+          "distractors": [
+            "Mãe",
+            "Irmã",
+            "Primo"
+          ],
+          "target_vocab": "tio",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tío'",
+          "explanation": "'Tio' significa 'Tío'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Primo'",
+          "answer": "Primo",
+          "distractors": [
+            "Tia",
+            "Irmã",
+            "Irmão"
+          ],
+          "target_vocab": "primo",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Primo'",
+          "explanation": "'Primo' significa 'Primo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Primo'",
+          "phrase": "Primo",
+          "answer": "Primo",
+          "target_vocab": "primo",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en portugués: 'Primo'",
+          "explanation": "Se escribe 'Primo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Mi hermana es alto'",
+          "answer": "Meu irmã é alto",
+          "options": [
+            "Meu",
+            "irmã",
+            "é",
+            "alto"
+          ],
+          "target_vocab": "irmã",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi hermana es alto'",
+          "explanation": "La estructura correcta es: 'Meu irmã é alto'."
+        }
+      ]
+    }
+  ]
+}

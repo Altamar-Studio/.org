@@ -1,0 +1,152 @@
+/* body background styled with Tailwind classes */
+.text-serif { font-family: 'Cormorant Garamond', serif; }
+.text-handwritten { font-family: 'Homemade Apple', cursive; }
+
+.custom-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+.dark .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); }
+.custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.2); }
+.dark .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.3); }
+
+/* Animaciones para transiciones fluidas */
+.animate-fade-in { animation: fadeIn 0.3s ease-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.option-card {
+    transition: all 0.2s ease;
+}
+.option-card:hover:not(.selected):not(:disabled) {
+    background-color: #F3F4F6;
+    border-color: #D1D5DB;
+}
+.dark .option-card:hover:not(.selected):not(:disabled) {
+    background-color: #262626;
+    border-color: #404040;
+}
+.option-card.selected {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    border-color: #0A0A0A;
+}
+.dark .option-card.selected {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    border-color: #FFFFFF;
+}
+.option-card.selected .option-letter {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+}
+.dark .option-card.selected .option-letter {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+}
+.option-card.correct {
+    background-color: #10B981 !important; /* bg-emerald-500 */
+    color: #FFFFFF !important;
+    border-color: #10B981 !important;
+}
+.option-card.correct .option-letter {
+    background-color: #FFFFFF;
+    color: #10B981;
+}
+.option-card.incorrect {
+    background-color: #EF4444 !important; /* bg-red-500 */
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+}
+.option-card.incorrect .option-letter {
+    background-color: #FFFFFF;
+    color: #EF4444;
+}
+
+/* Lightbox Modal from old CSS updated */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal-overlay.hidden { display: none !important; }
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: transparent;
+}
+.lightbox-content img {
+  display: block;
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.lightbox-close:hover { background: black; }
+
+/* General utility states */
+.app-screen { display: none; }
+.app-screen.active { display: block; }
+
+/* Navegador de Reactivos */
+.grid-btn.answered {
+    background-color: #0A0A0A !important;
+    color: #FFFFFF !important;
+    border-color: #0A0A0A !important;
+}
+.dark .grid-btn.answered {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border-color: #FFFFFF !important;
+}
+
+.grid-btn.flagged {
+    background-color: #FBBF24 !important; /* amber-400 */
+    color: #000000 !important;
+    border-color: #FBBF24 !important;
+}
+
+.grid-btn.current {
+    background-color: #2563EB !important; /* blue-600 */
+    color: #FFFFFF !important;
+    border-color: #2563EB !important;
+    transform: scale(1.05);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+/* Mobile Drawer state */
+#nav-drawer.open {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 100%;
+    border-radius: 0;
+    margin: 0;
+}

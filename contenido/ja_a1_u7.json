@@ -1,0 +1,786 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 7,
+  "title": "Hobbies (Shumi)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Tenisu (テニス)",
+              "right": "Tenis"
+            },
+            {
+              "left": "Ongaku (音楽)",
+              "right": "Música"
+            },
+            {
+              "left": "Dansu (ダンス)",
+              "right": "Bailar"
+            },
+            {
+              "left": "E wo kaku (絵を描く)",
+              "right": "Pintar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes videojuegos?'",
+          "answer": "Geemu dekimasu ka",
+          "options": [
+            "Geemu",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "geemu",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes videojuegos?'",
+          "explanation": "La estructura correcta es: 'Geemu dekimasu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tenis'",
+          "answer": "Tenisu (テニス)",
+          "distractors": [
+            "Ryokou (旅行)",
+            "Oyogu (泳ぐ)",
+            "E wo kaku (絵を描く)"
+          ],
+          "target_vocab": "tenisu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Tenis'",
+          "explanation": "'Tenisu (テニス)' significa 'Tenis'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga daisuki desu",
+          "answer": "E wo kaku",
+          "options": [
+            "E wo kaku",
+            "Tenisu",
+            "Utau",
+            "Ongaku"
+          ],
+          "target_vocab": "e wo kaku",
+          "difficulty": 8,
+          "spanish_translation": "Completa: 'Me encanta pintar'",
+          "explanation": "Falta 'E wo kaku'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes cantar?'",
+          "answer": "Utau dekimasu ka",
+          "options": [
+            "Utau",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Utau dekimasu ka'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Correr'",
+          "phrase": "Correr",
+          "answer": "Hashiru (走る)",
+          "target_vocab": "hashiru",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Correr'",
+          "explanation": "Se dice 'Hashiru (走る)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta correr'",
+          "answer": "Watashi wa Hashiru ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hashiru",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "hashiru",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta correr'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hashiru ga daisuki desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tenis'",
+          "answer": "Tenisu (テニス)",
+          "distractors": [
+            "Oyogu (泳ぐ)",
+            "E wo kaku (絵を描く)",
+            "Hashiru (走る)"
+          ],
+          "target_vocab": "tenisu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Tenis'",
+          "explanation": "'Tenisu (テニス)' significa 'Tenis'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Ryokou (旅行)",
+          "target_vocab": "ryokou",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Viajar'",
+          "explanation": "Se dice 'Ryokou (旅行)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Cantar'",
+          "answer": "Utau (歌う)",
+          "distractors": [
+            "Ryouri (料理)",
+            "Ongaku (音楽)",
+            "Tenisu (テニス)"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Cantar'",
+          "explanation": "'Utau (歌う)' significa 'Cantar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes cantar?'",
+          "answer": "Utau dekimasu ka",
+          "options": [
+            "Utau",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Utau dekimasu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Geemu (ゲーム)",
+              "right": "Videojuegos"
+            },
+            {
+              "left": "Ryokou (旅行)",
+              "right": "Viajar"
+            },
+            {
+              "left": "Tenisu (テニス)",
+              "right": "Tenis"
+            },
+            {
+              "left": "Ryouri (料理)",
+              "right": "Cocinar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Música'",
+          "answer": "Ongaku (音楽)",
+          "distractors": [
+            "Oyogu (泳ぐ)",
+            "Dansu (ダンス)",
+            "Geemu (ゲーム)"
+          ],
+          "target_vocab": "ongaku",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Música'",
+          "explanation": "'Ongaku (音楽)' significa 'Música'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Bailar'",
+          "answer": "Dansu (ダンス)",
+          "distractors": [
+            "Hashiru (走る)",
+            "Ryokou (旅行)",
+            "Geemu (ゲーム)"
+          ],
+          "target_vocab": "dansu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Bailar'",
+          "explanation": "'Dansu (ダンス)' significa 'Bailar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Tenis'",
+          "phrase": "Tenis",
+          "answer": "Tenisu (テニス)",
+          "target_vocab": "tenisu",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Tenis'",
+          "explanation": "Se dice 'Tenisu (テニス)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes cantar?'",
+          "answer": "Utau dekimasu ka",
+          "options": [
+            "Utau",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Utau dekimasu ka'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga daisuki desu",
+          "answer": "Ryokou",
+          "options": [
+            "Ryokou",
+            "Ongaku",
+            "Hashiru",
+            "E wo kaku"
+          ],
+          "target_vocab": "ryokou",
+          "difficulty": 8,
+          "spanish_translation": "Completa: 'Me encanta viajar'",
+          "explanation": "Falta 'Ryokou'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta tenis'",
+          "answer": "Watashi wa Tenisu ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Tenisu",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "tenisu",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta tenis'",
+          "explanation": "La estructura correcta es: 'Watashi wa Tenisu ga daisuki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Correr'",
+          "phrase": "Correr",
+          "answer": "Hashiru (走る)",
+          "target_vocab": "hashiru",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Correr'",
+          "explanation": "Se dice 'Hashiru (走る)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Cantar'",
+          "answer": "Utau (歌う)",
+          "distractors": [
+            "Hashiru (走る)",
+            "Tenisu (テニス)",
+            "Dansu (ダンス)"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Cantar'",
+          "explanation": "'Utau (歌う)' significa 'Cantar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Bailar'",
+          "phrase": "Bailar",
+          "answer": "Dansu (ダンス)",
+          "target_vocab": "dansu",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Bailar'",
+          "explanation": "Se dice 'Dansu (ダンス)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tenis'",
+          "answer": "Tenisu (テニス)",
+          "distractors": [
+            "Utau (歌う)",
+            "Ryokou (旅行)",
+            "Ryouri (料理)"
+          ],
+          "target_vocab": "tenisu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Tenis'",
+          "explanation": "'Tenisu (テニス)' significa 'Tenis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta bailar'",
+          "answer": "Watashi wa Dansu ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Dansu",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "dansu",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta bailar'",
+          "explanation": "La estructura correcta es: 'Watashi wa Dansu ga daisuki desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes videojuegos?'",
+          "answer": "Geemu dekimasu ka",
+          "options": [
+            "Geemu",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "geemu",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes videojuegos?'",
+          "explanation": "La estructura correcta es: 'Geemu dekimasu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta música'",
+          "answer": "Watashi wa Ongaku ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Ongaku",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "ongaku",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta música'",
+          "explanation": "La estructura correcta es: 'Watashi wa Ongaku ga daisuki desu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga daisuki desu",
+          "answer": "Ongaku",
+          "options": [
+            "Ongaku",
+            "Tenisu",
+            "Utau",
+            "Hashiru"
+          ],
+          "target_vocab": "ongaku",
+          "difficulty": 8,
+          "spanish_translation": "Completa: 'Me encanta música'",
+          "explanation": "Falta 'Ongaku'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Dansu (ダンス)",
+              "right": "Bailar"
+            },
+            {
+              "left": "Ryokou (旅行)",
+              "right": "Viajar"
+            },
+            {
+              "left": "Ongaku (音楽)",
+              "right": "Música"
+            },
+            {
+              "left": "Oyogu (泳ぐ)",
+              "right": "Nadar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Cocinar'",
+          "answer": "Ryouri (料理)",
+          "distractors": [
+            "Hashiru (走る)",
+            "Tenisu (テニス)",
+            "Ongaku (音楽)"
+          ],
+          "target_vocab": "ryouri",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Cocinar'",
+          "explanation": "'Ryouri (料理)' significa 'Cocinar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Correr'",
+          "phrase": "Correr",
+          "answer": "Hashiru (走る)",
+          "target_vocab": "hashiru",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Correr'",
+          "explanation": "Se dice 'Hashiru (走る)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Bailar'",
+          "answer": "Dansu (ダンス)",
+          "distractors": [
+            "Ongaku (音楽)",
+            "Hashiru (走る)",
+            "Ryouri (料理)"
+          ],
+          "target_vocab": "dansu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Bailar'",
+          "explanation": "'Dansu (ダンス)' significa 'Bailar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "E wo kaku (絵を描く)",
+              "right": "Pintar"
+            },
+            {
+              "left": "Ryouri (料理)",
+              "right": "Cocinar"
+            },
+            {
+              "left": "Oyogu (泳ぐ)",
+              "right": "Nadar"
+            },
+            {
+              "left": "Ryokou (旅行)",
+              "right": "Viajar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Cocinar'",
+          "answer": "Ryouri (料理)",
+          "distractors": [
+            "Dansu (ダンス)",
+            "Ryokou (旅行)",
+            "Hashiru (走る)"
+          ],
+          "target_vocab": "ryouri",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Cocinar'",
+          "explanation": "'Ryouri (料理)' significa 'Cocinar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes correr?'",
+          "answer": "Hashiru dekimasu ka",
+          "options": [
+            "Hashiru",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "hashiru",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes correr?'",
+          "explanation": "La estructura correcta es: 'Hashiru dekimasu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pintar'",
+          "answer": "E wo kaku (絵を描く)",
+          "distractors": [
+            "Ryouri (料理)",
+            "Tenisu (テニス)",
+            "Dansu (ダンス)"
+          ],
+          "target_vocab": "e wo kaku",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Pintar'",
+          "explanation": "'E wo kaku (絵を描く)' significa 'Pintar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta videojuegos'",
+          "answer": "Watashi wa Geemu ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Geemu",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "geemu",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta videojuegos'",
+          "explanation": "La estructura correcta es: 'Watashi wa Geemu ga daisuki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Cantar'",
+          "phrase": "Cantar",
+          "answer": "Utau (歌う)",
+          "target_vocab": "utau",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Cantar'",
+          "explanation": "Se dice 'Utau (歌う)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta cantar'",
+          "answer": "Watashi wa Utau ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Utau",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "utau",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta cantar'",
+          "explanation": "La estructura correcta es: 'Watashi wa Utau ga daisuki desu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga daisuki desu",
+          "answer": "Ryouri",
+          "options": [
+            "Ryouri",
+            "Geemu",
+            "Dansu",
+            "Hashiru"
+          ],
+          "target_vocab": "ryouri",
+          "difficulty": 8,
+          "spanish_translation": "Completa: 'Me encanta cocinar'",
+          "explanation": "Falta 'Ryouri'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Bailar'",
+          "answer": "Dansu (ダンス)",
+          "distractors": [
+            "E wo kaku (絵を描く)",
+            "Ryouri (料理)",
+            "Oyogu (泳ぐ)"
+          ],
+          "target_vocab": "dansu",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Bailar'",
+          "explanation": "'Dansu (ダンス)' significa 'Bailar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Ryokou (旅行)",
+          "target_vocab": "ryokou",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Viajar'",
+          "explanation": "Se dice 'Ryokou (旅行)'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Bailar'",
+          "phrase": "Bailar",
+          "answer": "Dansu (ダンス)",
+          "target_vocab": "dansu",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Bailar'",
+          "explanation": "Se dice 'Dansu (ダンス)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Viajar'",
+          "answer": "Ryokou (旅行)",
+          "distractors": [
+            "Ongaku (音楽)",
+            "Tenisu (テニス)",
+            "Utau (歌う)"
+          ],
+          "target_vocab": "ryokou",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Viajar'",
+          "explanation": "'Ryokou (旅行)' significa 'Viajar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes pintar?'",
+          "answer": "E wo kaku dekimasu ka",
+          "options": [
+            "E",
+            "wo",
+            "kaku",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "e wo kaku",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes pintar?'",
+          "explanation": "La estructura correcta es: 'E wo kaku dekimasu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me encanta viajar'",
+          "answer": "Watashi wa Ryokou ga daisuki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Ryokou",
+            "ga",
+            "daisuki",
+            "desu"
+          ],
+          "target_vocab": "ryokou",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: 'Me encanta viajar'",
+          "explanation": "La estructura correcta es: 'Watashi wa Ryokou ga daisuki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Música'",
+          "phrase": "Música",
+          "answer": "Ongaku (音楽)",
+          "target_vocab": "ongaku",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Música'",
+          "explanation": "Se dice 'Ongaku (音楽)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Viajar'",
+          "answer": "Ryokou (旅行)",
+          "distractors": [
+            "Oyogu (泳ぐ)",
+            "Geemu (ゲーム)",
+            "Dansu (ダンス)"
+          ],
+          "target_vocab": "ryokou",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Viajar'",
+          "explanation": "'Ryokou (旅行)' significa 'Viajar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Correr'",
+          "answer": "Hashiru (走る)",
+          "distractors": [
+            "E wo kaku (絵を描く)",
+            "Dansu (ダンス)",
+            "Tenisu (テニス)"
+          ],
+          "target_vocab": "hashiru",
+          "difficulty": 7,
+          "spanish_translation": "Traducción de: 'Correr'",
+          "explanation": "'Hashiru (走る)' significa 'Correr'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Puedes cocinar?'",
+          "answer": "Ryouri dekimasu ka",
+          "options": [
+            "Ryouri",
+            "dekimasu",
+            "ka"
+          ],
+          "target_vocab": "ryouri",
+          "difficulty": 9,
+          "spanish_translation": "Ordena la frase: '¿Puedes cocinar?'",
+          "explanation": "La estructura correcta es: 'Ryouri dekimasu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ryouri (料理)",
+              "right": "Cocinar"
+            },
+            {
+              "left": "Oyogu (泳ぐ)",
+              "right": "Nadar"
+            },
+            {
+              "left": "Hashiru (走る)",
+              "right": "Correr"
+            },
+            {
+              "left": "Geemu (ゲーム)",
+              "right": "Videojuegos"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga daisuki desu",
+          "answer": "Tenisu",
+          "options": [
+            "Tenisu",
+            "Ryokou",
+            "Oyogu",
+            "Utau"
+          ],
+          "target_vocab": "tenisu",
+          "difficulty": 8,
+          "spanish_translation": "Completa: 'Me encanta tenis'",
+          "explanation": "Falta 'Tenisu'."
+        }
+      ]
+    }
+  ]
+}

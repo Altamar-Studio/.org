@@ -1,0 +1,765 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 7,
+  "title": "Hobbies e Tempo Livre",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Cantar",
+              "right": "Cantar"
+            },
+            {
+              "left": "Dançar",
+              "right": "Bailar"
+            },
+            {
+              "left": "Nadar",
+              "right": "Nadar"
+            },
+            {
+              "left": "Cozinhar",
+              "right": "Cocinar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Você pode _____?",
+          "answer": "viajar",
+          "options": [
+            "viajar",
+            "cozinhar",
+            "correr",
+            "jogar tênis"
+          ],
+          "target_vocab": "viajar",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes viajar?'",
+          "explanation": "La palabra correcta es 'viajar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bailar'",
+          "answer": "Dançar",
+          "distractors": [
+            "Viajar",
+            "Ouvir música",
+            "Correr"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dançar' significa 'Bailar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta escuchar música'",
+          "answer": "Eu adoro ouvir música",
+          "options": [
+            "Eu",
+            "adoro",
+            "ouvir",
+            "música"
+          ],
+          "target_vocab": "ouvir música",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta escuchar música'",
+          "explanation": "La estructura correcta es: 'Eu adoro ouvir música'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta correr'",
+          "answer": "Eu adoro correr",
+          "options": [
+            "Eu",
+            "adoro",
+            "correr"
+          ],
+          "target_vocab": "correr",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta correr'",
+          "explanation": "La estructura correcta es: 'Eu adoro correr'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Jugar videojuegos'",
+          "phrase": "Jugar videojuegos",
+          "answer": "Jogar videogame",
+          "target_vocab": "jogar videogame",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Jugar videojuegos'",
+          "explanation": "Se escribe 'Jogar videogame'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bailar'",
+          "answer": "Dançar",
+          "distractors": [
+            "Viajar",
+            "Cantar",
+            "Jogar tênis"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dançar' significa 'Bailar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Puedes cantar?'",
+          "answer": "Você pode cantar?",
+          "options": [
+            "Você",
+            "pode",
+            "cantar"
+          ],
+          "target_vocab": "cantar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Você pode cantar?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Viajar",
+          "target_vocab": "viajar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Viajar'",
+          "explanation": "Se escribe 'Viajar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Cantar'",
+          "answer": "Cantar",
+          "distractors": [
+            "Cozinhar",
+            "Pintar",
+            "Ouvir música"
+          ],
+          "target_vocab": "cantar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cantar'",
+          "explanation": "'Cantar' significa 'Cantar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Cantar'",
+          "answer": "Cantar",
+          "distractors": [
+            "Viajar",
+            "Jogar tênis",
+            "Jogar videogame"
+          ],
+          "target_vocab": "cantar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cantar'",
+          "explanation": "'Cantar' significa 'Cantar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Bailar'",
+          "phrase": "Bailar",
+          "answer": "Dançar",
+          "target_vocab": "dançar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Bailar'",
+          "explanation": "Se escribe 'Dançar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Nadar'",
+          "answer": "Nadar",
+          "distractors": [
+            "Correr",
+            "Jogar tênis",
+            "Cantar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Nadar'",
+          "explanation": "'Nadar' significa 'Nadar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Pintar",
+          "target_vocab": "pintar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Pintar'",
+          "explanation": "Se escribe 'Pintar'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu adoro _____",
+          "answer": "jogar tênis",
+          "options": [
+            "jogar tênis",
+            "cantar",
+            "jogar videogame",
+            "dançar"
+          ],
+          "target_vocab": "jogar tênis",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta jugar tenis'",
+          "explanation": "La palabra correcta es 'jogar tênis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Puedes viajar?'",
+          "answer": "Você pode viajar?",
+          "options": [
+            "Você",
+            "pode",
+            "viajar"
+          ],
+          "target_vocab": "viajar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes viajar?'",
+          "explanation": "La estructura correcta es: 'Você pode viajar?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta escuchar música'",
+          "answer": "Eu adoro ouvir música",
+          "options": [
+            "Eu",
+            "adoro",
+            "ouvir",
+            "música"
+          ],
+          "target_vocab": "ouvir música",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta escuchar música'",
+          "explanation": "La estructura correcta es: 'Eu adoro ouvir música'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta cocinar'",
+          "answer": "Eu adoro cozinhar",
+          "options": [
+            "Eu",
+            "adoro",
+            "cozinhar"
+          ],
+          "target_vocab": "cozinhar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cocinar'",
+          "explanation": "La estructura correcta es: 'Eu adoro cozinhar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Nadar",
+              "right": "Nadar"
+            },
+            {
+              "left": "Correr",
+              "right": "Correr"
+            },
+            {
+              "left": "Cantar",
+              "right": "Cantar"
+            },
+            {
+              "left": "Cozinhar",
+              "right": "Cocinar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bailar'",
+          "answer": "Dançar",
+          "distractors": [
+            "Ouvir música",
+            "Cozinhar",
+            "Correr"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dançar' significa 'Bailar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Nadar'",
+          "answer": "Nadar",
+          "distractors": [
+            "Pintar",
+            "Correr",
+            "Dançar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Nadar'",
+          "explanation": "'Nadar' significa 'Nadar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Jogar videogame",
+              "right": "Jugar videojuegos"
+            },
+            {
+              "left": "Correr",
+              "right": "Correr"
+            },
+            {
+              "left": "Cantar",
+              "right": "Cantar"
+            },
+            {
+              "left": "Cozinhar",
+              "right": "Cocinar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta cantar'",
+          "answer": "Eu adoro cantar",
+          "options": [
+            "Eu",
+            "adoro",
+            "cantar"
+          ],
+          "target_vocab": "cantar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cantar'",
+          "explanation": "La estructura correcta es: 'Eu adoro cantar'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu adoro _____",
+          "answer": "dançar",
+          "options": [
+            "dançar",
+            "cozinhar",
+            "cantar",
+            "correr"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta bailar'",
+          "explanation": "La palabra correcta es 'dançar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta bailar'",
+          "answer": "Eu adoro dançar",
+          "options": [
+            "Eu",
+            "adoro",
+            "dançar"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta bailar'",
+          "explanation": "La estructura correcta es: 'Eu adoro dançar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Nadar'",
+          "answer": "Nadar",
+          "distractors": [
+            "Pintar",
+            "Jogar tênis",
+            "Cantar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Nadar'",
+          "explanation": "'Nadar' significa 'Nadar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Cantar'",
+          "phrase": "Cantar",
+          "answer": "Cantar",
+          "target_vocab": "cantar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Cantar'",
+          "explanation": "Se escribe 'Cantar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bailar'",
+          "answer": "Dançar",
+          "distractors": [
+            "Jogar tênis",
+            "Nadar",
+            "Jogar videogame"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dançar' significa 'Bailar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta bailar'",
+          "answer": "Eu adoro dançar",
+          "options": [
+            "Eu",
+            "adoro",
+            "dançar"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta bailar'",
+          "explanation": "La estructura correcta es: 'Eu adoro dançar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Jugar videojuegos'",
+          "phrase": "Jugar videojuegos",
+          "answer": "Jogar videogame",
+          "target_vocab": "jogar videogame",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Jugar videojuegos'",
+          "explanation": "Se escribe 'Jogar videogame'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Escuchar música'",
+          "answer": "Ouvir música",
+          "distractors": [
+            "Dançar",
+            "Cozinhar",
+            "Jogar videogame"
+          ],
+          "target_vocab": "ouvir música",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Escuchar música'",
+          "explanation": "'Ouvir música' significa 'Escuchar música'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Nadar'",
+          "answer": "Nadar",
+          "distractors": [
+            "Pintar",
+            "Jogar tênis",
+            "Viajar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Nadar'",
+          "explanation": "'Nadar' significa 'Nadar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Escuchar música'",
+          "answer": "Ouvir música",
+          "distractors": [
+            "Cantar",
+            "Cozinhar",
+            "Pintar"
+          ],
+          "target_vocab": "ouvir música",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Escuchar música'",
+          "explanation": "'Ouvir música' significa 'Escuchar música'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Puedes pintar?'",
+          "answer": "Você pode pintar?",
+          "options": [
+            "Você",
+            "pode",
+            "pintar"
+          ],
+          "target_vocab": "pintar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes pintar?'",
+          "explanation": "La estructura correcta es: 'Você pode pintar?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta nadar'",
+          "answer": "Eu adoro nadar",
+          "options": [
+            "Eu",
+            "adoro",
+            "nadar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta nadar'",
+          "explanation": "La estructura correcta es: 'Eu adoro nadar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Nadar",
+              "right": "Nadar"
+            },
+            {
+              "left": "Viajar",
+              "right": "Viajar"
+            },
+            {
+              "left": "Cantar",
+              "right": "Cantar"
+            },
+            {
+              "left": "Dançar",
+              "right": "Bailar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu adoro _____",
+          "answer": "cozinhar",
+          "options": [
+            "cozinhar",
+            "dançar",
+            "jogar tênis",
+            "nadar"
+          ],
+          "target_vocab": "cozinhar",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta cocinar'",
+          "explanation": "La palabra correcta es 'cozinhar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Viajar",
+          "target_vocab": "viajar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Viajar'",
+          "explanation": "Se escribe 'Viajar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta nadar'",
+          "answer": "Eu adoro nadar",
+          "options": [
+            "Eu",
+            "adoro",
+            "nadar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta nadar'",
+          "explanation": "La estructura correcta es: 'Eu adoro nadar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Bailar'",
+          "phrase": "Bailar",
+          "answer": "Dançar",
+          "target_vocab": "dançar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Bailar'",
+          "explanation": "Se escribe 'Dançar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pintar'",
+          "answer": "Pintar",
+          "distractors": [
+            "Viajar",
+            "Dançar",
+            "Jogar tênis"
+          ],
+          "target_vocab": "pintar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Pintar'",
+          "explanation": "'Pintar' significa 'Pintar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Cantar",
+              "right": "Cantar"
+            },
+            {
+              "left": "Nadar",
+              "right": "Nadar"
+            },
+            {
+              "left": "Ouvir música",
+              "right": "Escuchar música"
+            },
+            {
+              "left": "Pintar",
+              "right": "Pintar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me encanta cocinar'",
+          "answer": "Eu adoro cozinhar",
+          "options": [
+            "Eu",
+            "adoro",
+            "cozinhar"
+          ],
+          "target_vocab": "cozinhar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cocinar'",
+          "explanation": "La estructura correcta es: 'Eu adoro cozinhar'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu adoro _____",
+          "answer": "viajar",
+          "options": [
+            "viajar",
+            "jogar tênis",
+            "correr",
+            "ouvir música"
+          ],
+          "target_vocab": "viajar",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta viajar'",
+          "explanation": "La palabra correcta es 'viajar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Puedes viajar?'",
+          "answer": "Você pode viajar?",
+          "options": [
+            "Você",
+            "pode",
+            "viajar"
+          ],
+          "target_vocab": "viajar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes viajar?'",
+          "explanation": "La estructura correcta es: 'Você pode viajar?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Bailar'",
+          "answer": "Dançar",
+          "distractors": [
+            "Jogar tênis",
+            "Pintar",
+            "Nadar"
+          ],
+          "target_vocab": "dançar",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dançar' significa 'Bailar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Puedes nadar?'",
+          "answer": "Você pode nadar?",
+          "options": [
+            "Você",
+            "pode",
+            "nadar"
+          ],
+          "target_vocab": "nadar",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes nadar?'",
+          "explanation": "La estructura correcta es: 'Você pode nadar?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Cocinar'",
+          "phrase": "Cocinar",
+          "answer": "Cozinhar",
+          "target_vocab": "cozinhar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Cocinar'",
+          "explanation": "Se escribe 'Cozinhar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Bailar'",
+          "phrase": "Bailar",
+          "answer": "Dançar",
+          "target_vocab": "dançar",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en portugués: 'Bailar'",
+          "explanation": "Se escribe 'Dançar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Escuchar música'",
+          "answer": "Ouvir música",
+          "distractors": [
+            "Correr",
+            "Cozinhar",
+            "Viajar"
+          ],
+          "target_vocab": "ouvir música",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Escuchar música'",
+          "explanation": "'Ouvir música' significa 'Escuchar música'."
+        }
+      ]
+    }
+  ]
+}

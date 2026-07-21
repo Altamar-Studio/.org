@@ -1,0 +1,794 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 1,
+  "title": "Les Salutations",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Au revoir",
+              "right": "Adiós"
+            },
+            {
+              "left": "Oui",
+              "right": "Sí"
+            },
+            {
+              "left": "Enchanté",
+              "right": "Encantado"
+            },
+            {
+              "left": "Je m'appelle",
+              "right": "Me llamo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je dis _____",
+          "answer": "enchanté",
+          "options": [
+            "enchanté",
+            "merci",
+            "comment ça va ?",
+            "oui"
+          ],
+          "target_vocab": "enchanté",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Yo digo encantado'",
+          "explanation": "La palabra correcta es 'enchanté'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Adiós'",
+          "answer": "Au revoir",
+          "distractors": [
+            "S'il vous plaît",
+            "Bonjour",
+            "Oui"
+          ],
+          "target_vocab": "au revoir",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Adiós'",
+          "explanation": "'Au revoir' significa 'Adiós'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo hola (informal)'",
+          "answer": "Je dis salut",
+          "options": [
+            "Je",
+            "dis",
+            "salut"
+          ],
+          "target_vocab": "salut",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo hola (informal)'",
+          "explanation": "La estructura correcta es: 'Je dis salut'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hola / Buenos días'",
+          "phrase": "Hola / Buenos días",
+          "answer": "Bonjour",
+          "target_vocab": "bonjour",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Hola / Buenos días'",
+          "explanation": "Se escribe 'Bonjour'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hola / Buenos días'",
+          "answer": "Bonjour",
+          "distractors": [
+            "Enchanté",
+            "Comment ça va ?",
+            "S'il vous plaît"
+          ],
+          "target_vocab": "bonjour",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Hola / Buenos días'",
+          "explanation": "'Bonjour' significa 'Hola / Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo gracias'",
+          "answer": "Je dis merci",
+          "options": [
+            "Je",
+            "dis",
+            "merci"
+          ],
+          "target_vocab": "merci",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Je dis merci'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hola / Buenos días'",
+          "phrase": "Hola / Buenos días",
+          "answer": "Bonjour",
+          "target_vocab": "bonjour",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Hola / Buenos días'",
+          "explanation": "Se escribe 'Bonjour'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'No'",
+          "answer": "Non",
+          "distractors": [
+            "S'il vous plaît",
+            "Au revoir",
+            "Bonjour"
+          ],
+          "target_vocab": "non",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'No'",
+          "explanation": "'Non' significa 'No'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde hola / buenos días'",
+          "answer": "Il répond bonjour",
+          "options": [
+            "Il",
+            "répond",
+            "bonjour"
+          ],
+          "target_vocab": "bonjour",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde hola / buenos días'",
+          "explanation": "La estructura correcta es: 'Il répond bonjour'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo me llamo'",
+          "answer": "Je dis je m'appelle",
+          "options": [
+            "Je",
+            "dis",
+            "je",
+            "m'appelle"
+          ],
+          "target_vocab": "je m'appelle",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo me llamo'",
+          "explanation": "La estructura correcta es: 'Je dis je m'appelle'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Salut",
+              "right": "Hola (informal)"
+            },
+            {
+              "left": "Merci",
+              "right": "Gracias"
+            },
+            {
+              "left": "Enchanté",
+              "right": "Encantado"
+            },
+            {
+              "left": "Non",
+              "right": "No"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde sí'",
+          "answer": "Il répond oui",
+          "options": [
+            "Il",
+            "répond",
+            "oui"
+          ],
+          "target_vocab": "oui",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde sí'",
+          "explanation": "La estructura correcta es: 'Il répond oui'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Gracias'",
+          "phrase": "Gracias",
+          "answer": "Merci",
+          "target_vocab": "merci",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Gracias'",
+          "explanation": "Se escribe 'Merci'.",
+          "image": "contenido/img/vocab_happy.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hola / Buenos días'",
+          "phrase": "Hola / Buenos días",
+          "answer": "Bonjour",
+          "target_vocab": "bonjour",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Hola / Buenos días'",
+          "explanation": "Se escribe 'Bonjour'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Gracias'",
+          "answer": "Merci",
+          "distractors": [
+            "S'il vous plaît",
+            "Bonjour",
+            "Au revoir"
+          ],
+          "target_vocab": "merci",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Gracias'",
+          "explanation": "'Merci' significa 'Gracias'.",
+          "image": "contenido/img/vocab_happy.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde adiós'",
+          "answer": "Il répond au revoir",
+          "options": [
+            "Il",
+            "répond",
+            "au",
+            "revoir"
+          ],
+          "target_vocab": "au revoir",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde adiós'",
+          "explanation": "La estructura correcta es: 'Il répond au revoir'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Por favor'",
+          "answer": "S'il vous plaît",
+          "distractors": [
+            "Merci",
+            "Salut",
+            "Bonjour"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'S'il vous plaît' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je dis _____",
+          "answer": "oui",
+          "options": [
+            "oui",
+            "non",
+            "comment ça va ?",
+            "salut"
+          ],
+          "target_vocab": "oui",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Yo digo sí'",
+          "explanation": "La palabra correcta es 'oui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Encantado'",
+          "answer": "Enchanté",
+          "distractors": [
+            "Non",
+            "Je m'appelle",
+            "Bonjour"
+          ],
+          "target_vocab": "enchanté",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Encantado'",
+          "explanation": "'Enchanté' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Por favor'",
+          "phrase": "Por favor",
+          "answer": "S'il vous plaît",
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Por favor'",
+          "explanation": "Se escribe 'S'il vous plaît'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Por favor'",
+          "answer": "S'il vous plaît",
+          "distractors": [
+            "Merci",
+            "Salut",
+            "Non"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'S'il vous plaît' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo por favor'",
+          "answer": "Je dis s'il vous plaît",
+          "options": [
+            "Je",
+            "dis",
+            "s'il",
+            "vous",
+            "plaît"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Je dis s'il vous plaît'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde no'",
+          "answer": "Il répond non",
+          "options": [
+            "Il",
+            "répond",
+            "non"
+          ],
+          "target_vocab": "non",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde no'",
+          "explanation": "La estructura correcta es: 'Il répond non'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo hola / buenos días'",
+          "answer": "Je dis bonjour",
+          "options": [
+            "Je",
+            "dis",
+            "bonjour"
+          ],
+          "target_vocab": "bonjour",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo hola / buenos días'",
+          "explanation": "La estructura correcta es: 'Je dis bonjour'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Encantado'",
+          "answer": "Enchanté",
+          "distractors": [
+            "Je m'appelle",
+            "S'il vous plaît",
+            "Oui"
+          ],
+          "target_vocab": "enchanté",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Encantado'",
+          "explanation": "'Enchanté' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je dis _____",
+          "answer": "oui",
+          "options": [
+            "oui",
+            "au revoir",
+            "enchanté",
+            "je m'appelle"
+          ],
+          "target_vocab": "oui",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Yo digo sí'",
+          "explanation": "La palabra correcta es 'oui'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Enchanté",
+              "right": "Encantado"
+            },
+            {
+              "left": "Au revoir",
+              "right": "Adiós"
+            },
+            {
+              "left": "Comment ça va ?",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "Salut",
+              "right": "Hola (informal)"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Adiós'",
+          "answer": "Au revoir",
+          "distractors": [
+            "Non",
+            "Bonjour",
+            "Merci"
+          ],
+          "target_vocab": "au revoir",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Adiós'",
+          "explanation": "'Au revoir' significa 'Adiós'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Encantado'",
+          "phrase": "Encantado",
+          "answer": "Enchanté",
+          "target_vocab": "enchanté",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Encantado'",
+          "explanation": "Se escribe 'Enchanté'.",
+          "image": "contenido/img/vocab_friends.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Por favor'",
+          "phrase": "Por favor",
+          "answer": "S'il vous plaît",
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Por favor'",
+          "explanation": "Se escribe 'S'il vous plaît'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Me llamo'",
+          "answer": "Je m'appelle",
+          "distractors": [
+            "Non",
+            "Oui",
+            "Salut"
+          ],
+          "target_vocab": "je m'appelle",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Me llamo'",
+          "explanation": "'Je m'appelle' significa 'Me llamo'.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Encantado'",
+          "answer": "Enchanté",
+          "distractors": [
+            "Merci",
+            "Je m'appelle",
+            "S'il vous plaît"
+          ],
+          "target_vocab": "enchanté",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Encantado'",
+          "explanation": "'Enchanté' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde adiós'",
+          "answer": "Il répond au revoir",
+          "options": [
+            "Il",
+            "répond",
+            "au",
+            "revoir"
+          ],
+          "target_vocab": "au revoir",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde adiós'",
+          "explanation": "La estructura correcta es: 'Il répond au revoir'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : '¿Cómo estás?'",
+          "phrase": "¿Cómo estás?",
+          "answer": "Comment ça va ?",
+          "target_vocab": "comment ça va ?",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: '¿Cómo estás?'",
+          "explanation": "Se escribe 'Comment ça va ?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo encantado'",
+          "answer": "Je dis enchanté",
+          "options": [
+            "Je",
+            "dis",
+            "enchanté"
+          ],
+          "target_vocab": "enchanté",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo encantado'",
+          "explanation": "La estructura correcta es: 'Je dis enchanté'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo gracias'",
+          "answer": "Je dis merci",
+          "options": [
+            "Je",
+            "dis",
+            "merci"
+          ],
+          "target_vocab": "merci",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Je dis merci'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Me llamo'",
+          "answer": "Je m'appelle",
+          "distractors": [
+            "Enchanté",
+            "Comment ça va ?",
+            "Non"
+          ],
+          "target_vocab": "je m'appelle",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Me llamo'",
+          "explanation": "'Je m'appelle' significa 'Me llamo'.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Comment ça va ?",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "Je m'appelle",
+              "right": "Me llamo"
+            },
+            {
+              "left": "Au revoir",
+              "right": "Adiós"
+            },
+            {
+              "left": "Salut",
+              "right": "Hola (informal)"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Il répond _____",
+          "answer": "non",
+          "options": [
+            "non",
+            "comment ça va ?",
+            "salut",
+            "je m'appelle"
+          ],
+          "target_vocab": "non",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde no'",
+          "explanation": "La palabra correcta es 'non'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Sí'",
+          "phrase": "Sí",
+          "answer": "Oui",
+          "target_vocab": "oui",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Sí'",
+          "explanation": "Se escribe 'Oui'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Il répond _____",
+          "answer": "s'il vous plaît",
+          "options": [
+            "s'il vous plaît",
+            "bonjour",
+            "salut",
+            "enchanté"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 2,
+          "spanish_translation": "Completa la oración: 'Él responde por favor'",
+          "explanation": "La palabra correcta es 's'il vous plaît'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo por favor'",
+          "answer": "Je dis s'il vous plaît",
+          "options": [
+            "Je",
+            "dis",
+            "s'il",
+            "vous",
+            "plaît"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Je dis s'il vous plaît'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hola / Buenos días'",
+          "phrase": "Hola / Buenos días",
+          "answer": "Bonjour",
+          "target_vocab": "bonjour",
+          "difficulty": 2,
+          "spanish_translation": "Escribe en francés: 'Hola / Buenos días'",
+          "explanation": "Se escribe 'Bonjour'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hola / Buenos días'",
+          "answer": "Bonjour",
+          "distractors": [
+            "Oui",
+            "Au revoir",
+            "Comment ça va ?"
+          ],
+          "target_vocab": "bonjour",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Hola / Buenos días'",
+          "explanation": "'Bonjour' significa 'Hola / Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hola (informal)'",
+          "answer": "Salut",
+          "distractors": [
+            "Enchanté",
+            "Bonjour",
+            "S'il vous plaît"
+          ],
+          "target_vocab": "salut",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Hola (informal)'",
+          "explanation": "'Salut' significa 'Hola (informal)'.",
+          "image": "contenido/img/vocab_hello.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Él responde por favor'",
+          "answer": "Il répond s'il vous plaît",
+          "options": [
+            "Il",
+            "répond",
+            "s'il",
+            "vous",
+            "plaît"
+          ],
+          "target_vocab": "s'il vous plaît",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Él responde por favor'",
+          "explanation": "La estructura correcta es: 'Il répond s'il vous plaît'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo digo me llamo'",
+          "answer": "Je dis je m'appelle",
+          "options": [
+            "Je",
+            "dis",
+            "je",
+            "m'appelle"
+          ],
+          "target_vocab": "je m'appelle",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Yo digo me llamo'",
+          "explanation": "La estructura correcta es: 'Je dis je m'appelle'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Non",
+              "right": "No"
+            },
+            {
+              "left": "Je m'appelle",
+              "right": "Me llamo"
+            },
+            {
+              "left": "Merci",
+              "right": "Gracias"
+            },
+            {
+              "left": "Bonjour",
+              "right": "Hola / Buenos días"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : '¿Cómo estás?'",
+          "answer": "Comment ça va ?",
+          "distractors": [
+            "Je m'appelle",
+            "Salut",
+            "Enchanté"
+          ],
+          "target_vocab": "comment ça va ?",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: '¿Cómo estás?'",
+          "explanation": "'Comment ça va ?' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 1,
+  "title": "Saludos (Aisatsu)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Me llamo'",
+          "phrase": "Me llamo",
+          "answer": "Watashi no namae wa (私の名前は)",
+          "target_vocab": "watashi no namae wa",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Me llamo'",
+          "explanation": "Se dice 'Watashi no namae wa (私の名前は)'.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo por favor'",
+          "answer": "Watashi wa Onegaishimasu to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Onegaishimasu",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "onegaishimasu",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Watashi wa Onegaishimasu to iimasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo hola / buenas tardes'",
+          "answer": "Watashi wa Konnichiwa to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Konnichiwa",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "konnichiwa",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo hola / buenas tardes'",
+          "explanation": "La estructura correcta es: 'Watashi wa Konnichiwa to iimasu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Genki desu ka (元気ですか)",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "Konnichiwa (こんにちは)",
+              "right": "Hola / Buenas tardes"
+            },
+            {
+              "left": "Watashi no namae wa (私の名前は)",
+              "right": "Me llamo"
+            },
+            {
+              "left": "Arigatou (ありがとう)",
+              "right": "Gracias"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : '¿Cómo estás?'",
+          "answer": "Genki desu ka (元気ですか)",
+          "distractors": [
+            "Hajimemashite (はじめまして)",
+            "Arigatou (ありがとう)",
+            "Hai (はい)"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: '¿Cómo estás?'",
+          "explanation": "'Genki desu ka (元気ですか)' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ to iimasu",
+          "answer": "Ohayou",
+          "options": [
+            "Ohayou",
+            "Sayounara",
+            "Hai",
+            "Watashi no namae wa"
+          ],
+          "target_vocab": "ohayou",
+          "difficulty": 2,
+          "spanish_translation": "Completa: 'Yo digo buenos días'",
+          "explanation": "Falta 'Ohayou'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Buenos días'",
+          "answer": "Ohayou (おはよう)",
+          "distractors": [
+            "Genki desu ka (元気ですか)",
+            "Hai (はい)",
+            "Iie (いいえ)"
+          ],
+          "target_vocab": "ohayou",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Buenos días'",
+          "explanation": "'Ohayou (おはよう)' significa 'Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo por favor'",
+          "answer": "Watashi wa Onegaishimasu to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Onegaishimasu",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "onegaishimasu",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Watashi wa Onegaishimasu to iimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Adiós'",
+          "answer": "Sayounara (さようなら)",
+          "distractors": [
+            "Hajimemashite (はじめまして)",
+            "Arigatou (ありがとう)",
+            "Konnichiwa (こんにちは)"
+          ],
+          "target_vocab": "sayounara",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Adiós'",
+          "explanation": "'Sayounara (さようなら)' significa 'Adiós'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hola / Buenas tardes'",
+          "phrase": "Hola / Buenas tardes",
+          "answer": "Konnichiwa (こんにちは)",
+          "target_vocab": "konnichiwa",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Hola / Buenas tardes'",
+          "explanation": "Se dice 'Konnichiwa (こんにちは)'.",
+          "image": "contenido/img/vocab_hello.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hola / Buenas tardes'",
+          "phrase": "Hola / Buenas tardes",
+          "answer": "Konnichiwa (こんにちは)",
+          "target_vocab": "konnichiwa",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Hola / Buenas tardes'",
+          "explanation": "Se dice 'Konnichiwa (こんにちは)'.",
+          "image": "contenido/img/vocab_hello.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo gracias'",
+          "answer": "Watashi wa Arigatou to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Arigatou",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "arigatou",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Watashi wa Arigatou to iimasu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Gracias'",
+          "phrase": "Gracias",
+          "answer": "Arigatou (ありがとう)",
+          "target_vocab": "arigatou",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Gracias'",
+          "explanation": "Se dice 'Arigatou (ありがとう)'.",
+          "image": "contenido/img/vocab_happy.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : '¿Cómo estás?'",
+          "answer": "Genki desu ka (元気ですか)",
+          "distractors": [
+            "Hai (はい)",
+            "Konnichiwa (こんにちは)",
+            "Watashi no namae wa (私の名前は)"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: '¿Cómo estás?'",
+          "explanation": "'Genki desu ka (元気ですか)' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Él responde hola / buenas tardes'",
+          "answer": "Kare wa Konnichiwa to kotaemasu",
+          "options": [
+            "Kare",
+            "wa",
+            "Konnichiwa",
+            "to",
+            "kotaemasu"
+          ],
+          "target_vocab": "konnichiwa",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Él responde hola / buenas tardes'",
+          "explanation": "La estructura correcta es: 'Kare wa Konnichiwa to kotaemasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Él responde sí'",
+          "answer": "Kare wa Hai to kotaemasu",
+          "options": [
+            "Kare",
+            "wa",
+            "Hai",
+            "to",
+            "kotaemasu"
+          ],
+          "target_vocab": "hai",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Él responde sí'",
+          "explanation": "La estructura correcta es: 'Kare wa Hai to kotaemasu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ohayou (おはよう)",
+              "right": "Buenos días"
+            },
+            {
+              "left": "Iie (いいえ)",
+              "right": "No"
+            },
+            {
+              "left": "Onegaishimasu (お願いします)",
+              "right": "Por favor"
+            },
+            {
+              "left": "Genki desu ka (元気ですか)",
+              "right": "¿Cómo estás?"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Por favor'",
+          "answer": "Onegaishimasu (お願いします)",
+          "distractors": [
+            "Watashi no namae wa (私の名前は)",
+            "Ohayou (おはよう)",
+            "Arigatou (ありがとう)"
+          ],
+          "target_vocab": "onegaishimasu",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Por favor'",
+          "explanation": "'Onegaishimasu (お願いします)' significa 'Por favor'.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : '¿Cómo estás?'",
+          "answer": "Genki desu ka (元気ですか)",
+          "distractors": [
+            "Onegaishimasu (お願いします)",
+            "Sayounara (さようなら)",
+            "Hajimemashite (はじめまして)"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: '¿Cómo estás?'",
+          "explanation": "'Genki desu ka (元気ですか)' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ to iimasu",
+          "answer": "Hai",
+          "options": [
+            "Hai",
+            "Arigatou",
+            "Iie",
+            "Konnichiwa"
+          ],
+          "target_vocab": "hai",
+          "difficulty": 2,
+          "spanish_translation": "Completa: 'Yo digo sí'",
+          "explanation": "Falta 'Hai'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo sí'",
+          "answer": "Watashi wa Hai to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hai",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "hai",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo sí'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hai to iimasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo por favor'",
+          "answer": "Watashi wa Onegaishimasu to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Onegaishimasu",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "onegaishimasu",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Watashi wa Onegaishimasu to iimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'No'",
+          "answer": "Iie (いいえ)",
+          "distractors": [
+            "Onegaishimasu (お願いします)",
+            "Hajimemashite (はじめまして)",
+            "Ohayou (おはよう)"
+          ],
+          "target_vocab": "iie",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'No'",
+          "explanation": "'Iie (いいえ)' significa 'No'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'No'",
+          "answer": "Iie (いいえ)",
+          "distractors": [
+            "Konnichiwa (こんにちは)",
+            "Onegaishimasu (お願いします)",
+            "Hajimemashite (はじめまして)"
+          ],
+          "target_vocab": "iie",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'No'",
+          "explanation": "'Iie (いいえ)' significa 'No'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Adiós'",
+          "answer": "Sayounara (さようなら)",
+          "distractors": [
+            "Ohayou (おはよう)",
+            "Watashi no namae wa (私の名前は)",
+            "Hai (はい)"
+          ],
+          "target_vocab": "sayounara",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Adiós'",
+          "explanation": "'Sayounara (さようなら)' significa 'Adiós'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ohayou (おはよう)",
+              "right": "Buenos días"
+            },
+            {
+              "left": "Iie (いいえ)",
+              "right": "No"
+            },
+            {
+              "left": "Konnichiwa (こんにちは)",
+              "right": "Hola / Buenas tardes"
+            },
+            {
+              "left": "Onegaishimasu (お願いします)",
+              "right": "Por favor"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo encantado'",
+          "answer": "Watashi wa Hajimemashite to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hajimemashite",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "hajimemashite",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo encantado'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hajimemashite to iimasu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ to iimasu",
+          "answer": "Watashi no namae wa",
+          "options": [
+            "Watashi no namae wa",
+            "Onegaishimasu",
+            "Genki desu ka",
+            "Ohayou"
+          ],
+          "target_vocab": "watashi no namae wa",
+          "difficulty": 2,
+          "spanish_translation": "Completa: 'Yo digo me llamo'",
+          "explanation": "Falta 'Watashi no namae wa'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Sí'",
+          "phrase": "Sí",
+          "answer": "Hai (はい)",
+          "target_vocab": "hai",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Sí'",
+          "explanation": "Se dice 'Hai (はい)'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Gracias'",
+          "phrase": "Gracias",
+          "answer": "Arigatou (ありがとう)",
+          "target_vocab": "arigatou",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Gracias'",
+          "explanation": "Se dice 'Arigatou (ありがとう)'.",
+          "image": "contenido/img/vocab_happy.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Encantado'",
+          "answer": "Hajimemashite (はじめまして)",
+          "distractors": [
+            "Genki desu ka (元気ですか)",
+            "Arigatou (ありがとう)",
+            "Onegaishimasu (お願いします)"
+          ],
+          "target_vocab": "hajimemashite",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Encantado'",
+          "explanation": "'Hajimemashite (はじめまして)' significa 'Encantado'.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Arigatou (ありがとう)",
+              "right": "Gracias"
+            },
+            {
+              "left": "Iie (いいえ)",
+              "right": "No"
+            },
+            {
+              "left": "Genki desu ka (元気ですか)",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "Ohayou (おはよう)",
+              "right": "Buenos días"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Él responde ¿cómo estás?'",
+          "answer": "Kare wa Genki desu ka to kotaemasu",
+          "options": [
+            "Kare",
+            "wa",
+            "Genki",
+            "desu",
+            "ka",
+            "to",
+            "kotaemasu"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Él responde ¿cómo estás?'",
+          "explanation": "La estructura correcta es: 'Kare wa Genki desu ka to kotaemasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : '¿Cómo estás?'",
+          "answer": "Genki desu ka (元気ですか)",
+          "distractors": [
+            "Hajimemashite (はじめまして)",
+            "Hai (はい)",
+            "Arigatou (ありがとう)"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: '¿Cómo estás?'",
+          "explanation": "'Genki desu ka (元気ですか)' significa '¿Cómo estás?'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Él responde ¿cómo estás?'",
+          "answer": "Kare wa Genki desu ka to kotaemasu",
+          "options": [
+            "Kare",
+            "wa",
+            "Genki",
+            "desu",
+            "ka",
+            "to",
+            "kotaemasu"
+          ],
+          "target_vocab": "genki desu ka",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Él responde ¿cómo estás?'",
+          "explanation": "La estructura correcta es: 'Kare wa Genki desu ka to kotaemasu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kare wa _____ to kotaemasu",
+          "answer": "Hai",
+          "options": [
+            "Hai",
+            "Konnichiwa",
+            "Sayounara",
+            "Watashi no namae wa"
+          ],
+          "target_vocab": "hai",
+          "difficulty": 2,
+          "spanish_translation": "Completa: 'Él responde sí'",
+          "explanation": "Falta 'Hai'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo por favor'",
+          "answer": "Watashi wa Onegaishimasu to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Onegaishimasu",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "onegaishimasu",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo por favor'",
+          "explanation": "La estructura correcta es: 'Watashi wa Onegaishimasu to iimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Buenos días'",
+          "answer": "Ohayou (おはよう)",
+          "distractors": [
+            "Arigatou (ありがとう)",
+            "Hajimemashite (はじめまして)",
+            "Konnichiwa (こんにちは)"
+          ],
+          "target_vocab": "ohayou",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Buenos días'",
+          "explanation": "'Ohayou (おはよう)' significa 'Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Me llamo'",
+          "phrase": "Me llamo",
+          "answer": "Watashi no namae wa (私の名前は)",
+          "target_vocab": "watashi no namae wa",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Me llamo'",
+          "explanation": "Se dice 'Watashi no namae wa (私の名前は)'.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Sí'",
+          "phrase": "Sí",
+          "answer": "Hai (はい)",
+          "target_vocab": "hai",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Sí'",
+          "explanation": "Se dice 'Hai (はい)'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Sayounara (さようなら)",
+              "right": "Adiós"
+            },
+            {
+              "left": "Arigatou (ありがとう)",
+              "right": "Gracias"
+            },
+            {
+              "left": "Hajimemashite (はじめまして)",
+              "right": "Encantado"
+            },
+            {
+              "left": "Genki desu ka (元気ですか)",
+              "right": "¿Cómo estás?"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 4,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Buenos días'",
+          "answer": "Ohayou (おはよう)",
+          "distractors": [
+            "Onegaishimasu (お願いします)",
+            "Konnichiwa (こんにちは)",
+            "Hajimemashite (はじめまして)"
+          ],
+          "target_vocab": "ohayou",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Buenos días'",
+          "explanation": "'Ohayou (おはよう)' significa 'Buenos días'.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kare wa _____ to kotaemasu",
+          "answer": "Sayounara",
+          "options": [
+            "Sayounara",
+            "Hajimemashite",
+            "Hai",
+            "Konnichiwa"
+          ],
+          "target_vocab": "sayounara",
+          "difficulty": 2,
+          "spanish_translation": "Completa: 'Él responde adiós'",
+          "explanation": "Falta 'Sayounara'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Gracias'",
+          "answer": "Arigatou (ありがとう)",
+          "distractors": [
+            "Konnichiwa (こんにちは)",
+            "Hai (はい)",
+            "Watashi no namae wa (私の名前は)"
+          ],
+          "target_vocab": "arigatou",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Gracias'",
+          "explanation": "'Arigatou (ありがとう)' significa 'Gracias'.",
+          "image": "contenido/img/vocab_happy.png"
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : '¿Cómo estás?'",
+          "phrase": "¿Cómo estás?",
+          "answer": "Genki desu ka (元気ですか)",
+          "target_vocab": "genki desu ka",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: '¿Cómo estás?'",
+          "explanation": "Se dice 'Genki desu ka (元気ですか)'.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Él responde me llamo'",
+          "answer": "Kare wa Watashi no namae wa to kotaemasu",
+          "options": [
+            "Kare",
+            "wa",
+            "Watashi",
+            "no",
+            "namae",
+            "wa",
+            "to",
+            "kotaemasu"
+          ],
+          "target_vocab": "watashi no namae wa",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Él responde me llamo'",
+          "explanation": "La estructura correcta es: 'Kare wa Watashi no namae wa to kotaemasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo gracias'",
+          "answer": "Watashi wa Arigatou to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Arigatou",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "arigatou",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo gracias'",
+          "explanation": "La estructura correcta es: 'Watashi wa Arigatou to iimasu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Adiós'",
+          "phrase": "Adiós",
+          "answer": "Sayounara (さようなら)",
+          "target_vocab": "sayounara",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Adiós'",
+          "explanation": "Se dice 'Sayounara (さようなら)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo digo me llamo'",
+          "answer": "Watashi wa Watashi no namae wa to iimasu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Watashi",
+            "no",
+            "namae",
+            "wa",
+            "to",
+            "iimasu"
+          ],
+          "target_vocab": "watashi no namae wa",
+          "difficulty": 3,
+          "spanish_translation": "Ordena la frase: 'Yo digo me llamo'",
+          "explanation": "La estructura correcta es: 'Watashi wa Watashi no namae wa to iimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Adiós'",
+          "answer": "Sayounara (さようなら)",
+          "distractors": [
+            "Konnichiwa (こんにちは)",
+            "Watashi no namae wa (私の名前は)",
+            "Genki desu ka (元気ですか)"
+          ],
+          "target_vocab": "sayounara",
+          "difficulty": 1,
+          "spanish_translation": "Traducción de: 'Adiós'",
+          "explanation": "'Sayounara (さようなら)' significa 'Adiós'."
+        }
+      ]
+    }
+  ]
+}

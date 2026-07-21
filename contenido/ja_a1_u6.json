@@ -1,0 +1,814 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 6,
+  "title": "Compras (Kaimono)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este falda?'",
+          "answer": "Kono Sukaato wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Sukaato",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "sukaato",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'Kono Sukaato wa ikura desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abrigo'",
+          "answer": "Kooto (コート)",
+          "distractors": [
+            "Doresu (ドレス)",
+            "Shatsu (シャツ)",
+            "Boushi (帽子)"
+          ],
+          "target_vocab": "kooto",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Abrigo'",
+          "explanation": "'Kooto (コート)' significa 'Abrigo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este chaqueta?'",
+          "answer": "Kono Jaketto wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Jaketto",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "jaketto",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este chaqueta?'",
+          "explanation": "La estructura correcta es: 'Kono Jaketto wa ikura desu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos chaqueta'",
+          "answer": "Watashi wa kono Jaketto ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Jaketto",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "jaketto",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos chaqueta'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Jaketto ga suki desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Sombrero'",
+          "answer": "Boushi (帽子)",
+          "distractors": [
+            "Shatsu (シャツ)",
+            "Tii-shatsu (Tシャツ)",
+            "Sukaato (スカート)"
+          ],
+          "target_vocab": "boushi",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Sombrero'",
+          "explanation": "'Boushi (帽子)' significa 'Sombrero'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Chaqueta'",
+          "phrase": "Chaqueta",
+          "answer": "Jaketto (ジャケット)",
+          "target_vocab": "jaketto",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Chaqueta'",
+          "explanation": "Se dice 'Jaketto (ジャケット)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Zubon (ズボン)",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Kutsushita (靴下)",
+              "right": "Calcetines"
+            },
+            {
+              "left": "Kutsu (靴)",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Tii-shatsu (Tシャツ)",
+              "right": "Camiseta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vestido'",
+          "answer": "Doresu (ドレス)",
+          "distractors": [
+            "Kooto (コート)",
+            "Sukaato (スカート)",
+            "Tii-shatsu (Tシャツ)"
+          ],
+          "target_vocab": "doresu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Vestido'",
+          "explanation": "'Doresu (ドレス)' significa 'Vestido'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Chaqueta'",
+          "phrase": "Chaqueta",
+          "answer": "Jaketto (ジャケット)",
+          "target_vocab": "jaketto",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Chaqueta'",
+          "explanation": "Se dice 'Jaketto (ジャケット)'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kono _____ wa ikura desu ka",
+          "answer": "Tii-shatsu",
+          "options": [
+            "Tii-shatsu",
+            "Jaketto",
+            "Kutsu",
+            "Doresu"
+          ],
+          "target_vocab": "tii-shatsu",
+          "difficulty": 7,
+          "spanish_translation": "Completa: '¿Cuánto cuesta este camiseta?'",
+          "explanation": "Falta 'Tii-shatsu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos pantalones'",
+          "answer": "Watashi wa kono Zubon ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Zubon",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "zubon",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos pantalones'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Zubon ga suki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Camiseta'",
+          "phrase": "Camiseta",
+          "answer": "Tii-shatsu (Tシャツ)",
+          "target_vocab": "tii-shatsu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Camiseta'",
+          "explanation": "Se dice 'Tii-shatsu (Tシャツ)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este chaqueta?'",
+          "answer": "Kono Jaketto wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Jaketto",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "jaketto",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este chaqueta?'",
+          "explanation": "La estructura correcta es: 'Kono Jaketto wa ikura desu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este abrigo?'",
+          "answer": "Kono Kooto wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Kooto",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "kooto",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este abrigo?'",
+          "explanation": "La estructura correcta es: 'Kono Kooto wa ikura desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vestido'",
+          "answer": "Doresu (ドレス)",
+          "distractors": [
+            "Kutsu (靴)",
+            "Kooto (コート)",
+            "Kutsushita (靴下)"
+          ],
+          "target_vocab": "doresu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Vestido'",
+          "explanation": "'Doresu (ドレス)' significa 'Vestido'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kono _____ wa ikura desu ka",
+          "answer": "Boushi",
+          "options": [
+            "Boushi",
+            "Doresu",
+            "Zubon",
+            "Kutsushita"
+          ],
+          "target_vocab": "boushi",
+          "difficulty": 7,
+          "spanish_translation": "Completa: '¿Cuánto cuesta este sombrero?'",
+          "explanation": "Falta 'Boushi'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Abrigo'",
+          "phrase": "Abrigo",
+          "answer": "Kooto (コート)",
+          "target_vocab": "kooto",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Abrigo'",
+          "explanation": "Se dice 'Kooto (コート)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Falda'",
+          "answer": "Sukaato (スカート)",
+          "distractors": [
+            "Boushi (帽子)",
+            "Doresu (ドレス)",
+            "Kutsu (靴)"
+          ],
+          "target_vocab": "sukaato",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Falda'",
+          "explanation": "'Sukaato (スカート)' significa 'Falda'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Shatsu (シャツ)",
+              "right": "Camisa"
+            },
+            {
+              "left": "Kutsushita (靴下)",
+              "right": "Calcetines"
+            },
+            {
+              "left": "Tii-shatsu (Tシャツ)",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Jaketto (ジャケット)",
+              "right": "Chaqueta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Camisa'",
+          "answer": "Shatsu (シャツ)",
+          "distractors": [
+            "Kutsu (靴)",
+            "Jaketto (ジャケット)",
+            "Zubon (ズボン)"
+          ],
+          "target_vocab": "shatsu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Camisa'",
+          "explanation": "'Shatsu (シャツ)' significa 'Camisa'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Zapatos'",
+          "phrase": "Zapatos",
+          "answer": "Kutsu (靴)",
+          "target_vocab": "kutsu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Zapatos'",
+          "explanation": "Se dice 'Kutsu (靴)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos sombrero'",
+          "answer": "Watashi wa kono Boushi ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Boushi",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "boushi",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos sombrero'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Boushi ga suki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Doresu (ドレス)",
+          "target_vocab": "doresu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Vestido'",
+          "explanation": "Se dice 'Doresu (ドレス)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Zapatos'",
+          "answer": "Kutsu (靴)",
+          "distractors": [
+            "Kooto (コート)",
+            "Sukaato (スカート)",
+            "Tii-shatsu (Tシャツ)"
+          ],
+          "target_vocab": "kutsu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Zapatos'",
+          "explanation": "'Kutsu (靴)' significa 'Zapatos'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa kono _____ ga suki desu",
+          "answer": "Zubon",
+          "options": [
+            "Zubon",
+            "Sukaato",
+            "Kooto",
+            "Tii-shatsu"
+          ],
+          "target_vocab": "zubon",
+          "difficulty": 7,
+          "spanish_translation": "Completa: 'Me gustan estos pantalones'",
+          "explanation": "Falta 'Zubon'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Calcetines'",
+          "answer": "Kutsushita (靴下)",
+          "distractors": [
+            "Kutsu (靴)",
+            "Sukaato (スカート)",
+            "Jaketto (ジャケット)"
+          ],
+          "target_vocab": "kutsushita",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Calcetines'",
+          "explanation": "'Kutsushita (靴下)' significa 'Calcetines'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pantalones'",
+          "answer": "Zubon (ズボン)",
+          "distractors": [
+            "Kutsushita (靴下)",
+            "Doresu (ドレス)",
+            "Kooto (コート)"
+          ],
+          "target_vocab": "zubon",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Pantalones'",
+          "explanation": "'Zubon (ズボン)' significa 'Pantalones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este falda?'",
+          "answer": "Kono Sukaato wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Sukaato",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "sukaato",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'Kono Sukaato wa ikura desu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este camisa?'",
+          "answer": "Kono Shatsu wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Shatsu",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "shatsu",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'Kono Shatsu wa ikura desu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Zubon (ズボン)",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Kutsu (靴)",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Boushi (帽子)",
+              "right": "Sombrero"
+            },
+            {
+              "left": "Tii-shatsu (Tシャツ)",
+              "right": "Camiseta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este pantalones?'",
+          "answer": "Kono Zubon wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Zubon",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "zubon",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este pantalones?'",
+          "explanation": "La estructura correcta es: 'Kono Zubon wa ikura desu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos falda'",
+          "answer": "Watashi wa kono Sukaato ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Sukaato",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "sukaato",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos falda'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Sukaato ga suki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Sombrero'",
+          "phrase": "Sombrero",
+          "answer": "Boushi (帽子)",
+          "target_vocab": "boushi",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Sombrero'",
+          "explanation": "Se dice 'Boushi (帽子)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Calcetines'",
+          "answer": "Kutsushita (靴下)",
+          "distractors": [
+            "Kooto (コート)",
+            "Tii-shatsu (Tシャツ)",
+            "Jaketto (ジャケット)"
+          ],
+          "target_vocab": "kutsushita",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Calcetines'",
+          "explanation": "'Kutsushita (靴下)' significa 'Calcetines'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Sukaato (スカート)",
+              "right": "Falda"
+            },
+            {
+              "left": "Zubon (ズボン)",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Kooto (コート)",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Doresu (ドレス)",
+              "right": "Vestido"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa kono _____ ga suki desu",
+          "answer": "Jaketto",
+          "options": [
+            "Jaketto",
+            "Tii-shatsu",
+            "Kooto",
+            "Kutsu"
+          ],
+          "target_vocab": "jaketto",
+          "difficulty": 7,
+          "spanish_translation": "Completa: 'Me gustan estos chaqueta'",
+          "explanation": "Falta 'Jaketto'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vestido'",
+          "answer": "Doresu (ドレス)",
+          "distractors": [
+            "Zubon (ズボン)",
+            "Kooto (コート)",
+            "Kutsu (靴)"
+          ],
+          "target_vocab": "doresu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Vestido'",
+          "explanation": "'Doresu (ドレス)' significa 'Vestido'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vestido'",
+          "answer": "Doresu (ドレス)",
+          "distractors": [
+            "Boushi (帽子)",
+            "Tii-shatsu (Tシャツ)",
+            "Shatsu (シャツ)"
+          ],
+          "target_vocab": "doresu",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Vestido'",
+          "explanation": "'Doresu (ドレス)' significa 'Vestido'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este camisa?'",
+          "answer": "Kono Shatsu wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Shatsu",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "shatsu",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'Kono Shatsu wa ikura desu ka'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Zapatos'",
+          "phrase": "Zapatos",
+          "answer": "Kutsu (靴)",
+          "target_vocab": "kutsu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Zapatos'",
+          "explanation": "Se dice 'Kutsu (靴)'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Doresu (ドレス)",
+          "target_vocab": "doresu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Vestido'",
+          "explanation": "Se dice 'Doresu (ドレス)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos calcetines'",
+          "answer": "Watashi wa kono Kutsushita ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Kutsushita",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "kutsushita",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos calcetines'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Kutsushita ga suki desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Me gustan estos sombrero'",
+          "answer": "Watashi wa kono Boushi ga suki desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "kono",
+            "Boushi",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "boushi",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: 'Me gustan estos sombrero'",
+          "explanation": "La estructura correcta es: 'Watashi wa kono Boushi ga suki desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Camisa'",
+          "phrase": "Camisa",
+          "answer": "Shatsu (シャツ)",
+          "target_vocab": "shatsu",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Camisa'",
+          "explanation": "Se dice 'Shatsu (シャツ)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Calcetines'",
+          "answer": "Kutsushita (靴下)",
+          "distractors": [
+            "Kooto (コート)",
+            "Jaketto (ジャケット)",
+            "Kutsu (靴)"
+          ],
+          "target_vocab": "kutsushita",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Calcetines'",
+          "explanation": "'Kutsushita (靴下)' significa 'Calcetines'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Cuánto cuesta este camisa?'",
+          "answer": "Kono Shatsu wa ikura desu ka",
+          "options": [
+            "Kono",
+            "Shatsu",
+            "wa",
+            "ikura",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "shatsu",
+          "difficulty": 8,
+          "spanish_translation": "Ordena la frase: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'Kono Shatsu wa ikura desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abrigo'",
+          "answer": "Kooto (コート)",
+          "distractors": [
+            "Boushi (帽子)",
+            "Tii-shatsu (Tシャツ)",
+            "Sukaato (スカート)"
+          ],
+          "target_vocab": "kooto",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Abrigo'",
+          "explanation": "'Kooto (コート)' significa 'Abrigo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kono _____ wa ikura desu ka",
+          "answer": "Kutsushita",
+          "options": [
+            "Kutsushita",
+            "Kooto",
+            "Doresu",
+            "Tii-shatsu"
+          ],
+          "target_vocab": "kutsushita",
+          "difficulty": 7,
+          "spanish_translation": "Completa: '¿Cuánto cuesta este calcetines?'",
+          "explanation": "Falta 'Kutsushita'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abrigo'",
+          "answer": "Kooto (コート)",
+          "distractors": [
+            "Doresu (ドレス)",
+            "Kutsushita (靴下)",
+            "Tii-shatsu (Tシャツ)"
+          ],
+          "target_vocab": "kooto",
+          "difficulty": 6,
+          "spanish_translation": "Traducción de: 'Abrigo'",
+          "explanation": "'Kooto (コート)' significa 'Abrigo'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Zubon (ズボン)",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Tii-shatsu (Tシャツ)",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Kutsu (靴)",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Kutsushita (靴下)",
+              "right": "Calcetines"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        }
+      ]
+    }
+  ]
+}

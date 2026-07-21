@@ -1,0 +1,1012 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 1,
+  "title": "Saludos y Presentaciones",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Saludos básicos",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Choose the correct translation: 'Hola'",
+          "correct_answer": "Hello",
+          "distractors": [
+            "Goodbye",
+            "Please",
+            "Thanks"
+          ],
+          "target_vocab": "hello",
+          "difficulty": 1,
+          "spanish_translation": "Elige la traducción correcta: 'Hola'",
+          "explanation": "'Hello' es el saludo universal en inglés para decir 'Hola'.",
+          "image": "contenido/img/vocab_hello.png"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 'Good morning' mean?",
+          "correct_answer": "Buenos días",
+          "distractors": [
+            "Buenas tardes",
+            "Buenas noches",
+            "Adiós"
+          ],
+          "target_vocab": "good morning",
+          "difficulty": 1,
+          "spanish_translation": "¿Qué significa 'Good morning'?",
+          "explanation": "'Morning' significa mañana, así que 'Good morning' es Buenos días.",
+          "image": "contenido/img/vocab_morning.png"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Buenas noches (al despedirse)'",
+          "correct_answer": "Good night",
+          "word_bank": [
+            "Good",
+            "night",
+            "evening",
+            "morning",
+            "hello"
+          ],
+          "target_vocab": "good night",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Buenas noches (al despedirse)'",
+          "explanation": "Se usa 'Good night' para despedirse en la noche o ir a dormir. Para saludar es 'Good evening'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Adiós'",
+          "correct_answer": "Goodbye",
+          "target_vocab": "goodbye",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Adiós'",
+          "explanation": "'Goodbye' o 'Bye' son la forma estándar de despedirse."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the greetings",
+          "pairs": [
+            {
+              "left": "Good morning",
+              "right": "Buenos días"
+            },
+            {
+              "left": "Good afternoon",
+              "right": "Buenas tardes"
+            },
+            {
+              "left": "Good evening",
+              "right": "Buenas noches (saludo)"
+            },
+            {
+              "left": "Good night",
+              "right": "Buenas noches (despedida)"
+            }
+          ],
+          "target_vocab": "time_greetings",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Empareja los saludos",
+          "explanation": "Cada parte del día tiene su propio saludo."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Choose the correct translation: 'Por favor'",
+          "correct_answer": "Please",
+          "distractors": [
+            "Thanks",
+            "Sorry",
+            "Hello"
+          ],
+          "target_vocab": "please",
+          "difficulty": 1,
+          "image_prompt": null,
+          "spanish_translation": "Elige la traducción correcta: 'Por favor'",
+          "explanation": "'Please' significa por favor."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Gracias'",
+          "correct_answer": "Thank you",
+          "word_bank": [
+            "Thank",
+            "you",
+            "please",
+            "very"
+          ],
+          "target_vocab": "thank you",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Gracias'",
+          "explanation": "'Thank you' o 'Thanks' significan gracias."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'De nada'",
+          "correct_answer": "You are welcome",
+          "target_vocab": "you are welcome",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'De nada'",
+          "explanation": "La expresión más común para 'de nada' es 'You are welcome'."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What is the meaning of 'Sorry'?",
+          "correct_answer": "Lo siento",
+          "distractors": [
+            "Gracias",
+            "Por favor",
+            "Hola"
+          ],
+          "target_vocab": "sorry",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Cuál es el significado de 'Sorry'?",
+          "explanation": "'Sorry' se usa para disculparse."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the courtesy words",
+          "pairs": [
+            {
+              "left": "Please",
+              "right": "Por favor"
+            },
+            {
+              "left": "Thank you",
+              "right": "Gracias"
+            },
+            {
+              "left": "Sorry",
+              "right": "Lo siento"
+            },
+            {
+              "left": "Excuse me",
+              "right": "Disculpe"
+            }
+          ],
+          "target_vocab": "courtesy_words",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Empareja las palabras de cortesía",
+          "explanation": "Estas son palabras esenciales de cortesía."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Hola, buenos días'",
+          "correct_answer": "Hello good morning",
+          "word_bank": [
+            "Hello",
+            "good",
+            "morning",
+            "night",
+            "thanks"
+          ],
+          "target_vocab": "hello good morning",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Hola, buenos días'",
+          "explanation": "Simplemente combinamos 'Hello' y 'Good morning'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Muchas gracias'",
+          "correct_answer": "Thank you very much",
+          "target_vocab": "thank you very much",
+          "difficulty": 5,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Muchas gracias'",
+          "explanation": "Añadimos 'very much' al final para enfatizar el agradecimiento."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Presentaciones",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 'How are you?' mean?",
+          "correct_answer": "¿Cómo estás?",
+          "distractors": [
+            "¿Quién eres?",
+            "¿Dónde estás?",
+            "¿Qué hora es?"
+          ],
+          "target_vocab": "how are you",
+          "difficulty": 1,
+          "spanish_translation": "¿Qué significa 'How are you?'",
+          "explanation": "Es la forma más común de preguntar el estado de alguien.",
+          "image": "contenido/img/vocab_how_are_you.png"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Estoy bien, gracias'",
+          "correct_answer": "I am fine thanks",
+          "word_bank": [
+            "I",
+            "am",
+            "fine",
+            "thanks",
+            "bad"
+          ],
+          "target_vocab": "i am fine",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Estoy bien, gracias'",
+          "explanation": "'I am fine' significa estoy bien."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say '¿Y tú?'",
+          "correct_answer": "And you?",
+          "distractors": [
+            "Are you?",
+            "And me?",
+            "You are?"
+          ],
+          "target_vocab": "and you",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Cómo dices '¿Y tú?'",
+          "explanation": "'And' significa 'y'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Mucho gusto'",
+          "correct_answer": "Nice to meet you",
+          "target_vocab": "nice to meet you",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Mucho gusto'",
+          "explanation": "Es la expresión típica al conocer a alguien por primera vez.",
+          "image": "contenido/img/vocab_business.png"
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the phrases",
+          "pairs": [
+            {
+              "left": "How are you?",
+              "right": "¿Cómo estás?"
+            },
+            {
+              "left": "I am fine",
+              "right": "Estoy bien"
+            },
+            {
+              "left": "And you?",
+              "right": "¿Y tú?"
+            },
+            {
+              "left": "Nice to meet you",
+              "right": "Mucho gusto"
+            }
+          ],
+          "target_vocab": "introductions",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Empareja las frases",
+          "explanation": "Frases útiles para presentarse."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'El gusto es mío (Mucho gusto también)'",
+          "correct_answer": "Nice to meet you too",
+          "word_bank": [
+            "Nice",
+            "to",
+            "meet",
+            "you",
+            "too",
+            "two"
+          ],
+          "target_vocab": "nice to meet you too",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'El gusto es mío'",
+          "explanation": "Añadimos 'too' al final para decir 'también'."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What is 'My name is...' in Spanish?",
+          "correct_answer": "Mi nombre es...",
+          "distractors": [
+            "Yo soy...",
+            "Él se llama...",
+            "Tú eres..."
+          ],
+          "target_vocab": "my name is",
+          "difficulty": 1,
+          "image_prompt": null,
+          "spanish_translation": "¿Qué significa 'My name is...'?",
+          "explanation": "'Name' significa nombre."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Me llamo Anna'",
+          "correct_answer": "My name is Anna",
+          "target_vocab": "my name is",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Me llamo Anna'",
+          "explanation": "También puedes decir 'I am Anna'."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 'What is your name?' mean?",
+          "correct_answer": "¿Cómo te llamas?",
+          "distractors": [
+            "¿Cómo estás?",
+            "¿De dónde eres?",
+            "¿Qué hora es?"
+          ],
+          "target_vocab": "what is your name",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Qué significa 'What is your name?'",
+          "explanation": "Literalmente: ¿Cuál es tu nombre?"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Hola, ¿cómo te llamas?'",
+          "correct_answer": "Hello what is your name",
+          "word_bank": [
+            "Hello",
+            "what",
+            "is",
+            "your",
+            "name",
+            "my"
+          ],
+          "target_vocab": "what is your name",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Hola, ¿cómo te llamas?'",
+          "explanation": "Combina el saludo con la pregunta del nombre."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the questions and answers",
+          "pairs": [
+            {
+              "left": "How are you?",
+              "right": "I am fine"
+            },
+            {
+              "left": "What is your name?",
+              "right": "My name is Tom"
+            },
+            {
+              "left": "Nice to meet you",
+              "right": "Nice to meet you too"
+            }
+          ],
+          "target_vocab": "intro_qa",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Empareja preguntas con respuestas",
+          "explanation": "Práctica de conversación básica."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Hola, mi nombre es David. Mucho gusto.'",
+          "correct_answer": "Hello my name is David Nice to meet you",
+          "target_vocab": "hello my name is",
+          "difficulty": 5,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Hola, mi nombre es David. Mucho gusto.'",
+          "explanation": "Una frase completa de presentación."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Verbo To Be",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "question": "Match the personal pronouns",
+          "pairs": [
+            {
+              "left": "I",
+              "right": "Yo"
+            },
+            {
+              "left": "You",
+              "right": "Tú / Usted"
+            },
+            {
+              "left": "He",
+              "right": "Él"
+            },
+            {
+              "left": "She",
+              "right": "Ella"
+            },
+            {
+              "left": "It",
+              "right": "Eso (animal o cosa)"
+            }
+          ],
+          "target_vocab": "pronouns_singular",
+          "difficulty": 1,
+          "image_prompt": null,
+          "spanish_translation": "Empareja los pronombres personales singulares",
+          "explanation": "Los pronombres básicos del inglés."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which verb form goes with 'I'?",
+          "correct_answer": "am",
+          "distractors": [
+            "is",
+            "are",
+            "be"
+          ],
+          "target_vocab": "i am",
+          "difficulty": 1,
+          "image_prompt": null,
+          "spanish_translation": "¿Qué forma del verbo acompaña a 'I'?",
+          "explanation": "Siempre decimos 'I am' (Yo soy/estoy)."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which verb form goes with 'She'?",
+          "correct_answer": "is",
+          "distractors": [
+            "am",
+            "are",
+            "be"
+          ],
+          "target_vocab": "she is",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Qué forma del verbo acompaña a 'She'?",
+          "explanation": "He, She e It usan 'is'."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Él es un estudiante'",
+          "correct_answer": "He is a student",
+          "word_bank": [
+            "He",
+            "is",
+            "a",
+            "student",
+            "am",
+            "she"
+          ],
+          "target_vocab": "he is",
+          "difficulty": 2,
+          "spanish_translation": "Traduce: 'Él es un estudiante'",
+          "explanation": "'He' para él, 'is' para es.",
+          "image": "contenido/img/vocab_student.png"
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the plural pronouns",
+          "pairs": [
+            {
+              "left": "We",
+              "right": "Nosotros"
+            },
+            {
+              "left": "You",
+              "right": "Ustedes"
+            },
+            {
+              "left": "They",
+              "right": "Ellos / Ellas"
+            }
+          ],
+          "target_vocab": "pronouns_plural",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Empareja los pronombres plurales",
+          "explanation": "Nota que 'You' sirve para singular y plural."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which verb form goes with 'We, You, They'?",
+          "correct_answer": "are",
+          "distractors": [
+            "am",
+            "is",
+            "be"
+          ],
+          "target_vocab": "we are",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Qué verbo acompaña a los plurales?",
+          "explanation": "Todos los plurales y el 'you' usan 'are'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Nosotros somos felices'",
+          "correct_answer": "We are happy",
+          "target_vocab": "we are",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en inglés: 'Nosotros somos felices'",
+          "explanation": "'We' (nosotros) usa 'are'. Happy significa feliz.",
+          "image": "contenido/img/vocab_friends.png"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Ellos son doctores'",
+          "correct_answer": "They are doctors",
+          "word_bank": [
+            "They",
+            "are",
+            "doctors",
+            "is",
+            "we"
+          ],
+          "target_vocab": "they are",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Ellos son doctores'",
+          "explanation": "'They' significa ellos."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match subject and verb",
+          "pairs": [
+            {
+              "left": "I",
+              "right": "am"
+            },
+            {
+              "left": "He / She / It",
+              "right": "is"
+            },
+            {
+              "left": "We / You / They",
+              "right": "are"
+            }
+          ],
+          "target_vocab": "to_be_conjugation",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Empareja el sujeto con el verbo correcto",
+          "explanation": "Resumen de la conjugación del verbo To Be."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Translate: 'El perro es grande' (Usando 'It')",
+          "correct_answer": "It is big",
+          "distractors": [
+            "He is big",
+            "It are big",
+            "She is big"
+          ],
+          "target_vocab": "it is",
+          "difficulty": 4,
+          "spanish_translation": "¿Cómo traduces usando el pronombre para animales?",
+          "explanation": "Para un animal u objeto singular, usamos 'It'.",
+          "image": "contenido/img/vocab_big.png"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Tú eres mi amigo'",
+          "correct_answer": "You are my friend",
+          "word_bank": [
+            "You",
+            "are",
+            "my",
+            "friend",
+            "is",
+            "am"
+          ],
+          "target_vocab": "you are",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Tú eres mi amigo'",
+          "explanation": "'You' siempre usa 'are'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Yo estoy cansado'",
+          "correct_answer": "I am tired",
+          "target_vocab": "i am",
+          "difficulty": 5,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Yo estoy cansado'",
+          "explanation": "'To be' significa ser O estar. Tired es cansado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Negación y Preguntas",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "How do you make a negative sentence?",
+          "correct_answer": "Add 'not' after the verb to be",
+          "distractors": [
+            "Add 'not' before the verb",
+            "Use 'don't'",
+            "Change the verb"
+          ],
+          "target_vocab": "not",
+          "difficulty": 1,
+          "image_prompt": null,
+          "spanish_translation": "¿Cómo haces una frase negativa?",
+          "explanation": "En inglés, simplemente agregamos 'not' después de am/is/are."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Yo no soy un estudiante'",
+          "correct_answer": "I am not a student",
+          "word_bank": [
+            "I",
+            "am",
+            "not",
+            "a",
+            "student",
+            "no"
+          ],
+          "target_vocab": "i am not",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Yo no soy un estudiante'",
+          "explanation": "Se dice 'I am not'."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the contractions",
+          "pairs": [
+            {
+              "left": "is not",
+              "right": "isn't"
+            },
+            {
+              "left": "are not",
+              "right": "aren't"
+            },
+            {
+              "left": "I am not",
+              "right": "I'm not"
+            }
+          ],
+          "target_vocab": "contractions",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Empareja las contracciones",
+          "explanation": "'am not' no se contrae como 'amn't', solo como 'I'm not'."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which is correct?",
+          "correct_answer": "She isn't sad",
+          "distractors": [
+            "She aren't sad",
+            "She not is sad",
+            "She doesn't sad"
+          ],
+          "target_vocab": "is not",
+          "difficulty": 3,
+          "spanish_translation": "¿Cuál es correcta para decir 'Ella no está triste'?",
+          "explanation": "Usamos 'isn't' para He/She/It.",
+          "image": "contenido/img/vocab_happy.png"
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Nosotros no estamos listos'",
+          "correct_answer": "We are not ready",
+          "target_vocab": "are not",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Nosotros no estamos listos' (usa forma completa)",
+          "explanation": "We usa 'are', seguido de 'not'."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you ask a question with the verb To Be?",
+          "correct_answer": "Put am/is/are before the subject",
+          "distractors": [
+            "Put 'Do' at the start",
+            "Just add a question mark",
+            "Put 'not' at the start"
+          ],
+          "target_vocab": "questions",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Cómo haces una pregunta?",
+          "explanation": "El verbo se invierte con el sujeto: 'You are' -> 'Are you?'"
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: '¿Estás tú feliz?'",
+          "correct_answer": "Are you happy",
+          "word_bank": [
+            "Are",
+            "you",
+            "happy",
+            "Is",
+            "am"
+          ],
+          "target_vocab": "are you",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: '¿Estás feliz?'",
+          "explanation": "El verbo 'Are' va al principio."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Translate: '¿Es él tu hermano?'",
+          "correct_answer": "Is he your brother?",
+          "distractors": [
+            "Are he your brother?",
+            "He is your brother?",
+            "Does he your brother?"
+          ],
+          "target_vocab": "is he",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "¿Es él tu hermano?",
+          "explanation": "'He' requiere 'Is' al principio."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the short answers for 'Are you happy?'",
+          "pairs": [
+            {
+              "left": "Yes (positive)",
+              "right": "Yes, I am"
+            },
+            {
+              "left": "No (negative)",
+              "right": "No, I am not"
+            }
+          ],
+          "target_vocab": "short_answers",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Respuestas cortas",
+          "explanation": "Las respuestas cortas retoman el verbo to be."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: '¿Están ellos aquí?'",
+          "correct_answer": "Are they here",
+          "target_vocab": "are they",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: '¿Están ellos aquí?'",
+          "explanation": "They usa Are."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Ella no es mi hermana'",
+          "correct_answer": "She is not my sister",
+          "word_bank": [
+            "She",
+            "is",
+            "not",
+            "my",
+            "sister",
+            "are"
+          ],
+          "target_vocab": "is not",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Ella no es mi hermana'",
+          "explanation": "Negación simple."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: '¿Soy yo tarde?' (Llego tarde)",
+          "correct_answer": "Am I late",
+          "target_vocab": "am i",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en inglés: '¿Llego tarde?' (lit. ¿Estoy tarde?)",
+          "explanation": "Pregunta contigo mismo: 'Am I...?'",
+          "image": "contenido/img/vocab_late.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Países y Nacionalidades",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 'Where are you from?' mean?",
+          "correct_answer": "¿De dónde eres?",
+          "distractors": [
+            "¿Hacia dónde vas?",
+            "¿Quién eres?",
+            "¿Dónde estás?"
+          ],
+          "target_vocab": "where are you from",
+          "difficulty": 1,
+          "spanish_translation": "¿Qué significa 'Where are you from?'",
+          "explanation": "Es la pregunta estándar para preguntar el país de origen.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "order_words",
+          "question": "Answer: 'Yo soy de México'",
+          "correct_answer": "I am from Mexico",
+          "word_bank": [
+            "I",
+            "am",
+            "from",
+            "Mexico",
+            "is",
+            "are"
+          ],
+          "target_vocab": "from",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Yo soy de México'",
+          "explanation": "Usamos la preposición 'from' (de/desde)."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match the Country with the Nationality",
+          "pairs": [
+            {
+              "left": "Mexico",
+              "right": "Mexican"
+            },
+            {
+              "left": "Spain",
+              "right": "Spanish"
+            },
+            {
+              "left": "Japan",
+              "right": "Japanese"
+            },
+            {
+              "left": "France",
+              "right": "French"
+            }
+          ],
+          "target_vocab": "nationalities",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Empareja el país con la nacionalidad",
+          "explanation": "En inglés, las nacionalidades siempre van con mayúscula inicial."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which is correct?",
+          "correct_answer": "She is Spanish",
+          "distractors": [
+            "She is Spain",
+            "She is spanish",
+            "She are Spanish"
+          ],
+          "target_vocab": "spanish",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Cuál frase está escrita correctamente?",
+          "explanation": "Usamos el adjetivo de nacionalidad, siempre en mayúscula."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Él es de Japón'",
+          "correct_answer": "He is from Japan",
+          "target_vocab": "from japan",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: 'Él es de Japón'",
+          "explanation": "País = Japan."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: '¿De dónde es ella?'",
+          "correct_answer": "Where is she from",
+          "word_bank": [
+            "Where",
+            "is",
+            "she",
+            "from",
+            "are"
+          ],
+          "target_vocab": "where is she from",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: '¿De dónde es ella?'",
+          "explanation": "Invertimos el verbo: Where + is + she + from."
+        },
+        {
+          "type": "match_pairs",
+          "question": "Match questions and answers",
+          "pairs": [
+            {
+              "left": "Where are you from?",
+              "right": "I am from Colombia"
+            },
+            {
+              "left": "Are you Brazilian?",
+              "right": "Yes, I am"
+            },
+            {
+              "left": "Is he from Canada?",
+              "right": "No, he is American"
+            }
+          ],
+          "target_vocab": "country_qa",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Empareja las preguntas y respuestas",
+          "explanation": "Práctica de fluidez sobre orígenes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "United States nationality is...",
+          "correct_answer": "American",
+          "distractors": [
+            "United Statesian",
+            "English",
+            "Americain"
+          ],
+          "target_vocab": "american",
+          "difficulty": 2,
+          "image_prompt": null,
+          "spanish_translation": "¿Cuál es el gentilicio de Estados Unidos?",
+          "explanation": "En inglés, se dice 'American'."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: 'Nosotros somos mexicanos'",
+          "correct_answer": "We are Mexican",
+          "target_vocab": "mexican",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Escribe: 'Nosotros somos mexicanos'",
+          "explanation": "Las nacionalidades en inglés NO tienen plural con 's'. (We are Mexican, no Mexicans)."
+        },
+        {
+          "type": "order_words",
+          "question": "Translate: 'Ellos no son franceses'",
+          "correct_answer": "They are not French",
+          "word_bank": [
+            "They",
+            "are",
+            "not",
+            "French",
+            "France"
+          ],
+          "target_vocab": "french",
+          "difficulty": 4,
+          "image_prompt": null,
+          "spanish_translation": "Traduce: 'Ellos no son franceses'",
+          "explanation": "Negación + nacionalidad."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "If someone says 'I am from Italy', their nationality is:",
+          "correct_answer": "Italian",
+          "distractors": [
+            "Italyan",
+            "Italese",
+            "Italish"
+          ],
+          "target_vocab": "italian",
+          "difficulty": 3,
+          "image_prompt": null,
+          "spanish_translation": "Si alguien es de Italia, es...",
+          "explanation": "Italian es el adjetivo."
+        },
+        {
+          "type": "translate",
+          "question": "Type in English: '¿Eres tú de España?'",
+          "correct_answer": "Are you from Spain",
+          "target_vocab": "from spain",
+          "difficulty": 5,
+          "image_prompt": null,
+          "spanish_translation": "Escribe en inglés: '¿Eres de España?'",
+          "explanation": "Pregunta de sí o no: Are + you + from + Spain."
+        }
+      ]
+    }
+  ]
+}

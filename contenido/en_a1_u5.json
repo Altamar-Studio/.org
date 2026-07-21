@@ -1,0 +1,778 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 5,
+  "title": "Comida y Bebida",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pescado'",
+          "answer": "Fish",
+          "distractors": [
+            "Milk",
+            "Apple",
+            "Rice"
+          ],
+          "target_vocab": "fish",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Fish' significa 'Pescado'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Do you like _____",
+          "answer": "salad",
+          "options": [
+            "salad",
+            "cheese",
+            "apple",
+            "chicken"
+          ],
+          "target_vocab": "salad",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el ensalada?'",
+          "explanation": "La palabra correcta es 'salad'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pollo'",
+          "answer": "Chicken",
+          "distractors": [
+            "Coffee",
+            "Water",
+            "Milk"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pollo'",
+          "explanation": "'Chicken' significa 'Pollo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero arroz'",
+          "answer": "I want some rice",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "rice"
+          ],
+          "target_vocab": "rice",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero arroz'",
+          "explanation": "La estructura correcta es: 'I want some rice'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Apple",
+              "right": "Manzana"
+            },
+            {
+              "left": "Water",
+              "right": "Agua"
+            },
+            {
+              "left": "Bread",
+              "right": "Pan"
+            },
+            {
+              "left": "Milk",
+              "right": "Leche"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Arroz'",
+          "answer": "Rice",
+          "distractors": [
+            "Coffee",
+            "Apple",
+            "Cheese"
+          ],
+          "target_vocab": "rice",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Arroz'",
+          "explanation": "'Rice' significa 'Arroz'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero ensalada'",
+          "answer": "I want some salad",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "salad"
+          ],
+          "target_vocab": "salad",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero ensalada'",
+          "explanation": "La estructura correcta es: 'I want some salad'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Salad",
+          "target_vocab": "salad",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Ensalada'",
+          "explanation": "Se escribe 'Salad'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el leche?'",
+          "answer": "Do you like milk",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "milk"
+          ],
+          "target_vocab": "milk",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el leche?'",
+          "explanation": "La estructura correcta es: 'Do you like milk'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "I want some _____",
+          "answer": "rice",
+          "options": [
+            "rice",
+            "milk",
+            "cheese",
+            "salad"
+          ],
+          "target_vocab": "rice",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero arroz'",
+          "explanation": "La palabra correcta es 'rice'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Café'",
+          "phrase": "Café",
+          "answer": "Coffee",
+          "target_vocab": "coffee",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Café'",
+          "explanation": "Se escribe 'Coffee'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pescado'",
+          "answer": "Fish",
+          "distractors": [
+            "Water",
+            "Salad",
+            "Cheese"
+          ],
+          "target_vocab": "fish",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Fish' significa 'Pescado'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el café?'",
+          "answer": "Do you like coffee",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "coffee"
+          ],
+          "target_vocab": "coffee",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el café?'",
+          "explanation": "La estructura correcta es: 'Do you like coffee'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el pan?'",
+          "answer": "Do you like bread",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "bread"
+          ],
+          "target_vocab": "bread",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el pan?'",
+          "explanation": "La estructura correcta es: 'Do you like bread'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Café'",
+          "answer": "Coffee",
+          "distractors": [
+            "Apple",
+            "Bread",
+            "Cheese"
+          ],
+          "target_vocab": "coffee",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Coffee' significa 'Café'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pescado'",
+          "answer": "Fish",
+          "distractors": [
+            "Milk",
+            "Cheese",
+            "Chicken"
+          ],
+          "target_vocab": "fish",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Fish' significa 'Pescado'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero leche'",
+          "answer": "I want some milk",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "milk"
+          ],
+          "target_vocab": "milk",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero leche'",
+          "explanation": "La estructura correcta es: 'I want some milk'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Rice",
+              "right": "Arroz"
+            },
+            {
+              "left": "Fish",
+              "right": "Pescado"
+            },
+            {
+              "left": "Apple",
+              "right": "Manzana"
+            },
+            {
+              "left": "Coffee",
+              "right": "Café"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Queso'",
+          "answer": "Cheese",
+          "distractors": [
+            "Salad",
+            "Rice",
+            "Bread"
+          ],
+          "target_vocab": "cheese",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Queso'",
+          "explanation": "'Cheese' significa 'Queso'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el ensalada?'",
+          "answer": "Do you like salad",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "salad"
+          ],
+          "target_vocab": "salad",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el ensalada?'",
+          "explanation": "La estructura correcta es: 'Do you like salad'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Coffee",
+              "right": "Café"
+            },
+            {
+              "left": "Fish",
+              "right": "Pescado"
+            },
+            {
+              "left": "Salad",
+              "right": "Ensalada"
+            },
+            {
+              "left": "Cheese",
+              "right": "Queso"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Agua'",
+          "phrase": "Agua",
+          "answer": "Water",
+          "target_vocab": "water",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Agua'",
+          "explanation": "Se escribe 'Water'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero pan'",
+          "answer": "I want some bread",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "bread"
+          ],
+          "target_vocab": "bread",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pan'",
+          "explanation": "La estructura correcta es: 'I want some bread'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el ensalada?'",
+          "answer": "Do you like salad",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "salad"
+          ],
+          "target_vocab": "salad",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el ensalada?'",
+          "explanation": "La estructura correcta es: 'Do you like salad'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pollo'",
+          "answer": "Chicken",
+          "distractors": [
+            "Fish",
+            "Rice",
+            "Milk"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pollo'",
+          "explanation": "'Chicken' significa 'Pollo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pan'",
+          "answer": "Bread",
+          "distractors": [
+            "Rice",
+            "Coffee",
+            "Salad"
+          ],
+          "target_vocab": "bread",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pan'",
+          "explanation": "'Bread' significa 'Pan'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I want some _____",
+          "answer": "apple",
+          "options": [
+            "apple",
+            "bread",
+            "salad",
+            "cheese"
+          ],
+          "target_vocab": "apple",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero manzana'",
+          "explanation": "La palabra correcta es 'apple'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Do you like _____",
+          "answer": "chicken",
+          "options": [
+            "chicken",
+            "milk",
+            "bread",
+            "rice"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el pollo?'",
+          "explanation": "La palabra correcta es 'chicken'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pescado'",
+          "answer": "Fish",
+          "distractors": [
+            "Bread",
+            "Milk",
+            "Cheese"
+          ],
+          "target_vocab": "fish",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Fish' significa 'Pescado'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pollo'",
+          "answer": "Chicken",
+          "distractors": [
+            "Water",
+            "Fish",
+            "Cheese"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pollo'",
+          "explanation": "'Chicken' significa 'Pollo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Salad",
+          "target_vocab": "salad",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Ensalada'",
+          "explanation": "Se escribe 'Salad'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Chicken",
+              "right": "Pollo"
+            },
+            {
+              "left": "Water",
+              "right": "Agua"
+            },
+            {
+              "left": "Milk",
+              "right": "Leche"
+            },
+            {
+              "left": "Apple",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero agua'",
+          "answer": "I want some water",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "water"
+          ],
+          "target_vocab": "water",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero agua'",
+          "explanation": "La estructura correcta es: 'I want some water'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero leche'",
+          "answer": "I want some milk",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "milk"
+          ],
+          "target_vocab": "milk",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero leche'",
+          "explanation": "La estructura correcta es: 'I want some milk'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leche'",
+          "answer": "Milk",
+          "distractors": [
+            "Fish",
+            "Bread",
+            "Chicken"
+          ],
+          "target_vocab": "milk",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Leche'",
+          "explanation": "'Milk' significa 'Leche'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero pan'",
+          "answer": "I want some bread",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "bread"
+          ],
+          "target_vocab": "bread",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pan'",
+          "explanation": "La estructura correcta es: 'I want some bread'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Te gusta el manzana?'",
+          "answer": "Do you like apple",
+          "options": [
+            "Do",
+            "you",
+            "like",
+            "apple"
+          ],
+          "target_vocab": "apple",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el manzana?'",
+          "explanation": "La estructura correcta es: 'Do you like apple'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Manzana'",
+          "answer": "Apple",
+          "distractors": [
+            "Fish",
+            "Rice",
+            "Coffee"
+          ],
+          "target_vocab": "apple",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Apple' significa 'Manzana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Queso'",
+          "answer": "Cheese",
+          "distractors": [
+            "Bread",
+            "Water",
+            "Fish"
+          ],
+          "target_vocab": "cheese",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Queso'",
+          "explanation": "'Cheese' significa 'Queso'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero pollo'",
+          "answer": "I want some chicken",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "chicken"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'I want some chicken'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I want some _____",
+          "answer": "coffee",
+          "options": [
+            "coffee",
+            "bread",
+            "water",
+            "chicken"
+          ],
+          "target_vocab": "coffee",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero café'",
+          "explanation": "La palabra correcta es 'coffee'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Cheese",
+              "right": "Queso"
+            },
+            {
+              "left": "Milk",
+              "right": "Leche"
+            },
+            {
+              "left": "Fish",
+              "right": "Pescado"
+            },
+            {
+              "left": "Rice",
+              "right": "Arroz"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Agua'",
+          "answer": "Water",
+          "distractors": [
+            "Fish",
+            "Bread",
+            "Rice"
+          ],
+          "target_vocab": "water",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Agua'",
+          "explanation": "'Water' significa 'Agua'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pan'",
+          "phrase": "Pan",
+          "answer": "Bread",
+          "target_vocab": "bread",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en inglés: 'Pan'",
+          "explanation": "Se escribe 'Bread'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Quiero pollo'",
+          "answer": "I want some chicken",
+          "options": [
+            "I",
+            "want",
+            "some",
+            "chicken"
+          ],
+          "target_vocab": "chicken",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'I want some chicken'."
+        }
+      ]
+    }
+  ]
+}

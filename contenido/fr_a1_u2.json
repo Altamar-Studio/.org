@@ -1,0 +1,778 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 2,
+  "title": "La Famille",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Madre'",
+          "answer": "Mère",
+          "distractors": [
+            "Frère",
+            "Grand-père",
+            "Grand-mère"
+          ],
+          "target_vocab": "mère",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mère' significa 'Madre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su hermana es amable'",
+          "answer": "Sa sœur est gentille",
+          "options": [
+            "Sa",
+            "sœur",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "sœur",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermana es amable'",
+          "explanation": "La estructura correcta es: 'Sa sœur est gentille'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Mon _____ est grand",
+          "answer": "sœur",
+          "options": [
+            "sœur",
+            "oncle",
+            "tante",
+            "famille"
+          ],
+          "target_vocab": "sœur",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi hermana es alto'",
+          "explanation": "La palabra correcta es 'sœur'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Tío'",
+          "phrase": "Tío",
+          "answer": "Oncle",
+          "target_vocab": "oncle",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Tío'",
+          "explanation": "Se escribe 'Oncle'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Familia'",
+          "answer": "Famille",
+          "distractors": [
+            "Frère",
+            "Sœur",
+            "Tante"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Familia'",
+          "explanation": "'Famille' significa 'Familia'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Padre'",
+          "answer": "Père",
+          "distractors": [
+            "Famille",
+            "Grand-mère",
+            "Cousin"
+          ],
+          "target_vocab": "père",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Père' significa 'Padre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Mi familia es alto'",
+          "answer": "Mon famille est grand",
+          "options": [
+            "Mon",
+            "famille",
+            "est",
+            "grand"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi familia es alto'",
+          "explanation": "La estructura correcta es: 'Mon famille est grand'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Mi tío es alto'",
+          "answer": "Mon oncle est grand",
+          "options": [
+            "Mon",
+            "oncle",
+            "est",
+            "grand"
+          ],
+          "target_vocab": "oncle",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi tío es alto'",
+          "explanation": "La estructura correcta es: 'Mon oncle est grand'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Madre'",
+          "phrase": "Madre",
+          "answer": "Mère",
+          "target_vocab": "mère",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Madre'",
+          "explanation": "Se escribe 'Mère'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Oncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Mère",
+              "right": "Madre"
+            },
+            {
+              "left": "Père",
+              "right": "Padre"
+            },
+            {
+              "left": "Frère",
+              "right": "Hermano"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su tía es amable'",
+          "answer": "Sa tante est gentille",
+          "options": [
+            "Sa",
+            "tante",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "tante",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Sa tante est gentille'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Oncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Cousin",
+              "right": "Primo"
+            },
+            {
+              "left": "Tante",
+              "right": "Tía"
+            },
+            {
+              "left": "Famille",
+              "right": "Familia"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su abuela es amable'",
+          "answer": "Sa grand-mère est gentille",
+          "options": [
+            "Sa",
+            "grand-mère",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "grand-mère",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su abuela es amable'",
+          "explanation": "La estructura correcta es: 'Sa grand-mère est gentille'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su hermano es amable'",
+          "answer": "Sa frère est gentille",
+          "options": [
+            "Sa",
+            "frère",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "frère",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermano es amable'",
+          "explanation": "La estructura correcta es: 'Sa frère est gentille'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Madre'",
+          "answer": "Mère",
+          "distractors": [
+            "Oncle",
+            "Grand-père",
+            "Famille"
+          ],
+          "target_vocab": "mère",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Madre'",
+          "explanation": "'Mère' significa 'Madre'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Familia'",
+          "answer": "Famille",
+          "distractors": [
+            "Mère",
+            "Sœur",
+            "Grand-père"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Familia'",
+          "explanation": "'Famille' significa 'Familia'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Tía'",
+          "phrase": "Tía",
+          "answer": "Tante",
+          "target_vocab": "tante",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Tía'",
+          "explanation": "Se escribe 'Tante'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Mon _____ est grand",
+          "answer": "père",
+          "options": [
+            "père",
+            "frère",
+            "sœur",
+            "oncle"
+          ],
+          "target_vocab": "père",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi padre es alto'",
+          "explanation": "La palabra correcta es 'père'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Familia'",
+          "answer": "Famille",
+          "distractors": [
+            "Mère",
+            "Sœur",
+            "Père"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Familia'",
+          "explanation": "'Famille' significa 'Familia'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Tío'",
+          "phrase": "Tío",
+          "answer": "Oncle",
+          "target_vocab": "oncle",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Tío'",
+          "explanation": "Se escribe 'Oncle'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Mi hermano es alto'",
+          "answer": "Mon frère est grand",
+          "options": [
+            "Mon",
+            "frère",
+            "est",
+            "grand"
+          ],
+          "target_vocab": "frère",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi hermano es alto'",
+          "explanation": "La estructura correcta es: 'Mon frère est grand'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Mi familia es alto'",
+          "answer": "Mon famille est grand",
+          "options": [
+            "Mon",
+            "famille",
+            "est",
+            "grand"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi familia es alto'",
+          "explanation": "La estructura correcta es: 'Mon famille est grand'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su abuela es amable'",
+          "answer": "Sa grand-mère est gentille",
+          "options": [
+            "Sa",
+            "grand-mère",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "grand-mère",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su abuela es amable'",
+          "explanation": "La estructura correcta es: 'Sa grand-mère est gentille'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Mon _____ est grand",
+          "answer": "grand-mère",
+          "options": [
+            "grand-mère",
+            "sœur",
+            "cousin",
+            "tante"
+          ],
+          "target_vocab": "grand-mère",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi abuela es alto'",
+          "explanation": "La palabra correcta es 'grand-mère'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Padre'",
+          "answer": "Père",
+          "distractors": [
+            "Grand-père",
+            "Sœur",
+            "Mère"
+          ],
+          "target_vocab": "père",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Padre'",
+          "explanation": "'Père' significa 'Padre'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Primo'",
+          "phrase": "Primo",
+          "answer": "Cousin",
+          "target_vocab": "cousin",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Primo'",
+          "explanation": "Se escribe 'Cousin'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hermana'",
+          "answer": "Sœur",
+          "distractors": [
+            "Grand-mère",
+            "Oncle",
+            "Mère"
+          ],
+          "target_vocab": "sœur",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermana'",
+          "explanation": "'Sœur' significa 'Hermana'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Grand-père",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Oncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Tante",
+              "right": "Tía"
+            },
+            {
+              "left": "Sœur",
+              "right": "Hermana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hermano'",
+          "phrase": "Hermano",
+          "answer": "Frère",
+          "target_vocab": "frère",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Hermano'",
+          "explanation": "Se escribe 'Frère'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Tía'",
+          "answer": "Tante",
+          "distractors": [
+            "Famille",
+            "Grand-mère",
+            "Sœur"
+          ],
+          "target_vocab": "tante",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tía'",
+          "explanation": "'Tante' significa 'Tía'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su hermana es amable'",
+          "answer": "Sa sœur est gentille",
+          "options": [
+            "Sa",
+            "sœur",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "sœur",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su hermana es amable'",
+          "explanation": "La estructura correcta es: 'Sa sœur est gentille'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Tía'",
+          "answer": "Tante",
+          "distractors": [
+            "Oncle",
+            "Frère",
+            "Grand-mère"
+          ],
+          "target_vocab": "tante",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tía'",
+          "explanation": "'Tante' significa 'Tía'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Frère",
+              "right": "Hermano"
+            },
+            {
+              "left": "Oncle",
+              "right": "Tío"
+            },
+            {
+              "left": "Mère",
+              "right": "Madre"
+            },
+            {
+              "left": "Sœur",
+              "right": "Hermana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Mi primo es alto'",
+          "answer": "Mon cousin est grand",
+          "options": [
+            "Mon",
+            "cousin",
+            "est",
+            "grand"
+          ],
+          "target_vocab": "cousin",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Mi primo es alto'",
+          "explanation": "La estructura correcta es: 'Mon cousin est grand'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hermana'",
+          "answer": "Sœur",
+          "distractors": [
+            "Mère",
+            "Père",
+            "Frère"
+          ],
+          "target_vocab": "sœur",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Hermana'",
+          "explanation": "'Sœur' significa 'Hermana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Tía'",
+          "phrase": "Tía",
+          "answer": "Tante",
+          "target_vocab": "tante",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Tía'",
+          "explanation": "Se escribe 'Tante'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su madre es amable'",
+          "answer": "Sa mère est gentille",
+          "options": [
+            "Sa",
+            "mère",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "mère",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su madre es amable'",
+          "explanation": "La estructura correcta es: 'Sa mère est gentille'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Abuelo'",
+          "answer": "Grand-père",
+          "distractors": [
+            "Mère",
+            "Famille",
+            "Frère"
+          ],
+          "target_vocab": "grand-père",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuelo'",
+          "explanation": "'Grand-père' significa 'Abuelo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Padre'",
+          "phrase": "Padre",
+          "answer": "Père",
+          "target_vocab": "père",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Padre'",
+          "explanation": "Se escribe 'Père'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Mon _____ est grand",
+          "answer": "oncle",
+          "options": [
+            "oncle",
+            "famille",
+            "sœur",
+            "mère"
+          ],
+          "target_vocab": "oncle",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Mi tío es alto'",
+          "explanation": "La palabra correcta es 'oncle'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su tía es amable'",
+          "answer": "Sa tante est gentille",
+          "options": [
+            "Sa",
+            "tante",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "tante",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Sa tante est gentille'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Abuelo'",
+          "answer": "Grand-père",
+          "distractors": [
+            "Grand-mère",
+            "Père",
+            "Sœur"
+          ],
+          "target_vocab": "grand-père",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Abuelo'",
+          "explanation": "'Grand-père' significa 'Abuelo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Sa _____ est gentille",
+          "answer": "grand-père",
+          "options": [
+            "grand-père",
+            "sœur",
+            "frère",
+            "famille"
+          ],
+          "target_vocab": "grand-père",
+          "difficulty": 3,
+          "spanish_translation": "Completa la oración: 'Su abuelo es amable'",
+          "explanation": "La palabra correcta es 'grand-père'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hermana'",
+          "phrase": "Hermana",
+          "answer": "Sœur",
+          "target_vocab": "sœur",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Hermana'",
+          "explanation": "Se escribe 'Sœur'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Madre'",
+          "phrase": "Madre",
+          "answer": "Mère",
+          "target_vocab": "mère",
+          "difficulty": 3,
+          "spanish_translation": "Escribe en francés: 'Madre'",
+          "explanation": "Se escribe 'Mère'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Primo'",
+          "answer": "Cousin",
+          "distractors": [
+            "Grand-père",
+            "Frère",
+            "Grand-mère"
+          ],
+          "target_vocab": "cousin",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Primo'",
+          "explanation": "'Cousin' significa 'Primo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su abuelo es amable'",
+          "answer": "Sa grand-père est gentille",
+          "options": [
+            "Sa",
+            "grand-père",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "grand-père",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su abuelo es amable'",
+          "explanation": "La estructura correcta es: 'Sa grand-père est gentille'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Tío'",
+          "answer": "Oncle",
+          "distractors": [
+            "Grand-père",
+            "Sœur",
+            "Famille"
+          ],
+          "target_vocab": "oncle",
+          "difficulty": 2,
+          "spanish_translation": "Elige la traducción correcta: 'Tío'",
+          "explanation": "'Oncle' significa 'Tío'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Su familia es amable'",
+          "answer": "Sa famille est gentille",
+          "options": [
+            "Sa",
+            "famille",
+            "est",
+            "gentille"
+          ],
+          "target_vocab": "famille",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Su familia es amable'",
+          "explanation": "La estructura correcta es: 'Sa famille est gentille'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Cousin",
+              "right": "Primo"
+            },
+            {
+              "left": "Mère",
+              "right": "Madre"
+            },
+            {
+              "left": "Grand-père",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Oncle",
+              "right": "Tío"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        }
+      ]
+    }
+  ]
+}

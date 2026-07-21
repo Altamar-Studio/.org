@@ -1,0 +1,794 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 3,
+  "title": "La Ville",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Aeropuerto'",
+          "phrase": "Aeropuerto",
+          "answer": "Aéroport",
+          "target_vocab": "aéroport",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Aeropuerto'",
+          "explanation": "Se escribe 'Aéroport'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Calle'",
+          "answer": "Rue",
+          "distractors": [
+            "Hôpital",
+            "Gare",
+            "Banque"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Calle'",
+          "explanation": "'Rue' significa 'Calle'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "École",
+          "target_vocab": "école",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Escuela'",
+          "explanation": "Se escribe 'École'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Musée",
+              "right": "Museo"
+            },
+            {
+              "left": "Gare",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Aéroport",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Banque",
+              "right": "Banco"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Où est le _____ ?",
+          "answer": "restaurant",
+          "options": [
+            "restaurant",
+            "supermarché",
+            "banque",
+            "école"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el restaurante?'",
+          "explanation": "La palabra correcta es 'restaurant'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un escuela aquí'",
+          "answer": "Il y a un école ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "école",
+            "ici"
+          ],
+          "target_vocab": "école",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un escuela aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un école ici'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Hospital'",
+          "answer": "Hôpital",
+          "distractors": [
+            "Rue",
+            "Aéroport",
+            "École"
+          ],
+          "target_vocab": "hôpital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hôpital' significa 'Hospital'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un estación de tren aquí'",
+          "answer": "Il y a un gare ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "gare",
+            "ici"
+          ],
+          "target_vocab": "gare",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un estación de tren aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un gare ici'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el parque?'",
+          "answer": "Où est le parc ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "parc"
+          ],
+          "target_vocab": "parc",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el parque?'",
+          "explanation": "La estructura correcta es: 'Où est le parc ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Banco'",
+          "answer": "Banque",
+          "distractors": [
+            "Gare",
+            "Musée",
+            "Hôpital"
+          ],
+          "target_vocab": "banque",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banque' significa 'Banco'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el calle?'",
+          "answer": "Où est le rue ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "rue"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el calle?'",
+          "explanation": "La estructura correcta es: 'Où est le rue ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Banco'",
+          "phrase": "Banco",
+          "answer": "Banque",
+          "target_vocab": "banque",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Banco'",
+          "explanation": "Se escribe 'Banque'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Il y a un _____ ici",
+          "answer": "musée",
+          "options": [
+            "musée",
+            "gare",
+            "hôpital",
+            "aéroport"
+          ],
+          "target_vocab": "musée",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un museo aquí'",
+          "explanation": "La palabra correcta es 'musée'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el hospital?'",
+          "answer": "Où est le hôpital ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "hôpital"
+          ],
+          "target_vocab": "hôpital",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el hospital?'",
+          "explanation": "La estructura correcta es: 'Où est le hôpital ?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Restaurant",
+              "right": "Restaurante"
+            },
+            {
+              "left": "École",
+              "right": "Escuela"
+            },
+            {
+              "left": "Parc",
+              "right": "Parque"
+            },
+            {
+              "left": "Rue",
+              "right": "Calle"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Restaurante'",
+          "phrase": "Restaurante",
+          "answer": "Restaurant",
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Restaurante'",
+          "explanation": "Se escribe 'Restaurant'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Restaurante'",
+          "answer": "Restaurant",
+          "distractors": [
+            "Supermarché",
+            "Rue",
+            "Banque"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurant' significa 'Restaurante'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Escuela'",
+          "answer": "École",
+          "distractors": [
+            "Banque",
+            "Rue",
+            "Aéroport"
+          ],
+          "target_vocab": "école",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Escuela'",
+          "explanation": "'École' significa 'Escuela'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Parque'",
+          "answer": "Parc",
+          "distractors": [
+            "Musée",
+            "École",
+            "Hôpital"
+          ],
+          "target_vocab": "parc",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Parque'",
+          "explanation": "'Parc' significa 'Parque'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un calle aquí'",
+          "answer": "Il y a un rue ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "rue",
+            "ici"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un rue ici'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Il y a un _____ ici",
+          "answer": "restaurant",
+          "options": [
+            "restaurant",
+            "hôpital",
+            "rue",
+            "gare"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un restaurante aquí'",
+          "explanation": "La palabra correcta es 'restaurant'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Restaurant",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Parc",
+              "right": "Parque"
+            },
+            {
+              "left": "Banque",
+              "right": "Banco"
+            },
+            {
+              "left": "Supermarché",
+              "right": "Supermercado"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Aeropuerto'",
+          "answer": "Aéroport",
+          "distractors": [
+            "Gare",
+            "Supermarché",
+            "Rue"
+          ],
+          "target_vocab": "aéroport",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Aeropuerto'",
+          "explanation": "'Aéroport' significa 'Aeropuerto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un supermercado aquí'",
+          "answer": "Il y a un supermarché ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "supermarché",
+            "ici"
+          ],
+          "target_vocab": "supermarché",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un supermercado aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un supermarché ici'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un restaurante aquí'",
+          "answer": "Il y a un restaurant ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "restaurant",
+            "ici"
+          ],
+          "target_vocab": "restaurant",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un restaurante aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un restaurant ici'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Parque'",
+          "phrase": "Parque",
+          "answer": "Parc",
+          "target_vocab": "parc",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Parque'",
+          "explanation": "Se escribe 'Parc'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el calle?'",
+          "answer": "Où est le rue ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "rue"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el calle?'",
+          "explanation": "La estructura correcta es: 'Où est le rue ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Aeropuerto'",
+          "phrase": "Aeropuerto",
+          "answer": "Aéroport",
+          "target_vocab": "aéroport",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Aeropuerto'",
+          "explanation": "Se escribe 'Aéroport'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Museo'",
+          "answer": "Musée",
+          "distractors": [
+            "Gare",
+            "Hôpital",
+            "Banque"
+          ],
+          "target_vocab": "musée",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Museo'",
+          "explanation": "'Musée' significa 'Museo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Parque'",
+          "answer": "Parc",
+          "distractors": [
+            "École",
+            "Banque",
+            "Gare"
+          ],
+          "target_vocab": "parc",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Parque'",
+          "explanation": "'Parc' significa 'Parque'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Estación de tren'",
+          "answer": "Gare",
+          "distractors": [
+            "Banque",
+            "Hôpital",
+            "Rue"
+          ],
+          "target_vocab": "gare",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Estación de tren'",
+          "explanation": "'Gare' significa 'Estación de tren'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el calle?'",
+          "answer": "Où est le rue ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "rue"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el calle?'",
+          "explanation": "La estructura correcta es: 'Où est le rue ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Estación de tren'",
+          "phrase": "Estación de tren",
+          "answer": "Gare",
+          "target_vocab": "gare",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Estación de tren'",
+          "explanation": "Se escribe 'Gare'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Aeropuerto'",
+          "answer": "Aéroport",
+          "distractors": [
+            "Supermarché",
+            "École",
+            "Banque"
+          ],
+          "target_vocab": "aéroport",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Aeropuerto'",
+          "explanation": "'Aéroport' significa 'Aeropuerto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Museo'",
+          "answer": "Musée",
+          "distractors": [
+            "Hôpital",
+            "Rue",
+            "École"
+          ],
+          "target_vocab": "musée",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Museo'",
+          "explanation": "'Musée' significa 'Museo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Estación de tren'",
+          "phrase": "Estación de tren",
+          "answer": "Gare",
+          "target_vocab": "gare",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Estación de tren'",
+          "explanation": "Se escribe 'Gare'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Rue",
+              "right": "Calle"
+            },
+            {
+              "left": "Aéroport",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Restaurant",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Gare",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Hay un estación de tren aquí'",
+          "answer": "Il y a un gare ici",
+          "options": [
+            "Il",
+            "y",
+            "a",
+            "un",
+            "gare",
+            "ici"
+          ],
+          "target_vocab": "gare",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un estación de tren aquí'",
+          "explanation": "La estructura correcta es: 'Il y a un gare ici'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el museo?'",
+          "answer": "Où est le musée ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "musée"
+          ],
+          "target_vocab": "musée",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el museo?'",
+          "explanation": "La estructura correcta es: 'Où est le musée ?'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Où est le _____ ?",
+          "answer": "musée",
+          "options": [
+            "musée",
+            "parc",
+            "restaurant",
+            "supermarché"
+          ],
+          "target_vocab": "musée",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el museo?'",
+          "explanation": "La palabra correcta es 'musée'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Hospital'",
+          "phrase": "Hospital",
+          "answer": "Hôpital",
+          "target_vocab": "hôpital",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Hospital'",
+          "explanation": "Se escribe 'Hôpital'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Parque'",
+          "phrase": "Parque",
+          "answer": "Parc",
+          "target_vocab": "parc",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en francés: 'Parque'",
+          "explanation": "Se escribe 'Parc'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Il y a un _____ ici",
+          "answer": "aéroport",
+          "options": [
+            "aéroport",
+            "rue",
+            "hôpital",
+            "école"
+          ],
+          "target_vocab": "aéroport",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un aeropuerto aquí'",
+          "explanation": "La palabra correcta es 'aéroport'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el banco?'",
+          "answer": "Où est le banque ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "banque"
+          ],
+          "target_vocab": "banque",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el banco?'",
+          "explanation": "La estructura correcta es: 'Où est le banque ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Calle'",
+          "answer": "Rue",
+          "distractors": [
+            "Hôpital",
+            "École",
+            "Banque"
+          ],
+          "target_vocab": "rue",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Calle'",
+          "explanation": "'Rue' significa 'Calle'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Banco'",
+          "answer": "Banque",
+          "distractors": [
+            "Musée",
+            "Hôpital",
+            "Supermarché"
+          ],
+          "target_vocab": "banque",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banque' significa 'Banco'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el estación de tren?'",
+          "answer": "Où est le gare ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "gare"
+          ],
+          "target_vocab": "gare",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el estación de tren?'",
+          "explanation": "La estructura correcta es: 'Où est le gare ?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Hôpital",
+              "right": "Hospital"
+            },
+            {
+              "left": "Rue",
+              "right": "Calle"
+            },
+            {
+              "left": "Parc",
+              "right": "Parque"
+            },
+            {
+              "left": "Gare",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Banco'",
+          "answer": "Banque",
+          "distractors": [
+            "Aéroport",
+            "Supermarché",
+            "Rue"
+          ],
+          "target_vocab": "banque",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banque' significa 'Banco'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Dónde está el parque?'",
+          "answer": "Où est le parc ?",
+          "options": [
+            "Où",
+            "est",
+            "le",
+            "parc"
+          ],
+          "target_vocab": "parc",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el parque?'",
+          "explanation": "La estructura correcta es: 'Où est le parc ?'."
+        }
+      ]
+    }
+  ]
+}

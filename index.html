@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>EstudiandoAndo | Tu ingreso con IA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    
+    <script>
+        // Configuración inicial de Tailwind con darkMode
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-cream': '#F9F9F9',
+                        'ea-dark': '#0A0A0A',
+                        'ea-gray-light': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-serif { font-family: 'Cormorant Garamond', serif; }
+        .text-handwritten { font-family: 'Homemade Apple', cursive; }
+        
+        .highlight-gray {
+            background-color: #E5E7EB;
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+        
+        .btn-dark {
+            background-color: #0A0A0A;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-dark:hover {
+            background-color: #262626;
+            transform: translateY(-1px);
+        }
+        
+        .watermark-text {
+            font-size: 11vw;
+            line-height: 1;
+            color: rgba(0,0,0,0.02);
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        /* Hover glows matching university colors */
+        .glow-uv {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-uv:hover {
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+            border-color: rgba(37, 99, 235, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-unam {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-unam:hover {
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-ipn {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-ipn:hover {
+            box-shadow: 0 10px 30px rgba(122, 28, 71, 0.15);
+            border-color: rgba(122, 28, 71, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-uam {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-uam:hover {
+            box-shadow: 0 10px 30px rgba(128, 0, 0, 0.15);
+            border-color: rgba(128, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-buap {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-buap:hover {
+            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.15);
+            border-color: rgba(79, 70, 229, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-chapingo {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-chapingo:hover {
+            box-shadow: 0 10px 30px rgba(21, 128, 61, 0.15);
+            border-color: rgba(21, 128, 61, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-uanl {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-uanl:hover {
+            box-shadow: 0 10px 30px rgba(0, 59, 113, 0.15);
+            border-color: rgba(0, 59, 113, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-udg {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-udg:hover {
+            box-shadow: 0 10px 30px rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-normal {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-normal:hover {
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+            border-color: rgba(6, 182, 212, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-upn {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-upn:hover {
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+            border-color: rgba(99, 102, 241, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-uaemex {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-uaemex:hover {
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+            border-color: rgba(245, 158, 11, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-uaeh {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-uaeh:hover {
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-2px);
+        }
+        .glow-tecnm {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glow-tecnm:hover {
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-2px);
+        }
+
+
+        /* Feature Cards Premium Animation Styles */
+        .feature-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px) scale-[1.008];
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.04);
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+        
+        .feature-card-glow-blue:hover {
+            box-shadow: 0 24px 48px rgba(37, 99, 235, 0.08);
+            border-color: rgba(37, 99, 235, 0.25) !important;
+        }
+        .feature-card-glow-emerald:hover {
+            box-shadow: 0 24px 48px rgba(16, 185, 129, 0.08);
+            border-color: rgba(16, 185, 129, 0.25) !important;
+        }
+        .feature-card-glow-indigo:hover {
+            box-shadow: 0 24px 48px rgba(99, 102, 241, 0.08);
+            border-color: rgba(99, 102, 241, 0.25) !important;
+        }
+        .feature-card-glow-amber:hover {
+            box-shadow: 0 24px 48px rgba(245, 158, 11, 0.08);
+            border-color: rgba(245, 158, 11, 0.25) !important;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        /* Bouncing hover for avatars */
+        .avatar-pop {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .avatar-pop:hover {
+            transform: scale(1.18) translateY(-4px);
+            z-index: 10;
+        }
+
+        /* Scroll reveal styling */
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-section.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typer caret animation */
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .caret {
+            display: inline-block;
+            width: 2px;
+            height: 15px;
+            background-color: currentColor;
+            margin-left: 2px;
+            animation: blink 0.8s infinite;
+            vertical-align: middle;
+        }
+    </style>
+    <script>
+        // Script anti-FOUC para aplicar tema inmediatamente
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+    <script src="auth.js"></script>
+</head>
+<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
+
+    <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2.5" href="#">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class='hover:opacity-100 transition-opacity' href='biblioteca.html'>Biblioteca</a>
+                    <a class='hover:opacity-100 transition-opacity' href='aprendizaje.html'>Aprendizaje</a>
+                    <a class="hover:opacity-100 transition-opacity" href="idiomas.html">Idiomas</a>
+                    <a class="hover:opacity-100 transition-opacity" href="blog.html">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <a class="text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block" href="login.html">Iniciar sesión</a>
+                <a class="btn-dark dark:bg-white dark:text-black dark:hover:bg-gray-200 px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition-colors" href="registro.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-36 md:pt-40">
+        <!-- HERO SECTION -->
+        <section class="max-w-[90%] 2xl:max-w-[1650px] mx-auto px-6 mb-32 lg:mb-40 grid lg:grid-cols-12 gap-12 items-center min-h-[65vh] overflow-visible">
+            <div class="lg:col-span-8 space-y-8 text-left animate-fade-in relative z-10">
+                <h1 class="text-6xl md:text-8xl xl:text-[6.5rem] text-serif leading-[1.0] font-medium tracking-tight text-ea-dark dark:text-white">
+                    Tu preparación<br> académica para la <span class="text-handwritten text-5xl md:text-7xl xl:text-[6rem] italic text-ea-dark dark:text-white whitespace-nowrap block sm:inline-block mt-2">universidad</span>.
+                </h1>
+                
+                <p class="text-lg md:text-xl opacity-60 max-w-3xl font-medium leading-relaxed">
+                    La comunidad de preparación definitiva para tu examen. Explora nuestra biblioteca virtual con eBooks teóricos oficiales, practica con los simuladores de examenes reales, practica lenguas con la seccion de idiomas (Inglés, Francés, Portugués, Japonés), entérate de convocatorias oficiales en el blog y conéctate a charlar en tiempo real con otros estudiantes en nuestras salas de foros grupales de forma 100% gratuita.
+                </p>
+            </div>
+            
+            <div class="lg:col-span-6 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[48vw] lg:max-w-[700px] flex justify-center lg:justify-end items-center overflow-visible z-0 pointer-events-none select-none lg:translate-y-16">
+                <!-- Floating Glow Backing -->
+                <div class="absolute w-[120%] h-[120%] bg-blue-600/10 dark:bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                <!-- Mascot Image (Large, bleeding off screen, faded right & bottom edges) -->
+                <div class="relative w-full aspect-square flex items-center justify-center lg:justify-end overflow-visible pointer-events-none">
+                    <img src="cropped_assets/logo_mascot.png" 
+                         class="w-[90%] lg:w-[130%] h-auto object-contain dark:invert animate-float pointer-events-auto transition-transform hover:scale-[1.02] duration-300" 
+                         style="mask-image: radial-gradient(circle at 20% 35%, black 40%, transparent 80%);
+                                -webkit-mask-image: radial-gradient(circle at 20% 35%, black 40%, transparent 80%);" 
+                         alt="Nando - EA Mascot">
+                    <!-- Floating label for Nando's name -->
+                    <div class="absolute bottom-6 left-6 lg:left-0 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md px-4 py-2 rounded-2xl border border-black/5 dark:border-white/5 text-xs font-bold shadow-lg opacity-85 select-none pointer-events-none tracking-tight flex items-center gap-1.5 text-ea-dark dark:text-white z-10">
+                        <span>🐾 Hola, soy Nando</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UNIVERSITIES TICKER -->
+        <style>
+            @keyframes infinite-scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-50%)); }
+            }
+            .animate-infinite-scroll {
+                display: flex;
+                width: max-content;
+                animation: infinite-scroll 45s linear infinite;
+            }
+            .animate-infinite-scroll:hover {
+                animation-play-state: paused;
+            }
+        </style>
+
+        <section class="mt-12 lg:mt-24 mb-32 relative overflow-hidden reveal-section">
+            <h4 class="text-center text-serif text-3xl mb-10 opacity-50 italic font-medium">Preparación de alto rendimiento para aspirantes de</h4>
+            
+            <div class="relative w-full overflow-hidden">
+                <div class="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-[#F9F9F9] dark:from-neutral-950 to-transparent z-10 pointer-events-none transition-colors"></div>
+                <div class="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-[#F9F9F9] dark:from-neutral-950 to-transparent z-10 pointer-events-none transition-colors"></div>
+                
+                <div class="animate-infinite-scroll gap-6 px-3">
+                    <!-- Universidad Veracruzana -->
+                    <div class="glow-uv bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Veracruzana</span>
+                    </div>
+                    <!-- Universidad Nacional Autónoma de México -->
+                    <div class="glow-unam bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Nacional Autónoma de México</span>
+                    </div>
+                    <!-- Instituto Politécnico Nacional -->
+                    <div class="glow-ipn bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Instituto Politécnico Nacional</span>
+                    </div>
+                    <!-- Universidad Autónoma Metropolitana -->
+                    <div class="glow-uam bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma Metropolitana</span>
+                    </div>
+                    <!-- Benemérita Universidad Autónoma de Puebla -->
+                    <div class="glow-buap bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Benemérita Universidad Autónoma de Puebla</span>
+                    </div>
+                    <!-- Universidad Autónoma de Nuevo León -->
+                    <div class="glow-uanl bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma de Nuevo León</span>
+                    </div>
+                    <!-- Universidad de Guadalajara -->
+                    <div class="glow-udg bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad de Guadalajara</span>
+                    </div>
+                    <!-- Escuelas Normales -->
+                    <div class="glow-normal bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Escuelas Normales</span>
+                    </div>
+                    <!-- Universidad Autónoma Chapingo -->
+                    <div class="glow-chapingo bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma Chapingo</span>
+                    </div>
+                    <!-- Universidad Pedagógica Nacional -->
+                    <div class="glow-upn bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Pedagógica Nacional</span>
+                    </div>
+                    <!-- Universidad Autónoma del Estado de México -->
+                    <div class="glow-uaemex bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma del Estado de México</span>
+                    </div>
+                    <!-- Universidad Autónoma del Estado de Hidalgo -->
+                    <div class="glow-uaeh bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma del Estado de Hidalgo</span>
+                    </div>
+                    <!-- Tecnológico Nacional de México -->
+                    <div class="glow-tecnm bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Tecnológico Nacional de México</span>
+                    </div>
+
+                    <!-- Duplicate for loop -->
+                    <!-- Universidad Veracruzana -->
+                    <div class="glow-uv bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Veracruzana</span>
+                    </div>
+                    <!-- Universidad Nacional Autónoma de México -->
+                    <div class="glow-unam bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Nacional Autónoma de México</span>
+                    </div>
+                    <!-- Instituto Politécnico Nacional -->
+                    <div class="glow-ipn bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Instituto Politécnico Nacional</span>
+                    </div>
+                    <!-- Universidad Autónoma Metropolitana -->
+                    <div class="glow-uam bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma Metropolitana</span>
+                    </div>
+                    <!-- Benemérita Universidad Autónoma de Puebla -->
+                    <div class="glow-buap bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Benemérita Universidad Autónoma de Puebla</span>
+                    </div>
+                    <!-- Universidad Autónoma de Nuevo León -->
+                    <div class="glow-uanl bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma de Nuevo León</span>
+                    </div>
+                    <!-- Universidad de Guadalajara -->
+                    <div class="glow-udg bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad de Guadalajara</span>
+                    </div>
+                    <!-- Escuelas Normales -->
+                    <div class="glow-normal bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Escuelas Normales</span>
+                    </div>
+                    <!-- Universidad Autónoma Chapingo -->
+                    <div class="glow-chapingo bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma Chapingo</span>
+                    </div>
+                    <!-- Universidad Pedagógica Nacional -->
+                    <div class="glow-upn bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Pedagógica Nacional</span>
+                    </div>
+                    <!-- Universidad Autónoma del Estado de México -->
+                    <div class="glow-uaemex bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma del Estado de México</span>
+                    </div>
+                    <!-- Universidad Autónoma del Estado de Hidalgo -->
+                    <div class="glow-uaeh bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Universidad Autónoma del Estado de Hidalgo</span>
+                    </div>
+                    <!-- Tecnológico Nacional de México -->
+                    <div class="glow-tecnm bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-2xl px-7 py-5 flex items-center justify-center shadow-[0_2px_10px_rgb(0,0,0,0.02)] min-w-max cursor-default">
+                        <span class="text-lg font-bold tracking-tight opacity-75">Tecnológico Nacional de México</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ECOSISTEMA DE ESTUDIO (SECCIONES REALES) -->
+        <section class="max-w-[90%] 2xl:max-w-[1650px] mx-auto px-6 mb-32 reveal-section">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <h2 class="text-4xl md:text-5xl text-serif font-medium tracking-tight">Todo lo que necesitas en un solo lugar</h2>
+                <p class="text-sm opacity-60 font-medium">Un entorno de alto rendimiento diseñado para potenciar tu preparación, recopilando herramientas oficiales e interactivas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Tarjeta Biblioteca (Asimétrica - Ocupa 8 columnas) -->
+                <div class="lg:col-span-8 feature-card feature-card-glow-blue bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 p-8 md:p-10 rounded-[32px] flex flex-col justify-between h-full group">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+                        <div class="space-y-4 max-w-md">
+                            <div class="w-12 h-12 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">local_library</span>
+                            </div>
+                            <h3 class="text-2xl font-black text-ea-dark dark:text-white">Biblioteca Digital</h3>
+                            <p class="text-sm opacity-60 leading-relaxed">Navega a través de apuntes estructurados por materias, resúmenes teóricos y guías de estudio 100% gratuitas desarrolladas por docentes especializados.</p>
+                        </div>
+                        <!-- Interactive Mockup: Books fanning animation -->
+                        <div class="relative h-24 w-32 md:ml-auto flex items-end justify-center gap-1.5 pb-2 overflow-visible select-none pointer-events-none">
+                            <div class="w-5 h-16 bg-blue-500 rounded-t-lg transition-transform duration-300 origin-bottom transform group-hover:rotate-[-18deg] group-hover:translate-x-[-10px] shadow-md"></div>
+                            <div class="w-5 h-20 bg-indigo-500 rounded-t-lg transition-transform duration-300 origin-bottom transform group-hover:scale-105 shadow-md"></div>
+                            <div class="w-5 h-14 bg-emerald-500 rounded-t-lg transition-transform duration-300 origin-bottom transform group-hover:rotate-[18deg] group-hover:translate-x-[10px] shadow-md"></div>
+                        </div>
+                    </div>
+                    <a href="biblioteca.html" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-blue-600 dark:text-blue-400 border-b-2 border-blue-600/20 hover:border-blue-600 pb-0.5 w-max transition-all">
+                        Explorar Materiales
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Tarjeta Simuladores de Admisión (Asimétrica - Ocupa 4 columnas) -->
+                <div class="lg:col-span-4 feature-card feature-card-glow-blue bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 p-8 md:p-10 rounded-[32px] flex flex-col justify-between h-full group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-12 h-12 bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">speed</span>
+                            </div>
+                            <!-- Interactive Mockup: scattering university badges -->
+                            <div class="relative w-24 h-12 flex items-center justify-center overflow-visible select-none pointer-events-none">
+                                <span class="absolute text-[8px] font-black bg-amber-600 text-white px-2 py-0.5 rounded shadow-sm transition-all duration-300 group-hover:-translate-y-3 group-hover:-translate-x-5 group-hover:rotate-[-10deg] z-10">UNAM</span>
+                                <span class="absolute text-[8px] font-black bg-red-700 text-white px-2 py-0.5 rounded shadow-sm transition-all duration-300 group-hover:-translate-y-3 group-hover:translate-x-5 group-hover:rotate-[10deg] z-20">IPN</span>
+                                <span class="absolute text-[8px] font-black bg-blue-600 text-white px-2 py-0.5 rounded shadow-sm transition-all duration-300 group-hover:translate-y-3 group-hover:-translate-x-2 z-0">UV</span>
+                                <span class="absolute text-[8px] font-black bg-indigo-600 text-white px-2 py-0.5 rounded shadow-sm transition-all duration-300 group-hover:translate-y-3 group-hover:translate-x-2 z-0">UAM</span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-black text-ea-dark dark:text-white mb-3">Simuladores de Admisión</h3>
+                        <p class="text-sm opacity-60 leading-relaxed mb-6">Practica con reactivos reales estructurados y cronómetros oficiales adaptados al examen de admisión de la UNAM, IPN, UAM, UV, BUAP, UANL, UDG y más.</p>
+                    </div>
+                    <a href="aprendizaje.html" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-blue-600 dark:text-blue-400 border-b-2 border-blue-600/20 hover:border-blue-600 pb-0.5 w-max transition-all">
+                        Explorar Simuladores
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Tarjeta Cursos de Idiomas (Asimétrica - Ocupa 6 columnas) -->
+                <div class="lg:col-span-6 feature-card feature-card-glow-amber bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 p-8 md:p-10 rounded-[32px] flex flex-col justify-between h-full group">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+                        <div class="space-y-4 max-w-md">
+                            <div class="w-12 h-12 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-2xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">translate</span>
+                            </div>
+                            <h3 class="text-2xl font-black text-ea-dark dark:text-white">Sección de Idiomas</h3>
+                            <p class="text-sm opacity-60 leading-relaxed">Domina una lengua extranjera a tu propio ritmo. Libros completos e interactivos con lecciones estructuradas de Inglés, Francés, Portugués y Japonés.</p>
+                        </div>
+                        <!-- Interactive Mockup: scattering flags -->
+                        <div class="relative w-24 h-12 md:ml-auto flex items-center justify-center overflow-visible select-none pointer-events-none">
+                            <div class="absolute w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shadow-md text-sm transition-all duration-300 group-hover:-translate-y-3 group-hover:-translate-x-4 group-hover:rotate-[-12deg] z-10">🇺🇸</div>
+                            <div class="absolute w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shadow-md text-sm transition-all duration-300 group-hover:-translate-y-3 group-hover:translate-x-4 group-hover:rotate-[12deg] z-20">🇫🇷</div>
+                            <div class="absolute w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shadow-md text-sm transition-all duration-300 group-hover:translate-y-3 group-hover:-translate-x-2 z-0">🇧🇷</div>
+                            <div class="absolute w-7 h-7 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center shadow-md text-sm transition-all duration-300 group-hover:translate-y-3 group-hover:translate-x-2 z-0">🇯🇵</div>
+                        </div>
+                    </div>
+                    <a href="idiomas.html" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-amber-600 dark:text-amber-400 border-b-2 border-amber-600/20 hover:border-amber-600 pb-0.5 w-max transition-all">
+                        Aprender Idiomas
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Tarjeta Blog de Convocatorias (Asimétrica - Ocupa 6 columnas) -->
+                <div class="lg:col-span-6 feature-card feature-card-glow-indigo bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 p-8 md:p-10 rounded-[32px] flex flex-col justify-between h-full group">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+                        <div class="space-y-4 max-w-md">
+                            <div class="w-12 h-12 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-2xl flex items-center justify-center">
+                                <span class="material-symbols-outlined text-2xl">feed</span>
+                              </div>
+                            <h3 class="text-2xl font-black text-ea-dark dark:text-white">Blog de Convocatorias</h3>
+                            <p class="text-sm opacity-60 leading-relaxed">Mantente al día con publicaciones oficiales sobre fechas de registro, guías de estudio, resultados de admisión y técnicas de aprendizaje científico.</p>
+                        </div>
+                        <!-- Interactive Mockup: sliding news card with alert logo -->
+                        <div class="relative w-24 h-12 md:ml-auto flex items-center justify-center pointer-events-none select-none">
+                            <div class="w-full bg-indigo-500/10 rounded-xl p-2.5 border border-indigo-500/10 relative overflow-hidden transition-all duration-300 group-hover:translate-y-[-2px] group-hover:shadow-md">
+                                <div class="w-8 h-1.5 bg-indigo-500/30 rounded mb-1"></div>
+                                <div class="w-12 h-1 bg-indigo-500/20 rounded"></div>
+                                <div class="absolute -right-1 -bottom-1 w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-[10px] text-indigo-600 dark:text-indigo-400">campaign</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="inline-flex items-center gap-1.5 text-xs font-black uppercase tracking-widest text-indigo-600 dark:text-indigo-400 border-b-2 border-indigo-600/20 hover:border-indigo-600 pb-0.5 w-max transition-all">
+                        Ver Convocatorias
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVATARS AND PROFILES SHOWCASE -->
+        <section class="max-w-6xl mx-auto px-6 mb-32 reveal-section text-center">
+            <div class="max-w-2xl mx-auto mb-12 space-y-4">
+                <h2 class="text-4xl md:text-5xl text-serif font-medium tracking-tight">Tu Perfil en la Comunidad</h2>
+                <p class="text-sm opacity-60 font-medium">Crea un perfil para poder acceder a la sección de Foros y poder charlar con más miembros de la comunidad Estudi<span class="text-neutral-400 dark:text-neutral-500 font-bold">ando</span></p>
+            </div>
+            
+            <!-- Horizontal Avatars Row -->
+            <div class="flex flex-wrap items-center justify-center gap-6 py-6 px-4 bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-[32px] max-w-4xl mx-auto shadow-sm">
+                <!-- Avatars list (adventurer SVGs matching the profile modal) -->
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Felix">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Aneka">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Aneka" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Jack">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jack" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Liam">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Liam" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Buster">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Buster" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer bg-black text-white" title="Nando (Mascota EA)">
+                    <img src="cropped_assets/logo_mascot.png" class="w-full h-full object-contain p-1 dark:invert">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Bella">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bella" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Sasha">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Sasha" class="w-full h-full object-cover">
+                </div>
+                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Chloe">
+                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Chloe" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center gap-4">
+                <a href="login.html" class="px-6 py-2.5 rounded-full border border-black/10 dark:border-white/10 text-sm font-bold hover:bg-black/5 dark:hover:bg-white/5 transition-all text-ea-dark dark:text-white">Iniciar Sesión</a>
+                <a href="registro.html" class="bg-black dark:bg-white text-white dark:text-black px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 transition-all">Registrarse</a>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- democratizacion BOX -->
+        <section class="max-w-[90%] 2xl:max-w-[1650px] mx-auto px-6 py-10 reveal-section">
+            <div class="bg-black dark:bg-neutral-900 rounded-[48px] py-20 px-8 md:px-12 text-center text-white overflow-hidden relative shadow-2xl transition-colors">
+                <div class="absolute inset-0 flex items-center justify-center opacity-5 select-none pointer-events-none">
+                    <span class="text-[12vw] font-bold text-white tracking-tighter">GRATUITO</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl text-serif mb-6 leading-tight font-medium relative z-10">
+                    Educación de calidad, <br>siempre <span class="italic text-handwritten text-4xl md:text-6xl text-white">gratuita</span>.
+                </h2>
+                
+                <p class="text-base opacity-70 max-w-2xl mx-auto font-medium leading-relaxed relative z-10">
+                    Nuestra misión es democratizar el acceso a la educación superior en México. Todos los resúmenes, lecciones de idiomas y foros de charla activa están a tu disposición sin ningún costo. Tu único límite es tu dedicación.
+                </p>
+            </div>
+        </section>
+    </main>
+
+        <footer class="bg-white dark:bg-neutral-950 py-20 px-6 border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-[90%] 2xl:max-w-[1650px] mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="cropped_assets/logo_combined.png" class="h-16 w-auto object-contain dark:invert" alt="EA Logo">
+                    </div>
+                    <p class="text-xs opacity-50 font-medium leading-relaxed max-w-xs">
+                        Elevando el estándar de la educación digital en México de forma gratuita y libre de distracciones.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Plataforma</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="biblioteca.html">Biblioteca Virtual</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="aprendizaje.html">Simuladores de Admisión</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="idiomas.html">Cursos Idiomas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Comunidad</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="foros.html">Foros de Charla</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="blog.html">Blog Oficial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Redes</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.tiktok.com/@estudiando_ando.org?_r=1&_t=ZS-98CbOv3uH8E" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.instagram.com/estudiandoando_org?igsh=MWZveTB2ZnVybWZnOQ==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.facebook.com/share/g/1GbheNa2cb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Grupo de Facebook</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://discord.gg/SzurPrJZcR" target="_blank" rel="noopener noreferrer">Servidor de Discord</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://chat.whatsapp.com/Kz5w8TAh44FBHHDoA3rAss" target="_blank" rel="noopener noreferrer">Grupo de WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Legal</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Privacidad</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-black/5 pt-10 pb-20 md:pb-0">
+                <p class="text-xs opacity-40 font-bold tracking-tight">© EstudiandoAndo 2026. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra de Navegación Móvil (Adaptable a celulares/tablets pequeñas) -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl border-t border-black/10 dark:border-white/10 h-16 flex items-center justify-around px-1 md:hidden shadow-lg transition-colors">
+        <a href="index.html" class="flex flex-col items-center gap-0.5 opacity-100 text-black dark:text-white transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="text-[9px] font-bold tracking-tight">Inicio</span>
+        </a>
+        <a href="biblioteca.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">local_library</span>
+            <span class="text-[9px] font-bold tracking-tight">Biblioteca</span>
+        </a>
+        <a href="aprendizaje.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">psychology</span>
+            <span class="text-[9px] font-bold tracking-tight">Aprendizaje</span>
+        </a>
+        <a href="idiomas.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">language</span>
+            <span class="text-[9px] font-bold tracking-tight">Idiomas</span>
+        </a>
+        <a href="blog.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">feed</span>
+            <span class="text-[9px] font-bold tracking-tight">Blog</span>
+        </a>
+    </nav>
+
+    <!-- SCRIPTS -->
+    <script>
+
+
+
+
+        // --- 3. SCROLL REVEAL ANIMATIONS (IntersectionObserver) ---
+        function initScrollReveal() {
+            const sections = document.querySelectorAll('.reveal-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            sections.forEach(s => observer.observe(s));
+        }
+
+        // --- 4. INITIALIZATION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            initScrollReveal();
+        });
+
+        // Dark mode toggle listener
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "unit1": {
+    "title": "Bases, saludos y viajes",
+    "lessons": [
+      {
+        "id": "l1",
+        "exercises": [
+          {
+            "type": "multiple_choice",
+            "question": "¿Cómo se dice 'Hola' en inglés?",
+            "options": ["Goodbye", "Hello", "Please", "Thank you"],
+            "answer": "Hello"
+          },
+          {
+            "type": "translate",
+            "question": "Traduce esta oración",
+            "phrase": "I want a coffee",
+            "answer": "Yo quiero un café",
+            "accepted": ["Quiero un café", "Yo quiero un café"]
+          },
+          {
+            "type": "order_words",
+            "question": "Ordena las palabras para formar: '¿Dónde está el baño?'",
+            "words": ["is", "the", "Where", "bathroom?"],
+            "answer": ["Where", "is", "the", "bathroom?"]
+          },
+          {
+            "type": "fill_in_blank",
+            "question": "Completa el espacio",
+            "phrase": "Nice to _____ you.",
+            "options": ["meet", "meat", "greet"],
+            "answer": "meet"
+          },
+          {
+            "type": "match_pairs",
+            "question": "Empareja los pares",
+            "pairs": [
+              { "a": "Water", "b": "Agua" },
+              { "a": "Bread", "b": "Pan" },
+              { "a": "Apple", "b": "Manzana" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

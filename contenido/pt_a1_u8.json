@@ -1,0 +1,794 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 8,
+  "title": "Planos Futuros (Checkpoint 2)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a aprender portugués'",
+          "answer": "Ela vai aprender português",
+          "options": [
+            "Ela",
+            "vai",
+            "aprender",
+            "português"
+          ],
+          "target_vocab": "aprender português",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a aprender portugués'",
+          "explanation": "La estructura correcta es: 'Ela vai aprender português'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Visitar amigos'",
+          "phrase": "Visitar amigos",
+          "answer": "Visitar amigos",
+          "target_vocab": "visitar amigos",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Visitar amigos'",
+          "explanation": "Se escribe 'Visitar amigos'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a empezar un nuevo trabajo'",
+          "answer": "Ela vai começar um novo trabalho",
+          "options": [
+            "Ela",
+            "vai",
+            "começar",
+            "um",
+            "novo",
+            "trabalho"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'Ela vai começar um novo trabalho'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Comprar un carro'",
+          "answer": "Comprar um carro",
+          "distractors": [
+            "Economizar dinheiro",
+            "Começar um novo trabalho",
+            "Aprender português"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Comprar un carro'",
+          "explanation": "'Comprar um carro' significa 'Comprar un carro'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Comprar un carro'",
+          "answer": "Comprar um carro",
+          "distractors": [
+            "Visitar amigos",
+            "Aprender português",
+            "Sair de férias"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Comprar un carro'",
+          "explanation": "'Comprar um carro' significa 'Comprar un carro'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu vou _____",
+          "answer": "começar um novo trabalho",
+          "options": [
+            "começar um novo trabalho",
+            "estudar na próxima semana",
+            "ler mais",
+            "economizar dinheiro"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a empezar un nuevo trabajo'",
+          "explanation": "La palabra correcta es 'começar um novo trabalho'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Empezar un nuevo trabajo'",
+          "answer": "Começar um novo trabalho",
+          "distractors": [
+            "Aprender português",
+            "Estudar na próxima semana",
+            "Comprar um carro"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Empezar un nuevo trabajo'",
+          "explanation": "'Começar um novo trabalho' significa 'Empezar un nuevo trabajo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a comprar un carro'",
+          "answer": "Ela vai comprar um carro",
+          "options": [
+            "Ela",
+            "vai",
+            "comprar",
+            "um",
+            "carro"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Ela vai comprar um carro'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Visitar amigos",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Viajar amanhã",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Economizar dinheiro",
+              "right": "Ahorrar dinero"
+            },
+            {
+              "left": "Ler mais",
+              "right": "Leer más"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Leer más'",
+          "phrase": "Leer más",
+          "answer": "Ler mais",
+          "target_vocab": "ler mais",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Leer más'",
+          "explanation": "Se escribe 'Ler mais'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ela vai _____",
+          "answer": "sair de férias",
+          "options": [
+            "sair de férias",
+            "aprender português",
+            "ler mais",
+            "viajar amanhã"
+          ],
+          "target_vocab": "sair de férias",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a ir de vacaciones'",
+          "explanation": "La palabra correcta es 'sair de férias'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a leer más'",
+          "answer": "Ela vai ler mais",
+          "options": [
+            "Ela",
+            "vai",
+            "ler",
+            "mais"
+          ],
+          "target_vocab": "ler mais",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a leer más'",
+          "explanation": "La estructura correcta es: 'Ela vai ler mais'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Voy a empezar un nuevo trabajo'",
+          "answer": "Eu vou começar um novo trabalho",
+          "options": [
+            "Eu",
+            "vou",
+            "começar",
+            "um",
+            "novo",
+            "trabalho"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'Eu vou começar um novo trabalho'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Leer más'",
+          "answer": "Ler mais",
+          "distractors": [
+            "Sair de férias",
+            "Economizar dinheiro",
+            "Aprender português"
+          ],
+          "target_vocab": "ler mais",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Ler mais' significa 'Leer más'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Empezar un nuevo trabajo'",
+          "phrase": "Empezar un nuevo trabajo",
+          "answer": "Começar um novo trabalho",
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Empezar un nuevo trabajo'",
+          "explanation": "Se escribe 'Começar um novo trabalho'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a ahorrar dinero'",
+          "answer": "Ela vai economizar dinheiro",
+          "options": [
+            "Ela",
+            "vai",
+            "economizar",
+            "dinheiro"
+          ],
+          "target_vocab": "economizar dinheiro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ahorrar dinero'",
+          "explanation": "La estructura correcta es: 'Ela vai economizar dinheiro'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Ahorrar dinero'",
+          "phrase": "Ahorrar dinero",
+          "answer": "Economizar dinheiro",
+          "target_vocab": "economizar dinheiro",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Ahorrar dinero'",
+          "explanation": "Se escribe 'Economizar dinheiro'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Visitar amigos",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Comprar um carro",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Ler mais",
+              "right": "Leer más"
+            },
+            {
+              "left": "Estudar na próxima semana",
+              "right": "Estudiar la próxima semana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Mudarse'",
+          "answer": "Mudar de casa",
+          "distractors": [
+            "Ler mais",
+            "Começar um novo trabalho",
+            "Comprar um carro"
+          ],
+          "target_vocab": "mudar de casa",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Mudarse'",
+          "explanation": "'Mudar de casa' significa 'Mudarse'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Comprar un carro'",
+          "answer": "Comprar um carro",
+          "distractors": [
+            "Sair de férias",
+            "Viajar amanhã",
+            "Aprender português"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Comprar un carro'",
+          "explanation": "'Comprar um carro' significa 'Comprar un carro'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Viajar mañana'",
+          "answer": "Viajar amanhã",
+          "distractors": [
+            "Começar um novo trabalho",
+            "Aprender português",
+            "Estudar na próxima semana"
+          ],
+          "target_vocab": "viajar amanhã",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Viajar amanhã' significa 'Viajar mañana'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu vou _____",
+          "answer": "começar um novo trabalho",
+          "options": [
+            "começar um novo trabalho",
+            "sair de férias",
+            "viajar amanhã",
+            "mudar de casa"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a empezar un nuevo trabajo'",
+          "explanation": "La palabra correcta es 'começar um novo trabalho'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a comprar un carro'",
+          "answer": "Ela vai comprar um carro",
+          "options": [
+            "Ela",
+            "vai",
+            "comprar",
+            "um",
+            "carro"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Ela vai comprar um carro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a ahorrar dinero'",
+          "answer": "Ela vai economizar dinheiro",
+          "options": [
+            "Ela",
+            "vai",
+            "economizar",
+            "dinheiro"
+          ],
+          "target_vocab": "economizar dinheiro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ahorrar dinero'",
+          "explanation": "La estructura correcta es: 'Ela vai economizar dinheiro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Voy a empezar un nuevo trabajo'",
+          "answer": "Eu vou começar um novo trabalho",
+          "options": [
+            "Eu",
+            "vou",
+            "começar",
+            "um",
+            "novo",
+            "trabalho"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'Eu vou começar um novo trabalho'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Mudarse'",
+          "phrase": "Mudarse",
+          "answer": "Mudar de casa",
+          "target_vocab": "mudar de casa",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Mudarse'",
+          "explanation": "Se escribe 'Mudar de casa'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Aprender portugués'",
+          "answer": "Aprender português",
+          "distractors": [
+            "Visitar amigos",
+            "Estudar na próxima semana",
+            "Sair de férias"
+          ],
+          "target_vocab": "aprender português",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Aprender portugués'",
+          "explanation": "'Aprender português' significa 'Aprender portugués'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Mudarse'",
+          "phrase": "Mudarse",
+          "answer": "Mudar de casa",
+          "target_vocab": "mudar de casa",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Mudarse'",
+          "explanation": "Se escribe 'Mudar de casa'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Estudar na próxima semana",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Sair de férias",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Visitar amigos",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Economizar dinheiro",
+              "right": "Ahorrar dinero"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Aprender portugués'",
+          "answer": "Aprender português",
+          "distractors": [
+            "Estudar na próxima semana",
+            "Sair de férias",
+            "Visitar amigos"
+          ],
+          "target_vocab": "aprender português",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Aprender portugués'",
+          "explanation": "'Aprender português' significa 'Aprender portugués'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Estudiar la próxima semana'",
+          "answer": "Estudar na próxima semana",
+          "distractors": [
+            "Ler mais",
+            "Viajar amanhã",
+            "Economizar dinheiro"
+          ],
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Estudiar la próxima semana'",
+          "explanation": "'Estudar na próxima semana' significa 'Estudiar la próxima semana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Viajar mañana'",
+          "phrase": "Viajar mañana",
+          "answer": "Viajar amanhã",
+          "target_vocab": "viajar amanhã",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Viajar mañana'",
+          "explanation": "Se escribe 'Viajar amanhã'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Viajar mañana'",
+          "answer": "Viajar amanhã",
+          "distractors": [
+            "Mudar de casa",
+            "Comprar um carro",
+            "Sair de férias"
+          ],
+          "target_vocab": "viajar amanhã",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Viajar amanhã' significa 'Viajar mañana'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Ela vai _____",
+          "answer": "começar um novo trabalho",
+          "options": [
+            "começar um novo trabalho",
+            "comprar um carro",
+            "economizar dinheiro",
+            "sair de férias"
+          ],
+          "target_vocab": "começar um novo trabalho",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La palabra correcta es 'começar um novo trabalho'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Voy a viajar mañana'",
+          "answer": "Eu vou viajar amanhã",
+          "options": [
+            "Eu",
+            "vou",
+            "viajar",
+            "amanhã"
+          ],
+          "target_vocab": "viajar amanhã",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a viajar mañana'",
+          "explanation": "La estructura correcta es: 'Eu vou viajar amanhã'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Visitar amigos'",
+          "answer": "Visitar amigos",
+          "distractors": [
+            "Viajar amanhã",
+            "Comprar um carro",
+            "Sair de férias"
+          ],
+          "target_vocab": "visitar amigos",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visitar amigos' significa 'Visitar amigos'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a estudiar la próxima semana'",
+          "answer": "Ela vai estudar na próxima semana",
+          "options": [
+            "Ela",
+            "vai",
+            "estudar",
+            "na",
+            "próxima",
+            "semana"
+          ],
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Ela vai estudar na próxima semana'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a comprar un carro'",
+          "answer": "Ela vai comprar um carro",
+          "options": [
+            "Ela",
+            "vai",
+            "comprar",
+            "um",
+            "carro"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Ela vai comprar um carro'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Ler mais",
+              "right": "Leer más"
+            },
+            {
+              "left": "Visitar amigos",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Aprender português",
+              "right": "Aprender portugués"
+            },
+            {
+              "left": "Comprar um carro",
+              "right": "Comprar un carro"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Leer más'",
+          "phrase": "Leer más",
+          "answer": "Ler mais",
+          "target_vocab": "ler mais",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Leer más'",
+          "explanation": "Se escribe 'Ler mais'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Ahorrar dinero'",
+          "phrase": "Ahorrar dinero",
+          "answer": "Economizar dinheiro",
+          "target_vocab": "economizar dinheiro",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Ahorrar dinero'",
+          "explanation": "Se escribe 'Economizar dinheiro'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir de vacaciones'",
+          "answer": "Sair de férias",
+          "distractors": [
+            "Estudar na próxima semana",
+            "Ler mais",
+            "Mudar de casa"
+          ],
+          "target_vocab": "sair de férias",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Ir de vacaciones'",
+          "explanation": "'Sair de férias' significa 'Ir de vacaciones'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Estudiar la próxima semana'",
+          "answer": "Estudar na próxima semana",
+          "distractors": [
+            "Comprar um carro",
+            "Viajar amanhã",
+            "Mudar de casa"
+          ],
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Estudiar la próxima semana'",
+          "explanation": "'Estudar na próxima semana' significa 'Estudiar la próxima semana'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu vou _____",
+          "answer": "economizar dinheiro",
+          "options": [
+            "economizar dinheiro",
+            "aprender português",
+            "mudar de casa",
+            "começar um novo trabalho"
+          ],
+          "target_vocab": "economizar dinheiro",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a ahorrar dinero'",
+          "explanation": "La palabra correcta es 'economizar dinheiro'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Estudiar la próxima semana'",
+          "phrase": "Estudiar la próxima semana",
+          "answer": "Estudar na próxima semana",
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en portugués: 'Estudiar la próxima semana'",
+          "explanation": "Se escribe 'Estudar na próxima semana'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a estudiar la próxima semana'",
+          "answer": "Ela vai estudar na próxima semana",
+          "options": [
+            "Ela",
+            "vai",
+            "estudar",
+            "na",
+            "próxima",
+            "semana"
+          ],
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Ela vai estudar na próxima semana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Ir de vacaciones'",
+          "answer": "Sair de férias",
+          "distractors": [
+            "Mudar de casa",
+            "Economizar dinheiro",
+            "Comprar um carro"
+          ],
+          "target_vocab": "sair de férias",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Ir de vacaciones'",
+          "explanation": "'Sair de férias' significa 'Ir de vacaciones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a estudiar la próxima semana'",
+          "answer": "Ela vai estudar na próxima semana",
+          "options": [
+            "Ela",
+            "vai",
+            "estudar",
+            "na",
+            "próxima",
+            "semana"
+          ],
+          "target_vocab": "estudar na próxima semana",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Ela vai estudar na próxima semana'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Ella va a comprar un carro'",
+          "answer": "Ela vai comprar um carro",
+          "options": [
+            "Ela",
+            "vai",
+            "comprar",
+            "um",
+            "carro"
+          ],
+          "target_vocab": "comprar um carro",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Ela vai comprar um carro'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Estudar na próxima semana",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Economizar dinheiro",
+              "right": "Ahorrar dinero"
+            },
+            {
+              "left": "Sair de férias",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Viajar amanhã",
+              "right": "Viajar mañana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    }
+  ]
+}

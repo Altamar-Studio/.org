@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Idiomas | EstudiandoAndo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    
+    <script>
+        // Configuración inicial de Tailwind con darkMode
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-cream': '#F9F9F9',
+                        'ea-dark': '#0A0A0A',
+                        'ea-gray-light': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-serif { font-family: 'Cormorant Garamond', serif; }
+        .text-handwritten { font-family: 'Homemade Apple', cursive; }
+        
+        .highlight-gray {
+            background-color: #E5E7EB;
+            padding: 0 6px;
+            border-radius: 4px;
+        }
+        
+        .btn-dark {
+            background-color: #0A0A0A;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-dark:hover {
+            background-color: #262626;
+            transform: translateY(-1px);
+        }
+        
+        .watermark-text {
+            font-size: 11vw;
+            line-height: 1;
+            color: rgba(0,0,0,0.02);
+            pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        #live-news-content { transition: opacity 0.4s ease-in-out; }
+    </style>
+    <script>
+        // Script anti-FOUC para aplicar tema inmediatamente
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+<script src="auth.js"></script>
+</head>
+<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
+
+    <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2" href="#">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class='hover:opacity-100 transition-opacity' href='biblioteca.html'>Biblioteca</a>
+                    <a class='hover:opacity-100 transition-opacity' href='aprendizaje.html'>Aprendizaje</a>
+                    <a class="hover:opacity-100 transition-opacity" href="idiomas.html">Idiomas</a>
+                    <a class="hover:opacity-100 transition-opacity" href="blog.html">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <a class="text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block" href="login.html">Iniciar sesión</a>
+                <a class="btn-dark dark:bg-white dark:text-black dark:hover:bg-gray-200 px-5 py-2.5 rounded-full text-sm font-bold shadow-sm transition-colors" href="registro.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="pt-32 pb-24 px-4 min-h-screen">
+        
+        <!-- Botón Volver -->
+        <div class="max-w-4xl mx-auto mb-10 flex items-center justify-start">
+            <a href="idiomas.html" class="inline-flex items-center gap-2 text-sm font-bold opacity-60 hover:opacity-100 transition-opacity group">
+                <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+                Volver a Idiomas
+            </a>
+        </div>
+
+        
+        <section class="max-w-4xl mx-auto mb-8 text-center px-6">
+            <div class="inline-flex items-center gap-3 bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 px-6 py-3 rounded-[20px] shadow-sm mb-6">
+                <span class="text-2xl">🇯🇵</span>
+                <h1 class="text-2xl font-bold tracking-tight text-ea-dark dark:text-white">Japonés</h1>
+            </div>
+        </section>
+
+        <!-- Lesson Path -->
+        <section class="max-w-3xl mx-auto bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[40px] shadow-sm overflow-hidden p-8 sm:p-12 mb-20">
+            
+            <!-- Progress Bar Info -->
+            <div class="mb-10 pb-6 border-b border-black/5 dark:border-white/5 flex justify-between items-end">
+                <div class="relative z-10">
+                    <h2 class="text-xl font-bold mb-1 text-gray-700 dark:text-gray-300 drop-shadow-sm">Tu Camino</h2>
+                </div>
+                <div id="lesson-counter" class="relative z-10 text-red-800 dark:text-red-100 bg-red-100/50 dark:bg-red-900/50 backdrop-blur-md border border-red-200 dark:border-red-800 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-widest shadow-sm">
+                    0 Lecciones
+                </div>
+            </div>
+
+            <!-- Path Container: generated by JS -->
+            <div id="lesson-path-container" class="relative w-full max-w-sm mx-auto py-12">
+                <!-- SVG dynamically generated by JS -->
+                <svg id="dynamic-path-svg" class="absolute inset-0 w-full h-full pointer-events-none z-0"></svg>
+                
+                <div id="lesson-nodes" class="relative z-10 flex flex-col items-center gap-12 w-full">
+                    <!-- Nodes injected here by renderPath() -->
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Cards removed as requested -->
+    </main>
+
+
+        <footer class="bg-white dark:bg-neutral-950 py-20 px-6 border-t border-black/5 dark:border-white/5 transition-colors">
+        <div class="max-w-[90%] 2xl:max-w-[1650px] mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-12 mb-16">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="cropped_assets/logo_combined.png" class="h-16 w-auto object-contain dark:invert" alt="EA Logo">
+                    </div>
+                    <p class="text-xs opacity-50 font-medium leading-relaxed max-w-xs">
+                        Elevando el estándar de la educación digital en México de forma gratuita y libre de distracciones.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Plataforma</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="biblioteca.html">Biblioteca Virtual</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="aprendizaje.html">Simuladores de Admisión</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="idiomas.html">Cursos Idiomas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Comunidad</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="foros.html">Foros de Charla</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="blog.html">Blog Oficial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Redes</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.tiktok.com/@estudiando_ando.org?_r=1&_t=ZS-98CbOv3uH8E" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.instagram.com/estudiandoando_org?igsh=MWZveTB2ZnVybWZnOQ==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://www.facebook.com/share/g/1GbheNa2cb/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Grupo de Facebook</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://discord.gg/SzurPrJZcR" target="_blank" rel="noopener noreferrer">Servidor de Discord</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="https://chat.whatsapp.com/Kz5w8TAh44FBHHDoA3rAss" target="_blank" rel="noopener noreferrer">Grupo de WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Legal</h5>
+                    <ul class="space-y-4 text-sm font-medium opacity-60">
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Privacidad</a></li>
+                        <li><a class="hover:opacity-100 transition-opacity" href="#">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-black/5 pt-10 pb-20 md:pb-0">
+                <div class="watermark-text font-black tracking-tighter hidden md:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></div>
+                <p class="text-xs opacity-40 font-bold tracking-tight">© EstudiandoAndo 2026. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Barra de Navegación Móvil (Adaptable a celulares/tablets pequeñas) -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-neutral-900/90 backdrop-blur-xl border-t border-black/10 dark:border-white/10 h-16 flex items-center justify-around px-1 md:hidden shadow-lg transition-colors">
+        <a href="index.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="text-[9px] font-bold tracking-tight">Inicio</span>
+        </a>
+        <a href="biblioteca.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">local_library</span>
+            <span class="text-[9px] font-bold tracking-tight">Biblioteca</span>
+        </a>
+        <a href="aprendizaje.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">psychology</span>
+            <span class="text-[9px] font-bold tracking-tight">Aprendizaje</span>
+        </a>
+        <a href="idiomas.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">language</span>
+            <span class="text-[9px] font-bold tracking-tight">Idiomas</span>
+        </a>
+        <a href="blog.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">feed</span>
+            <span class="text-[9px] font-bold tracking-tight">Blog</span>
+        </a>
+    </nav>
+
+    <script src="userProfile.js"></script>
+    <script>
+        // Dark mode toggle
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // ── Dynamic Lesson Path ──────────────────────────────────────────
+        
+        const motivationalPhrases = [
+            "¡Tú puedes!",
+            "Un paso a la vez",
+            "Sigue así",
+            "Excelente esfuerzo",
+            "Aprender es crecer",
+            "¡No te rindas!",
+            "Hoy serás mejor",
+            "Sigue brillando",
+            "El éxito te espera",
+            "¡A darle!"
+        ];
+
+        const LANG = 'ja', LEVEL = 'a1';
+        const TOTAL_UNITS = 8;
+        const LESSONS_PER_UNIT = 5;
+        
+        const UNIT_TITLES = {
+            1: "Saludos (Aisatsu)",
+            2: "Familia (Kazoku)",
+            3: "Ciudad (Machi)",
+            4: "Rutina (Nichijō)",
+            5: "Comida (Tabemono)",
+            6: "Compras (Kaimono)",
+            7: "Hobbies (Shumi)",
+            8: "Planes (Yotei)"
+        };
+        
+        // Zigzag offsets (Tailwind classes for margin)
+        const OFFSETS = ['-ml-[25%]', 'ml-[25%]', '-ml-[15%]', 'ml-[35%]', '-ml-[5%]', 'ml-[15%]'];
+
+        function renderPath() {
+            try {
+                const nodesContainer = document.getElementById('lesson-nodes');
+                if (!nodesContainer) return;
+                
+                nodesContainer.innerHTML = '';
+                
+                let completedCount = 0;
+                let totalAvailableLessons = TOTAL_UNITS * LESSONS_PER_UNIT;
+                const items = [];
+                
+                // Build the sequence of nodes for ALL units
+                for (let u = 1; u <= TOTAL_UNITS; u++) {
+                    items.push({ type: 'header', unit: u, title: UNIT_TITLES[u] });
+                    for (let l = 0; l < LESSONS_PER_UNIT; l++) {
+                        items.push({ type: 'lesson', unit: u, index: l });
+                    }
+                    if (u === 4 || u === 8) {
+                        items.push({ type: 'chest', unit: u, afterLesson: LESSONS_PER_UNIT - 1 });
+                    }
+                }
+
+                // Figure out active index isn't as simple anymore since states cascade.
+                // We just rely on getLessonState which checks localStorage
+                
+                let outHtml = '';
+                let nodeIdx = 0;
+                
+                items.forEach((item) => {
+                    if (item.type === 'header') {
+                        outHtml += `
+                            <div class="w-full max-w-sm mx-auto mt-12 mb-8 flex items-center gap-4">
+                                <div class="h-px bg-gray-300 dark:bg-neutral-700 flex-1"></div>
+                                <div class="text-center">
+                                    <span class="text-[10px] font-bold text-gray-400 dark:text-neutral-500 uppercase tracking-widest block mb-1">Unidad ${item.unit}</span>
+                                    <h2 class="text-lg font-extrabold text-ea-dark dark:text-white leading-tight">${item.title}</h2>
+                                </div>
+                                <div class="h-px bg-gray-300 dark:bg-neutral-700 flex-1"></div>
+                            </div>
+                        `;
+                    } else if (item.type === 'lesson') {
+                        const offset = OFFSETS[nodeIdx % OFFSETS.length] || '';
+                        nodeIdx++;
+                        const state = getLessonState(LANG, LEVEL, item.unit, item.index, LESSONS_PER_UNIT);
+                        
+                        if (state === 'completed') {
+                            completedCount++;
+                            const profile = getProfile();
+                            const key = `${LANG}_${LEVEL}_u${item.unit}_l${item.index}`;
+                            const stars = profile.lessonStars && profile.lessonStars[key] ? profile.lessonStars[key] : 1;
+                            
+                            let starsHtml = `<div class="absolute -bottom-6 flex gap-0.5">`;
+                            for(let s=0; s<3; s++) {
+                                if(s < stars) {
+                                    starsHtml += `<span class="text-yellow-400 text-[10px] drop-shadow-sm">⭐</span>`;
+                                } else {
+                                    starsHtml += `<span class="text-gray-300 dark:text-neutral-700 text-[10px] grayscale opacity-50">⭐</span>`;
+                                }
+                            }
+                            starsHtml += `</div>`;
+                            
+                            outHtml += `
+                                <a href="leccion.html?lang=${LANG}&level=${LEVEL}&unit=${item.unit}&lesson=${item.index}" class="path-node relative flex flex-col items-center group cursor-pointer ${offset} mb-6" data-state="completed">
+                                    <div class="w-16 h-16 rounded-full bg-red-600 border-4 border-white dark:border-neutral-900 flex items-center justify-center text-white shadow-[0_0_15px_rgba(220,38,38,0.5)] transform transition-transform group-hover:scale-110">
+                                        <span class="material-symbols-outlined font-bold text-[28px]">check</span>
+                                    </div>
+                                    ${starsHtml}
+                                </a>`;
+                        } else if (state === 'active') {
+                            outHtml += `
+                                <a href="leccion.html?lang=${LANG}&level=${LEVEL}&unit=${item.unit}&lesson=${item.index}"
+                                   class="path-node z-20 relative flex flex-col items-center group cursor-pointer ${offset} my-4" data-state="active">
+                                    <!-- Motivational Bubble -->
+                                    <div class="absolute -top-12 -right-24 animate-[bounce_3s_infinite] pointer-events-none hidden sm:block z-50">
+                                        <div class="bg-white dark:bg-neutral-800 text-ea-dark dark:text-white text-xs font-bold px-4 py-2 rounded-2xl shadow-lg border border-black/10 dark:border-white/10 whitespace-nowrap relative">
+                                            ${motivationalPhrases[Math.floor(Math.random() * motivationalPhrases.length)]}
+                                            <div class="absolute -bottom-1.5 left-4 w-3 h-3 bg-white dark:bg-neutral-800 border-b border-r border-black/10 dark:border-white/10 transform rotate-45"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-20 h-20 rounded-full bg-red-600 border-b-8 border-red-800 flex items-center justify-center text-white shadow-[0_0_30px_rgba(220,38,38,0.6)] transform transition-transform group-hover:scale-105 group-active:translate-y-2 group-active:border-b-0 ring-4 ring-red-400/50 animate-pulse">
+                                        <span class="material-symbols-outlined font-bold text-[36px]">play_arrow</span>
+                                    </div>
+                                </a>`;
+                        } else {
+                            outHtml += `
+                                <div class="path-node relative flex flex-col items-center group cursor-not-allowed ${offset} my-2" data-state="locked">
+                                    <div class="w-16 h-16 rounded-full bg-gray-200/50 dark:bg-neutral-800/50 backdrop-blur-md border-2 border-gray-300 dark:border-neutral-700 flex items-center justify-center text-black/30 dark:text-white/30 shadow-sm">
+                                        <span class="material-symbols-outlined font-bold text-[28px]">lock</span>
+                                    </div>
+                                </div>`;
+                        }
+                    } else if (item.type === 'chest') {
+                        const offset = OFFSETS[nodeIdx % OFFSETS.length] || '';
+                        nodeIdx++;
+                        
+                        const prevState = getLessonState(LANG, LEVEL, item.unit, item.afterLesson, LESSONS_PER_UNIT);
+                        const isAvailable = (prevState === 'completed');
+                        
+                        if (isAvailable) {
+                            outHtml += `
+                                <a href="leccion.html?lang=${LANG}&mode=review" class="path-node z-20 relative flex flex-col items-center group cursor-pointer ${offset} my-2" data-state="chest">
+                                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-600 border-b-4 border-yellow-700 flex items-center justify-center text-white shadow-[0_0_20px_rgba(250,204,21,0.5)] transform transition-transform group-hover:scale-110 group-active:translate-y-1 group-active:border-b-0">
+                                        <span class="text-3xl drop-shadow-md">🎁</span>
+                                    </div>
+                                    <div class="absolute -bottom-8 bg-white dark:bg-neutral-800 text-ea-dark dark:text-white text-[10px] font-bold px-3 py-1 rounded-xl shadow-sm border border-black/5 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                                        Repaso Inteligente
+                                    </div>
+                                </a>`;
+                        } else {
+                            outHtml += `
+                                <div class="path-node relative flex flex-col items-center group cursor-not-allowed ${offset} my-2" data-state="locked">
+                                    <div class="w-14 h-14 rounded-xl bg-gray-200/50 dark:bg-neutral-800/50 backdrop-blur-md border-2 border-gray-300 dark:border-neutral-700 flex items-center justify-center opacity-60">
+                                        <span class="text-2xl grayscale">🎁</span>
+                                    </div>
+                                </div>`;
+                        }
+                    }
+                });
+                
+                nodesContainer.innerHTML = outHtml;
+                
+                const counter = document.getElementById('lesson-counter');
+                if (counter) counter.textContent = `${completedCount}/${totalAvailableLessons} Lecciones`;
+                
+                // Draw the SVG line dynamically based on the nodes' positions
+                setTimeout(drawDynamicSVG, 50); // wait for layout
+            } catch (err) {
+                const nodesContainer = document.getElementById('lesson-nodes');
+                if (nodesContainer) {
+                    nodesContainer.innerHTML = `<div class="bg-red-500 text-white p-4 rounded-xl"><b>Error JS:</b> ${err.message} <br><pre class="text-xs mt-2">${err.stack}</pre></div>`;
+                }
+            }
+        }
+        
+        function drawDynamicSVG() {
+            const svg = document.getElementById('dynamic-path-svg');
+            const nodes = document.querySelectorAll('.path-node');
+            if (!svg || nodes.length < 2) return;
+            
+            const container = document.getElementById('lesson-path-container');
+            const containerRect = container.getBoundingClientRect();
+            
+            let pathD = "";
+            let completedPathD = "";
+            
+            let lastX = 0, lastY = 0;
+            let isPreviousCompleted = true;
+            
+            nodes.forEach((node, idx) => {
+                const rect = node.getBoundingClientRect();
+                // calculate center relative to container
+                const x = (rect.left - containerRect.left) + (rect.width / 2);
+                const y = (rect.top - containerRect.top) + (rect.height / 2);
+                
+                const state = node.getAttribute('data-state');
+                const isCompleted = state === 'completed' || state === 'chest'; // treat active/chest as part of the path logic
+                
+                if (idx === 0) {
+                    pathD += `M ${x} ${y}`;
+                    completedPathD += `M ${x} ${y}`;
+                    isPreviousCompleted = isCompleted;
+                } else {
+                    // Create a smooth bezier curve between last node and this node
+                    const cp1Y = lastY + (y - lastY) / 2;
+                    const cp2Y = lastY + (y - lastY) / 2;
+                    
+                    const curve = ` C ${lastX} ${cp1Y}, ${x} ${cp2Y}, ${x} ${y}`;
+                    pathD += curve;
+                    
+                    if (isPreviousCompleted) {
+                        completedPathD += curve;
+                    }
+                    
+                    if (state !== 'completed') {
+                        isPreviousCompleted = false; // Stop coloring the active path once we hit a non-completed node
+                    }
+                }
+                
+                lastX = x;
+                lastY = y;
+            });
+            
+            svg.innerHTML = `
+                <path d="${pathD}" fill="none" stroke="currentColor" stroke-width="12" class="text-gray-200 dark:text-neutral-800" stroke-linecap="round" />
+                <path d="${completedPathD}" fill="none" stroke="#dc2626" stroke-width="12" stroke-linecap="round" class="drop-shadow-[0_0_10px_rgba(220,38,38,0.4)]" />
+            `;
+        }
+
+        window.addEventListener('resize', drawDynamicSVG);
+        document.addEventListener('DOMContentLoaded', renderPath);
+    </script>
+</body>
+</html>

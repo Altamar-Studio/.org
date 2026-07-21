@@ -1,0 +1,778 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 6,
+  "title": "Roupas e Compras",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu gosto destes _____",
+          "answer": "camiseta",
+          "options": [
+            "camiseta",
+            "vestido",
+            "casaco",
+            "chapéu"
+          ],
+          "target_vocab": "camiseta",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos camiseta'",
+          "explanation": "La palabra correcta es 'camiseta'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Pantalones'",
+          "phrase": "Pantalones",
+          "answer": "Calça",
+          "target_vocab": "calça",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Pantalones'",
+          "explanation": "Se escribe 'Calça'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Camiseta",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Casaco",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Calça",
+              "right": "Pantalones"
+            },
+            {
+              "left": "Sapatos",
+              "right": "Zapatos"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Sombrero'",
+          "answer": "Chapéu",
+          "distractors": [
+            "Camisa",
+            "Meias",
+            "Camiseta"
+          ],
+          "target_vocab": "chapéu",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Chapéu' significa 'Sombrero'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Chaqueta'",
+          "answer": "Jaqueta",
+          "distractors": [
+            "Calça",
+            "Casaco",
+            "Saia"
+          ],
+          "target_vocab": "jaqueta",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Chaqueta'",
+          "explanation": "'Jaqueta' significa 'Chaqueta'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este zapatos?'",
+          "answer": "Quanto custa este sapatos?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "sapatos"
+          ],
+          "target_vocab": "sapatos",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este zapatos?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este sapatos?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Sombrero'",
+          "phrase": "Sombrero",
+          "answer": "Chapéu",
+          "target_vocab": "chapéu",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Sombrero'",
+          "explanation": "Se escribe 'Chapéu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Chaqueta'",
+          "answer": "Jaqueta",
+          "distractors": [
+            "Calça",
+            "Sapatos",
+            "Meias"
+          ],
+          "target_vocab": "jaqueta",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Chaqueta'",
+          "explanation": "'Jaqueta' significa 'Chaqueta'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos camiseta'",
+          "answer": "Eu gosto destes camiseta",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "camiseta"
+          ],
+          "target_vocab": "camiseta",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos camiseta'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes camiseta'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos abrigo'",
+          "answer": "Eu gosto destes casaco",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "casaco"
+          ],
+          "target_vocab": "casaco",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos abrigo'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes casaco'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Sombrero'",
+          "answer": "Chapéu",
+          "distractors": [
+            "Casaco",
+            "Vestido",
+            "Jaqueta"
+          ],
+          "target_vocab": "chapéu",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Chapéu' significa 'Sombrero'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Sapatos",
+              "right": "Zapatos"
+            },
+            {
+              "left": "Chapéu",
+              "right": "Sombrero"
+            },
+            {
+              "left": "Jaqueta",
+              "right": "Chaqueta"
+            },
+            {
+              "left": "Camisa",
+              "right": "Camisa"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu gosto destes _____",
+          "answer": "camisa",
+          "options": [
+            "camisa",
+            "meias",
+            "saia",
+            "sapatos"
+          ],
+          "target_vocab": "camisa",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos camisa'",
+          "explanation": "La palabra correcta es 'camisa'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Zapatos'",
+          "answer": "Sapatos",
+          "distractors": [
+            "Camiseta",
+            "Calça",
+            "Meias"
+          ],
+          "target_vocab": "sapatos",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Sapatos' significa 'Zapatos'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Zapatos'",
+          "answer": "Sapatos",
+          "distractors": [
+            "Chapéu",
+            "Calça",
+            "Saia"
+          ],
+          "target_vocab": "sapatos",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Sapatos' significa 'Zapatos'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos pantalones'",
+          "answer": "Eu gosto destes calça",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "calça"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos pantalones'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes calça'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este vestido?'",
+          "answer": "Quanto custa este vestido?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "vestido"
+          ],
+          "target_vocab": "vestido",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este vestido?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este vestido?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Sombrero'",
+          "phrase": "Sombrero",
+          "answer": "Chapéu",
+          "target_vocab": "chapéu",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Sombrero'",
+          "explanation": "Se escribe 'Chapéu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este sombrero?'",
+          "answer": "Quanto custa este chapéu?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "chapéu"
+          ],
+          "target_vocab": "chapéu",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este sombrero?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este chapéu?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Vestido",
+          "target_vocab": "vestido",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Vestido'",
+          "explanation": "Se escribe 'Vestido'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu gosto destes _____",
+          "answer": "sapatos",
+          "options": [
+            "sapatos",
+            "camisa",
+            "meias",
+            "jaqueta"
+          ],
+          "target_vocab": "sapatos",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos zapatos'",
+          "explanation": "La palabra correcta es 'sapatos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Falda'",
+          "phrase": "Falda",
+          "answer": "Saia",
+          "target_vocab": "saia",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Falda'",
+          "explanation": "Se escribe 'Saia'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Zapatos'",
+          "answer": "Sapatos",
+          "distractors": [
+            "Camiseta",
+            "Chapéu",
+            "Casaco"
+          ],
+          "target_vocab": "sapatos",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Sapatos' significa 'Zapatos'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos camisa'",
+          "answer": "Eu gosto destes camisa",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "camisa"
+          ],
+          "target_vocab": "camisa",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos camisa'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes camisa'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Casaco",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Jaqueta",
+              "right": "Chaqueta"
+            },
+            {
+              "left": "Meias",
+              "right": "Calcetines"
+            },
+            {
+              "left": "Camisa",
+              "right": "Camisa"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Vestido'",
+          "answer": "Vestido",
+          "distractors": [
+            "Casaco",
+            "Camiseta",
+            "Calça"
+          ],
+          "target_vocab": "vestido",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Vestido'",
+          "explanation": "'Vestido' significa 'Vestido'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Sombrero'",
+          "answer": "Chapéu",
+          "distractors": [
+            "Sapatos",
+            "Jaqueta",
+            "Casaco"
+          ],
+          "target_vocab": "chapéu",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Chapéu' significa 'Sombrero'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este vestido?'",
+          "answer": "Quanto custa este vestido?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "vestido"
+          ],
+          "target_vocab": "vestido",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este vestido?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este vestido?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Abrigo'",
+          "phrase": "Abrigo",
+          "answer": "Casaco",
+          "target_vocab": "casaco",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Abrigo'",
+          "explanation": "Se escribe 'Casaco'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos pantalones'",
+          "answer": "Eu gosto destes calça",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "calça"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos pantalones'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes calça'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos pantalones'",
+          "answer": "Eu gosto destes calça",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "calça"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos pantalones'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes calça'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Camiseta'",
+          "answer": "Camiseta",
+          "distractors": [
+            "Jaqueta",
+            "Calça",
+            "Vestido"
+          ],
+          "target_vocab": "camiseta",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camiseta'",
+          "explanation": "'Camiseta' significa 'Camiseta'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pantalones'",
+          "answer": "Calça",
+          "distractors": [
+            "Jaqueta",
+            "Chapéu",
+            "Vestido"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Calça' significa 'Pantalones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos pantalones'",
+          "answer": "Eu gosto destes calça",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "calça"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos pantalones'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes calça'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Jaqueta",
+              "right": "Chaqueta"
+            },
+            {
+              "left": "Vestido",
+              "right": "Vestido"
+            },
+            {
+              "left": "Casaco",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Chapéu",
+              "right": "Sombrero"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu gosto destes _____",
+          "answer": "jaqueta",
+          "options": [
+            "jaqueta",
+            "meias",
+            "calça",
+            "camiseta"
+          ],
+          "target_vocab": "jaqueta",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos chaqueta'",
+          "explanation": "La palabra correcta es 'jaqueta'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Abrigo'",
+          "answer": "Casaco",
+          "distractors": [
+            "Calça",
+            "Camiseta",
+            "Chapéu"
+          ],
+          "target_vocab": "casaco",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Casaco' significa 'Abrigo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Vestido",
+          "target_vocab": "vestido",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Vestido'",
+          "explanation": "Se escribe 'Vestido'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Falda'",
+          "phrase": "Falda",
+          "answer": "Saia",
+          "target_vocab": "saia",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Falda'",
+          "explanation": "Se escribe 'Saia'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este camisa?'",
+          "answer": "Quanto custa este camisa?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "camisa"
+          ],
+          "target_vocab": "camisa",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este camisa?'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Abrigo'",
+          "phrase": "Abrigo",
+          "answer": "Casaco",
+          "target_vocab": "casaco",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Abrigo'",
+          "explanation": "Se escribe 'Casaco'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu gosto destes _____",
+          "answer": "meias",
+          "options": [
+            "meias",
+            "camisa",
+            "chapéu",
+            "casaco"
+          ],
+          "target_vocab": "meias",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos calcetines'",
+          "explanation": "La palabra correcta es 'meias'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Me gustan esos pantalones'",
+          "answer": "Eu gosto destes calça",
+          "options": [
+            "Eu",
+            "gosto",
+            "destes",
+            "calça"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos pantalones'",
+          "explanation": "La estructura correcta es: 'Eu gosto destes calça'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Camisa'",
+          "answer": "Camisa",
+          "distractors": [
+            "Chapéu",
+            "Calça",
+            "Casaco"
+          ],
+          "target_vocab": "camisa",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camisa'",
+          "explanation": "'Camisa' significa 'Camisa'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pantalones'",
+          "answer": "Calça",
+          "distractors": [
+            "Meias",
+            "Jaqueta",
+            "Saia"
+          ],
+          "target_vocab": "calça",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Calça' significa 'Pantalones'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Saia",
+              "right": "Falda"
+            },
+            {
+              "left": "Meias",
+              "right": "Calcetines"
+            },
+            {
+              "left": "Camiseta",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Calça",
+              "right": "Pantalones"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Camiseta'",
+          "answer": "Camiseta",
+          "distractors": [
+            "Jaqueta",
+            "Camisa",
+            "Meias"
+          ],
+          "target_vocab": "camiseta",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camiseta'",
+          "explanation": "'Camiseta' significa 'Camiseta'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Falda'",
+          "phrase": "Falda",
+          "answer": "Saia",
+          "target_vocab": "saia",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en portugués: 'Falda'",
+          "explanation": "Se escribe 'Saia'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este camiseta?'",
+          "answer": "Quanto custa este camiseta?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "camiseta"
+          ],
+          "target_vocab": "camiseta",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camiseta?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este camiseta?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Cuánto cuesta este vestido?'",
+          "answer": "Quanto custa este vestido?",
+          "options": [
+            "Quanto",
+            "custa",
+            "este",
+            "vestido"
+          ],
+          "target_vocab": "vestido",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este vestido?'",
+          "explanation": "La estructura correcta es: 'Quanto custa este vestido?'."
+        }
+      ]
+    }
+  ]
+}

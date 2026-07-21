@@ -1,0 +1,795 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 3,
+  "title": "Ciudad (Machi)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Koko ni _____ ga arimasu",
+          "answer": "Michi",
+          "options": [
+            "Michi",
+            "Kouen",
+            "Byouin",
+            "Ginkou"
+          ],
+          "target_vocab": "michi",
+          "difficulty": 4,
+          "spanish_translation": "Completa: 'Hay un calle aquí'",
+          "explanation": "Falta 'Michi'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Restaurante'",
+          "answer": "Resutoran (レストラン)",
+          "distractors": [
+            "Byouin (病院)",
+            "Kuukou (空港)",
+            "Ginkou (銀行)"
+          ],
+          "target_vocab": "resutoran",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Restaurante'",
+          "explanation": "'Resutoran (レストラン)' significa 'Restaurante'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Resutoran (レストラン)",
+            "Ginkou (銀行)",
+            "Byouin (病院)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un banco aquí'",
+          "answer": "Koko ni Ginkou ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Ginkou",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "ginkou",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un banco aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Ginkou ga arimasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el restaurante?'",
+          "answer": "Resutoran wa doko desu ka",
+          "options": [
+            "Resutoran",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "resutoran",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el restaurante?'",
+          "explanation": "La estructura correcta es: 'Resutoran wa doko desu ka'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Museo'",
+          "phrase": "Museo",
+          "answer": "Hakubutsukan (博物館)",
+          "target_vocab": "hakubutsukan",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Museo'",
+          "explanation": "Se dice 'Hakubutsukan (博物館)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un escuela aquí'",
+          "answer": "Koko ni Gakkou ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Gakkou",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "gakkou",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un escuela aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Gakkou ga arimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Byouin (病院)",
+            "Ginkou (銀行)",
+            "Kouen (公園)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hospital'",
+          "phrase": "Hospital",
+          "answer": "Byouin (病院)",
+          "target_vocab": "byouin",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Hospital'",
+          "explanation": "Se dice 'Byouin (病院)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Gakkou (学校)",
+              "right": "Escuela"
+            },
+            {
+              "left": "Michi (道)",
+              "right": "Calle"
+            },
+            {
+              "left": "Kuukou (空港)",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Eki (駅)",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hospital'",
+          "phrase": "Hospital",
+          "answer": "Byouin (病院)",
+          "target_vocab": "byouin",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Hospital'",
+          "explanation": "Se dice 'Byouin (病院)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el museo?'",
+          "answer": "Hakubutsukan wa doko desu ka",
+          "options": [
+            "Hakubutsukan",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "hakubutsukan",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el museo?'",
+          "explanation": "La estructura correcta es: 'Hakubutsukan wa doko desu ka'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el estación de tren?'",
+          "answer": "Eki wa doko desu ka",
+          "options": [
+            "Eki",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el estación de tren?'",
+          "explanation": "La estructura correcta es: 'Eki wa doko desu ka'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Restaurante'",
+          "phrase": "Restaurante",
+          "answer": "Resutoran (レストラン)",
+          "target_vocab": "resutoran",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Restaurante'",
+          "explanation": "Se dice 'Resutoran (レストラン)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Gakkou (学校)",
+              "right": "Escuela"
+            },
+            {
+              "left": "Kouen (公園)",
+              "right": "Parque"
+            },
+            {
+              "left": "Eki (駅)",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Kuukou (空港)",
+              "right": "Aeropuerto"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Koko ni _____ ga arimasu",
+          "answer": "Eki",
+          "options": [
+            "Eki",
+            "Michi",
+            "Ginkou",
+            "Suupaa"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 4,
+          "spanish_translation": "Completa: 'Hay un estación de tren aquí'",
+          "explanation": "Falta 'Eki'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Suupaa (スーパー)",
+            "Byouin (病院)",
+            "Ginkou (銀行)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Escuela'",
+          "answer": "Gakkou (学校)",
+          "distractors": [
+            "Michi (道)",
+            "Resutoran (レストラン)",
+            "Ginkou (銀行)"
+          ],
+          "target_vocab": "gakkou",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Escuela'",
+          "explanation": "'Gakkou (学校)' significa 'Escuela'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Parque'",
+          "answer": "Kouen (公園)",
+          "distractors": [
+            "Ginkou (銀行)",
+            "Hakubutsukan (博物館)",
+            "Suupaa (スーパー)"
+          ],
+          "target_vocab": "kouen",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Parque'",
+          "explanation": "'Kouen (公園)' significa 'Parque'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el hospital?'",
+          "answer": "Byouin wa doko desu ka",
+          "options": [
+            "Byouin",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "byouin",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el hospital?'",
+          "explanation": "La estructura correcta es: 'Byouin wa doko desu ka'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Hakubutsukan (博物館)",
+            "Gakkou (学校)",
+            "Michi (道)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "Gakkou (学校)",
+          "target_vocab": "gakkou",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Escuela'",
+          "explanation": "Se dice 'Gakkou (学校)'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Koko ni _____ ga arimasu",
+          "answer": "Gakkou",
+          "options": [
+            "Gakkou",
+            "Kouen",
+            "Hakubutsukan",
+            "Kuukou"
+          ],
+          "target_vocab": "gakkou",
+          "difficulty": 4,
+          "spanish_translation": "Completa: 'Hay un escuela aquí'",
+          "explanation": "Falta 'Gakkou'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "Gakkou (学校)",
+          "target_vocab": "gakkou",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Escuela'",
+          "explanation": "Se dice 'Gakkou (学校)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el escuela?'",
+          "answer": "Gakkou wa doko desu ka",
+          "options": [
+            "Gakkou",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "gakkou",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el escuela?'",
+          "explanation": "La estructura correcta es: 'Gakkou wa doko desu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Hakubutsukan (博物館)",
+              "right": "Museo"
+            },
+            {
+              "left": "Kuukou (空港)",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Resutoran (レストラン)",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Eki (駅)",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el restaurante?'",
+          "answer": "Resutoran wa doko desu ka",
+          "options": [
+            "Resutoran",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "resutoran",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el restaurante?'",
+          "explanation": "La estructura correcta es: 'Resutoran wa doko desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Aeropuerto'",
+          "answer": "Kuukou (空港)",
+          "distractors": [
+            "Ginkou (銀行)",
+            "Resutoran (レストラン)",
+            "Kouen (公園)"
+          ],
+          "target_vocab": "kuukou",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Aeropuerto'",
+          "explanation": "'Kuukou (空港)' significa 'Aeropuerto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un hospital aquí'",
+          "answer": "Koko ni Byouin ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Byouin",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "byouin",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un hospital aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Byouin ga arimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Restaurante'",
+          "answer": "Resutoran (レストラン)",
+          "distractors": [
+            "Byouin (病院)",
+            "Eki (駅)",
+            "Kouen (公園)"
+          ],
+          "target_vocab": "resutoran",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Restaurante'",
+          "explanation": "'Resutoran (レストラン)' significa 'Restaurante'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el restaurante?'",
+          "answer": "Resutoran wa doko desu ka",
+          "options": [
+            "Resutoran",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "resutoran",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el restaurante?'",
+          "explanation": "La estructura correcta es: 'Resutoran wa doko desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Kouen (公園)",
+            "Gakkou (学校)",
+            "Ginkou (銀行)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "_____ wa doko desu ka",
+          "answer": "Kuukou",
+          "options": [
+            "Kuukou",
+            "Ginkou",
+            "Kouen",
+            "Michi"
+          ],
+          "target_vocab": "kuukou",
+          "difficulty": 4,
+          "spanish_translation": "Completa: '¿Dónde está el aeropuerto?'",
+          "explanation": "Falta 'Kuukou'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un aeropuerto aquí'",
+          "answer": "Koko ni Kuukou ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Kuukou",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "kuukou",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un aeropuerto aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Kuukou ga arimasu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Restaurante'",
+          "phrase": "Restaurante",
+          "answer": "Resutoran (レストラン)",
+          "target_vocab": "resutoran",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Restaurante'",
+          "explanation": "Se dice 'Resutoran (レストラン)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Suupaa (スーパー)",
+            "Byouin (病院)",
+            "Michi (道)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ginkou (銀行)",
+              "right": "Banco"
+            },
+            {
+              "left": "Eki (駅)",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Kuukou (空港)",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Resutoran (レストラン)",
+              "right": "Restaurante"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Supermercado'",
+          "phrase": "Supermercado",
+          "answer": "Suupaa (スーパー)",
+          "target_vocab": "suupaa",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Supermercado'",
+          "explanation": "Se dice 'Suupaa (スーパー)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un hospital aquí'",
+          "answer": "Koko ni Byouin ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Byouin",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "byouin",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un hospital aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Byouin ga arimasu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Aeropuerto'",
+          "answer": "Kuukou (空港)",
+          "distractors": [
+            "Hakubutsukan (博物館)",
+            "Gakkou (学校)",
+            "Michi (道)"
+          ],
+          "target_vocab": "kuukou",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Aeropuerto'",
+          "explanation": "'Kuukou (空港)' significa 'Aeropuerto'.",
+          "image": "contenido/img/vocab_countries.png"
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Hospital'",
+          "answer": "Byouin (病院)",
+          "distractors": [
+            "Kouen (公園)",
+            "Michi (道)",
+            "Resutoran (レストラン)"
+          ],
+          "target_vocab": "byouin",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Hospital'",
+          "explanation": "'Byouin (病院)' significa 'Hospital'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un calle aquí'",
+          "answer": "Koko ni Michi ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Michi",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "michi",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Michi ga arimasu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Koko ni _____ ga arimasu",
+          "answer": "Kuukou",
+          "options": [
+            "Kuukou",
+            "Suupaa",
+            "Kouen",
+            "Ginkou"
+          ],
+          "target_vocab": "kuukou",
+          "difficulty": 4,
+          "spanish_translation": "Completa: 'Hay un aeropuerto aquí'",
+          "explanation": "Falta 'Kuukou'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Banco'",
+          "phrase": "Banco",
+          "answer": "Ginkou (銀行)",
+          "target_vocab": "ginkou",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Banco'",
+          "explanation": "Se dice 'Ginkou (銀行)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estación de tren'",
+          "answer": "Eki (駅)",
+          "distractors": [
+            "Kouen (公園)",
+            "Byouin (病院)",
+            "Michi (道)"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Estación de tren'",
+          "explanation": "'Eki (駅)' significa 'Estación de tren'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Hay un museo aquí'",
+          "answer": "Koko ni Hakubutsukan ga arimasu",
+          "options": [
+            "Koko",
+            "ni",
+            "Hakubutsukan",
+            "ga",
+            "arimasu"
+          ],
+          "target_vocab": "hakubutsukan",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: 'Hay un museo aquí'",
+          "explanation": "La estructura correcta es: 'Koko ni Hakubutsukan ga arimasu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Dónde está el estación de tren?'",
+          "answer": "Eki wa doko desu ka",
+          "options": [
+            "Eki",
+            "wa",
+            "doko",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "eki",
+          "difficulty": 5,
+          "spanish_translation": "Ordena la frase: '¿Dónde está el estación de tren?'",
+          "explanation": "La estructura correcta es: 'Eki wa doko desu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Eki (駅)",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Kuukou (空港)",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Resutoran (レストラン)",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Suupaa (スーパー)",
+              "right": "Supermercado"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hospital'",
+          "phrase": "Hospital",
+          "answer": "Byouin (病院)",
+          "target_vocab": "byouin",
+          "difficulty": 4,
+          "spanish_translation": "Traduce: 'Hospital'",
+          "explanation": "Se dice 'Byouin (病院)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Supermercado'",
+          "answer": "Suupaa (スーパー)",
+          "distractors": [
+            "Ginkou (銀行)",
+            "Resutoran (レストラン)",
+            "Byouin (病院)"
+          ],
+          "target_vocab": "suupaa",
+          "difficulty": 3,
+          "spanish_translation": "Traducción de: 'Supermercado'",
+          "explanation": "'Suupaa (スーパー)' significa 'Supermercado'."
+        }
+      ]
+    }
+  ]
+}

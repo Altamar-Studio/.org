@@ -1,0 +1,772 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 7,
+  "title": "Hobbies y Tiempo Libre",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Jugar tenis'",
+          "phrase": "Jugar tenis",
+          "answer": "Play tennis",
+          "target_vocab": "play tennis",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Jugar tenis'",
+          "explanation": "Se escribe 'Play tennis'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Cantar'",
+          "answer": "Sing",
+          "distractors": [
+            "Run",
+            "Play video games",
+            "Dance"
+          ],
+          "target_vocab": "sing",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cantar'",
+          "explanation": "'Sing' significa 'Cantar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Cook",
+            "Play video games",
+            "Sing"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta jugar videojuegos'",
+          "answer": "I love to play video games",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "play",
+            "video",
+            "games"
+          ],
+          "target_vocab": "play video games",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta jugar videojuegos'",
+          "explanation": "La estructura correcta es: 'I love to play video games'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Sing",
+              "right": "Cantar"
+            },
+            {
+              "left": "Play video games",
+              "right": "Jugar videojuegos"
+            },
+            {
+              "left": "Travel",
+              "right": "Viajar"
+            },
+            {
+              "left": "Swim",
+              "right": "Nadar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I love to _____",
+          "answer": "run",
+          "options": [
+            "run",
+            "play tennis",
+            "dance",
+            "play video games"
+          ],
+          "target_vocab": "run",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta correr'",
+          "explanation": "La palabra correcta es 'run'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Sing",
+            "Swim",
+            "Paint"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes jugar tenis?'",
+          "answer": "Can you play tennis",
+          "options": [
+            "Can",
+            "you",
+            "play",
+            "tennis"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes jugar tenis?'",
+          "explanation": "La estructura correcta es: 'Can you play tennis'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Travel",
+          "target_vocab": "travel",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Viajar'",
+          "explanation": "Se escribe 'Travel'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes correr?'",
+          "answer": "Can you run",
+          "options": [
+            "Can",
+            "you",
+            "run"
+          ],
+          "target_vocab": "run",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes correr?'",
+          "explanation": "La estructura correcta es: 'Can you run'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Correr'",
+          "answer": "Run",
+          "distractors": [
+            "Play video games",
+            "Listen to music",
+            "Cook"
+          ],
+          "target_vocab": "run",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Correr'",
+          "explanation": "'Run' significa 'Correr'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Paint",
+          "target_vocab": "paint",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Pintar'",
+          "explanation": "Se escribe 'Paint'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Cook",
+            "Play video games",
+            "Run"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Travel",
+              "right": "Viajar"
+            },
+            {
+              "left": "Dance",
+              "right": "Bailar"
+            },
+            {
+              "left": "Play video games",
+              "right": "Jugar videojuegos"
+            },
+            {
+              "left": "Paint",
+              "right": "Pintar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Sing",
+            "Swim",
+            "Travel"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta bailar'",
+          "answer": "I love to dance",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "dance"
+          ],
+          "target_vocab": "dance",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta bailar'",
+          "explanation": "La estructura correcta es: 'I love to dance'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta cocinar'",
+          "answer": "I love to cook",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "cook"
+          ],
+          "target_vocab": "cook",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cocinar'",
+          "explanation": "La estructura correcta es: 'I love to cook'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta viajar'",
+          "answer": "I love to travel",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "travel"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta viajar'",
+          "explanation": "La estructura correcta es: 'I love to travel'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Nadar'",
+          "phrase": "Nadar",
+          "answer": "Swim",
+          "target_vocab": "swim",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Nadar'",
+          "explanation": "Se escribe 'Swim'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Can you _____",
+          "answer": "sing",
+          "options": [
+            "sing",
+            "play video games",
+            "travel",
+            "dance"
+          ],
+          "target_vocab": "sing",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes cantar?'",
+          "explanation": "La palabra correcta es 'sing'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Viajar'",
+          "answer": "Travel",
+          "distractors": [
+            "Play tennis",
+            "Dance",
+            "Cook"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Travel' significa 'Viajar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta pintar'",
+          "answer": "I love to paint",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "paint"
+          ],
+          "target_vocab": "paint",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta pintar'",
+          "explanation": "La estructura correcta es: 'I love to paint'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Jugar tenis'",
+          "phrase": "Jugar tenis",
+          "answer": "Play tennis",
+          "target_vocab": "play tennis",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Jugar tenis'",
+          "explanation": "Se escribe 'Play tennis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me encanta cocinar'",
+          "answer": "I love to cook",
+          "options": [
+            "I",
+            "love",
+            "to",
+            "cook"
+          ],
+          "target_vocab": "cook",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cocinar'",
+          "explanation": "La estructura correcta es: 'I love to cook'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Escuchar música'",
+          "phrase": "Escuchar música",
+          "answer": "Listen to music",
+          "target_vocab": "listen to music",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Escuchar música'",
+          "explanation": "Se escribe 'Listen to music'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Cocinar'",
+          "answer": "Cook",
+          "distractors": [
+            "Play tennis",
+            "Play video games",
+            "Dance"
+          ],
+          "target_vocab": "cook",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cook' significa 'Cocinar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Cocinar'",
+          "answer": "Cook",
+          "distractors": [
+            "Swim",
+            "Sing",
+            "Play video games"
+          ],
+          "target_vocab": "cook",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cook' significa 'Cocinar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes viajar?'",
+          "answer": "Can you travel",
+          "options": [
+            "Can",
+            "you",
+            "travel"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes viajar?'",
+          "explanation": "La estructura correcta es: 'Can you travel'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Can you _____",
+          "answer": "play video games",
+          "options": [
+            "play video games",
+            "swim",
+            "paint",
+            "cook"
+          ],
+          "target_vocab": "play video games",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes jugar videojuegos?'",
+          "explanation": "La palabra correcta es 'play video games'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Run",
+              "right": "Correr"
+            },
+            {
+              "left": "Swim",
+              "right": "Nadar"
+            },
+            {
+              "left": "Play tennis",
+              "right": "Jugar tenis"
+            },
+            {
+              "left": "Listen to music",
+              "right": "Escuchar música"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "I love to _____",
+          "answer": "swim",
+          "options": [
+            "swim",
+            "sing",
+            "run",
+            "cook"
+          ],
+          "target_vocab": "swim",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta nadar'",
+          "explanation": "La palabra correcta es 'swim'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Correr'",
+          "phrase": "Correr",
+          "answer": "Run",
+          "target_vocab": "run",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Correr'",
+          "explanation": "Se escribe 'Run'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Bailar'",
+          "answer": "Dance",
+          "distractors": [
+            "Play tennis",
+            "Run",
+            "Cook"
+          ],
+          "target_vocab": "dance",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Dance' significa 'Bailar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Viajar'",
+          "answer": "Travel",
+          "distractors": [
+            "Cook",
+            "Listen to music",
+            "Paint"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Travel' significa 'Viajar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Nadar'",
+          "phrase": "Nadar",
+          "answer": "Swim",
+          "target_vocab": "swim",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Nadar'",
+          "explanation": "Se escribe 'Swim'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes viajar?'",
+          "answer": "Can you travel",
+          "options": [
+            "Can",
+            "you",
+            "travel"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes viajar?'",
+          "explanation": "La estructura correcta es: 'Can you travel'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes correr?'",
+          "answer": "Can you run",
+          "options": [
+            "Can",
+            "you",
+            "run"
+          ],
+          "target_vocab": "run",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes correr?'",
+          "explanation": "La estructura correcta es: 'Can you run'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Cook",
+            "Swim",
+            "Play video games"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Dance",
+              "right": "Bailar"
+            },
+            {
+              "left": "Sing",
+              "right": "Cantar"
+            },
+            {
+              "left": "Run",
+              "right": "Correr"
+            },
+            {
+              "left": "Swim",
+              "right": "Nadar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes pintar?'",
+          "answer": "Can you paint",
+          "options": [
+            "Can",
+            "you",
+            "paint"
+          ],
+          "target_vocab": "paint",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes pintar?'",
+          "explanation": "La estructura correcta es: 'Can you paint'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Nadar'",
+          "phrase": "Nadar",
+          "answer": "Swim",
+          "target_vocab": "swim",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Nadar'",
+          "explanation": "Se escribe 'Swim'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Correr'",
+          "answer": "Run",
+          "distractors": [
+            "Cook",
+            "Sing",
+            "Paint"
+          ],
+          "target_vocab": "run",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Correr'",
+          "explanation": "'Run' significa 'Correr'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Cook",
+              "right": "Cocinar"
+            },
+            {
+              "left": "Travel",
+              "right": "Viajar"
+            },
+            {
+              "left": "Paint",
+              "right": "Pintar"
+            },
+            {
+              "left": "Sing",
+              "right": "Cantar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I love to _____",
+          "answer": "play tennis",
+          "options": [
+            "play tennis",
+            "play video games",
+            "dance",
+            "travel"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta jugar tenis'",
+          "explanation": "La palabra correcta es 'play tennis'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Paint",
+          "target_vocab": "paint",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en inglés: 'Pintar'",
+          "explanation": "Se escribe 'Paint'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Jugar tenis'",
+          "answer": "Play tennis",
+          "distractors": [
+            "Play video games",
+            "Travel",
+            "Sing"
+          ],
+          "target_vocab": "play tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Play tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes cantar?'",
+          "answer": "Can you sing",
+          "options": [
+            "Can",
+            "you",
+            "sing"
+          ],
+          "target_vocab": "sing",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Can you sing'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Viajar'",
+          "answer": "Travel",
+          "distractors": [
+            "Swim",
+            "Sing",
+            "Play video games"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Travel' significa 'Viajar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes cantar?'",
+          "answer": "Can you sing",
+          "options": [
+            "Can",
+            "you",
+            "sing"
+          ],
+          "target_vocab": "sing",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cantar?'",
+          "explanation": "La estructura correcta es: 'Can you sing'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Puedes viajar?'",
+          "answer": "Can you travel",
+          "options": [
+            "Can",
+            "you",
+            "travel"
+          ],
+          "target_vocab": "travel",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes viajar?'",
+          "explanation": "La estructura correcta es: 'Can you travel'."
+        }
+      ]
+    }
+  ]
+}

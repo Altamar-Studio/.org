@@ -1,0 +1,788 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 8,
+  "title": "Projets (Checkpoint 2)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir de vacaciones'",
+          "answer": "Partir en vacances",
+          "distractors": [
+            "Étudier la semaine prochaine",
+            "Déménager",
+            "Apprendre le français"
+          ],
+          "target_vocab": "partir en vacances",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Ir de vacaciones'",
+          "explanation": "'Partir en vacances' significa 'Ir de vacaciones'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Étudier la semaine prochaine",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Partir en vacances",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Déménager",
+              "right": "Mudarse"
+            },
+            {
+              "left": "Lire plus",
+              "right": "Leer más"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ir de vacaciones'",
+          "phrase": "Ir de vacaciones",
+          "answer": "Partir en vacances",
+          "target_vocab": "partir en vacances",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Ir de vacaciones'",
+          "explanation": "Se escribe 'Partir en vacances'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Visitar amigos'",
+          "phrase": "Visitar amigos",
+          "answer": "Visiter des amis",
+          "target_vocab": "visiter des amis",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Visitar amigos'",
+          "explanation": "Se escribe 'Visiter des amis'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle va _____",
+          "answer": "voyager demain",
+          "options": [
+            "voyager demain",
+            "apprendre le français",
+            "lire plus",
+            "acheter une voiture"
+          ],
+          "target_vocab": "voyager demain",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a viajar mañana'",
+          "explanation": "La palabra correcta es 'voyager demain'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Leer más'",
+          "answer": "Lire plus",
+          "distractors": [
+            "Acheter une voiture",
+            "Commencer un nouveau travail",
+            "Visiter des amis"
+          ],
+          "target_vocab": "lire plus",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Lire plus' significa 'Leer más'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a leer más'",
+          "answer": "Elle va lire plus",
+          "options": [
+            "Elle",
+            "va",
+            "lire",
+            "plus"
+          ],
+          "target_vocab": "lire plus",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a leer más'",
+          "explanation": "La estructura correcta es: 'Elle va lire plus'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a ir de vacaciones'",
+          "answer": "Elle va partir en vacances",
+          "options": [
+            "Elle",
+            "va",
+            "partir",
+            "en",
+            "vacances"
+          ],
+          "target_vocab": "partir en vacances",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ir de vacaciones'",
+          "explanation": "La estructura correcta es: 'Elle va partir en vacances'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Empezar un nuevo trabajo'",
+          "answer": "Commencer un nouveau travail",
+          "distractors": [
+            "Partir en vacances",
+            "Visiter des amis",
+            "Économiser de l'argent"
+          ],
+          "target_vocab": "commencer un nouveau travail",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Empezar un nuevo trabajo'",
+          "explanation": "'Commencer un nouveau travail' significa 'Empezar un nuevo trabajo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a mudarse'",
+          "answer": "Je vais déménager",
+          "options": [
+            "Je",
+            "vais",
+            "déménager"
+          ],
+          "target_vocab": "déménager",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a mudarse'",
+          "explanation": "La estructura correcta es: 'Je vais déménager'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle va _____",
+          "answer": "déménager",
+          "options": [
+            "déménager",
+            "lire plus",
+            "apprendre le français",
+            "commencer un nouveau travail"
+          ],
+          "target_vocab": "déménager",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a mudarse'",
+          "explanation": "La palabra correcta es 'déménager'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Déménager",
+              "right": "Mudarse"
+            },
+            {
+              "left": "Acheter une voiture",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Étudier la semaine prochaine",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Lire plus",
+              "right": "Leer más"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Viajar mañana'",
+          "phrase": "Viajar mañana",
+          "answer": "Voyager demain",
+          "target_vocab": "voyager demain",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Viajar mañana'",
+          "explanation": "Se escribe 'Voyager demain'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a leer más'",
+          "answer": "Elle va lire plus",
+          "options": [
+            "Elle",
+            "va",
+            "lire",
+            "plus"
+          ],
+          "target_vocab": "lire plus",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a leer más'",
+          "explanation": "La estructura correcta es: 'Elle va lire plus'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Aprender francés'",
+          "answer": "Apprendre le français",
+          "distractors": [
+            "Acheter une voiture",
+            "Déménager",
+            "Économiser de l'argent"
+          ],
+          "target_vocab": "apprendre le français",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Aprender francés'",
+          "explanation": "'Apprendre le français' significa 'Aprender francés'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a estudiar la próxima semana'",
+          "answer": "Je vais étudier la semaine prochaine",
+          "options": [
+            "Je",
+            "vais",
+            "étudier",
+            "la",
+            "semaine",
+            "prochaine"
+          ],
+          "target_vocab": "étudier la semaine prochaine",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Je vais étudier la semaine prochaine'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Visitar amigos'",
+          "answer": "Visiter des amis",
+          "distractors": [
+            "Commencer un nouveau travail",
+            "Apprendre le français",
+            "Partir en vacances"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visiter des amis' significa 'Visitar amigos'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Aprender francés'",
+          "answer": "Apprendre le français",
+          "distractors": [
+            "Déménager",
+            "Lire plus",
+            "Acheter une voiture"
+          ],
+          "target_vocab": "apprendre le français",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Aprender francés'",
+          "explanation": "'Apprendre le français' significa 'Aprender francés'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a empezar un nuevo trabajo'",
+          "answer": "Elle va commencer un nouveau travail",
+          "options": [
+            "Elle",
+            "va",
+            "commencer",
+            "un",
+            "nouveau",
+            "travail"
+          ],
+          "target_vocab": "commencer un nouveau travail",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'Elle va commencer un nouveau travail'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Estudiar la próxima semana'",
+          "phrase": "Estudiar la próxima semana",
+          "answer": "Étudier la semaine prochaine",
+          "target_vocab": "étudier la semaine prochaine",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Estudiar la próxima semana'",
+          "explanation": "Se escribe 'Étudier la semaine prochaine'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Mudarse'",
+          "phrase": "Mudarse",
+          "answer": "Déménager",
+          "target_vocab": "déménager",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Mudarse'",
+          "explanation": "Se escribe 'Déménager'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a leer más'",
+          "answer": "Je vais lire plus",
+          "options": [
+            "Je",
+            "vais",
+            "lire",
+            "plus"
+          ],
+          "target_vocab": "lire plus",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a leer más'",
+          "explanation": "La estructura correcta es: 'Je vais lire plus'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je vais _____",
+          "answer": "acheter une voiture",
+          "options": [
+            "acheter une voiture",
+            "étudier la semaine prochaine",
+            "déménager",
+            "voyager demain"
+          ],
+          "target_vocab": "acheter une voiture",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a comprar un carro'",
+          "explanation": "La palabra correcta es 'acheter une voiture'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a viajar mañana'",
+          "answer": "Elle va voyager demain",
+          "options": [
+            "Elle",
+            "va",
+            "voyager",
+            "demain"
+          ],
+          "target_vocab": "voyager demain",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a viajar mañana'",
+          "explanation": "La estructura correcta es: 'Elle va voyager demain'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Empezar un nuevo trabajo'",
+          "phrase": "Empezar un nuevo trabajo",
+          "answer": "Commencer un nouveau travail",
+          "target_vocab": "commencer un nouveau travail",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Empezar un nuevo trabajo'",
+          "explanation": "Se escribe 'Commencer un nouveau travail'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Apprendre le français",
+              "right": "Aprender francés"
+            },
+            {
+              "left": "Partir en vacances",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Visiter des amis",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Économiser de l'argent",
+              "right": "Ahorrar dinero"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Mudarse'",
+          "answer": "Déménager",
+          "distractors": [
+            "Visiter des amis",
+            "Économiser de l'argent",
+            "Commencer un nouveau travail"
+          ],
+          "target_vocab": "déménager",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Mudarse'",
+          "explanation": "'Déménager' significa 'Mudarse'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir de vacaciones'",
+          "answer": "Partir en vacances",
+          "distractors": [
+            "Commencer un nouveau travail",
+            "Visiter des amis",
+            "Déménager"
+          ],
+          "target_vocab": "partir en vacances",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Ir de vacaciones'",
+          "explanation": "'Partir en vacances' significa 'Ir de vacaciones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a comprar un carro'",
+          "answer": "Je vais acheter une voiture",
+          "options": [
+            "Je",
+            "vais",
+            "acheter",
+            "une",
+            "voiture"
+          ],
+          "target_vocab": "acheter une voiture",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Je vais acheter une voiture'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Visitar amigos'",
+          "answer": "Visiter des amis",
+          "distractors": [
+            "Déménager",
+            "Partir en vacances",
+            "Apprendre le français"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visiter des amis' significa 'Visitar amigos'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Partir en vacances",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Voyager demain",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Visiter des amis",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Commencer un nouveau travail",
+              "right": "Empezar un nuevo trabajo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je vais _____",
+          "answer": "visiter des amis",
+          "options": [
+            "visiter des amis",
+            "apprendre le français",
+            "déménager",
+            "commencer un nouveau travail"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a visitar amigos'",
+          "explanation": "La palabra correcta es 'visiter des amis'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Comprar un carro'",
+          "phrase": "Comprar un carro",
+          "answer": "Acheter une voiture",
+          "target_vocab": "acheter une voiture",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Comprar un carro'",
+          "explanation": "Se escribe 'Acheter une voiture'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Visitar amigos'",
+          "answer": "Visiter des amis",
+          "distractors": [
+            "Déménager",
+            "Acheter une voiture",
+            "Économiser de l'argent"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visiter des amis' significa 'Visitar amigos'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Viajar mañana'",
+          "answer": "Voyager demain",
+          "distractors": [
+            "Commencer un nouveau travail",
+            "Étudier la semaine prochaine",
+            "Économiser de l'argent"
+          ],
+          "target_vocab": "voyager demain",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Voyager demain' significa 'Viajar mañana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Viajar mañana'",
+          "answer": "Voyager demain",
+          "distractors": [
+            "Économiser de l'argent",
+            "Lire plus",
+            "Partir en vacances"
+          ],
+          "target_vocab": "voyager demain",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Voyager demain' significa 'Viajar mañana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Aprender francés'",
+          "phrase": "Aprender francés",
+          "answer": "Apprendre le français",
+          "target_vocab": "apprendre le français",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Aprender francés'",
+          "explanation": "Se escribe 'Apprendre le français'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a viajar mañana'",
+          "answer": "Je vais voyager demain",
+          "options": [
+            "Je",
+            "vais",
+            "voyager",
+            "demain"
+          ],
+          "target_vocab": "voyager demain",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a viajar mañana'",
+          "explanation": "La estructura correcta es: 'Je vais voyager demain'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a comprar un carro'",
+          "answer": "Je vais acheter une voiture",
+          "options": [
+            "Je",
+            "vais",
+            "acheter",
+            "une",
+            "voiture"
+          ],
+          "target_vocab": "acheter une voiture",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Je vais acheter une voiture'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a ahorrar dinero'",
+          "answer": "Elle va économiser de l'argent",
+          "options": [
+            "Elle",
+            "va",
+            "économiser",
+            "de",
+            "l'argent"
+          ],
+          "target_vocab": "économiser de l'argent",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ahorrar dinero'",
+          "explanation": "La estructura correcta es: 'Elle va économiser de l'argent'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a visitar amigos'",
+          "answer": "Je vais visiter des amis",
+          "options": [
+            "Je",
+            "vais",
+            "visiter",
+            "des",
+            "amis"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a visitar amigos'",
+          "explanation": "La estructura correcta es: 'Je vais visiter des amis'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ahorrar dinero'",
+          "phrase": "Ahorrar dinero",
+          "answer": "Économiser de l'argent",
+          "target_vocab": "économiser de l'argent",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Ahorrar dinero'",
+          "explanation": "Se escribe 'Économiser de l'argent'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Estudiar la próxima semana'",
+          "answer": "Étudier la semaine prochaine",
+          "distractors": [
+            "Économiser de l'argent",
+            "Voyager demain",
+            "Visiter des amis"
+          ],
+          "target_vocab": "étudier la semaine prochaine",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Estudiar la próxima semana'",
+          "explanation": "'Étudier la semaine prochaine' significa 'Estudiar la próxima semana'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Lire plus",
+              "right": "Leer más"
+            },
+            {
+              "left": "Partir en vacances",
+              "right": "Ir de vacaciones"
+            },
+            {
+              "left": "Acheter une voiture",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Apprendre le français",
+              "right": "Aprender francés"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Ella va a aprender francés'",
+          "answer": "Elle va apprendre le français",
+          "options": [
+            "Elle",
+            "va",
+            "apprendre",
+            "le",
+            "français"
+          ],
+          "target_vocab": "apprendre le français",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a aprender francés'",
+          "explanation": "La estructura correcta es: 'Elle va apprendre le français'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ir de vacaciones'",
+          "phrase": "Ir de vacaciones",
+          "answer": "Partir en vacances",
+          "target_vocab": "partir en vacances",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en francés: 'Ir de vacaciones'",
+          "explanation": "Se escribe 'Partir en vacances'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Voy a comprar un carro'",
+          "answer": "Je vais acheter une voiture",
+          "options": [
+            "Je",
+            "vais",
+            "acheter",
+            "une",
+            "voiture"
+          ],
+          "target_vocab": "acheter une voiture",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Je vais acheter une voiture'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle va _____",
+          "answer": "lire plus",
+          "options": [
+            "lire plus",
+            "déménager",
+            "visiter des amis",
+            "acheter une voiture"
+          ],
+          "target_vocab": "lire plus",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a leer más'",
+          "explanation": "La palabra correcta es 'lire plus'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Visitar amigos'",
+          "answer": "Visiter des amis",
+          "distractors": [
+            "Acheter une voiture",
+            "Partir en vacances",
+            "Déménager"
+          ],
+          "target_vocab": "visiter des amis",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visiter des amis' significa 'Visitar amigos'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Estudiar la próxima semana'",
+          "answer": "Étudier la semaine prochaine",
+          "distractors": [
+            "Déménager",
+            "Commencer un nouveau travail",
+            "Visiter des amis"
+          ],
+          "target_vocab": "étudier la semaine prochaine",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Estudiar la próxima semana'",
+          "explanation": "'Étudier la semaine prochaine' significa 'Estudiar la próxima semana'."
+        }
+      ]
+    }
+  ]
+}

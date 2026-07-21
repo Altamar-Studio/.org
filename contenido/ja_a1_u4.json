@@ -1,0 +1,812 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 4,
+  "title": "Rutina (Nichijō)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Despertar'",
+          "phrase": "Despertar",
+          "answer": "Okiru (起きる)",
+          "target_vocab": "okiru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Despertar'",
+          "explanation": "Se dice 'Okiru (起きる)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'A ella le gusta cena'",
+          "answer": "Kanojo wa Bangohan ga suki desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Bangohan",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "bangohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'A ella le gusta cena'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Bangohan ga suki desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero almuerzo'",
+          "answer": "Watashi wa Hirugohan ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hirugohan",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero almuerzo'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hirugohan ga shitai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero ducha'",
+          "answer": "Watashi wa Shawaa ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Shawaa",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero ducha'",
+          "explanation": "La estructura correcta es: 'Watashi wa Shawaa ga shitai desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Almuerzo'",
+          "answer": "Hirugohan (昼ごはん)",
+          "distractors": [
+            "Shigoto ni iku (仕事に行く)",
+            "Bangohan (晩ごはん)",
+            "Terebi wo miru (テレビを見る)"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Almuerzo'",
+          "explanation": "'Hirugohan (昼ごはん)' significa 'Almuerzo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kanojo wa _____ ga suki desu",
+          "answer": "Kaeru",
+          "options": [
+            "Kaeru",
+            "Asagohan",
+            "Neru",
+            "Hirugohan"
+          ],
+          "target_vocab": "kaeru",
+          "difficulty": 5,
+          "spanish_translation": "Completa: 'A ella le gusta volver a casa'",
+          "explanation": "Falta 'Kaeru'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Almuerzo'",
+          "answer": "Hirugohan (昼ごはん)",
+          "distractors": [
+            "Asagohan (朝ごはん)",
+            "Shigoto ni iku (仕事に行く)",
+            "Terebi wo miru (テレビを見る)"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Almuerzo'",
+          "explanation": "'Hirugohan (昼ごはん)' significa 'Almuerzo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Despertar'",
+          "phrase": "Despertar",
+          "answer": "Okiru (起きる)",
+          "target_vocab": "okiru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Despertar'",
+          "explanation": "Se dice 'Okiru (起きる)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Dormir'",
+          "answer": "Neru (寝る)",
+          "distractors": [
+            "Kaeru (帰る)",
+            "Hon wo yomu (本を読む)",
+            "Shigoto ni iku (仕事に行く)"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Dormir'",
+          "explanation": "'Neru (寝る)' significa 'Dormir'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Asagohan (朝ごはん)",
+              "right": "Desayuno"
+            },
+            {
+              "left": "Shigoto ni iku (仕事に行く)",
+              "right": "Ir a trabajar"
+            },
+            {
+              "left": "Kaeru (帰る)",
+              "right": "Volver a casa"
+            },
+            {
+              "left": "Okiru (起きる)",
+              "right": "Despertar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'A ella le gusta desayuno'",
+          "answer": "Kanojo wa Asagohan ga suki desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Asagohan",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "asagohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'A ella le gusta desayuno'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Asagohan ga suki desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ducha'",
+          "answer": "Shawaa (シャワー)",
+          "distractors": [
+            "Asagohan (朝ごはん)",
+            "Okiru (起きる)",
+            "Hon wo yomu (本を読む)"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ducha'",
+          "explanation": "'Shawaa (シャワー)' significa 'Ducha'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ir a trabajar'",
+          "phrase": "Ir a trabajar",
+          "answer": "Shigoto ni iku (仕事に行く)",
+          "target_vocab": "shigoto ni iku",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Ir a trabajar'",
+          "explanation": "Se dice 'Shigoto ni iku (仕事に行く)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Almuerzo'",
+          "answer": "Hirugohan (昼ごはん)",
+          "distractors": [
+            "Neru (寝る)",
+            "Terebi wo miru (テレビを見る)",
+            "Shigoto ni iku (仕事に行く)"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Almuerzo'",
+          "explanation": "'Hirugohan (昼ごはん)' significa 'Almuerzo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kanojo wa _____ ga suki desu",
+          "answer": "Neru",
+          "options": [
+            "Neru",
+            "Hirugohan",
+            "Shigoto ni iku",
+            "Hon wo yomu"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 5,
+          "spanish_translation": "Completa: 'A ella le gusta dormir'",
+          "explanation": "Falta 'Neru'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Shigoto ni iku (仕事に行く)",
+              "right": "Ir a trabajar"
+            },
+            {
+              "left": "Hirugohan (昼ごはん)",
+              "right": "Almuerzo"
+            },
+            {
+              "left": "Shawaa (シャワー)",
+              "right": "Ducha"
+            },
+            {
+              "left": "Bangohan (晩ごはん)",
+              "right": "Cena"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero cena'",
+          "answer": "Watashi wa Bangohan ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Bangohan",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "bangohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero cena'",
+          "explanation": "La estructura correcta es: 'Watashi wa Bangohan ga shitai desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ir a trabajar'",
+          "phrase": "Ir a trabajar",
+          "answer": "Shigoto ni iku (仕事に行く)",
+          "target_vocab": "shigoto ni iku",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Ir a trabajar'",
+          "explanation": "Se dice 'Shigoto ni iku (仕事に行く)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero almuerzo'",
+          "answer": "Watashi wa Hirugohan ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hirugohan",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero almuerzo'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hirugohan ga shitai desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ir a trabajar'",
+          "answer": "Shigoto ni iku (仕事に行く)",
+          "distractors": [
+            "Hirugohan (昼ごはん)",
+            "Hon wo yomu (本を読む)",
+            "Bangohan (晩ごはん)"
+          ],
+          "target_vocab": "shigoto ni iku",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ir a trabajar'",
+          "explanation": "'Shigoto ni iku (仕事に行く)' significa 'Ir a trabajar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Desayuno'",
+          "answer": "Asagohan (朝ごはん)",
+          "distractors": [
+            "Shawaa (シャワー)",
+            "Terebi wo miru (テレビを見る)",
+            "Shigoto ni iku (仕事に行く)"
+          ],
+          "target_vocab": "asagohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Desayuno'",
+          "explanation": "'Asagohan (朝ごはん)' significa 'Desayuno'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Desayuno'",
+          "answer": "Asagohan (朝ごはん)",
+          "distractors": [
+            "Shigoto ni iku (仕事に行く)",
+            "Okiru (起きる)",
+            "Terebi wo miru (テレビを見る)"
+          ],
+          "target_vocab": "asagohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Desayuno'",
+          "explanation": "'Asagohan (朝ごはん)' significa 'Desayuno'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Terebi wo miru (テレビを見る)",
+              "right": "Ver la tele"
+            },
+            {
+              "left": "Kaeru (帰る)",
+              "right": "Volver a casa"
+            },
+            {
+              "left": "Asagohan (朝ごはん)",
+              "right": "Desayuno"
+            },
+            {
+              "left": "Okiru (起きる)",
+              "right": "Despertar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero ducha'",
+          "answer": "Watashi wa Shawaa ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Shawaa",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero ducha'",
+          "explanation": "La estructura correcta es: 'Watashi wa Shawaa ga shitai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero dormir'",
+          "answer": "Watashi wa Neru ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Neru",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero dormir'",
+          "explanation": "La estructura correcta es: 'Watashi wa Neru ga shitai desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ducha'",
+          "answer": "Shawaa (シャワー)",
+          "distractors": [
+            "Kaeru (帰る)",
+            "Terebi wo miru (テレビを見る)",
+            "Asagohan (朝ごはん)"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ducha'",
+          "explanation": "'Shawaa (シャワー)' significa 'Ducha'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga shitai desu",
+          "answer": "Kaeru",
+          "options": [
+            "Kaeru",
+            "Shigoto ni iku",
+            "Bangohan",
+            "Asagohan"
+          ],
+          "target_vocab": "kaeru",
+          "difficulty": 5,
+          "spanish_translation": "Completa: 'Yo quiero volver a casa'",
+          "explanation": "Falta 'Kaeru'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ver la tele'",
+          "phrase": "Ver la tele",
+          "answer": "Terebi wo miru (テレビを見る)",
+          "target_vocab": "terebi wo miru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Ver la tele'",
+          "explanation": "Se dice 'Terebi wo miru (テレビを見る)'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ducha'",
+          "phrase": "Ducha",
+          "answer": "Shawaa (シャワー)",
+          "target_vocab": "shawaa",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Ducha'",
+          "explanation": "Se dice 'Shawaa (シャワー)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero ducha'",
+          "answer": "Watashi wa Shawaa ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Shawaa",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero ducha'",
+          "explanation": "La estructura correcta es: 'Watashi wa Shawaa ga shitai desu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Almuerzo'",
+          "answer": "Hirugohan (昼ごはん)",
+          "distractors": [
+            "Kaeru (帰る)",
+            "Asagohan (朝ごはん)",
+            "Neru (寝る)"
+          ],
+          "target_vocab": "hirugohan",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Almuerzo'",
+          "explanation": "'Hirugohan (昼ごはん)' significa 'Almuerzo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Dormir'",
+          "phrase": "Dormir",
+          "answer": "Neru (寝る)",
+          "target_vocab": "neru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Dormir'",
+          "explanation": "Se dice 'Neru (寝る)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'A ella le gusta ir a trabajar'",
+          "answer": "Kanojo wa Shigoto ni iku ga suki desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Shigoto",
+            "ni",
+            "iku",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "shigoto ni iku",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'A ella le gusta ir a trabajar'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Shigoto ni iku ga suki desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ducha'",
+          "answer": "Shawaa (シャワー)",
+          "distractors": [
+            "Bangohan (晩ごはん)",
+            "Okiru (起きる)",
+            "Hon wo yomu (本を読む)"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ducha'",
+          "explanation": "'Shawaa (シャワー)' significa 'Ducha'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Dormir'",
+          "phrase": "Dormir",
+          "answer": "Neru (寝る)",
+          "target_vocab": "neru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Dormir'",
+          "explanation": "Se dice 'Neru (寝る)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Despertar'",
+          "answer": "Okiru (起きる)",
+          "distractors": [
+            "Neru (寝る)",
+            "Hon wo yomu (本を読む)",
+            "Shigoto ni iku (仕事に行く)"
+          ],
+          "target_vocab": "okiru",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Despertar'",
+          "explanation": "'Okiru (起きる)' significa 'Despertar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Hirugohan (昼ごはん)",
+              "right": "Almuerzo"
+            },
+            {
+              "left": "Kaeru (帰る)",
+              "right": "Volver a casa"
+            },
+            {
+              "left": "Bangohan (晩ごはん)",
+              "right": "Cena"
+            },
+            {
+              "left": "Asagohan (朝ごはん)",
+              "right": "Desayuno"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero ver la tele'",
+          "answer": "Watashi wa Terebi wo miru ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Terebi",
+            "wo",
+            "miru",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "terebi wo miru",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero ver la tele'",
+          "explanation": "La estructura correcta es: 'Watashi wa Terebi wo miru ga shitai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero volver a casa'",
+          "answer": "Watashi wa Kaeru ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Kaeru",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "kaeru",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero volver a casa'",
+          "explanation": "La estructura correcta es: 'Watashi wa Kaeru ga shitai desu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga shitai desu",
+          "answer": "Neru",
+          "options": [
+            "Neru",
+            "Asagohan",
+            "Okiru",
+            "Terebi wo miru"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 5,
+          "spanish_translation": "Completa: 'Yo quiero dormir'",
+          "explanation": "Falta 'Neru'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Volver a casa'",
+          "phrase": "Volver a casa",
+          "answer": "Kaeru (帰る)",
+          "target_vocab": "kaeru",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Volver a casa'",
+          "explanation": "Se dice 'Kaeru (帰る)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Leer un libro'",
+          "answer": "Hon wo yomu (本を読む)",
+          "distractors": [
+            "Terebi wo miru (テレビを見る)",
+            "Kaeru (帰る)",
+            "Bangohan (晩ごはん)"
+          ],
+          "target_vocab": "hon wo yomu",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Leer un libro'",
+          "explanation": "'Hon wo yomu (本を読む)' significa 'Leer un libro'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Neru (寝る)",
+              "right": "Dormir"
+            },
+            {
+              "left": "Kaeru (帰る)",
+              "right": "Volver a casa"
+            },
+            {
+              "left": "Asagohan (朝ごはん)",
+              "right": "Desayuno"
+            },
+            {
+              "left": "Terebi wo miru (テレビを見る)",
+              "right": "Ver la tele"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ver la tele'",
+          "answer": "Terebi wo miru (テレビを見る)",
+          "distractors": [
+            "Okiru (起きる)",
+            "Hirugohan (昼ごはん)",
+            "Hon wo yomu (本を読む)"
+          ],
+          "target_vocab": "terebi wo miru",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ver la tele'",
+          "explanation": "'Terebi wo miru (テレビを見る)' significa 'Ver la tele'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Leer un libro'",
+          "phrase": "Leer un libro",
+          "answer": "Hon wo yomu (本を読む)",
+          "target_vocab": "hon wo yomu",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Leer un libro'",
+          "explanation": "Se dice 'Hon wo yomu (本を読む)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ducha'",
+          "answer": "Shawaa (シャワー)",
+          "distractors": [
+            "Kaeru (帰る)",
+            "Asagohan (朝ごはん)",
+            "Okiru (起きる)"
+          ],
+          "target_vocab": "shawaa",
+          "difficulty": 4,
+          "spanish_translation": "Traducción de: 'Ducha'",
+          "explanation": "'Shawaa (シャワー)' significa 'Ducha'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kanojo wa _____ ga suki desu",
+          "answer": "Shigoto ni iku",
+          "options": [
+            "Shigoto ni iku",
+            "Okiru",
+            "Hirugohan",
+            "Neru"
+          ],
+          "target_vocab": "shigoto ni iku",
+          "difficulty": 5,
+          "spanish_translation": "Completa: 'A ella le gusta ir a trabajar'",
+          "explanation": "Falta 'Shigoto ni iku'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'A ella le gusta dormir'",
+          "answer": "Kanojo wa Neru ga suki desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Neru",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'A ella le gusta dormir'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Neru ga suki desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'A ella le gusta cena'",
+          "answer": "Kanojo wa Bangohan ga suki desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Bangohan",
+            "ga",
+            "suki",
+            "desu"
+          ],
+          "target_vocab": "bangohan",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'A ella le gusta cena'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Bangohan ga suki desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Yo quiero dormir'",
+          "answer": "Watashi wa Neru ga shitai desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Neru",
+            "ga",
+            "shitai",
+            "desu"
+          ],
+          "target_vocab": "neru",
+          "difficulty": 6,
+          "spanish_translation": "Ordena la frase: 'Yo quiero dormir'",
+          "explanation": "La estructura correcta es: 'Watashi wa Neru ga shitai desu'."
+        }
+      ]
+    }
+  ]
+}

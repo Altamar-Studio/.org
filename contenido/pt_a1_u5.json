@@ -1,0 +1,770 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 5,
+  "title": "Comida e Bebida",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Agua'",
+          "phrase": "Agua",
+          "answer": "Água",
+          "target_vocab": "água",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Agua'",
+          "explanation": "Se escribe 'Água'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Maçã",
+            "Frango",
+            "Arroz"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero queso'",
+          "answer": "Eu quero queijo",
+          "options": [
+            "Eu",
+            "quero",
+            "queijo"
+          ],
+          "target_vocab": "queijo",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero queso'",
+          "explanation": "La estructura correcta es: 'Eu quero queijo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "café",
+          "options": [
+            "café",
+            "leite",
+            "maçã",
+            "arroz"
+          ],
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero café'",
+          "explanation": "La palabra correcta es 'café'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pollo'",
+          "answer": "Frango",
+          "distractors": [
+            "Queijo",
+            "Café",
+            "Pão"
+          ],
+          "target_vocab": "frango",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pollo'",
+          "explanation": "'Frango' significa 'Pollo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el queso?'",
+          "answer": "Você gosta de queijo?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "queijo"
+          ],
+          "target_vocab": "queijo",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el queso?'",
+          "explanation": "La estructura correcta es: 'Você gosta de queijo?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Queijo",
+              "right": "Queso"
+            },
+            {
+              "left": "Frango",
+              "right": "Pollo"
+            },
+            {
+              "left": "Café",
+              "right": "Café"
+            },
+            {
+              "left": "Salada",
+              "right": "Ensalada"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Pan'",
+          "phrase": "Pan",
+          "answer": "Pão",
+          "target_vocab": "pão",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Pan'",
+          "explanation": "Se escribe 'Pão'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero ensalada'",
+          "answer": "Eu quero salada",
+          "options": [
+            "Eu",
+            "quero",
+            "salada"
+          ],
+          "target_vocab": "salada",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero ensalada'",
+          "explanation": "La estructura correcta es: 'Eu quero salada'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Manzana'",
+          "answer": "Maçã",
+          "distractors": [
+            "Queijo",
+            "Frango",
+            "Peixe"
+          ],
+          "target_vocab": "maçã",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Maçã' significa 'Manzana'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero pollo'",
+          "answer": "Eu quero frango",
+          "options": [
+            "Eu",
+            "quero",
+            "frango"
+          ],
+          "target_vocab": "frango",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'Eu quero frango'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pan'",
+          "answer": "Pão",
+          "distractors": [
+            "Queijo",
+            "Salada",
+            "Água"
+          ],
+          "target_vocab": "pão",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pan'",
+          "explanation": "'Pão' significa 'Pan'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero pescado'",
+          "answer": "Eu quero peixe",
+          "options": [
+            "Eu",
+            "quero",
+            "peixe"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pescado'",
+          "explanation": "La estructura correcta es: 'Eu quero peixe'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Queijo",
+              "right": "Queso"
+            },
+            {
+              "left": "Peixe",
+              "right": "Pescado"
+            },
+            {
+              "left": "Arroz",
+              "right": "Arroz"
+            },
+            {
+              "left": "Pão",
+              "right": "Pan"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Arroz'",
+          "phrase": "Arroz",
+          "answer": "Arroz",
+          "target_vocab": "arroz",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Arroz'",
+          "explanation": "Se escribe 'Arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Manzana'",
+          "answer": "Maçã",
+          "distractors": [
+            "Arroz",
+            "Frango",
+            "Peixe"
+          ],
+          "target_vocab": "maçã",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Maçã' significa 'Manzana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Pollo'",
+          "phrase": "Pollo",
+          "answer": "Frango",
+          "target_vocab": "frango",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Pollo'",
+          "explanation": "Se escribe 'Frango'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Você gosta de _____?",
+          "answer": "pão",
+          "options": [
+            "pão",
+            "arroz",
+            "peixe",
+            "leite"
+          ],
+          "target_vocab": "pão",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el pan?'",
+          "explanation": "La palabra correcta es 'pão'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero ensalada'",
+          "answer": "Eu quero salada",
+          "options": [
+            "Eu",
+            "quero",
+            "salada"
+          ],
+          "target_vocab": "salada",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero ensalada'",
+          "explanation": "La estructura correcta es: 'Eu quero salada'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Arroz'",
+          "answer": "Arroz",
+          "distractors": [
+            "Salada",
+            "Peixe",
+            "Maçã"
+          ],
+          "target_vocab": "arroz",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Arroz'",
+          "explanation": "'Arroz' significa 'Arroz'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Café'",
+          "phrase": "Café",
+          "answer": "Café",
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Café'",
+          "explanation": "Se escribe 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el leche?'",
+          "answer": "Você gosta de leite?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "leite"
+          ],
+          "target_vocab": "leite",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el leche?'",
+          "explanation": "La estructura correcta es: 'Você gosta de leite?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero pescado'",
+          "answer": "Eu quero peixe",
+          "options": [
+            "Eu",
+            "quero",
+            "peixe"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pescado'",
+          "explanation": "La estructura correcta es: 'Eu quero peixe'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Eu quero _____",
+          "answer": "salada",
+          "options": [
+            "salada",
+            "leite",
+            "água",
+            "café"
+          ],
+          "target_vocab": "salada",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: 'Quiero ensalada'",
+          "explanation": "La palabra correcta es 'salada'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Agua'",
+          "phrase": "Agua",
+          "answer": "Água",
+          "target_vocab": "água",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Agua'",
+          "explanation": "Se escribe 'Água'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pescado'",
+          "answer": "Peixe",
+          "distractors": [
+            "Salada",
+            "Maçã",
+            "Arroz"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Peixe' significa 'Pescado'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Pão",
+              "right": "Pan"
+            },
+            {
+              "left": "Arroz",
+              "right": "Arroz"
+            },
+            {
+              "left": "Queijo",
+              "right": "Queso"
+            },
+            {
+              "left": "Leite",
+              "right": "Leche"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero pescado'",
+          "answer": "Eu quero peixe",
+          "options": [
+            "Eu",
+            "quero",
+            "peixe"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero pescado'",
+          "explanation": "La estructura correcta es: 'Eu quero peixe'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Manzana'",
+          "answer": "Maçã",
+          "distractors": [
+            "Café",
+            "Frango",
+            "Leite"
+          ],
+          "target_vocab": "maçã",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Maçã' significa 'Manzana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Manzana'",
+          "answer": "Maçã",
+          "distractors": [
+            "Frango",
+            "Leite",
+            "Pão"
+          ],
+          "target_vocab": "maçã",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Manzana'",
+          "explanation": "'Maçã' significa 'Manzana'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el leche?'",
+          "answer": "Você gosta de leite?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "leite"
+          ],
+          "target_vocab": "leite",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el leche?'",
+          "explanation": "La estructura correcta es: 'Você gosta de leite?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Quiero arroz'",
+          "answer": "Eu quero arroz",
+          "options": [
+            "Eu",
+            "quero",
+            "arroz"
+          ],
+          "target_vocab": "arroz",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: 'Quiero arroz'",
+          "explanation": "La estructura correcta es: 'Eu quero arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pescado'",
+          "answer": "Peixe",
+          "distractors": [
+            "Maçã",
+            "Água",
+            "Pão"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Peixe' significa 'Pescado'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Você gosta de _____?",
+          "answer": "frango",
+          "options": [
+            "frango",
+            "café",
+            "salada",
+            "peixe"
+          ],
+          "target_vocab": "frango",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el pollo?'",
+          "explanation": "La palabra correcta es 'frango'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Café'",
+          "phrase": "Café",
+          "answer": "Café",
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Café'",
+          "explanation": "Se escribe 'Café'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Maçã",
+            "Arroz",
+            "Pão"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Arroz",
+            "Leite",
+            "Água"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el agua?'",
+          "answer": "Você gosta de água?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "água"
+          ],
+          "target_vocab": "água",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el agua?'",
+          "explanation": "La estructura correcta es: 'Você gosta de água?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Salada",
+          "target_vocab": "salada",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Ensalada'",
+          "explanation": "Se escribe 'Salada'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Peixe",
+              "right": "Pescado"
+            },
+            {
+              "left": "Queijo",
+              "right": "Queso"
+            },
+            {
+              "left": "Frango",
+              "right": "Pollo"
+            },
+            {
+              "left": "Maçã",
+              "right": "Manzana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el manzana?'",
+          "answer": "Você gosta de maçã?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "maçã"
+          ],
+          "target_vocab": "maçã",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el manzana?'",
+          "explanation": "La estructura correcta es: 'Você gosta de maçã?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Leche'",
+          "phrase": "Leche",
+          "answer": "Leite",
+          "target_vocab": "leite",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Leche'",
+          "explanation": "Se escribe 'Leite'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pescado'",
+          "answer": "Peixe",
+          "distractors": [
+            "Salada",
+            "Água",
+            "Maçã"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Peixe' significa 'Pescado'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Café'",
+          "answer": "Café",
+          "distractors": [
+            "Frango",
+            "Leite",
+            "Pão"
+          ],
+          "target_vocab": "café",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Café'",
+          "explanation": "'Café' significa 'Café'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Você gosta de _____?",
+          "answer": "salada",
+          "options": [
+            "salada",
+            "arroz",
+            "água",
+            "maçã"
+          ],
+          "target_vocab": "salada",
+          "difficulty": 6,
+          "spanish_translation": "Completa la oración: '¿Te gusta el ensalada?'",
+          "explanation": "La palabra correcta es 'salada'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Arroz",
+              "right": "Arroz"
+            },
+            {
+              "left": "Maçã",
+              "right": "Manzana"
+            },
+            {
+              "left": "Café",
+              "right": "Café"
+            },
+            {
+              "left": "Leite",
+              "right": "Leche"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el leche?'",
+          "answer": "Você gosta de leite?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "leite"
+          ],
+          "target_vocab": "leite",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el leche?'",
+          "explanation": "La estructura correcta es: 'Você gosta de leite?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Pescado'",
+          "answer": "Peixe",
+          "distractors": [
+            "Leite",
+            "Pão",
+            "Frango"
+          ],
+          "target_vocab": "peixe",
+          "difficulty": 5,
+          "spanish_translation": "Elige la traducción correcta: 'Pescado'",
+          "explanation": "'Peixe' significa 'Pescado'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Café'",
+          "phrase": "Café",
+          "answer": "Café",
+          "target_vocab": "café",
+          "difficulty": 6,
+          "spanish_translation": "Escribe en portugués: 'Café'",
+          "explanation": "Se escribe 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Te gusta el ensalada?'",
+          "answer": "Você gosta de salada?",
+          "options": [
+            "Você",
+            "gosta",
+            "de",
+            "salada"
+          ],
+          "target_vocab": "salada",
+          "difficulty": 7,
+          "spanish_translation": "Traduce: '¿Te gusta el ensalada?'",
+          "explanation": "La estructura correcta es: 'Você gosta de salada?'."
+        }
+      ]
+    }
+  ]
+}

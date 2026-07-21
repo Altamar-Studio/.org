@@ -1,0 +1,756 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 7,
+  "title": "Les Loisirs",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Danser",
+              "right": "Bailar"
+            },
+            {
+              "left": "Jouer aux jeux vidéo",
+              "right": "Jugar videojuegos"
+            },
+            {
+              "left": "Chanter",
+              "right": "Cantar"
+            },
+            {
+              "left": "Peindre",
+              "right": "Pintar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes jugar tenis?'",
+          "answer": "Peux-tu jouer au tennis ?",
+          "options": [
+            "Peux-tu",
+            "jouer",
+            "au",
+            "tennis"
+          ],
+          "target_vocab": "jouer au tennis",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes jugar tenis?'",
+          "explanation": "La estructura correcta es: 'Peux-tu jouer au tennis ?'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "J'adore _____",
+          "answer": "jouer au tennis",
+          "options": [
+            "jouer au tennis",
+            "chanter",
+            "nager",
+            "cuisiner"
+          ],
+          "target_vocab": "jouer au tennis",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta jugar tenis'",
+          "explanation": "La palabra correcta es 'jouer au tennis'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cocinar'",
+          "answer": "Cuisiner",
+          "distractors": [
+            "Courir",
+            "Peindre",
+            "Voyager"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cuisiner' significa 'Cocinar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes bailar?'",
+          "answer": "Peux-tu danser ?",
+          "options": [
+            "Peux-tu",
+            "danser"
+          ],
+          "target_vocab": "danser",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes bailar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu danser ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta jugar videojuegos'",
+          "answer": "J'adore jouer aux jeux vidéo",
+          "options": [
+            "J'adore",
+            "jouer",
+            "aux",
+            "jeux",
+            "vidéo"
+          ],
+          "target_vocab": "jouer aux jeux vidéo",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta jugar videojuegos'",
+          "explanation": "La estructura correcta es: 'J'adore jouer aux jeux vidéo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Peindre",
+          "target_vocab": "peindre",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Pintar'",
+          "explanation": "Se escribe 'Peindre'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Correr'",
+          "phrase": "Correr",
+          "answer": "Courir",
+          "target_vocab": "courir",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Correr'",
+          "explanation": "Se escribe 'Courir'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Bailar'",
+          "answer": "Danser",
+          "distractors": [
+            "Peindre",
+            "Voyager",
+            "Chanter"
+          ],
+          "target_vocab": "danser",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Bailar'",
+          "explanation": "'Danser' significa 'Bailar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Correr'",
+          "answer": "Courir",
+          "distractors": [
+            "Danser",
+            "Cuisiner",
+            "Nager"
+          ],
+          "target_vocab": "courir",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Correr'",
+          "explanation": "'Courir' significa 'Correr'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Viajar'",
+          "phrase": "Viajar",
+          "answer": "Voyager",
+          "target_vocab": "voyager",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Viajar'",
+          "explanation": "Se escribe 'Voyager'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes pintar?'",
+          "answer": "Peux-tu peindre ?",
+          "options": [
+            "Peux-tu",
+            "peindre"
+          ],
+          "target_vocab": "peindre",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes pintar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu peindre ?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Jugar videojuegos'",
+          "phrase": "Jugar videojuegos",
+          "answer": "Jouer aux jeux vidéo",
+          "target_vocab": "jouer aux jeux vidéo",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Jugar videojuegos'",
+          "explanation": "Se escribe 'Jouer aux jeux vidéo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes pintar?'",
+          "answer": "Peux-tu peindre ?",
+          "options": [
+            "Peux-tu",
+            "peindre"
+          ],
+          "target_vocab": "peindre",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes pintar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu peindre ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cocinar'",
+          "answer": "Cuisiner",
+          "distractors": [
+            "Courir",
+            "Jouer aux jeux vidéo",
+            "Nager"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cuisiner' significa 'Cocinar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Pintar'",
+          "answer": "Peindre",
+          "distractors": [
+            "Écouter de la musique",
+            "Nager",
+            "Cuisiner"
+          ],
+          "target_vocab": "peindre",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Pintar'",
+          "explanation": "'Peindre' significa 'Pintar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Jugar videojuegos'",
+          "answer": "Jouer aux jeux vidéo",
+          "distractors": [
+            "Jouer au tennis",
+            "Danser",
+            "Voyager"
+          ],
+          "target_vocab": "jouer aux jeux vidéo",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar videojuegos'",
+          "explanation": "'Jouer aux jeux vidéo' significa 'Jugar videojuegos'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Cuisiner",
+              "right": "Cocinar"
+            },
+            {
+              "left": "Jouer au tennis",
+              "right": "Jugar tenis"
+            },
+            {
+              "left": "Nager",
+              "right": "Nadar"
+            },
+            {
+              "left": "Écouter de la musique",
+              "right": "Escuchar música"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Peux-tu _____ ?",
+          "answer": "cuisiner",
+          "options": [
+            "cuisiner",
+            "peindre",
+            "écouter de la musique",
+            "jouer au tennis"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes cocinar?'",
+          "explanation": "La palabra correcta es 'cuisiner'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes cocinar?'",
+          "answer": "Peux-tu cuisiner ?",
+          "options": [
+            "Peux-tu",
+            "cuisiner"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cocinar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu cuisiner ?'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Peux-tu _____ ?",
+          "answer": "jouer aux jeux vidéo",
+          "options": [
+            "jouer aux jeux vidéo",
+            "danser",
+            "courir",
+            "cuisiner"
+          ],
+          "target_vocab": "jouer aux jeux vidéo",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes jugar videojuegos?'",
+          "explanation": "La palabra correcta es 'jouer aux jeux vidéo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cantar'",
+          "answer": "Chanter",
+          "distractors": [
+            "Voyager",
+            "Courir",
+            "Jouer aux jeux vidéo"
+          ],
+          "target_vocab": "chanter",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cantar'",
+          "explanation": "'Chanter' significa 'Cantar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Viajar'",
+          "answer": "Voyager",
+          "distractors": [
+            "Courir",
+            "Cuisiner",
+            "Jouer au tennis"
+          ],
+          "target_vocab": "voyager",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Voyager' significa 'Viajar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Nadar'",
+          "phrase": "Nadar",
+          "answer": "Nager",
+          "target_vocab": "nager",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Nadar'",
+          "explanation": "Se escribe 'Nager'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta cocinar'",
+          "answer": "J'adore cuisiner",
+          "options": [
+            "J'adore",
+            "cuisiner"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta cocinar'",
+          "explanation": "La estructura correcta es: 'J'adore cuisiner'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cantar'",
+          "answer": "Chanter",
+          "distractors": [
+            "Courir",
+            "Nager",
+            "Jouer au tennis"
+          ],
+          "target_vocab": "chanter",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cantar'",
+          "explanation": "'Chanter' significa 'Cantar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta escuchar música'",
+          "answer": "J'adore écouter de la musique",
+          "options": [
+            "J'adore",
+            "écouter",
+            "de",
+            "la",
+            "musique"
+          ],
+          "target_vocab": "écouter de la musique",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta escuchar música'",
+          "explanation": "La estructura correcta es: 'J'adore écouter de la musique'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Peindre",
+          "target_vocab": "peindre",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Pintar'",
+          "explanation": "Se escribe 'Peindre'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Voyager",
+              "right": "Viajar"
+            },
+            {
+              "left": "Peindre",
+              "right": "Pintar"
+            },
+            {
+              "left": "Chanter",
+              "right": "Cantar"
+            },
+            {
+              "left": "Cuisiner",
+              "right": "Cocinar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta viajar'",
+          "answer": "J'adore voyager",
+          "options": [
+            "J'adore",
+            "voyager"
+          ],
+          "target_vocab": "voyager",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta viajar'",
+          "explanation": "La estructura correcta es: 'J'adore voyager'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Jugar videojuegos'",
+          "phrase": "Jugar videojuegos",
+          "answer": "Jouer aux jeux vidéo",
+          "target_vocab": "jouer aux jeux vidéo",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Jugar videojuegos'",
+          "explanation": "Se escribe 'Jouer aux jeux vidéo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Cocinar'",
+          "phrase": "Cocinar",
+          "answer": "Cuisiner",
+          "target_vocab": "cuisiner",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Cocinar'",
+          "explanation": "Se escribe 'Cuisiner'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Jugar tenis'",
+          "answer": "Jouer au tennis",
+          "distractors": [
+            "Courir",
+            "Chanter",
+            "Peindre"
+          ],
+          "target_vocab": "jouer au tennis",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Jugar tenis'",
+          "explanation": "'Jouer au tennis' significa 'Jugar tenis'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Viajar'",
+          "answer": "Voyager",
+          "distractors": [
+            "Écouter de la musique",
+            "Cuisiner",
+            "Jouer au tennis"
+          ],
+          "target_vocab": "voyager",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Voyager' significa 'Viajar'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Peux-tu _____ ?",
+          "answer": "courir",
+          "options": [
+            "courir",
+            "écouter de la musique",
+            "jouer au tennis",
+            "jouer aux jeux vidéo"
+          ],
+          "target_vocab": "courir",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: '¿Puedes correr?'",
+          "explanation": "La palabra correcta es 'courir'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cocinar'",
+          "answer": "Cuisiner",
+          "distractors": [
+            "Peindre",
+            "Jouer aux jeux vidéo",
+            "Jouer au tennis"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cuisiner' significa 'Cocinar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes cocinar?'",
+          "answer": "Peux-tu cuisiner ?",
+          "options": [
+            "Peux-tu",
+            "cuisiner"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cocinar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu cuisiner ?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes bailar?'",
+          "answer": "Peux-tu danser ?",
+          "options": [
+            "Peux-tu",
+            "danser"
+          ],
+          "target_vocab": "danser",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes bailar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu danser ?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Nager",
+              "right": "Nadar"
+            },
+            {
+              "left": "Courir",
+              "right": "Correr"
+            },
+            {
+              "left": "Peindre",
+              "right": "Pintar"
+            },
+            {
+              "left": "Voyager",
+              "right": "Viajar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes cocinar?'",
+          "answer": "Peux-tu cuisiner ?",
+          "options": [
+            "Peux-tu",
+            "cuisiner"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cocinar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu cuisiner ?'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "J'adore _____",
+          "answer": "nager",
+          "options": [
+            "nager",
+            "voyager",
+            "jouer au tennis",
+            "courir"
+          ],
+          "target_vocab": "nager",
+          "difficulty": 8,
+          "spanish_translation": "Completa la oración: 'Me encanta nadar'",
+          "explanation": "La palabra correcta es 'nager'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Pintar'",
+          "phrase": "Pintar",
+          "answer": "Peindre",
+          "target_vocab": "peindre",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Pintar'",
+          "explanation": "Se escribe 'Peindre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta nadar'",
+          "answer": "J'adore nager",
+          "options": [
+            "J'adore",
+            "nager"
+          ],
+          "target_vocab": "nager",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta nadar'",
+          "explanation": "La estructura correcta es: 'J'adore nager'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Escuchar música'",
+          "phrase": "Escuchar música",
+          "answer": "Écouter de la musique",
+          "target_vocab": "écouter de la musique",
+          "difficulty": 8,
+          "spanish_translation": "Escribe en francés: 'Escuchar música'",
+          "explanation": "Se escribe 'Écouter de la musique'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : '¿Puedes cocinar?'",
+          "answer": "Peux-tu cuisiner ?",
+          "options": [
+            "Peux-tu",
+            "cuisiner"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: '¿Puedes cocinar?'",
+          "explanation": "La estructura correcta es: 'Peux-tu cuisiner ?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Escuchar música'",
+          "answer": "Écouter de la musique",
+          "distractors": [
+            "Jouer au tennis",
+            "Courir",
+            "Voyager"
+          ],
+          "target_vocab": "écouter de la musique",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Escuchar música'",
+          "explanation": "'Écouter de la musique' significa 'Escuchar música'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cocinar'",
+          "answer": "Cuisiner",
+          "distractors": [
+            "Danser",
+            "Peindre",
+            "Courir"
+          ],
+          "target_vocab": "cuisiner",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Cocinar'",
+          "explanation": "'Cuisiner' significa 'Cocinar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Me encanta nadar'",
+          "answer": "J'adore nager",
+          "options": [
+            "J'adore",
+            "nager"
+          ],
+          "target_vocab": "nager",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Me encanta nadar'",
+          "explanation": "La estructura correcta es: 'J'adore nager'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Nager",
+              "right": "Nadar"
+            },
+            {
+              "left": "Voyager",
+              "right": "Viajar"
+            },
+            {
+              "left": "Jouer au tennis",
+              "right": "Jugar tenis"
+            },
+            {
+              "left": "Peindre",
+              "right": "Pintar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 10,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Viajar'",
+          "answer": "Voyager",
+          "distractors": [
+            "Danser",
+            "Écouter de la musique",
+            "Chanter"
+          ],
+          "target_vocab": "voyager",
+          "difficulty": 7,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar'",
+          "explanation": "'Voyager' significa 'Viajar'."
+        }
+      ]
+    }
+  ]
+}

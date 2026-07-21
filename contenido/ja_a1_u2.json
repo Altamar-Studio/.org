@@ -1,0 +1,820 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 2,
+  "title": "Familia (Kazoku)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Oji (伯父)",
+              "right": "Tío"
+            },
+            {
+              "left": "Haha (母)",
+              "right": "Madre"
+            },
+            {
+              "left": "Sofu (祖父)",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Ani (兄)",
+              "right": "Hermano mayor"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su hermano mayor es amable'",
+          "answer": "Kare no Ani wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Ani",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "ani",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su hermano mayor es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Ani wa shinsetsu desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Madre'",
+          "phrase": "Madre",
+          "answer": "Haha (母)",
+          "target_vocab": "haha",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Madre'",
+          "explanation": "Se dice 'Haha (母)'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kare no _____ wa shinsetsu desu",
+          "answer": "Chichi",
+          "options": [
+            "Chichi",
+            "Ani",
+            "Sofu",
+            "Haha"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 3,
+          "spanish_translation": "Completa: 'Su padre es amable'",
+          "explanation": "Falta 'Chichi'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su tío es amable'",
+          "answer": "Kare no Oji wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Oji",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "oji",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su tío es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Oji wa shinsetsu desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su tía es amable'",
+          "answer": "Kare no Oba wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Oba",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "oba",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su tía es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Oba wa shinsetsu desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hermana mayor'",
+          "phrase": "Hermana mayor",
+          "answer": "Ane (姉)",
+          "target_vocab": "ane",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Hermana mayor'",
+          "explanation": "Se dice 'Ane (姉)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Madre'",
+          "answer": "Haha (母)",
+          "distractors": [
+            "Oba (伯母)",
+            "Chichi (父)",
+            "Ito-ko (いとこ)"
+          ],
+          "target_vocab": "haha",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Madre'",
+          "explanation": "'Haha (母)' significa 'Madre'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tía'",
+          "answer": "Oba (伯母)",
+          "distractors": [
+            "Ane (姉)",
+            "Ito-ko (いとこ)",
+            "Kazoku (家族)"
+          ],
+          "target_vocab": "oba",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Tía'",
+          "explanation": "'Oba (伯母)' significa 'Tía'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Padre'",
+          "answer": "Chichi (父)",
+          "distractors": [
+            "Sofu (祖父)",
+            "Sobo (祖母)",
+            "Oji (伯父)"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Padre'",
+          "explanation": "'Chichi (父)' significa 'Padre'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ane (姉)",
+              "right": "Hermana mayor"
+            },
+            {
+              "left": "Ito-ko (いとこ)",
+              "right": "Primo"
+            },
+            {
+              "left": "Ani (兄)",
+              "right": "Hermano mayor"
+            },
+            {
+              "left": "Sobo (祖母)",
+              "right": "Abuela"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Madre'",
+          "phrase": "Madre",
+          "answer": "Haha (母)",
+          "target_vocab": "haha",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Madre'",
+          "explanation": "Se dice 'Haha (母)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Hermano mayor'",
+          "answer": "Ani (兄)",
+          "distractors": [
+            "Kazoku (家族)",
+            "Ane (姉)",
+            "Sobo (祖母)"
+          ],
+          "target_vocab": "ani",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Hermano mayor'",
+          "explanation": "'Ani (兄)' significa 'Hermano mayor'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi primo es alto'",
+          "answer": "Watashi no Ito-ko wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Ito-ko",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "ito-ko",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi primo es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Ito-ko wa se ga takai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi padre es alto'",
+          "answer": "Watashi no Chichi wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Chichi",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi padre es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Chichi wa se ga takai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su abuelo es amable'",
+          "answer": "Kare no Sofu wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Sofu",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "sofu",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su abuelo es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Sofu wa shinsetsu desu'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kare no _____ wa shinsetsu desu",
+          "answer": "Oba",
+          "options": [
+            "Oba",
+            "Sofu",
+            "Ane",
+            "Chichi"
+          ],
+          "target_vocab": "oba",
+          "difficulty": 3,
+          "spanish_translation": "Completa: 'Su tía es amable'",
+          "explanation": "Falta 'Oba'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Tía'",
+          "phrase": "Tía",
+          "answer": "Oba (伯母)",
+          "target_vocab": "oba",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Tía'",
+          "explanation": "Se dice 'Oba (伯母)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Primo'",
+          "answer": "Ito-ko (いとこ)",
+          "distractors": [
+            "Oba (伯母)",
+            "Ani (兄)",
+            "Ane (姉)"
+          ],
+          "target_vocab": "ito-ko",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Primo'",
+          "explanation": "'Ito-ko (いとこ)' significa 'Primo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Hermana mayor'",
+          "answer": "Ane (姉)",
+          "distractors": [
+            "Sofu (祖父)",
+            "Ani (兄)",
+            "Oba (伯母)"
+          ],
+          "target_vocab": "ane",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Hermana mayor'",
+          "explanation": "'Ane (姉)' significa 'Hermana mayor'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Abuelo'",
+          "phrase": "Abuelo",
+          "answer": "Sofu (祖父)",
+          "target_vocab": "sofu",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Abuelo'",
+          "explanation": "Se dice 'Sofu (祖父)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ito-ko (いとこ)",
+              "right": "Primo"
+            },
+            {
+              "left": "Ani (兄)",
+              "right": "Hermano mayor"
+            },
+            {
+              "left": "Ane (姉)",
+              "right": "Hermana mayor"
+            },
+            {
+              "left": "Chichi (父)",
+              "right": "Padre"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su abuelo es amable'",
+          "answer": "Kare no Sofu wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Sofu",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "sofu",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su abuelo es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Sofu wa shinsetsu desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abuela'",
+          "answer": "Sobo (祖母)",
+          "distractors": [
+            "Ane (姉)",
+            "Kazoku (家族)",
+            "Chichi (父)"
+          ],
+          "target_vocab": "sobo",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Abuela'",
+          "explanation": "'Sobo (祖母)' significa 'Abuela'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi hermana mayor es alto'",
+          "answer": "Watashi no Ane wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Ane",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "ane",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi hermana mayor es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Ane wa se ga takai desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Familia'",
+          "phrase": "Familia",
+          "answer": "Kazoku (家族)",
+          "target_vocab": "kazoku",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Familia'",
+          "explanation": "Se dice 'Kazoku (家族)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abuela'",
+          "answer": "Sobo (祖母)",
+          "distractors": [
+            "Kazoku (家族)",
+            "Oji (伯父)",
+            "Ito-ko (いとこ)"
+          ],
+          "target_vocab": "sobo",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Abuela'",
+          "explanation": "'Sobo (祖母)' significa 'Abuela'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su padre es amable'",
+          "answer": "Kare no Chichi wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Chichi",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su padre es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Chichi wa shinsetsu desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tío'",
+          "answer": "Oji (伯父)",
+          "distractors": [
+            "Chichi (父)",
+            "Kazoku (家族)",
+            "Haha (母)"
+          ],
+          "target_vocab": "oji",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Tío'",
+          "explanation": "'Oji (伯父)' significa 'Tío'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi no _____ wa se ga takai desu",
+          "answer": "Chichi",
+          "options": [
+            "Chichi",
+            "Sofu",
+            "Ani",
+            "Ane"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 3,
+          "spanish_translation": "Completa: 'Mi padre es alto'",
+          "explanation": "Falta 'Chichi'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tío'",
+          "answer": "Oji (伯父)",
+          "distractors": [
+            "Oba (伯母)",
+            "Chichi (父)",
+            "Ito-ko (いとこ)"
+          ],
+          "target_vocab": "oji",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Tío'",
+          "explanation": "'Oji (伯父)' significa 'Tío'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Hermano mayor'",
+          "phrase": "Hermano mayor",
+          "answer": "Ani (兄)",
+          "target_vocab": "ani",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Hermano mayor'",
+          "explanation": "Se dice 'Ani (兄)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su primo es amable'",
+          "answer": "Kare no Ito-ko wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Ito-ko",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "ito-ko",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su primo es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Ito-ko wa shinsetsu desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Abuelo'",
+          "answer": "Sofu (祖父)",
+          "distractors": [
+            "Kazoku (家族)",
+            "Oji (伯父)",
+            "Ito-ko (いとこ)"
+          ],
+          "target_vocab": "sofu",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Abuelo'",
+          "explanation": "'Sofu (祖父)' significa 'Abuelo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi no _____ wa se ga takai desu",
+          "answer": "Sofu",
+          "options": [
+            "Sofu",
+            "Kazoku",
+            "Oji",
+            "Sobo"
+          ],
+          "target_vocab": "sofu",
+          "difficulty": 3,
+          "spanish_translation": "Completa: 'Mi abuelo es alto'",
+          "explanation": "Falta 'Sofu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Chichi (父)",
+              "right": "Padre"
+            },
+            {
+              "left": "Oba (伯母)",
+              "right": "Tía"
+            },
+            {
+              "left": "Sofu (祖父)",
+              "right": "Abuelo"
+            },
+            {
+              "left": "Ito-ko (いとこ)",
+              "right": "Primo"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Familia'",
+          "phrase": "Familia",
+          "answer": "Kazoku (家族)",
+          "target_vocab": "kazoku",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Familia'",
+          "explanation": "Se dice 'Kazoku (家族)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Hermana mayor'",
+          "answer": "Ane (姉)",
+          "distractors": [
+            "Chichi (父)",
+            "Oji (伯父)",
+            "Haha (母)"
+          ],
+          "target_vocab": "ane",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Hermana mayor'",
+          "explanation": "'Ane (姉)' significa 'Hermana mayor'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su abuela es amable'",
+          "answer": "Kare no Sobo wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Sobo",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "sobo",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su abuela es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Sobo wa shinsetsu desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi tío es alto'",
+          "answer": "Watashi no Oji wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Oji",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "oji",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi tío es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Oji wa se ga takai desu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Tía'",
+          "answer": "Oba (伯母)",
+          "distractors": [
+            "Chichi (父)",
+            "Sobo (祖母)",
+            "Kazoku (家族)"
+          ],
+          "target_vocab": "oba",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Tía'",
+          "explanation": "'Oba (伯母)' significa 'Tía'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Hermana mayor'",
+          "answer": "Ane (姉)",
+          "distractors": [
+            "Haha (母)",
+            "Oba (伯母)",
+            "Sobo (祖母)"
+          ],
+          "target_vocab": "ane",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Hermana mayor'",
+          "explanation": "'Ane (姉)' significa 'Hermana mayor'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kare no _____ wa shinsetsu desu",
+          "answer": "Chichi",
+          "options": [
+            "Chichi",
+            "Ane",
+            "Kazoku",
+            "Oji"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 3,
+          "spanish_translation": "Completa: 'Su padre es amable'",
+          "explanation": "Falta 'Chichi'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Abuelo'",
+          "phrase": "Abuelo",
+          "answer": "Sofu (祖父)",
+          "target_vocab": "sofu",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Abuelo'",
+          "explanation": "Se dice 'Sofu (祖父)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Padre'",
+          "answer": "Chichi (父)",
+          "distractors": [
+            "Oba (伯母)",
+            "Ane (姉)",
+            "Oji (伯父)"
+          ],
+          "target_vocab": "chichi",
+          "difficulty": 2,
+          "spanish_translation": "Traducción de: 'Padre'",
+          "explanation": "'Chichi (父)' significa 'Padre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi abuela es alto'",
+          "answer": "Watashi no Sobo wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Sobo",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "sobo",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi abuela es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Sobo wa se ga takai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Mi abuela es alto'",
+          "answer": "Watashi no Sobo wa se ga takai desu",
+          "options": [
+            "Watashi",
+            "no",
+            "Sobo",
+            "wa",
+            "se",
+            "ga",
+            "takai",
+            "desu"
+          ],
+          "target_vocab": "sobo",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Mi abuela es alto'",
+          "explanation": "La estructura correcta es: 'Watashi no Sobo wa se ga takai desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Su primo es amable'",
+          "answer": "Kare no Ito-ko wa shinsetsu desu",
+          "options": [
+            "Kare",
+            "no",
+            "Ito-ko",
+            "wa",
+            "shinsetsu",
+            "desu"
+          ],
+          "target_vocab": "ito-ko",
+          "difficulty": 4,
+          "spanish_translation": "Ordena la frase: 'Su primo es amable'",
+          "explanation": "La estructura correcta es: 'Kare no Ito-ko wa shinsetsu desu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Kazoku (家族)",
+              "right": "Familia"
+            },
+            {
+              "left": "Chichi (父)",
+              "right": "Padre"
+            },
+            {
+              "left": "Oji (伯父)",
+              "right": "Tío"
+            },
+            {
+              "left": "Haha (母)",
+              "right": "Madre"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 5,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Abuelo'",
+          "phrase": "Abuelo",
+          "answer": "Sofu (祖父)",
+          "target_vocab": "sofu",
+          "difficulty": 3,
+          "spanish_translation": "Traduce: 'Abuelo'",
+          "explanation": "Se dice 'Sofu (祖父)'."
+        }
+      ]
+    }
+  ]
+}

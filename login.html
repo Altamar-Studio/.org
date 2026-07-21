@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - EstudiandoAndo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-dark': '#111111',
+                        'ea-cream': '#F9F9F9',
+                        'ea-blue': '#2563EB',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    <style>
+        .animate-fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        }
+        .dark .bg-grid {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        }
+    </style>
+    <script>
+        // Anti-FOUC theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+</head>
+<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans transition-colors duration-300 min-h-screen flex flex-col justify-between overflow-x-hidden bg-grid">
+
+    <!-- Header / Nav Back -->
+    <header class="absolute top-6 left-0 right-0 z-50 flex justify-between items-center px-6 max-w-7xl mx-auto w-full">
+        <a class="flex items-center gap-2" href="index.html">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight text-ea-dark dark:text-white">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+        <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors flex items-center justify-center">
+            <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+            <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+        </button>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow flex items-center justify-center px-4 py-24 sm:px-6 lg:px-8">
+        <div class="max-w-5xl w-full bg-white/70 dark:bg-neutral-900/60 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] overflow-hidden shadow-2xl flex flex-col md:flex-row p-6 md:p-8 gap-8 items-stretch animate-slide-up">
+            
+            <!-- Panel Izquierdo: Branding & Información -->
+            <div class="w-full md:w-1/2 bg-blue-600 rounded-[24px] p-8 text-white flex flex-col justify-between relative overflow-hidden min-h-[320px] md:min-h-[480px]">
+                <!-- Background Pattern -->
+                <div class="absolute -right-24 -bottom-24 w-80 h-80 rounded-full bg-white/10 blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-12 -top-12 w-48 h-48 rounded-full bg-blue-500 blur-2xl pointer-events-none"></div>
+
+                <div class="z-10">
+                    <span class="bg-white/20 text-white px-3.5 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest leading-none">PREPARACIÓN 2.0</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-bold tracking-tight mt-6 leading-tight">
+                        Tu camino <br>a la universidad <br><span class="italic font-normal opacity-90 text-blue-100">comienza aquí</span>.
+                    </h2>
+                </div>
+
+                <div class="z-10 mt-auto space-y-4">
+                    <p class="text-sm text-blue-100 leading-relaxed font-medium">
+                        Accede a simuladores oficiales, guías de estudio 3D y foros comunitarios adaptados para tu éxito académico.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="flex -space-x-2">
+                            <span class="w-7 h-7 rounded-full bg-amber-500 border-2 border-blue-600 text-[10px] font-bold flex items-center justify-center">U</span>
+                            <span class="w-7 h-7 rounded-full bg-emerald-500 border-2 border-blue-600 text-[10px] font-bold flex items-center justify-center">I</span>
+                            <span class="w-7 h-7 rounded-full bg-indigo-500 border-2 border-blue-600 text-[10px] font-bold flex items-center justify-center">F</span>
+                        </div>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-200">+10k estudiantes preparándose</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel Derecho: Formulario de Login -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center px-2 py-4">
+                <div class="mb-8">
+                    <h1 class="text-3xl font-serif font-bold text-ea-dark dark:text-white tracking-tight">Bienvenido de nuevo</h1>
+                    <p class="text-xs opacity-60 font-medium mt-1">Ingresa tus credenciales para acceder a tu perfil y foros.</p>
+                </div>
+
+                <!-- Notificación de error -->
+                <div id="error-banner" class="hidden mb-6 p-4 bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-400 rounded-2xl text-xs font-semibold animate-fade-in flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[18px]">error</span>
+                    <span id="error-message"></span>
+                </div>
+
+                <!-- Formulario -->
+                <form id="login-form" onsubmit="handleLogin(event)" class="space-y-5">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase tracking-widest opacity-50 mb-1.5" for="username">Nombre de usuario</label>
+                        <div class="relative">
+                            <span class="material-symbols-outlined absolute left-4 top-3.5 text-[20px] opacity-40">person</span>
+                            <input type="text" required id="username" placeholder="Tu usuario" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-2xl pl-12 pr-4 py-3.5 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase tracking-widest opacity-50 mb-1.5" for="password">Contraseña</label>
+                        <div class="relative">
+                            <span class="material-symbols-outlined absolute left-4 top-3.5 text-[20px] opacity-40">lock</span>
+                            <input type="password" required id="password" placeholder="••••••••" class="w-full bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-2xl pl-12 pr-4 py-3.5 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white dark:bg-blue-500 py-4 rounded-2xl text-xs font-bold shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 active:scale-[0.98] transition-all" style="box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);">
+                        Iniciar Sesión
+                    </button>
+                </form>
+
+                <!-- Cuenta de Prueba Zahir -->
+                <div class="mt-6 p-4 rounded-2xl bg-amber-500/5 dark:bg-amber-500/10 border border-amber-500/20 text-left">
+                    <span class="block text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest mb-1.5 flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">info</span> Cuenta de prueba disponible
+                    </span>
+                    <p class="text-[11px] opacity-70 font-medium">
+                        Puedes acceder usando: <strong>Zahir</strong> y contraseña <strong>Ea2026</strong> (Universidad: UV, 20 años).
+                    </p>
+                </div>
+
+                <div class="mt-8 text-center text-xs font-medium opacity-60">
+                    ¿No tienes cuenta? <a href="registro.html" class="text-blue-600 dark:text-blue-400 font-bold hover:underline">Regístrate gratis</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-6 text-center text-xs opacity-40 font-medium">
+        © 2026 Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span>. Todos los derechos reservados.
+    </footer>
+
+    <!-- Scripts de Autenticación -->
+    <script src="auth.js"></script>
+    <script>
+        function handleLogin(e) {
+            e.preventDefault();
+            const userEl = document.getElementById('username');
+            const passEl = document.getElementById('password');
+            const errorBanner = document.getElementById('error-banner');
+            const errorMsg = document.getElementById('error-message');
+            
+            errorBanner.classList.add('hidden');
+
+            const res = login(userEl.value, passEl.value);
+            if (res.success) {
+                // Redirigir al inicio tras iniciar sesión exitosamente
+                window.location.href = 'index.html';
+            } else {
+                errorMsg.innerText = res.message;
+                errorBanner.classList.remove('hidden');
+            }
+        }
+
+        // Dark mode listener
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            if (isDark) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Simulador digital del examen de ingreso EXANI-II para la Universidad Veracruzana (UV).">
+    <title>Simulador Oficial EXANI-II (UV) | EstudiandoAndo</title>
+    
+    <!-- Tailwind and Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-cream': '#F9F9F9',
+                        'ea-dark': '#0A0A0A',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom minimal CSS -->
+    <link rel="stylesheet" href="simulador-uv.css">
+    <script>
+        // Script anti-FOUC para aplicar tema inmediatamente
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+</head>
+<body class="antialiased bg-ea-cream dark:bg-neutral-950 text-ea-dark dark:text-white selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black flex flex-col min-h-screen transition-colors duration-300">
+
+    <!-- Navegación Superior Fija -->
+    <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class='flex items-center gap-2' href='index.html'>
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class="text-black dark:text-white font-bold opacity-100 transition-colors" href='#'>Simulador UV</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <a class="bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-xs font-bold shadow-sm hover:bg-neutral-800 dark:hover:bg-gray-200 transition-colors" href="aprendizaje.html">Salir</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 mb-20 exam-layout">
+        
+        <!-- ========================================== -->
+        <!-- PANTALLA 1: INICIO DEL SIMULADOR           -->
+        <!-- ========================================== -->
+        <section id="welcome-screen" class="app-screen active animate-fade-in">
+            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-8 sm:p-12 rounded-[32px] shadow-sm max-w-3xl mx-auto mt-6 transition-colors">
+                
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-lg border border-blue-100 dark:border-blue-800/50">UV</div>
+                    <div>
+                        <span class="text-xs opacity-50 font-medium uppercase tracking-wider">Simulador Oficial Dinámico</span>
+                        <h2 class="font-bold text-xl leading-tight">Universidad Veracruzana (EXANI-II)</h2>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl text-serif font-medium tracking-tight leading-tight mb-6">
+                    Prueba de Selección <span class="text-handwritten text-3xl sm:text-5xl italic block sm:inline-block mt-2 sm:mt-0">Real</span>
+                </h1>
+
+                <p class="text-sm sm:text-base opacity-70 leading-relaxed mb-8">
+                    Este simulador cuenta con <strong>90 reactivos oficiales</strong> idénticos en estructura, tiempo y dificultad a la prueba de CENEVAL. Configura tu simulacro antes de iniciar.
+                </p>
+
+                <!-- Configuración del Simulador -->
+                <form id="setup-form" onsubmit="return false;" class="space-y-6">
+                    
+                    <div class="space-y-2">
+                        <label for="student-name" class="block text-sm font-bold opacity-80">Nombre del Estudiante</label>
+                        <input type="text" id="student-name" required autocomplete="off" placeholder="Ingresa tu nombre completo" class="w-full bg-neutral-50 dark:bg-neutral-800 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-black dark:focus:border-white outline-none transition-all text-black dark:text-white">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label for="exam-mode" class="block text-sm font-bold opacity-80">Modalidad</label>
+                            <select id="exam-mode" class="w-full bg-neutral-50 dark:bg-neutral-800 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-black dark:focus:ring-white outline-none appearance-none text-black dark:text-white">
+                                <option value="sim">Simulacro Real (Con tiempo)</option>
+                                <option value="practice">Práctica Libre (Sin tiempo)</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="exam-range" class="block text-sm font-bold opacity-80">Contenido</label>
+                            <select id="exam-range" class="w-full bg-neutral-50 dark:bg-neutral-800 border border-black/10 dark:border-white/10 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-black dark:focus:ring-white outline-none appearance-none text-black dark:text-white">
+                                <option value="all">Examen Completo (90 reactivos)</option>
+                                <option value="s1">Sección 1: Lectura (1-30)</option>
+                                <option value="s2">Sección 2: Redacción (31-60)</option>
+                                <option value="s3">Sección 3: Matemáticas (61-90)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-black/5 dark:border-white/5 transition-colors">
+                        <div class="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 text-center sm:text-left transition-colors">
+                            <span class="text-[10px] opacity-50 block font-bold uppercase tracking-widest">Módulos</span>
+                            <span class="font-bold text-lg">3 áreas</span>
+                        </div>
+                        <div class="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 text-center sm:text-left transition-colors">
+                            <span class="text-[10px] opacity-50 block font-bold uppercase tracking-widest">Reactivos</span>
+                            <span class="font-bold text-lg" id="info-reactivos-count">90</span>
+                        </div>
+                        <div class="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 text-center sm:text-left transition-colors">
+                            <span class="text-[10px] opacity-50 block font-bold uppercase tracking-widest">Tiempo Límite</span>
+                            <span class="font-bold text-lg" id="info-time-limit">3h 00m</span>
+                        </div>
+                        <div class="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 text-center sm:text-left transition-colors">
+                            <span class="text-[10px] opacity-50 block font-bold uppercase tracking-widest">Evaluación</span>
+                            <span class="font-bold text-lg">CENEVAL</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-black dark:bg-white text-white dark:text-black py-4 rounded-2xl font-bold hover:bg-blue-600 dark:hover:bg-blue-400 transition-colors shadow-md text-center block sm:text-lg">
+                            INICIAR EXAMEN AHORA
+                        </button>
+                        <p class="text-center text-xs opacity-40 font-medium mt-3">Asegúrate de estar en un lugar tranquilo y sin distracciones.</p>
+                        
+                        <!-- Agradecimiento a Profe Cristian -->
+                        <div class="mt-6 text-center bg-neutral-50 dark:bg-neutral-800/50 p-4 rounded-xl border border-black/5 dark:border-white/5 transition-colors">
+                            <p class="text-xs sm:text-sm opacity-80 leading-relaxed">
+                                Este simulador fue posible gracias al esfuerzo de <strong>Profe Cristian</strong> en la recopilación de reactivos oficiales.
+                            </p>
+                            <a href="https://www.youtube.com/@ProfeCristian" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 mt-2 text-red-600 dark:text-red-400 font-bold text-xs sm:text-sm hover:underline transition-colors">
+                                <span class="material-symbols-outlined text-sm">smart_display</span>
+                                Canal de YouTube
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PANTALLA 2: EXAMEN EN VIVO                 -->
+        <!-- ========================================== -->
+        <section id="exam-screen" class="app-screen animate-fade-in space-y-6 mt-4">
+            
+            <!-- Barra Superior de Estado y Cronómetro -->
+            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-4 sm:px-6 rounded-2xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 sticky top-[72px] lg:top-28 z-40 transition-all">
+                <div class="w-full sm:w-auto flex flex-wrap items-center justify-between sm:justify-start gap-4">
+                    
+                    <div class="flex items-center gap-2">
+                        <div class="bg-neutral-100 dark:bg-neutral-800 p-2 rounded-full transition-colors">
+                            <span class="material-symbols-outlined text-sm block">person</span>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase font-bold tracking-widest opacity-40 block">Estudiante</span>
+                            <h3 id="display-student-name" class="font-bold text-xs sm:text-sm truncate max-w-[100px]">Estudiante</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="h-8 w-px bg-black/10 dark:bg-white/10 hidden sm:block"></div>
+                    
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-widest opacity-40 block">Módulo Actual</span>
+                        <h3 id="display-section-name" class="font-bold text-xs sm:text-sm text-blue-600 dark:text-blue-400">Comprensión Lectora</h3>
+                    </div>
+                    
+                    <div class="h-8 w-px bg-black/10 dark:bg-white/10 hidden sm:block"></div>
+                    
+                    <div>
+                        <span class="text-[10px] uppercase font-bold tracking-widest opacity-40 block">Reactivo</span>
+                        <span class="font-bold text-xs sm:text-sm"><span id="q-number-display">1</span> / <span class="total-q-label">90</span></span>
+                    </div>
+
+                    <!-- Botón Navegador Móvil -->
+                    <button id="btn-show-grid" class="lg:hidden ml-auto bg-black dark:bg-white text-white dark:text-black px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tighter flex items-center gap-1 transition-colors">
+                        <span class="material-symbols-outlined text-xs">apps</span> Menú
+                    </button>
+                </div>
+
+                <!-- Controles Derecha -->
+                <div class="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-4">
+                    <div class="flex items-center gap-3 text-xs font-bold opacity-60">
+                        <span>Contestadas: <span id="stat-answered" class="text-black dark:text-white opacity-100">0</span></span>
+                        <span class="w-1 h-1 rounded-full bg-black/20 dark:bg-white/20"></span>
+                        <span class="flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">flag</span>
+                            <span id="stat-flagged" class="text-black dark:text-white opacity-100">0</span>
+                        </span>
+                    </div>
+
+                    <!-- Cronómetro -->
+                    <div id="exam-timer" class="flex items-center gap-2 bg-neutral-50 dark:bg-neutral-800 px-4 py-2 rounded-xl border border-black/5 dark:border-white/5 transition-colors">
+                        <span class="material-symbols-outlined text-base animate-spin opacity-50" style="animation-duration: 4s;">schedule</span>
+                        <span id="timer-text" class="font-mono font-bold text-sm tracking-wider text-black dark:text-white">03:00:00</span>
+                    </div>
+                    
+                    <!-- Terminar Botón Superior -->
+                    <button id="btn-finish-exam" class="hidden sm:block text-[10px] uppercase font-bold text-red-600 hover:text-white border border-red-200 hover:bg-red-600 px-3 py-1.5 rounded-lg transition-colors">Finalizar</button>
+                </div>
+            </div>
+
+            <!-- Barra de progreso visual (Simulada por CSS, pero aquí ponemos un fallback) -->
+            <div class="w-full h-1.5 bg-black/5 dark:bg-white/10 rounded-full overflow-hidden transition-colors">
+                <div id="progressBarFill" class="h-full bg-blue-600 dark:bg-blue-500 transition-all duration-300 w-full opacity-20"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                
+                <!-- Cuerpo Principal -->
+                <div class="lg:col-span-3 space-y-6">
+                    
+                    <!-- Tarjeta de Lectura -->
+                    <div id="reading-panel" class="hidden bg-neutral-50 dark:bg-neutral-800 border border-black/10 dark:border-white/10 p-6 sm:p-8 rounded-3xl max-h-80 overflow-y-auto custom-scroll shadow-inner transition-colors">
+                        <div class="flex items-center justify-between mb-4 pb-2 border-b border-black/5 dark:border-white/5 transition-colors">
+                            <div class="flex items-center gap-2 opacity-50 text-xs font-bold uppercase tracking-wider">
+                                <span class="material-symbols-outlined text-sm">menu_book</span>
+                                Lectura Asociada
+                            </div>
+                            <h2 id="reading-title" class="font-bold text-sm">Título de Lectura</h2>
+                        </div>
+                        <div id="reading-body" class="text-sm sm:text-base leading-relaxed text-serif font-medium text-justify">
+                            <!-- Inyectado -->
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de la Pregunta -->
+                    <div id="question-panel" class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-6 sm:p-8 rounded-3xl shadow-sm transition-colors">
+                        <div class="space-y-6">
+                            
+                            <!-- Cabecera de Pregunta -->
+                            <div class="flex items-start justify-between gap-4 border-b border-black/5 dark:border-white/5 pb-4 transition-colors">
+                                <div class="flex items-start gap-4">
+                                    <span class="bg-black dark:bg-white text-white dark:text-black w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5 transition-colors"><span class="material-symbols-outlined text-[1rem]">help</span></span>
+                                    <div id="question-text" class="text-base sm:text-lg font-medium leading-relaxed">
+                                        Cargando reactivo...
+                                    </div>
+                                </div>
+                                <button id="btn-flag-question" class="flex-shrink-0 flex items-center gap-1 text-[10px] uppercase font-bold text-neutral-400 dark:text-neutral-500 hover:text-black dark:hover:text-white border border-black/10 dark:border-white/10 px-2 py-1 rounded-md transition-colors">
+                                    <span class="material-symbols-outlined text-sm">flag</span>
+                                    <span>Marcar</span>
+                                </button>
+                            </div>
+
+                            <!-- Contenedor para Imagen (Oculto por defecto) -->
+                            <div id="question-diagram-container" class="hidden w-full bg-neutral-50 dark:bg-neutral-800/50 border border-black/5 dark:border-white/5 p-4 rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+                                <img id="question-diagram" src="" alt="Diagrama del reactivo" class="max-h-64 object-contain rounded-xl shadow-sm bg-white p-2">
+                                <span class="text-[10px] uppercase font-bold tracking-widest opacity-40 mt-3 diagram-caption">Haz clic para ampliar</span>
+                            </div>
+
+                            <!-- Opciones de Respuesta -->
+                            <div id="options-container" class="space-y-3 pt-2">
+                                <!-- Opciones inyectadas por JS -->
+                            </div>
+                            
+                            <!-- Caja de Retroalimentación de Práctica -->
+                            <div id="practice-feedback" class="hidden mt-6 p-4 rounded-2xl border text-sm font-medium flex items-start gap-3">
+                                <!-- Inyectado por JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción / Navegación Inferior -->
+                    <div class="flex items-center justify-between pt-2 gap-4">
+                        <button id="btn-prev-question" class="px-5 py-3 rounded-xl border border-black/10 dark:border-white/10 text-xs sm:text-sm font-bold hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors disabled:opacity-30 disabled:pointer-events-none flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">arrow_back</span> Anterior
+                        </button>
+                        
+                        <button id="btn-next-question" class="flex-1 sm:flex-none px-8 py-3 rounded-xl bg-black dark:bg-white text-white dark:text-black text-xs sm:text-sm font-bold hover:bg-blue-600 dark:hover:bg-blue-400 transition-colors shadow-sm flex justify-center items-center gap-1">
+                            <span>Siguiente</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Panel Lateral: Navegador de Reactivos -->
+                <div id="nav-drawer" class="lg:block bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-6 rounded-3xl shadow-sm h-[600px] flex flex-col justify-between sticky top-48 hidden lg:flex transition-colors">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-black/5 dark:border-white/5 transition-colors">
+                            <h4 class="font-bold text-sm tracking-tight">Navegador</h4>
+                            <button id="btn-close-drawer" class="lg:hidden text-neutral-400 hover:text-black">
+                                <span class="material-symbols-outlined text-xl">close</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Leyenda -->
+                        <div class="flex flex-wrap gap-2 text-[10px] opacity-60 mb-4 font-bold uppercase tracking-wider">
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-neutral-200 dark:bg-neutral-600"></span> Pendiente</span>
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-black dark:bg-white"></span> Respondida</span>
+                            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-amber-400"></span> Marcada</span>
+                        </div>
+
+                        <!-- Cuadrícula -->
+                        <div id="drawer-grid" class="grid grid-cols-5 gap-2 overflow-y-auto custom-scroll pr-1 pt-1 content-start h-[400px]">
+                            <!-- Botones inyectados por JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PANTALLA 3: RESULTADOS                     -->
+        <!-- ========================================== -->
+        <section id="results-screen" class="app-screen animate-fade-in space-y-12 mt-6">
+            
+            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-8 sm:p-12 rounded-[32px] shadow-sm text-center relative overflow-hidden max-w-3xl mx-auto transition-colors">
+                <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-black dark:to-white"></div>
+                
+                <span class="text-xs font-bold uppercase tracking-widest opacity-40 block mb-2">Simulador EXANI-II Concluido</span>
+                <h2 id="results-title" class="text-4xl sm:text-5xl text-serif font-bold italic mb-2">Resultados Oficiales</h2>
+                <p id="results-student-greet" class="text-sm font-medium opacity-60 mb-8">Felicidades por completar el simulacro.</p>
+
+                <!-- Gráfico de Círculo/Puntaje -->
+                <div class="inline-flex items-center justify-center relative mb-8">
+                    <svg class="w-40 h-40 transform -rotate-90">
+                        <circle cx="80" cy="80" r="70" stroke="rgba(0,0,0,0.05)" stroke-width="12" fill="transparent" />
+                        <circle id="score-ring-progress" cx="80" cy="80" r="70" stroke="#2563EB" stroke-width="12" fill="transparent" stroke-dasharray="439.8" stroke-dashoffset="439.8" stroke-linecap="round" class="transition-all duration-1000" />
+                    </svg>
+                    <div class="absolute flex flex-col items-center justify-center">
+                        <span id="score-percentage" class="text-4xl sm:text-5xl font-bold font-mono tracking-tighter">0%</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest opacity-40">Aciertos</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-6 text-sm font-medium opacity-80 mb-8 max-w-sm mx-auto bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 transition-colors">
+                    <div>
+                        <span class="block text-xs opacity-50">Aciertos</span>
+                        <strong id="res-correct" class="text-lg text-emerald-600 font-bold">0</strong>
+                    </div>
+                    <div class="w-px bg-black/10 dark:bg-white/10"></div>
+                    <div>
+                        <span class="block text-xs opacity-50">Errores</span>
+                        <strong id="res-incorrect" class="text-lg text-red-600 font-bold">0</strong>
+                    </div>
+                    <div class="w-px bg-black/10 dark:bg-white/10"></div>
+                    <div>
+                        <span class="block text-xs opacity-50">Vacías</span>
+                        <strong id="res-unanswered" class="text-lg text-neutral-400 font-bold">0</strong>
+                    </div>
+                </div>
+                <div class="text-center mb-8">
+                    <span class="text-xs font-bold uppercase tracking-widest opacity-40 block mb-1">Fracción Total</span>
+                    <strong id="score-correct-fraction" class="text-lg text-black dark:text-white font-bold">0/90</strong>
+                </div>
+
+            </div>
+
+            <!-- Ceneval Estimator -->
+            <div class="bg-black text-white p-8 sm:p-10 rounded-[32px] shadow-xl max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <span class="text-[10px] font-mono text-white/50 tracking-widest uppercase block mb-2">Índice CENEVAL</span>
+                    <h2 id="ceneval-score-display" class="text-4xl sm:text-5xl font-bold font-mono">0000 <span class="text-2xl opacity-50">/ 1300</span></h2>
+                    <p class="text-xs text-white/70 mt-2 max-w-xs">Puntaje estimado en el formato oficial. El rango va de 700 a 1300.</p>
+                </div>
+                <div class="text-center md:text-right flex flex-col items-center md:items-end">
+                    <div id="ceneval-performance-badge" class="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-sm font-bold shadow-sm mb-4">Analizando...</div>
+                    <div class="flex items-center gap-2 text-xs text-white/60 font-medium bg-white/5 px-3 py-1.5 rounded-lg">
+                        <span class="material-symbols-outlined text-sm">schedule</span>
+                        Tiempo: <strong id="res-time-spent" class="text-white">00:00:00</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desglose por los módulos -->
+            <div class="max-w-3xl mx-auto space-y-4">
+                <h3 class="text-xl text-serif font-bold italic mb-4">Resultados por Área</h3>
+                
+                <div class="bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-black/10 dark:border-white/10 shadow-sm space-y-6 transition-colors">
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-bold">Comprensión Lectora</span>
+                            <span id="sec1-score-text" class="text-xs font-bold font-mono bg-neutral-100 dark:bg-neutral-800 text-black dark:text-white px-2 py-1 rounded-md transition-colors">0 / 30</span>
+                        </div>
+                        <div class="w-full h-2 bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden transition-colors">
+                            <div id="sec1-progress-fill" class="h-full bg-blue-600 transition-all duration-1000" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-bold">Redacción Indirecta</span>
+                            <span id="sec2-score-text" class="text-xs font-bold font-mono bg-neutral-100 dark:bg-neutral-800 text-black dark:text-white px-2 py-1 rounded-md transition-colors">0 / 30</span>
+                        </div>
+                        <div class="w-full h-2 bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden transition-colors">
+                            <div id="sec2-progress-fill" class="h-full bg-blue-600 transition-all duration-1000" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-bold">Pensamiento Matemático</span>
+                            <span id="sec3-score-text" class="text-xs font-bold font-mono bg-neutral-100 dark:bg-neutral-800 text-black dark:text-white px-2 py-1 rounded-md transition-colors">0 / 30</span>
+                        </div>
+                        <div class="w-full h-2 bg-neutral-100 dark:bg-neutral-800 rounded-full overflow-hidden transition-colors">
+                            <div id="sec3-progress-fill" class="h-full bg-blue-600 transition-all duration-1000" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <button id="btn-restart" class="px-8 py-4 bg-neutral-100 dark:bg-neutral-800 text-black dark:text-white border border-black/10 dark:border-white/10 rounded-2xl font-bold text-sm hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors shadow-sm inline-flex items-center justify-center gap-2 flex-1 sm:flex-none">
+                        <span class="material-symbols-outlined text-base">refresh</span>
+                        Reiniciar Examen
+                    </button>
+                    <button id="btn-review-answers" class="px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-2xl font-bold text-sm hover:bg-blue-600 dark:hover:bg-blue-400 transition-colors shadow-md inline-flex items-center justify-center gap-2 flex-1 sm:flex-none">
+                        <span class="material-symbols-outlined text-base">fact_check</span>
+                        Revisar Reactivos
+                    </button>
+                </div>
+
+                <!-- Agradecimiento a Profe Cristian -->
+                <div class="mt-8 text-center bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-black/10 dark:border-white/10 shadow-sm transition-colors">
+                    <p class="text-sm opacity-80 leading-relaxed mb-2">
+                        Queremos agradecer de forma especial a <strong>Profe Cristian</strong> por su dedicación al recopilar el examen simulacro en el que se basa esta herramienta.
+                    </p>
+                    <a href="https://www.youtube.com/@ProfeCristian" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 text-red-600 dark:text-red-400 font-bold text-sm hover:underline transition-colors">
+                        <span class="material-symbols-outlined text-base">smart_display</span>
+                        Visitar Canal de YouTube
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- MODAL: IMAGE ZOOM LIGHTBOX                 -->
+    <!-- ========================================== -->
+    <div id="lightbox-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+        <div class="lightbox-content bg-white/5 p-2 backdrop-blur-md border border-white/20">
+            <button id="btn-close-lightbox" class="lightbox-close bg-black/60 hover:bg-black text-white" aria-label="Cerrar zoom">&times;</button>
+            <img id="lightbox-img" src="" alt="Diagrama ampliado" class="rounded-xl shadow-2xl">
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL: CONFIRM FINISH EXAM                 -->
+    <!-- ========================================== -->
+    <div id="confirm-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white dark:bg-neutral-900 w-full max-w-sm rounded-[32px] p-8 text-center shadow-2xl animate-fade-in border border-black/10 dark:border-white/10 transition-colors">
+            <div class="w-16 h-16 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors">
+                <span class="material-symbols-outlined text-3xl">warning</span>
+            </div>
+            <h2 class="font-bold text-xl mb-2">¿Finalizar examen?</h2>
+            <p id="confirm-modal-warning-text" class="text-sm opacity-60 mb-6 leading-relaxed">
+                ¿Estás seguro de que deseas finalizar tu simulacro? Aún tienes preguntas sin responder.
+            </p>
+            
+            <div class="flex justify-center gap-4 mb-8 bg-neutral-50 dark:bg-neutral-800 p-4 rounded-2xl border border-black/5 dark:border-white/5 transition-colors">
+                <div>
+                    <span id="modal-stat-answered" class="block font-bold text-lg">0</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest opacity-50">Listas</span>
+                </div>
+                <div class="w-px bg-black/10 dark:bg-white/10"></div>
+                <div>
+                    <span id="modal-stat-unanswered" class="block font-bold text-lg text-red-600">0</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest opacity-50">Vacías</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <button id="btn-confirm-modal" class="w-full bg-black dark:bg-white text-white dark:text-black py-3.5 rounded-xl text-sm font-bold hover:bg-red-600 dark:hover:bg-red-500 hover:text-white dark:hover:text-white transition-colors shadow-sm">
+                    Sí, Entregar Examen
+                </button>
+                <button id="btn-cancel-modal" class="w-full bg-neutral-100 dark:bg-neutral-800 text-black dark:text-white py-3.5 rounded-xl text-sm font-bold hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors">
+                    Volver al Examen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="simulador-uv-questions.js"></script>
+    <script src="simulador-uv.js"></script>
+    <script>
+        // Dark mode toggle listener
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>

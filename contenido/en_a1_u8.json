@@ -1,0 +1,796 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 8,
+  "title": "Planes Futuros (Checkpoint 2)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a mudarse a una nueva casa'",
+          "answer": "She will move to a new house",
+          "options": [
+            "She",
+            "will",
+            "move",
+            "to",
+            "a",
+            "new",
+            "house"
+          ],
+          "target_vocab": "move to a new house",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a mudarse a una nueva casa'",
+          "explanation": "La estructura correcta es: 'She will move to a new house'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Learn English",
+              "right": "Aprender inglés"
+            },
+            {
+              "left": "Study next week",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Buy a car",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Go on vacation",
+              "right": "Ir de vacaciones"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Aprender inglés'",
+          "phrase": "Aprender inglés",
+          "answer": "Learn English",
+          "target_vocab": "learn english",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Aprender inglés'",
+          "explanation": "Se escribe 'Learn English'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "She will _____",
+          "answer": "visit friends",
+          "options": [
+            "visit friends",
+            "buy a car",
+            "save money",
+            "travel tomorrow"
+          ],
+          "target_vocab": "visit friends",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a visitar amigos'",
+          "explanation": "La palabra correcta es 'visit friends'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Travel tomorrow",
+            "Study next week",
+            "Buy a car"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Estudiar la próxima semana'",
+          "phrase": "Estudiar la próxima semana",
+          "answer": "Study next week",
+          "target_vocab": "study next week",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Estudiar la próxima semana'",
+          "explanation": "Se escribe 'Study next week'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Voy a ir de vacaciones'",
+          "answer": "I am going to go on vacation",
+          "options": [
+            "I",
+            "am",
+            "going",
+            "to",
+            "go",
+            "on",
+            "vacation"
+          ],
+          "target_vocab": "go on vacation",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a ir de vacaciones'",
+          "explanation": "La estructura correcta es: 'I am going to go on vacation'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Move to a new house",
+            "Go on vacation",
+            "Study next week"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Move to a new house",
+            "Visit friends",
+            "Study next week"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a viajar mañana'",
+          "answer": "She will travel tomorrow",
+          "options": [
+            "She",
+            "will",
+            "travel",
+            "tomorrow"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a viajar mañana'",
+          "explanation": "La estructura correcta es: 'She will travel tomorrow'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Voy a aprender inglés'",
+          "answer": "I am going to learn english",
+          "options": [
+            "I",
+            "am",
+            "going",
+            "to",
+            "learn",
+            "english"
+          ],
+          "target_vocab": "learn english",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Voy a aprender inglés'",
+          "explanation": "La estructura correcta es: 'I am going to learn english'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Comprar un carro'",
+          "answer": "Buy a car",
+          "distractors": [
+            "Visit friends",
+            "Go on vacation",
+            "Travel tomorrow"
+          ],
+          "target_vocab": "buy a car",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Comprar un carro'",
+          "explanation": "'Buy a car' significa 'Comprar un carro'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Estudiar la próxima semana'",
+          "phrase": "Estudiar la próxima semana",
+          "answer": "Study next week",
+          "target_vocab": "study next week",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Estudiar la próxima semana'",
+          "explanation": "Se escribe 'Study next week'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a ir de vacaciones'",
+          "answer": "She will go on vacation",
+          "options": [
+            "She",
+            "will",
+            "go",
+            "on",
+            "vacation"
+          ],
+          "target_vocab": "go on vacation",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ir de vacaciones'",
+          "explanation": "La estructura correcta es: 'She will go on vacation'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "She will _____",
+          "answer": "learn english",
+          "options": [
+            "learn english",
+            "save money",
+            "start a new job",
+            "visit friends"
+          ],
+          "target_vocab": "learn english",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a aprender inglés'",
+          "explanation": "La palabra correcta es 'learn english'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a visitar amigos'",
+          "answer": "She will visit friends",
+          "options": [
+            "She",
+            "will",
+            "visit",
+            "friends"
+          ],
+          "target_vocab": "visit friends",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a visitar amigos'",
+          "explanation": "La estructura correcta es: 'She will visit friends'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Viajar mañana'",
+          "answer": "Travel tomorrow",
+          "distractors": [
+            "Read more",
+            "Buy a car",
+            "Save money"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Travel tomorrow' significa 'Viajar mañana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Visitar amigos'",
+          "answer": "Visit friends",
+          "distractors": [
+            "Study next week",
+            "Start a new job",
+            "Buy a car"
+          ],
+          "target_vocab": "visit friends",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visit friends' significa 'Visitar amigos'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Study next week",
+              "right": "Estudiar la próxima semana"
+            },
+            {
+              "left": "Buy a car",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Read more",
+              "right": "Leer más"
+            },
+            {
+              "left": "Learn English",
+              "right": "Aprender inglés"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Leer más'",
+          "phrase": "Leer más",
+          "answer": "Read more",
+          "target_vocab": "read more",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Leer más'",
+          "explanation": "Se escribe 'Read more'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Empezar un nuevo trabajo'",
+          "answer": "Start a new job",
+          "distractors": [
+            "Study next week",
+            "Save money",
+            "Visit friends"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Empezar un nuevo trabajo'",
+          "explanation": "'Start a new job' significa 'Empezar un nuevo trabajo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I am going to _____",
+          "answer": "save money",
+          "options": [
+            "save money",
+            "learn english",
+            "study next week",
+            "start a new job"
+          ],
+          "target_vocab": "save money",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Voy a ahorrar dinero'",
+          "explanation": "La palabra correcta es 'save money'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a viajar mañana'",
+          "answer": "She will travel tomorrow",
+          "options": [
+            "She",
+            "will",
+            "travel",
+            "tomorrow"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a viajar mañana'",
+          "explanation": "La estructura correcta es: 'She will travel tomorrow'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Ir de vacaciones'",
+          "phrase": "Ir de vacaciones",
+          "answer": "Go on vacation",
+          "target_vocab": "go on vacation",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Ir de vacaciones'",
+          "explanation": "Se escribe 'Go on vacation'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a aprender inglés'",
+          "answer": "She will learn english",
+          "options": [
+            "She",
+            "will",
+            "learn",
+            "english"
+          ],
+          "target_vocab": "learn english",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a aprender inglés'",
+          "explanation": "La estructura correcta es: 'She will learn english'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Move to a new house",
+              "right": "Mudarse a una nueva casa"
+            },
+            {
+              "left": "Read more",
+              "right": "Leer más"
+            },
+            {
+              "left": "Buy a car",
+              "right": "Comprar un carro"
+            },
+            {
+              "left": "Learn English",
+              "right": "Aprender inglés"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a empezar un nuevo trabajo'",
+          "answer": "She will start a new job",
+          "options": [
+            "She",
+            "will",
+            "start",
+            "a",
+            "new",
+            "job"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'She will start a new job'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Empezar un nuevo trabajo'",
+          "answer": "Start a new job",
+          "distractors": [
+            "Read more",
+            "Save money",
+            "Travel tomorrow"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Empezar un nuevo trabajo'",
+          "explanation": "'Start a new job' significa 'Empezar un nuevo trabajo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Visitar amigos'",
+          "answer": "Visit friends",
+          "distractors": [
+            "Study next week",
+            "Start a new job",
+            "Read more"
+          ],
+          "target_vocab": "visit friends",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visit friends' significa 'Visitar amigos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Comprar un carro'",
+          "phrase": "Comprar un carro",
+          "answer": "Buy a car",
+          "target_vocab": "buy a car",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Comprar un carro'",
+          "explanation": "Se escribe 'Buy a car'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a estudiar la próxima semana'",
+          "answer": "She will study next week",
+          "options": [
+            "She",
+            "will",
+            "study",
+            "next",
+            "week"
+          ],
+          "target_vocab": "study next week",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'She will study next week'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Start a new job",
+              "right": "Empezar un nuevo trabajo"
+            },
+            {
+              "left": "Move to a new house",
+              "right": "Mudarse a una nueva casa"
+            },
+            {
+              "left": "Travel tomorrow",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Learn English",
+              "right": "Aprender inglés"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a ir de vacaciones'",
+          "answer": "She will go on vacation",
+          "options": [
+            "She",
+            "will",
+            "go",
+            "on",
+            "vacation"
+          ],
+          "target_vocab": "go on vacation",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a ir de vacaciones'",
+          "explanation": "La estructura correcta es: 'She will go on vacation'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a viajar mañana'",
+          "answer": "She will travel tomorrow",
+          "options": [
+            "She",
+            "will",
+            "travel",
+            "tomorrow"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a viajar mañana'",
+          "explanation": "La estructura correcta es: 'She will travel tomorrow'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Leer más'",
+          "phrase": "Leer más",
+          "answer": "Read more",
+          "target_vocab": "read more",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Leer más'",
+          "explanation": "Se escribe 'Read more'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Visit friends",
+            "Study next week",
+            "Travel tomorrow"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Save money",
+            "Visit friends",
+            "Go on vacation"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Aprender inglés'",
+          "phrase": "Aprender inglés",
+          "answer": "Learn English",
+          "target_vocab": "learn english",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Aprender inglés'",
+          "explanation": "Se escribe 'Learn English'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Empezar un nuevo trabajo'",
+          "answer": "Start a new job",
+          "distractors": [
+            "Read more",
+            "Move to a new house",
+            "Visit friends"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Empezar un nuevo trabajo'",
+          "explanation": "'Start a new job' significa 'Empezar un nuevo trabajo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "She will _____",
+          "answer": "buy a car",
+          "options": [
+            "buy a car",
+            "go on vacation",
+            "move to a new house",
+            "learn english"
+          ],
+          "target_vocab": "buy a car",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a comprar un carro'",
+          "explanation": "La palabra correcta es 'buy a car'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Comprar un carro'",
+          "phrase": "Comprar un carro",
+          "answer": "Buy a car",
+          "target_vocab": "buy a car",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Comprar un carro'",
+          "explanation": "Se escribe 'Buy a car'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a estudiar la próxima semana'",
+          "answer": "She will study next week",
+          "options": [
+            "She",
+            "will",
+            "study",
+            "next",
+            "week"
+          ],
+          "target_vocab": "study next week",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'She will study next week'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Visitar amigos'",
+          "answer": "Visit friends",
+          "distractors": [
+            "Buy a car",
+            "Move to a new house",
+            "Study next week"
+          ],
+          "target_vocab": "visit friends",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Visitar amigos'",
+          "explanation": "'Visit friends' significa 'Visitar amigos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Visitar amigos'",
+          "phrase": "Visitar amigos",
+          "answer": "Visit friends",
+          "target_vocab": "visit friends",
+          "difficulty": 9,
+          "spanish_translation": "Escribe en inglés: 'Visitar amigos'",
+          "explanation": "Se escribe 'Visit friends'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Leer más'",
+          "answer": "Read more",
+          "distractors": [
+            "Buy a car",
+            "Study next week",
+            "Visit friends"
+          ],
+          "target_vocab": "read more",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Leer más'",
+          "explanation": "'Read more' significa 'Leer más'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a empezar un nuevo trabajo'",
+          "answer": "She will start a new job",
+          "options": [
+            "She",
+            "will",
+            "start",
+            "a",
+            "new",
+            "job"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'She will start a new job'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Viajar mañana'",
+          "answer": "Travel tomorrow",
+          "distractors": [
+            "Save money",
+            "Read more",
+            "Learn English"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 8,
+          "spanish_translation": "Elige la traducción correcta: 'Viajar mañana'",
+          "explanation": "'Travel tomorrow' significa 'Viajar mañana'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Learn English",
+              "right": "Aprender inglés"
+            },
+            {
+              "left": "Travel tomorrow",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Read more",
+              "right": "Leer más"
+            },
+            {
+              "left": "Study next week",
+              "right": "Estudiar la próxima semana"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Ella va a empezar un nuevo trabajo'",
+          "answer": "She will start a new job",
+          "options": [
+            "She",
+            "will",
+            "start",
+            "a",
+            "new",
+            "job"
+          ],
+          "target_vocab": "start a new job",
+          "difficulty": 10,
+          "spanish_translation": "Traduce: 'Ella va a empezar un nuevo trabajo'",
+          "explanation": "La estructura correcta es: 'She will start a new job'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "She will _____",
+          "answer": "travel tomorrow",
+          "options": [
+            "travel tomorrow",
+            "buy a car",
+            "visit friends",
+            "learn english"
+          ],
+          "target_vocab": "travel tomorrow",
+          "difficulty": 9,
+          "spanish_translation": "Completa la oración: 'Ella va a viajar mañana'",
+          "explanation": "La palabra correcta es 'travel tomorrow'."
+        }
+      ]
+    }
+  ]
+}

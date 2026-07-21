@@ -1,0 +1,779 @@
+{
+  "language": "fr",
+  "level": "a1",
+  "unit": 4,
+  "title": "La Routine (Checkpoint 1)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Leçon 1",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle aime _____",
+          "answer": "prendre une douche",
+          "options": [
+            "prendre une douche",
+            "lire un livre",
+            "déjeuner",
+            "aller au travail"
+          ],
+          "target_vocab": "prendre une douche",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'A ella le gusta bañarse'",
+          "explanation": "La palabra correcta es 'prendre une douche'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Lire un livre",
+              "right": "Leer un libro"
+            },
+            {
+              "left": "Rentrer chez soi",
+              "right": "Ir a casa"
+            },
+            {
+              "left": "Se coucher",
+              "right": "Ir a dormir"
+            },
+            {
+              "left": "Dîner",
+              "right": "Cenar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero ver la tele'",
+          "answer": "Je veux regarder la télé",
+          "options": [
+            "Je",
+            "veux",
+            "regarder",
+            "la",
+            "télé"
+          ],
+          "target_vocab": "regarder la télé",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero ver la tele'",
+          "explanation": "La estructura correcta es: 'Je veux regarder la télé'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Leer un libro'",
+          "answer": "Lire un livre",
+          "distractors": [
+            "Se réveiller",
+            "Dîner",
+            "Se coucher"
+          ],
+          "target_vocab": "lire un livre",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Leer un libro'",
+          "explanation": "'Lire un livre' significa 'Leer un libro'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta ir a trabajar'",
+          "answer": "Elle aime aller au travail",
+          "options": [
+            "Elle",
+            "aime",
+            "aller",
+            "au",
+            "travail"
+          ],
+          "target_vocab": "aller au travail",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta ir a trabajar'",
+          "explanation": "La estructura correcta es: 'Elle aime aller au travail'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero cenar'",
+          "answer": "Je veux dîner",
+          "options": [
+            "Je",
+            "veux",
+            "dîner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero cenar'",
+          "explanation": "La estructura correcta es: 'Je veux dîner'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Despertar'",
+          "answer": "Se réveiller",
+          "distractors": [
+            "Rentrer chez soi",
+            "Lire un livre",
+            "Aller au travail"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Se réveiller' significa 'Despertar'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Despertar'",
+          "phrase": "Despertar",
+          "answer": "Se réveiller",
+          "target_vocab": "se réveiller",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Despertar'",
+          "explanation": "Se escribe 'Se réveiller'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ver la tele'",
+          "phrase": "Ver la tele",
+          "answer": "Regarder la télé",
+          "target_vocab": "regarder la télé",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Ver la tele'",
+          "explanation": "Se escribe 'Regarder la télé'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Despertar'",
+          "answer": "Se réveiller",
+          "distractors": [
+            "Se coucher",
+            "Lire un livre",
+            "Rentrer chez soi"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Se réveiller' significa 'Despertar'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Leçon 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir a dormir'",
+          "answer": "Se coucher",
+          "distractors": [
+            "Lire un livre",
+            "Prendre une douche",
+            "Déjeuner"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Se coucher' significa 'Ir a dormir'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir a dormir'",
+          "answer": "Se coucher",
+          "distractors": [
+            "Prendre le petit déjeuner",
+            "Dîner",
+            "Aller au travail"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Se coucher' significa 'Ir a dormir'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle aime _____",
+          "answer": "prendre le petit déjeuner",
+          "options": [
+            "prendre le petit déjeuner",
+            "se réveiller",
+            "déjeuner",
+            "rentrer chez soi"
+          ],
+          "target_vocab": "prendre le petit déjeuner",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'A ella le gusta desayunar'",
+          "explanation": "La palabra correcta es 'prendre le petit déjeuner'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ir a dormir'",
+          "phrase": "Ir a dormir",
+          "answer": "Se coucher",
+          "target_vocab": "se coucher",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Ir a dormir'",
+          "explanation": "Se escribe 'Se coucher'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Bañarse'",
+          "answer": "Prendre une douche",
+          "distractors": [
+            "Rentrer chez soi",
+            "Dîner",
+            "Regarder la télé"
+          ],
+          "target_vocab": "prendre une douche",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Bañarse'",
+          "explanation": "'Prendre une douche' significa 'Bañarse'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Desayunar'",
+          "phrase": "Desayunar",
+          "answer": "Prendre le petit déjeuner",
+          "target_vocab": "prendre le petit déjeuner",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Desayunar'",
+          "explanation": "Se escribe 'Prendre le petit déjeuner'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Se réveiller",
+              "right": "Despertar"
+            },
+            {
+              "left": "Aller au travail",
+              "right": "Ir a trabajar"
+            },
+            {
+              "left": "Déjeuner",
+              "right": "Almorzar"
+            },
+            {
+              "left": "Regarder la télé",
+              "right": "Ver la tele"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta desayunar'",
+          "answer": "Elle aime prendre le petit déjeuner",
+          "options": [
+            "Elle",
+            "aime",
+            "prendre",
+            "le",
+            "petit",
+            "déjeuner"
+          ],
+          "target_vocab": "prendre le petit déjeuner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta desayunar'",
+          "explanation": "La estructura correcta es: 'Elle aime prendre le petit déjeuner'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta cenar'",
+          "answer": "Elle aime dîner",
+          "options": [
+            "Elle",
+            "aime",
+            "dîner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta cenar'",
+          "explanation": "La estructura correcta es: 'Elle aime dîner'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero almorzar'",
+          "answer": "Je veux déjeuner",
+          "options": [
+            "Je",
+            "veux",
+            "déjeuner"
+          ],
+          "target_vocab": "déjeuner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero almorzar'",
+          "explanation": "La estructura correcta es: 'Je veux déjeuner'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Leçon 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Leer un libro'",
+          "phrase": "Leer un libro",
+          "answer": "Lire un livre",
+          "target_vocab": "lire un livre",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Leer un libro'",
+          "explanation": "Se escribe 'Lire un livre'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta ver la tele'",
+          "answer": "Elle aime regarder la télé",
+          "options": [
+            "Elle",
+            "aime",
+            "regarder",
+            "la",
+            "télé"
+          ],
+          "target_vocab": "regarder la télé",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta ver la tele'",
+          "explanation": "La estructura correcta es: 'Elle aime regarder la télé'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je veux _____",
+          "answer": "se réveiller",
+          "options": [
+            "se réveiller",
+            "se coucher",
+            "lire un livre",
+            "déjeuner"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero despertar'",
+          "explanation": "La palabra correcta es 'se réveiller'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Cenar'",
+          "answer": "Dîner",
+          "distractors": [
+            "Se coucher",
+            "Regarder la télé",
+            "Prendre le petit déjeuner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Cenar'",
+          "explanation": "'Dîner' significa 'Cenar'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Prendre une douche",
+              "right": "Bañarse"
+            },
+            {
+              "left": "Déjeuner",
+              "right": "Almorzar"
+            },
+            {
+              "left": "Se coucher",
+              "right": "Ir a dormir"
+            },
+            {
+              "left": "Se réveiller",
+              "right": "Despertar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Despertar'",
+          "answer": "Se réveiller",
+          "distractors": [
+            "Regarder la télé",
+            "Prendre une douche",
+            "Prendre le petit déjeuner"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Se réveiller' significa 'Despertar'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir a casa'",
+          "answer": "Rentrer chez soi",
+          "distractors": [
+            "Lire un livre",
+            "Prendre le petit déjeuner",
+            "Regarder la télé"
+          ],
+          "target_vocab": "rentrer chez soi",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a casa'",
+          "explanation": "'Rentrer chez soi' significa 'Ir a casa'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Bañarse'",
+          "phrase": "Bañarse",
+          "answer": "Prendre une douche",
+          "target_vocab": "prendre une douche",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Bañarse'",
+          "explanation": "Se escribe 'Prendre une douche'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero ir a dormir'",
+          "answer": "Je veux se coucher",
+          "options": [
+            "Je",
+            "veux",
+            "se",
+            "coucher"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero ir a dormir'",
+          "explanation": "La estructura correcta es: 'Je veux se coucher'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta cenar'",
+          "answer": "Elle aime dîner",
+          "options": [
+            "Elle",
+            "aime",
+            "dîner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta cenar'",
+          "explanation": "La estructura correcta es: 'Elle aime dîner'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Leçon 4",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Desayunar'",
+          "phrase": "Desayunar",
+          "answer": "Prendre le petit déjeuner",
+          "target_vocab": "prendre le petit déjeuner",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Desayunar'",
+          "explanation": "Se escribe 'Prendre le petit déjeuner'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Elle aime _____",
+          "answer": "déjeuner",
+          "options": [
+            "déjeuner",
+            "prendre une douche",
+            "se coucher",
+            "aller au travail"
+          ],
+          "target_vocab": "déjeuner",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'A ella le gusta almorzar'",
+          "explanation": "La palabra correcta es 'déjeuner'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ir a dormir'",
+          "phrase": "Ir a dormir",
+          "answer": "Se coucher",
+          "target_vocab": "se coucher",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Ir a dormir'",
+          "explanation": "Se escribe 'Se coucher'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ver la tele'",
+          "answer": "Regarder la télé",
+          "distractors": [
+            "Lire un livre",
+            "Aller au travail",
+            "Prendre une douche"
+          ],
+          "target_vocab": "regarder la télé",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ver la tele'",
+          "explanation": "'Regarder la télé' significa 'Ver la tele'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Ir a dormir'",
+          "answer": "Se coucher",
+          "distractors": [
+            "Prendre une douche",
+            "Aller au travail",
+            "Lire un livre"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Ir a dormir'",
+          "explanation": "'Se coucher' significa 'Ir a dormir'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero ir a dormir'",
+          "answer": "Je veux se coucher",
+          "options": [
+            "Je",
+            "veux",
+            "se",
+            "coucher"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero ir a dormir'",
+          "explanation": "La estructura correcta es: 'Je veux se coucher'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta ver la tele'",
+          "answer": "Elle aime regarder la télé",
+          "options": [
+            "Elle",
+            "aime",
+            "regarder",
+            "la",
+            "télé"
+          ],
+          "target_vocab": "regarder la télé",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta ver la tele'",
+          "explanation": "La estructura correcta es: 'Elle aime regarder la télé'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Bañarse'",
+          "answer": "Prendre une douche",
+          "distractors": [
+            "Aller au travail",
+            "Se coucher",
+            "Rentrer chez soi"
+          ],
+          "target_vocab": "prendre une douche",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Bañarse'",
+          "explanation": "'Prendre une douche' significa 'Bañarse'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta ir a dormir'",
+          "answer": "Elle aime se coucher",
+          "options": [
+            "Elle",
+            "aime",
+            "se",
+            "coucher"
+          ],
+          "target_vocab": "se coucher",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta ir a dormir'",
+          "explanation": "La estructura correcta es: 'Elle aime se coucher'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Rentrer chez soi",
+              "right": "Ir a casa"
+            },
+            {
+              "left": "Regarder la télé",
+              "right": "Ver la tele"
+            },
+            {
+              "left": "Déjeuner",
+              "right": "Almorzar"
+            },
+            {
+              "left": "Prendre une douche",
+              "right": "Bañarse"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Leçon 5",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Ir a trabajar'",
+          "phrase": "Ir a trabajar",
+          "answer": "Aller au travail",
+          "target_vocab": "aller au travail",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Ir a trabajar'",
+          "explanation": "Se escribe 'Aller au travail'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero cenar'",
+          "answer": "Je veux dîner",
+          "options": [
+            "Je",
+            "veux",
+            "dîner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero cenar'",
+          "explanation": "La estructura correcta es: 'Je veux dîner'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'A ella le gusta cenar'",
+          "answer": "Elle aime dîner",
+          "options": [
+            "Elle",
+            "aime",
+            "dîner"
+          ],
+          "target_vocab": "dîner",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'A ella le gusta cenar'",
+          "explanation": "La estructura correcta es: 'Elle aime dîner'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Despertar'",
+          "answer": "Se réveiller",
+          "distractors": [
+            "Dîner",
+            "Lire un livre",
+            "Aller au travail"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Se réveiller' significa 'Despertar'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduis : 'Yo quiero ir a casa'",
+          "answer": "Je veux rentrer chez soi",
+          "options": [
+            "Je",
+            "veux",
+            "rentrer",
+            "chez",
+            "soi"
+          ],
+          "target_vocab": "rentrer chez soi",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Yo quiero ir a casa'",
+          "explanation": "La estructura correcta es: 'Je veux rentrer chez soi'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Fais correspondre les bonnes paires",
+          "pairs": [
+            {
+              "left": "Aller au travail",
+              "right": "Ir a trabajar"
+            },
+            {
+              "left": "Lire un livre",
+              "right": "Leer un libro"
+            },
+            {
+              "left": "Prendre le petit déjeuner",
+              "right": "Desayunar"
+            },
+            {
+              "left": "Dîner",
+              "right": "Cenar"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 7,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en francés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Je veux _____",
+          "answer": "prendre une douche",
+          "options": [
+            "prendre une douche",
+            "rentrer chez soi",
+            "regarder la télé",
+            "se coucher"
+          ],
+          "target_vocab": "prendre une douche",
+          "difficulty": 5,
+          "spanish_translation": "Completa la oración: 'Yo quiero bañarse'",
+          "explanation": "La palabra correcta es 'prendre une douche'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Bañarse'",
+          "answer": "Prendre une douche",
+          "distractors": [
+            "Aller au travail",
+            "Lire un livre",
+            "Dîner"
+          ],
+          "target_vocab": "prendre une douche",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Bañarse'",
+          "explanation": "'Prendre une douche' significa 'Bañarse'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Écris en français : 'Almorzar'",
+          "phrase": "Almorzar",
+          "answer": "Déjeuner",
+          "target_vocab": "déjeuner",
+          "difficulty": 5,
+          "spanish_translation": "Escribe en francés: 'Almorzar'",
+          "explanation": "Se escribe 'Déjeuner'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choisis la bonne traduction : 'Despertar'",
+          "answer": "Se réveiller",
+          "distractors": [
+            "Déjeuner",
+            "Dîner",
+            "Regarder la télé"
+          ],
+          "target_vocab": "se réveiller",
+          "difficulty": 4,
+          "spanish_translation": "Elige la traducción correcta: 'Despertar'",
+          "explanation": "'Se réveiller' significa 'Despertar'."
+        }
+      ]
+    }
+  ]
+}

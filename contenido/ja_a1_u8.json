@@ -1,0 +1,809 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 8,
+  "title": "Planes (Yotei)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kanojo wa _____ tsumori desu",
+          "answer": "Raishuu benkyou suru",
+          "options": [
+            "Raishuu benkyou suru",
+            "Atarashii shigoto",
+            "Yasumi",
+            "Nihongo wo manabu"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 9,
+          "spanish_translation": "Completa: 'Ella va a estudiar la próxima semana'",
+          "explanation": "Falta 'Raishuu benkyou suru'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Viajar mañana'",
+          "phrase": "Viajar mañana",
+          "answer": "Ashita ryokou suru (明日旅行する)",
+          "target_vocab": "ashita ryokou suru",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Viajar mañana'",
+          "explanation": "Se dice 'Ashita ryokou suru (明日旅行する)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Yasumi (休み)",
+              "right": "Vacaciones"
+            },
+            {
+              "left": "Atarashii shigoto (新しい仕事)",
+              "right": "Nuevo trabajo"
+            },
+            {
+              "left": "Motto yomu (もっと読む)",
+              "right": "Leer más"
+            },
+            {
+              "left": "Hikkosu (引っ越す)",
+              "right": "Mudarse"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Ella va a leer más'",
+          "answer": "Kanojo wa Motto yomu tsumori desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Motto",
+            "yomu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "motto yomu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Ella va a leer más'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Motto yomu tsumori desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Comprar un carro'",
+          "phrase": "Comprar un carro",
+          "answer": "Kuruma wo kau (車を買う)",
+          "target_vocab": "kuruma wo kau",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Comprar un carro'",
+          "explanation": "Se dice 'Kuruma wo kau (車を買う)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a vacaciones'",
+          "answer": "Watashi wa Yasumi tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Yasumi",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "yasumi",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a vacaciones'",
+          "explanation": "La estructura correcta es: 'Watashi wa Yasumi tsumori desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a mudarse'",
+          "answer": "Watashi wa Hikkosu tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hikkosu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "hikkosu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a mudarse'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hikkosu tsumori desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Comprar un carro'",
+          "answer": "Kuruma wo kau (車を買う)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Tomodachi ni au (友達に会う)",
+            "Chokin suru (貯金する)"
+          ],
+          "target_vocab": "kuruma wo kau",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Comprar un carro'",
+          "explanation": "'Kuruma wo kau (車を買う)' significa 'Comprar un carro'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Viajar mañana'",
+          "answer": "Ashita ryokou suru (明日旅行する)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Raishuu benkyou suru (来週勉強する)",
+            "Yasumi (休み)"
+          ],
+          "target_vocab": "ashita ryokou suru",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Viajar mañana'",
+          "explanation": "'Ashita ryokou suru (明日旅行する)' significa 'Viajar mañana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estudiar la próxima semana'",
+          "answer": "Raishuu benkyou suru (来週勉強する)",
+          "distractors": [
+            "Yasumi (休み)",
+            "Atarashii shigoto (新しい仕事)",
+            "Chokin suru (貯金する)"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Estudiar la próxima semana'",
+          "explanation": "'Raishuu benkyou suru (来週勉強する)' significa 'Estudiar la próxima semana'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Atarashii shigoto (新しい仕事)",
+              "right": "Nuevo trabajo"
+            },
+            {
+              "left": "Hikkosu (引っ越す)",
+              "right": "Mudarse"
+            },
+            {
+              "left": "Nihongo wo manabu (日本語を学ぶ)",
+              "right": "Aprender japonés"
+            },
+            {
+              "left": "Motto yomu (もっと読む)",
+              "right": "Leer más"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a vacaciones'",
+          "answer": "Watashi wa Yasumi tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Yasumi",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "yasumi",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a vacaciones'",
+          "explanation": "La estructura correcta es: 'Watashi wa Yasumi tsumori desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Vacaciones'",
+          "phrase": "Vacaciones",
+          "answer": "Yasumi (休み)",
+          "target_vocab": "yasumi",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Vacaciones'",
+          "explanation": "Se dice 'Yasumi (休み)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Leer más'",
+          "answer": "Motto yomu (もっと読む)",
+          "distractors": [
+            "Kuruma wo kau (車を買う)",
+            "Chokin suru (貯金する)",
+            "Tomodachi ni au (友達に会う)"
+          ],
+          "target_vocab": "motto yomu",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Leer más'",
+          "explanation": "'Motto yomu (もっと読む)' significa 'Leer más'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vacaciones'",
+          "answer": "Yasumi (休み)",
+          "distractors": [
+            "Kuruma wo kau (車を買う)",
+            "Motto yomu (もっと読む)",
+            "Chokin suru (貯金する)"
+          ],
+          "target_vocab": "yasumi",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Vacaciones'",
+          "explanation": "'Yasumi (休み)' significa 'Vacaciones'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Nuevo trabajo'",
+          "phrase": "Nuevo trabajo",
+          "answer": "Atarashii shigoto (新しい仕事)",
+          "target_vocab": "atarashii shigoto",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Nuevo trabajo'",
+          "explanation": "Se dice 'Atarashii shigoto (新しい仕事)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Ella va a aprender japonés'",
+          "answer": "Kanojo wa Nihongo wo manabu tsumori desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Nihongo",
+            "wo",
+            "manabu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Ella va a aprender japonés'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Nihongo wo manabu tsumori desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Aprender japonés'",
+          "answer": "Nihongo wo manabu (日本語を学ぶ)",
+          "distractors": [
+            "Tomodachi ni au (友達に会う)",
+            "Raishuu benkyou suru (来週勉強する)",
+            "Atarashii shigoto (新しい仕事)"
+          ],
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Aprender japonés'",
+          "explanation": "'Nihongo wo manabu (日本語を学ぶ)' significa 'Aprender japonés'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ tsumori desu",
+          "answer": "Atarashii shigoto",
+          "options": [
+            "Atarashii shigoto",
+            "Motto yomu",
+            "Tomodachi ni au",
+            "Nihongo wo manabu"
+          ],
+          "target_vocab": "atarashii shigoto",
+          "difficulty": 9,
+          "spanish_translation": "Completa: 'Voy a nuevo trabajo'",
+          "explanation": "Falta 'Atarashii shigoto'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a estudiar la próxima semana'",
+          "answer": "Watashi wa Raishuu benkyou suru tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Raishuu",
+            "benkyou",
+            "suru",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Watashi wa Raishuu benkyou suru tsumori desu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ tsumori desu",
+          "answer": "Nihongo wo manabu",
+          "options": [
+            "Nihongo wo manabu",
+            "Ashita ryokou suru",
+            "Yasumi",
+            "Atarashii shigoto"
+          ],
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 9,
+          "spanish_translation": "Completa: 'Voy a aprender japonés'",
+          "explanation": "Falta 'Nihongo wo manabu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Tomodachi ni au (友達に会う)",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Yasumi (休み)",
+              "right": "Vacaciones"
+            },
+            {
+              "left": "Ashita ryokou suru (明日旅行する)",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Motto yomu (もっと読む)",
+              "right": "Leer más"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Nuevo trabajo'",
+          "answer": "Atarashii shigoto (新しい仕事)",
+          "distractors": [
+            "Yasumi (休み)",
+            "Hikkosu (引っ越す)",
+            "Tomodachi ni au (友達に会う)"
+          ],
+          "target_vocab": "atarashii shigoto",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Nuevo trabajo'",
+          "explanation": "'Atarashii shigoto (新しい仕事)' significa 'Nuevo trabajo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Aprender japonés'",
+          "answer": "Nihongo wo manabu (日本語を学ぶ)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Tomodachi ni au (友達に会う)",
+            "Raishuu benkyou suru (来週勉強する)"
+          ],
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Aprender japonés'",
+          "explanation": "'Nihongo wo manabu (日本語を学ぶ)' significa 'Aprender japonés'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Estudiar la próxima semana'",
+          "phrase": "Estudiar la próxima semana",
+          "answer": "Raishuu benkyou suru (来週勉強する)",
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Estudiar la próxima semana'",
+          "explanation": "Se dice 'Raishuu benkyou suru (来週勉強する)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Nuevo trabajo'",
+          "answer": "Atarashii shigoto (新しい仕事)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Motto yomu (もっと読む)",
+            "Chokin suru (貯金する)"
+          ],
+          "target_vocab": "atarashii shigoto",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Nuevo trabajo'",
+          "explanation": "'Atarashii shigoto (新しい仕事)' significa 'Nuevo trabajo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Visitar amigos'",
+          "phrase": "Visitar amigos",
+          "answer": "Tomodachi ni au (友達に会う)",
+          "target_vocab": "tomodachi ni au",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Visitar amigos'",
+          "explanation": "Se dice 'Tomodachi ni au (友達に会う)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a comprar un carro'",
+          "answer": "Watashi wa Kuruma wo kau tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Kuruma",
+            "wo",
+            "kau",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "kuruma wo kau",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a comprar un carro'",
+          "explanation": "La estructura correcta es: 'Watashi wa Kuruma wo kau tsumori desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a aprender japonés'",
+          "answer": "Watashi wa Nihongo wo manabu tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Nihongo",
+            "wo",
+            "manabu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a aprender japonés'",
+          "explanation": "La estructura correcta es: 'Watashi wa Nihongo wo manabu tsumori desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a mudarse'",
+          "answer": "Watashi wa Hikkosu tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Hikkosu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "hikkosu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a mudarse'",
+          "explanation": "La estructura correcta es: 'Watashi wa Hikkosu tsumori desu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a viajar mañana'",
+          "answer": "Watashi wa Ashita ryokou suru tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Ashita",
+            "ryokou",
+            "suru",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "ashita ryokou suru",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a viajar mañana'",
+          "explanation": "La estructura correcta es: 'Watashi wa Ashita ryokou suru tsumori desu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Yasumi (休み)",
+              "right": "Vacaciones"
+            },
+            {
+              "left": "Motto yomu (もっと読む)",
+              "right": "Leer más"
+            },
+            {
+              "left": "Ashita ryokou suru (明日旅行する)",
+              "right": "Viajar mañana"
+            },
+            {
+              "left": "Kuruma wo kau (車を買う)",
+              "right": "Comprar un carro"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Kanojo wa _____ tsumori desu",
+          "answer": "Chokin suru",
+          "options": [
+            "Chokin suru",
+            "Raishuu benkyou suru",
+            "Yasumi",
+            "Kuruma wo kau"
+          ],
+          "target_vocab": "chokin suru",
+          "difficulty": 9,
+          "spanish_translation": "Completa: 'Ella va a ahorrar dinero'",
+          "explanation": "Falta 'Chokin suru'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Viajar mañana'",
+          "phrase": "Viajar mañana",
+          "answer": "Ashita ryokou suru (明日旅行する)",
+          "target_vocab": "ashita ryokou suru",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Viajar mañana'",
+          "explanation": "Se dice 'Ashita ryokou suru (明日旅行する)'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estudiar la próxima semana'",
+          "answer": "Raishuu benkyou suru (来週勉強する)",
+          "distractors": [
+            "Kuruma wo kau (車を買う)",
+            "Motto yomu (もっと読む)",
+            "Nihongo wo manabu (日本語を学ぶ)"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Estudiar la próxima semana'",
+          "explanation": "'Raishuu benkyou suru (来週勉強する)' significa 'Estudiar la próxima semana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Visitar amigos'",
+          "answer": "Tomodachi ni au (友達に会う)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Atarashii shigoto (新しい仕事)",
+            "Motto yomu (もっと読む)"
+          ],
+          "target_vocab": "tomodachi ni au",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Visitar amigos'",
+          "explanation": "'Tomodachi ni au (友達に会う)' significa 'Visitar amigos'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a leer más'",
+          "answer": "Watashi wa Motto yomu tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Motto",
+            "yomu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "motto yomu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a leer más'",
+          "explanation": "La estructura correcta es: 'Watashi wa Motto yomu tsumori desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estudiar la próxima semana'",
+          "answer": "Raishuu benkyou suru (来週勉強する)",
+          "distractors": [
+            "Nihongo wo manabu (日本語を学ぶ)",
+            "Kuruma wo kau (車を買う)",
+            "Tomodachi ni au (友達に会う)"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Estudiar la próxima semana'",
+          "explanation": "'Raishuu benkyou suru (来週勉強する)' significa 'Estudiar la próxima semana'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Visitar amigos'",
+          "phrase": "Visitar amigos",
+          "answer": "Tomodachi ni au (友達に会う)",
+          "target_vocab": "tomodachi ni au",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Visitar amigos'",
+          "explanation": "Se dice 'Tomodachi ni au (友達に会う)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Voy a estudiar la próxima semana'",
+          "answer": "Watashi wa Raishuu benkyou suru tsumori desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Raishuu",
+            "benkyou",
+            "suru",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Voy a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Watashi wa Raishuu benkyou suru tsumori desu'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ tsumori desu",
+          "answer": "Kuruma wo kau",
+          "options": [
+            "Kuruma wo kau",
+            "Hikkosu",
+            "Tomodachi ni au",
+            "Yasumi"
+          ],
+          "target_vocab": "kuruma wo kau",
+          "difficulty": 9,
+          "spanish_translation": "Completa: 'Voy a comprar un carro'",
+          "explanation": "Falta 'Kuruma wo kau'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Vacaciones'",
+          "answer": "Yasumi (休み)",
+          "distractors": [
+            "Chokin suru (貯金する)",
+            "Motto yomu (もっと読む)",
+            "Kuruma wo kau (車を買う)"
+          ],
+          "target_vocab": "yasumi",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Vacaciones'",
+          "explanation": "'Yasumi (休み)' significa 'Vacaciones'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Visitar amigos'",
+          "answer": "Tomodachi ni au (友達に会う)",
+          "distractors": [
+            "Hikkosu (引っ越す)",
+            "Yasumi (休み)",
+            "Chokin suru (貯金する)"
+          ],
+          "target_vocab": "tomodachi ni au",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Visitar amigos'",
+          "explanation": "'Tomodachi ni au (友達に会う)' significa 'Visitar amigos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Vacaciones'",
+          "phrase": "Vacaciones",
+          "answer": "Yasumi (休み)",
+          "target_vocab": "yasumi",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Vacaciones'",
+          "explanation": "Se dice 'Yasumi (休み)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Ella va a mudarse'",
+          "answer": "Kanojo wa Hikkosu tsumori desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Hikkosu",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "hikkosu",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Ella va a mudarse'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Hikkosu tsumori desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Aprender japonés'",
+          "phrase": "Aprender japonés",
+          "answer": "Nihongo wo manabu (日本語を学ぶ)",
+          "target_vocab": "nihongo wo manabu",
+          "difficulty": 9,
+          "spanish_translation": "Traduce: 'Aprender japonés'",
+          "explanation": "Se dice 'Nihongo wo manabu (日本語を学ぶ)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Ella va a estudiar la próxima semana'",
+          "answer": "Kanojo wa Raishuu benkyou suru tsumori desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Raishuu",
+            "benkyou",
+            "suru",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Ella va a estudiar la próxima semana'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Raishuu benkyou suru tsumori desu'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Atarashii shigoto (新しい仕事)",
+              "right": "Nuevo trabajo"
+            },
+            {
+              "left": "Tomodachi ni au (友達に会う)",
+              "right": "Visitar amigos"
+            },
+            {
+              "left": "Motto yomu (もっと読む)",
+              "right": "Leer más"
+            },
+            {
+              "left": "Yasumi (休み)",
+              "right": "Vacaciones"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 11,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Ella va a vacaciones'",
+          "answer": "Kanojo wa Yasumi tsumori desu",
+          "options": [
+            "Kanojo",
+            "wa",
+            "Yasumi",
+            "tsumori",
+            "desu"
+          ],
+          "target_vocab": "yasumi",
+          "difficulty": 10,
+          "spanish_translation": "Ordena la frase: 'Ella va a vacaciones'",
+          "explanation": "La estructura correcta es: 'Kanojo wa Yasumi tsumori desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Estudiar la próxima semana'",
+          "answer": "Raishuu benkyou suru (来週勉強する)",
+          "distractors": [
+            "Chokin suru (貯金する)",
+            "Tomodachi ni au (友達に会う)",
+            "Yasumi (休み)"
+          ],
+          "target_vocab": "raishuu benkyou suru",
+          "difficulty": 8,
+          "spanish_translation": "Traducción de: 'Estudiar la próxima semana'",
+          "explanation": "'Raishuu benkyou suru (来週勉強する)' significa 'Estudiar la próxima semana'."
+        }
+      ]
+    }
+  ]
+}

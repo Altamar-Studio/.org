@@ -1,0 +1,783 @@
+{
+  "language": "pt",
+  "level": "a1",
+  "unit": 3,
+  "title": "Na Cidade",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lição 1",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Restaurante'",
+          "answer": "Restaurante",
+          "distractors": [
+            "Rua",
+            "Escola",
+            "Supermercado"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurante' significa 'Restaurante'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Hospital'",
+          "answer": "Hospital",
+          "distractors": [
+            "Parque",
+            "Estação de trem",
+            "Supermercado"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hospital' significa 'Hospital'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Calle'",
+          "phrase": "Calle",
+          "answer": "Rua",
+          "target_vocab": "rua",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Calle'",
+          "explanation": "Se escribe 'Rua'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un supermercado aquí'",
+          "answer": "Tem um supermercado aqui",
+          "options": [
+            "Tem",
+            "um",
+            "supermercado",
+            "aqui"
+          ],
+          "target_vocab": "supermercado",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un supermercado aquí'",
+          "explanation": "La estructura correcta es: 'Tem um supermercado aqui'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Tem um _____ aqui",
+          "answer": "banco",
+          "options": [
+            "banco",
+            "aeroporto",
+            "supermercado",
+            "parque"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un banco aquí'",
+          "explanation": "La palabra correcta es 'banco'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un parque aquí'",
+          "answer": "Tem um parque aqui",
+          "options": [
+            "Tem",
+            "um",
+            "parque",
+            "aqui"
+          ],
+          "target_vocab": "parque",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un parque aquí'",
+          "explanation": "La estructura correcta es: 'Tem um parque aqui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Museo'",
+          "answer": "Museu",
+          "distractors": [
+            "Hospital",
+            "Estação de trem",
+            "Supermercado"
+          ],
+          "target_vocab": "museu",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Museo'",
+          "explanation": "'Museu' significa 'Museo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el aeropuerto?'",
+          "answer": "Onde fica o aeroporto?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "aeroporto"
+          ],
+          "target_vocab": "aeroporto",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el aeropuerto?'",
+          "explanation": "La estructura correcta es: 'Onde fica o aeroporto?'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Escuela'",
+          "phrase": "Escuela",
+          "answer": "Escola",
+          "target_vocab": "escola",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Escuela'",
+          "explanation": "Se escribe 'Escola'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Restaurante",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Aeroporto",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Parque",
+              "right": "Parque"
+            },
+            {
+              "left": "Estação de trem",
+              "right": "Estación de tren"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lição 2",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el museo?'",
+          "answer": "Onde fica o museu?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "museu"
+          ],
+          "target_vocab": "museu",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el museo?'",
+          "explanation": "La estructura correcta es: 'Onde fica o museu?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Restaurante",
+              "right": "Restaurante"
+            },
+            {
+              "left": "Parque",
+              "right": "Parque"
+            },
+            {
+              "left": "Museu",
+              "right": "Museo"
+            },
+            {
+              "left": "Aeroporto",
+              "right": "Aeropuerto"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Restaurante'",
+          "answer": "Restaurante",
+          "distractors": [
+            "Supermercado",
+            "Hospital",
+            "Parque"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurante' significa 'Restaurante'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Banco'",
+          "phrase": "Banco",
+          "answer": "Banco",
+          "target_vocab": "banco",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Banco'",
+          "explanation": "Se escribe 'Banco'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Supermercado'",
+          "phrase": "Supermercado",
+          "answer": "Supermercado",
+          "target_vocab": "supermercado",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Supermercado'",
+          "explanation": "Se escribe 'Supermercado'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Tem um _____ aqui",
+          "answer": "restaurante",
+          "options": [
+            "restaurante",
+            "parque",
+            "estação de trem",
+            "escola"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un restaurante aquí'",
+          "explanation": "La palabra correcta es 'restaurante'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Aeropuerto'",
+          "answer": "Aeroporto",
+          "distractors": [
+            "Supermercado",
+            "Restaurante",
+            "Hospital"
+          ],
+          "target_vocab": "aeroporto",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Aeropuerto'",
+          "explanation": "'Aeroporto' significa 'Aeropuerto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el banco?'",
+          "answer": "Onde fica o banco?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "banco"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el banco?'",
+          "explanation": "La estructura correcta es: 'Onde fica o banco?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el aeropuerto?'",
+          "answer": "Onde fica o aeroporto?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "aeroporto"
+          ],
+          "target_vocab": "aeroporto",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el aeropuerto?'",
+          "explanation": "La estructura correcta es: 'Onde fica o aeroporto?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Banco'",
+          "answer": "Banco",
+          "distractors": [
+            "Supermercado",
+            "Escola",
+            "Parque"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banco' significa 'Banco'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lição 3",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un calle aquí'",
+          "answer": "Tem um rua aqui",
+          "options": [
+            "Tem",
+            "um",
+            "rua",
+            "aqui"
+          ],
+          "target_vocab": "rua",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'Tem um rua aqui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Banco'",
+          "answer": "Banco",
+          "distractors": [
+            "Hospital",
+            "Museu",
+            "Aeroporto"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banco' significa 'Banco'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Calle'",
+          "phrase": "Calle",
+          "answer": "Rua",
+          "target_vocab": "rua",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Calle'",
+          "explanation": "Se escribe 'Rua'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Banco",
+              "right": "Banco"
+            },
+            {
+              "left": "Aeroporto",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Estação de trem",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Rua",
+              "right": "Calle"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Aeropuerto'",
+          "phrase": "Aeropuerto",
+          "answer": "Aeroporto",
+          "target_vocab": "aeroporto",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Aeropuerto'",
+          "explanation": "Se escribe 'Aeroporto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Tem um _____ aqui",
+          "answer": "hospital",
+          "options": [
+            "hospital",
+            "museu",
+            "aeroporto",
+            "rua"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un hospital aquí'",
+          "explanation": "La palabra correcta es 'hospital'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un museo aquí'",
+          "answer": "Tem um museu aqui",
+          "options": [
+            "Tem",
+            "um",
+            "museu",
+            "aqui"
+          ],
+          "target_vocab": "museu",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un museo aquí'",
+          "explanation": "La estructura correcta es: 'Tem um museu aqui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Calle'",
+          "answer": "Rua",
+          "distractors": [
+            "Restaurante",
+            "Supermercado",
+            "Parque"
+          ],
+          "target_vocab": "rua",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Calle'",
+          "explanation": "'Rua' significa 'Calle'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el banco?'",
+          "answer": "Onde fica o banco?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "banco"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el banco?'",
+          "explanation": "La estructura correcta es: 'Onde fica o banco?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Hospital'",
+          "answer": "Hospital",
+          "distractors": [
+            "Museu",
+            "Escola",
+            "Parque"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hospital' significa 'Hospital'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lição 4",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Aeropuerto'",
+          "phrase": "Aeropuerto",
+          "answer": "Aeroporto",
+          "target_vocab": "aeroporto",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Aeropuerto'",
+          "explanation": "Se escribe 'Aeroporto'.",
+          "image": "contenido/img/vocab_countries.png"
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un estación de tren aquí'",
+          "answer": "Tem um estação de trem aqui",
+          "options": [
+            "Tem",
+            "um",
+            "estação",
+            "de",
+            "trem",
+            "aqui"
+          ],
+          "target_vocab": "estação de trem",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un estación de tren aquí'",
+          "explanation": "La estructura correcta es: 'Tem um estação de trem aqui'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un calle aquí'",
+          "answer": "Tem um rua aqui",
+          "options": [
+            "Tem",
+            "um",
+            "rua",
+            "aqui"
+          ],
+          "target_vocab": "rua",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un calle aquí'",
+          "explanation": "La estructura correcta es: 'Tem um rua aqui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Banco'",
+          "answer": "Banco",
+          "distractors": [
+            "Rua",
+            "Museu",
+            "Estação de trem"
+          ],
+          "target_vocab": "banco",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Banco'",
+          "explanation": "'Banco' significa 'Banco'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Calle'",
+          "phrase": "Calle",
+          "answer": "Rua",
+          "target_vocab": "rua",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Calle'",
+          "explanation": "Se escribe 'Rua'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : 'Hay un aeropuerto aquí'",
+          "answer": "Tem um aeroporto aqui",
+          "options": [
+            "Tem",
+            "um",
+            "aeroporto",
+            "aqui"
+          ],
+          "target_vocab": "aeroporto",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: 'Hay un aeropuerto aquí'",
+          "explanation": "La estructura correcta es: 'Tem um aeroporto aqui'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Parque'",
+          "answer": "Parque",
+          "distractors": [
+            "Estação de trem",
+            "Supermercado",
+            "Banco"
+          ],
+          "target_vocab": "parque",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Parque'",
+          "explanation": "'Parque' significa 'Parque'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Restaurante'",
+          "answer": "Restaurante",
+          "distractors": [
+            "Rua",
+            "Aeroporto",
+            "Hospital"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurante' significa 'Restaurante'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Tem um _____ aqui",
+          "answer": "estação de trem",
+          "options": [
+            "estação de trem",
+            "aeroporto",
+            "rua",
+            "museu"
+          ],
+          "target_vocab": "estação de trem",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: 'Hay un estación de tren aquí'",
+          "explanation": "La palabra correcta es 'estação de trem'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Estação de trem",
+              "right": "Estación de tren"
+            },
+            {
+              "left": "Hospital",
+              "right": "Hospital"
+            },
+            {
+              "left": "Rua",
+              "right": "Calle"
+            },
+            {
+              "left": "Parque",
+              "right": "Parque"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lição 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Restaurante'",
+          "answer": "Restaurante",
+          "distractors": [
+            "Parque",
+            "Aeroporto",
+            "Estação de trem"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurante' significa 'Restaurante'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Calle'",
+          "phrase": "Calle",
+          "answer": "Rua",
+          "target_vocab": "rua",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Calle'",
+          "explanation": "Se escribe 'Rua'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el museo?'",
+          "answer": "Onde fica o museu?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "museu"
+          ],
+          "target_vocab": "museu",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el museo?'",
+          "explanation": "La estructura correcta es: 'Onde fica o museu?'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Faça a correspondência correta",
+          "pairs": [
+            {
+              "left": "Escola",
+              "right": "Escuela"
+            },
+            {
+              "left": "Banco",
+              "right": "Banco"
+            },
+            {
+              "left": "Aeroporto",
+              "right": "Aeropuerto"
+            },
+            {
+              "left": "Supermercado",
+              "right": "Supermercado"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 6,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en portugués con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Restaurante'",
+          "answer": "Restaurante",
+          "distractors": [
+            "Banco",
+            "Estação de trem",
+            "Supermercado"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Restaurante'",
+          "explanation": "'Restaurante' significa 'Restaurante'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escreva em português : 'Calle'",
+          "phrase": "Calle",
+          "answer": "Rua",
+          "target_vocab": "rua",
+          "difficulty": 4,
+          "spanish_translation": "Escribe en portugués: 'Calle'",
+          "explanation": "Se escribe 'Rua'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Onde fica o _____?",
+          "answer": "restaurante",
+          "options": [
+            "restaurante",
+            "aeroporto",
+            "hospital",
+            "parque"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 4,
+          "spanish_translation": "Completa la oración: '¿Dónde está el restaurante?'",
+          "explanation": "La palabra correcta es 'restaurante'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el restaurante?'",
+          "answer": "Onde fica o restaurante?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "restaurante"
+          ],
+          "target_vocab": "restaurante",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el restaurante?'",
+          "explanation": "La estructura correcta es: 'Onde fica o restaurante?'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduza : '¿Dónde está el hospital?'",
+          "answer": "Onde fica o hospital?",
+          "options": [
+            "Onde",
+            "fica",
+            "o",
+            "hospital"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 5,
+          "spanish_translation": "Traduce: '¿Dónde está el hospital?'",
+          "explanation": "La estructura correcta es: 'Onde fica o hospital?'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Escolha a tradução correta : 'Hospital'",
+          "answer": "Hospital",
+          "distractors": [
+            "Museu",
+            "Parque",
+            "Aeroporto"
+          ],
+          "target_vocab": "hospital",
+          "difficulty": 3,
+          "spanish_translation": "Elige la traducción correcta: 'Hospital'",
+          "explanation": "'Hospital' significa 'Hospital'."
+        }
+      ]
+    }
+  ]
+}

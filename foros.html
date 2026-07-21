@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foros de Discusión - EstudiandoAndo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'ea-dark': '#111111',
+                        'ea-cream': '#F9F9F9',
+                        'ea-blue': '#2563EB',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        handwritten: ['"Homemade Apple"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    
+    <style>
+        .text-handwritten { font-family: 'Homemade Apple', cursive; }
+        .animate-fade-in {
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+        }
+        .dark .bg-grid {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+        }
+    </style>
+    <script>
+        // Anti-FOUC theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    </script>
+</head>
+<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans transition-colors duration-300 min-h-screen flex flex-col justify-between overflow-x-hidden bg-grid">
+
+    <!-- Verificación de Sesión Inmediata -->
+    <script src="auth.js"></script>
+    <script>
+        // Redirigir a login si no hay sesión
+        if (!getCurrentUser()) {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-6 left-0 right-0 z-40 flex justify-center px-4 pointer-events-none">
+        <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center gap-2" href="index.html">
+                    <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
+                    <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium opacity-60">
+                    <a class="hover:opacity-100 transition-opacity" href="biblioteca.html">Biblioteca</a>
+                    <a class="hover:opacity-100 transition-opacity" href="aprendizaje.html">Aprendizaje</a>
+                    <a class="hover:opacity-100 transition-opacity" href="idiomas.html">Idiomas</a>
+                    <a class="hover:opacity-100 transition-opacity" href="blog.html">Blog</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center cursor-pointer">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
+                <!-- Inyectado por updateNavUI() de auth.js -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-32 flex-grow flex flex-col max-w-[90%] 2xl:max-w-[1600px] mx-auto w-full px-6 mb-24">
+        
+        <!-- Título Principal -->
+        <div class="mb-12 mt-8 border-b border-black/10 dark:border-white/10 pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6 transition-colors animate-fade-in">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-serif font-medium tracking-tight text-ea-dark dark:text-white">
+                    Foros de <br><span class="text-handwritten text-5xl md:text-7xl italic font-normal">Charla</span>.
+                </h1>
+            </div>
+            <div class="max-w-xs text-sm font-medium opacity-60 leading-relaxed">
+                Interactúa con estudiantes de toda la comunidad. Debate, pregunta y comparte recursos sobre tus exámenes de admisión e idiomas.
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10">
+            
+            <!-- Barra Lateral: Selector de Salas de Chat -->
+            <aside class="w-full lg:w-72 xl:w-80 flex-shrink-0 flex flex-col gap-6 text-left">
+                <!-- Indicador de estado de salas -->
+                <div class="bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[24px] px-5 py-4 flex items-center gap-3 shadow-sm">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                    </span>
+                    <span class="text-[10px] font-black uppercase tracking-widest opacity-85 dark:text-neutral-300">Salas de Chat Activas</span>
+                </div>
+
+                <!-- Menú de Salas -->
+                <div class="bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] p-6 flex flex-col gap-4 shadow-sm">
+                    <div>
+                        <h3 class="text-[10px] font-black uppercase tracking-widest opacity-40 mb-2 px-1">Foro General</h3>
+                        <button onclick="selectForum('General')" id="forum-btn-General" class="group w-full text-left p-3 rounded-2xl transition-all flex items-center justify-between gap-3 border border-black/5 dark:border-white/5 bg-white dark:bg-neutral-900 shadow-sm cursor-pointer">
+                            <span class="flex items-center gap-3 min-w-0">
+                                <span class="w-8 h-8 rounded-lg flex items-center justify-center text-white flex-shrink-0" style="background-color: #6366F1;">
+                                    <span class="material-symbols-outlined text-[16px]">forum</span>
+                                </span>
+                                <span class="min-w-0 text-left">
+                                    <span class="block font-bold text-xs text-ea-dark dark:text-white truncate">Foro General</span>
+                                    <span class="block text-[9px] opacity-40 truncate">Charla abierta y ayuda</span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div>
+                        <h3 class="text-[10px] font-black uppercase tracking-widest opacity-40 mb-2 px-1">Universidades</h3>
+                        <div class="flex flex-col gap-2 max-h-56 overflow-y-auto no-scrollbar pr-1" id="university-forums-list">
+                            <!-- Generado dinámicamente -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-[10px] font-black uppercase tracking-widest opacity-40 mb-2 px-1">Idiomas</h3>
+                        <div class="flex flex-col gap-2" id="language-forums-list">
+                            <!-- Generado dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Contenedor de Chat en Vivo (Centro y Completo) -->
+            <div class="flex-grow flex flex-col h-[750px] w-full lg:min-w-0 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] p-6 lg:p-8 justify-between shadow-sm">
+                <!-- Chat Header -->
+                <div class="border-b border-black/5 dark:border-white/5 pb-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-black uppercase tracking-widest text-blue-600 dark:text-blue-400 animate-pulse flex items-center gap-1.5">
+                            <span class="inline-block w-2.5 h-2.5 rounded-full bg-blue-600 dark:bg-blue-400"></span> En Vivo
+                        </span>
+                        <span class="text-[10px] font-bold opacity-45 uppercase bg-black/5 dark:bg-white/10 px-3 py-1 rounded-full animate-fade-in" id="chat-count">12 activos</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-ea-dark dark:text-white mt-2 text-left">Chat de <span id="chat-forum-name">General</span></h3>
+                    <p class="text-xs opacity-40 font-medium mt-1 text-left" id="chat-forum-desc">Conversa en tiempo real con estudiantes de este foro.</p>
+                </div>
+
+                <!-- Chat Messages Feed -->
+                <div id="chat-messages-container" class="flex-grow overflow-y-auto my-6 space-y-4 pr-1 text-left no-scrollbar">
+                    <!-- Inyectado dinámicamente -->
+                </div>
+
+                <!-- Chat Input Form -->
+                <form onsubmit="handleSendChatMessage(event)" class="border-t border-black/5 dark:border-white/5 pt-4">
+                    <div class="flex items-center gap-3">
+                        <input type="text" id="chat-input" placeholder="Escribe un mensaje en el chat..." required class="flex-grow bg-neutral-50 dark:bg-neutral-950 border border-black/10 dark:border-white/10 rounded-2xl px-5 py-4 text-xs font-semibold focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 transition-all dark:text-white">
+                        <button type="submit" class="w-12 h-12 bg-blue-600 dark:bg-blue-500 text-white rounded-2xl flex items-center justify-center hover:bg-blue-700 dark:hover:bg-blue-600 active:scale-[0.95] transition-all cursor-pointer">
+                            <span class="material-symbols-outlined text-[20px]">send</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Modal Tarjeta de Usuario (Perfil ajeno) -->
+            <div id="user-card-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-center justify-center p-4">
+                <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 p-6 sm:p-8 rounded-[32px] shadow-2xl max-w-sm w-full animate-pop text-center relative">
+                    <button onclick="closeUserCardModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 flex items-center justify-center transition-colors">
+                        <span class="material-symbols-outlined text-[18px] text-ea-dark dark:text-white">close</span>
+                    </button>
+                    
+                    <div class="flex flex-col items-center mt-4">
+                        <div id="user-card-avatar" class="w-24 h-24 rounded-full relative flex items-center justify-center text-white font-bold text-4xl shadow-md bg-blue-600 dark:bg-blue-500 overflow-hidden mb-4">
+                            U
+                        </div>
+                        
+                        <h3 id="user-card-username" class="font-serif text-2xl font-bold text-ea-dark dark:text-white leading-tight">Nombre de Usuario</h3>
+                        
+                        <div class="flex items-center gap-2 mt-2">
+                            <span id="user-card-uni" class="bg-blue-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider">UNAM</span>
+                            <span id="user-card-age" class="bg-black/5 dark:bg-white/10 text-[10px] font-bold px-2.5 py-0.5 rounded-full dark:text-neutral-300">20 Años</span>
+                        </div>
+                        
+                        <div class="w-full border-t border-black/5 dark:border-white/5 my-5"></div>
+                        
+                        <div class="w-full text-left">
+                            <span class="block text-[10px] font-bold uppercase tracking-widest opacity-40 mb-2">Sobre mí</span>
+                            <p id="user-card-bio" class="text-sm opacity-80 leading-relaxed font-medium text-ea-dark dark:text-neutral-300 break-words bg-black/5 dark:bg-white/5 p-4 rounded-2xl min-h-[80px]">
+                                No hay descripción disponible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Navegación móvil condicional (Actualizada por auth.js) -->
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 px-6 py-2.5 rounded-full flex items-center gap-8 shadow-[0_8px_30px_rgb(0,0,0,0.08)] md:hidden z-40">
+        <a href="index.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">home</span>
+            <span class="text-[9px] font-bold tracking-tight">Inicio</span>
+        </a>
+        <a href="biblioteca.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">local_library</span>
+            <span class="text-[9px] font-bold tracking-tight">Biblioteca</span>
+        </a>
+        <a href="aprendizaje.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">psychology</span>
+            <span class="text-[9px] font-bold tracking-tight">Aprendizaje</span>
+        </a>
+        <a href="idiomas.html" class="flex flex-col items-center gap-0.5 opacity-40 hover:opacity-100 transition-opacity">
+            <span class="material-symbols-outlined text-[20px]">language</span>
+            <span class="text-[9px] font-bold tracking-tight">Idiomas</span>
+        </a>
+    </nav>
+
+    <!-- Scripts de Lógica del Foro -->
+    <script>
+        // Configuración de Universidades e Idiomas
+        const universitiesList = [
+            { code: 'UV', name: 'Univ. Veracruzana', subtitle: 'Halcones UV', color: '#10B981', icon: 'school' },
+            { code: 'UNAM', name: 'UNAM', subtitle: 'Goyas y Ciencias', color: '#3B82F6', icon: 'school' },
+            { code: 'IPN', name: 'IPN Poli', subtitle: 'Guindas y Politécnico', color: '#8B5CF6', icon: 'school' },
+            { code: 'UAM', name: 'UAM', subtitle: 'Autónoma Metropolitana', color: '#EC4899', icon: 'school' },
+            { code: 'BUAP', name: 'BUAP Puebla', subtitle: 'Comunidad Lobos', color: '#F59E0B', icon: 'school' },
+            { code: 'UANL', name: 'UANL Nuevo León', subtitle: 'Tigres del Norte', color: '#6366F1', icon: 'school' },
+            { code: 'UDG', name: 'UDG Guadalajara', subtitle: 'Leones Negros', color: '#EF4444', icon: 'school' },
+            { code: 'NORMAL', name: 'Escuela Normal', subtitle: 'Formación Docente', color: '#06B6D4', icon: 'school' },
+            { code: 'UACh', name: 'UACh Chapingo', subtitle: 'Agronomía y Bosques', color: '#10B981', icon: 'school' },
+            { code: 'UPN', name: 'UPN Pedagógica', subtitle: 'Educación Nacional', color: '#6366F1', icon: 'school' },
+            { code: 'UAEMex', name: 'UAEMex Toluca', subtitle: 'Verdes UAEMex', color: '#F59E0B', icon: 'school' },
+            { code: 'UAEH', name: 'UAEH Hidalgo', subtitle: 'Garzas UAEH', color: '#3B82F6', icon: 'school' },
+            { code: 'TecNM', name: 'TecNM', subtitle: 'Tecnológico Nacional', color: '#8B5CF6', icon: 'school' },
+            { code: 'EXANI II', name: 'EXANI II Ceneval', subtitle: 'Temario General', color: '#06B6D4', icon: 'description' }
+        ];
+
+        const languagesList = [
+            { code: 'Inglés', name: 'Inglés 🇺🇸', subtitle: 'Discusión y CEFR', color: '#F59E0B', icon: 'language' },
+            { code: 'Francés', name: 'Francés 🇫🇷', subtitle: 'Pronunciación y Grammaire', color: '#8B5CF6', icon: 'language' },
+            { code: 'Portugués', name: 'Portugués 🇧🇷', subtitle: 'Conversación rápida', color: '#10B981', icon: 'language' },
+            { code: 'Japonés', name: 'Japonés 🇯🇵', subtitle: 'Hiragana y Kanji', color: '#EF4444', icon: 'language' }
+        ];
+
+        let selectedForumId = 'General';
+
+        // Render Sidebar
+        function renderSidebarLists() {
+            const uniContainer = document.getElementById('university-forums-list');
+            const langContainer = document.getElementById('language-forums-list');
+
+            // Universidades
+            uniContainer.innerHTML = universitiesList.map(uni => `
+                <button onclick="selectForum('${uni.code}')" id="forum-btn-${uni.code}" class="group w-full text-left p-2.5 rounded-2xl transition-all flex items-center justify-between gap-3 border border-black/5 dark:border-white/5 bg-white/40 dark:bg-neutral-900/30 text-neutral-500 dark:text-neutral-400 whitespace-nowrap shadow-sm hover:shadow hover:text-black dark:hover:text-white cursor-pointer">
+                    <span class="flex items-center gap-3.5 min-w-0">
+                        <span class="w-7 h-7 rounded-lg flex items-center justify-center text-white flex-shrink-0" style="background-color: ${uni.color};">
+                            <span class="material-symbols-outlined text-[15px]">${uni.icon}</span>
+                        </span>
+                        <span class="min-w-0 text-left">
+                            <span class="block font-bold text-[11px] truncate text-ea-dark dark:text-white">${uni.name}</span>
+                            <span class="block text-[8px] opacity-40 truncate">${uni.subtitle}</span>
+                        </span>
+                    </span>
+                </button>
+            `).join('');
+
+            // Idiomas
+            langContainer.innerHTML = languagesList.map(lang => `
+                <button onclick="selectForum('${lang.code}')" id="forum-btn-${lang.code}" class="group w-full text-left p-2.5 rounded-2xl transition-all flex items-center justify-between gap-3 border border-black/5 dark:border-white/5 bg-white/40 dark:bg-neutral-900/30 text-neutral-500 dark:text-neutral-400 whitespace-nowrap shadow-sm hover:shadow hover:text-black dark:hover:text-white cursor-pointer">
+                    <span class="flex items-center gap-3.5 min-w-0">
+                        <span class="w-7 h-7 rounded-lg flex items-center justify-center text-white flex-shrink-0" style="background-color: ${lang.color};">
+                            <span class="material-symbols-outlined text-[15px]">${lang.icon}</span>
+                        </span>
+                        <span class="min-w-0 text-left">
+                            <span class="block font-bold text-[11px] truncate text-ea-dark dark:text-white">${lang.name}</span>
+                            <span class="block text-[8px] opacity-40 truncate">${lang.subtitle}</span>
+                        </span>
+                    </span>
+                </button>
+            `).join('');
+        }
+
+        // Seleccionar Foro
+        function selectForum(forumId) {
+            selectedForumId = forumId;
+            
+            // Remover estilos activos previos de todos los botones
+            document.querySelectorAll('[id^="forum-btn-"]').forEach(btn => {
+                btn.className = "group w-full text-left p-2.5 rounded-2xl transition-all flex items-center justify-between gap-3 border border-black/5 dark:border-white/5 bg-white/40 dark:bg-neutral-900/30 text-neutral-500 dark:text-neutral-400 whitespace-nowrap shadow-sm hover:shadow hover:text-black dark:hover:text-white active:scale-[0.99] cursor-pointer";
+                btn.style.backgroundColor = "";
+                btn.style.borderColor = "";
+                btn.style.color = "";
+            });
+
+            // Dar formato especial al botón General si aplica
+            const generalBtn = document.getElementById('forum-btn-General');
+            if (generalBtn) {
+                generalBtn.className = "group w-full text-left p-3 rounded-2xl transition-all flex items-center justify-between gap-3 border border-black/5 dark:border-white/5 bg-white/40 dark:bg-neutral-900/30 text-neutral-500 dark:text-neutral-400 whitespace-nowrap shadow-sm hover:shadow hover:text-black dark:hover:text-white active:scale-[0.99] cursor-pointer";
+            }
+
+            // Activar botón seleccionado
+            const btnActivo = document.getElementById(`forum-btn-${forumId}`);
+            if (btnActivo) {
+                let config = universitiesList.find(u => u.code === forumId) || 
+                             languagesList.find(l => l.code === forumId) || 
+                             { color: '#6366F1' };
+                
+                const isDark = document.documentElement.classList.contains('dark');
+                btnActivo.className = "group w-full text-left p-2.5 rounded-2xl transition-all flex items-center justify-between gap-3 border whitespace-nowrap shadow-md scale-[1.01]";
+                if (forumId === 'General') btnActivo.className = "group w-full text-left p-3 rounded-2xl transition-all flex items-center justify-between gap-3 border whitespace-nowrap shadow-md scale-[1.01]";
+
+                if (isDark) {
+                    btnActivo.style.backgroundColor = `${config.color}20`; // 12% opacity
+                    btnActivo.style.borderColor = `${config.color}60`;
+                    btnActivo.style.color = 'white';
+                } else {
+                    btnActivo.style.backgroundColor = `${config.color}08`; // 5% opacity
+                    btnActivo.style.borderColor = `${config.color}35`;
+                    btnActivo.style.color = config.color;
+                }
+            }
+
+            // Actualizar etiquetas principales
+            let info = universitiesList.find(u => u.code === forumId) || 
+                       languagesList.find(l => l.code === forumId) || 
+                       { name: 'Foro General', subtitle: 'Espacio de charla abierta para toda la comunidad.' };
+            
+            const chatTitle = document.getElementById('chat-forum-name');
+            const chatDesc = document.getElementById('chat-forum-desc');
+            if (chatTitle) chatTitle.innerText = info.name;
+            if (chatDesc) chatDesc.innerText = info.subtitle;
+
+            // Render Chat
+            renderChat(forumId);
+        }
+
+        /* ========================================================
+        LÓGICA DEL CHAT EN VIVO
+        ======================================================== */
+        const FORUM_CHAT_KEY = 'ea_forum_chat';
+        
+        const DEFAULT_CHAT = {
+            'General': [
+                { author: 'Zahir', uni: 'UV', text: '¡Hola a todos! Bienvenidos al chat del foro general. ¿Alguien estudiando hoy?', date: new Date(Date.now() - 1000 * 60 * 60) },
+                { author: 'Eduardo', uni: 'UNAM', text: 'Hola Zahir, yo estoy repasando historia universal. El simulador está genial.', date: new Date(Date.now() - 1000 * 60 * 30) },
+                { author: 'Laura_Poli', uni: 'IPN', text: 'Hola! ¿Saben cuándo sale la convocatoria oficial de la UNAM?', date: new Date(Date.now() - 1000 * 60 * 15) }
+            ],
+            'UV': [
+                { author: 'Carlos_UV', uni: 'UV', text: 'Qué onda chavos de la UV, ¿alguien va para el campus de Xalapa?', date: new Date(Date.now() - 1000 * 60 * 120) },
+                { author: 'Zahir', uni: 'UV', text: '¡Yo voy para Ingeniería de Software en Xalapa! ¿Tú a cuál vas?', date: new Date(Date.now() - 1000 * 60 * 60) },
+                { author: 'Carlos_UV', uni: 'UV', text: '¡Qué bien! Yo voy para Medicina. A ver si nos vemos por allá.', date: new Date(Date.now() - 1000 * 60 * 10) }
+            ],
+            'UNAM': [
+                { author: 'Fer_Ciencias', uni: 'UNAM', text: '¡Hola! ¿Alguien para Medicina en CU?', date: new Date(Date.now() - 1000 * 60 * 45) },
+                { author: 'Estudiante_UNAM', uni: 'UNAM', text: 'Yo voy para Psicología. ¡Mucho éxito con el examen de mayo!', date: new Date(Date.now() - 1000 * 60 * 5) }
+            ],
+            'Inglés': [
+                { author: 'Zahir', uni: 'UV', text: 'Hello! Let\'s practice speaking english here.', date: new Date(Date.now() - 1000 * 60 * 30) },
+                { author: 'Teacher_Sam', uni: 'EXANI II', text: 'Excellent idea! Feel free to ask any grammar question.', date: new Date(Date.now() - 1000 * 60 * 15) }
+            ]
+        };
+
+        function getChatMessages() {
+            let data = localStorage.getItem(FORUM_CHAT_KEY);
+            if (!data) {
+                localStorage.setItem(FORUM_CHAT_KEY, JSON.stringify(DEFAULT_CHAT));
+                return DEFAULT_CHAT;
+            }
+            try {
+                let parsed = JSON.parse(data);
+                Object.keys(parsed).forEach(k => {
+                    parsed[k] = parsed[k].map(m => {
+                        m.date = new Date(m.date);
+                        return m;
+                    });
+                });
+                return parsed;
+            } catch (e) {
+                return DEFAULT_CHAT;
+            }
+        }
+
+        function saveChatMessages(chatObj) {
+            localStorage.setItem(FORUM_CHAT_KEY, JSON.stringify(chatObj));
+        }
+
+        function renderChat(forumId) {
+            const container = document.getElementById('chat-messages-container');
+            const chatTitle = document.getElementById('chat-forum-name');
+            const chatCount = document.getElementById('chat-count');
+            if (!container || !chatTitle) return;
+
+            chatTitle.innerText = forumId;
+
+            const allChats = getChatMessages();
+            const messages = allChats[forumId] || [];
+
+            // Simular contador de usuarios activos específico del foro
+            const numActivos = Math.floor(Math.random() * 8) + 5; // Entre 5 y 12
+            if (chatCount) chatCount.innerText = `${numActivos} activos`;
+
+            container.innerHTML = '';
+            
+            if (messages.length === 0) {
+                container.innerHTML = `
+                    <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4">
+                        Aún no hay mensajes en este chat. ¡Inicia la conversación!
+                    </div>
+                `;
+                return;
+            }
+
+            const currentUser = getCurrentUser();
+            const isAdmin = currentUser && currentUser.role === 'admin';
+
+            messages.forEach((msg, idx) => {
+                let uniConfig = universitiesList.find(u => u.code === msg.uni) || { color: '#6366F1' };
+                let profileData = getUserProfileData(msg.author);
+                
+                const avatarHtml = profileData.avatar 
+                    ? `<img src="${profileData.avatar}" class="w-8 h-8 rounded-full object-cover shadow-sm" />` 
+                    : `<div class="w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-500 text-white font-bold flex items-center justify-center text-xs shadow-sm">${msg.author.charAt(0).toUpperCase()}</div>`;
+                
+                container.innerHTML += `
+                    <div class="bg-black/5 dark:bg-white/5 p-3.5 rounded-2xl animate-fade-in flex items-start gap-3 text-left">
+                        <button onclick="showUserProfileCard('${msg.author}')" class="flex-shrink-0 focus:outline-none hover:scale-105 active:scale-95 transition-transform" title="Ver perfil de ${msg.author}">
+                            ${avatarHtml}
+                        </button>
+                        
+                        <div class="flex-grow min-w-0">
+                            <div class="flex items-center justify-between gap-2 mb-1">
+                                <div class="flex items-center gap-1.5 min-w-0 font-sans">
+                                    <button onclick="showUserProfileCard('${msg.author}')" class="font-bold text-xs truncate dark:text-white text-ea-dark hover:underline focus:outline-none text-left">
+                                        ${msg.author}
+                                    </button>
+                                    <span class="text-[8px] font-black px-1.5 py-0.5 rounded-full text-white uppercase tracking-wider scale-90" style="background-color: ${uniConfig.color};">
+                                        ${msg.uni}
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[8px] opacity-40 font-bold tracking-wider">${formatChatTime(msg.date)}</span>
+                                    ${isAdmin ? `
+                                    <button onclick="deleteChatMessage('${forumId}', ${idx})" class="text-red-500 hover:text-red-700 opacity-60 hover:opacity-100 transition-opacity p-0.5 focus:outline-none flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Eliminar mensaje">
+                                        <span class="material-symbols-outlined text-[14px]">delete</span>
+                                    </button>
+                                    ` : ''}
+                                </div>
+                            </div>
+                            <p class="text-xs opacity-75 font-medium leading-relaxed dark:text-neutral-300 break-words">${msg.text}</p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Auto-scroll
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function formatChatTime(date) {
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${hours}:${minutes}`;
+        }
+
+        function handleSendChatMessage(e) {
+            e.preventDefault();
+            const input = document.getElementById('chat-input');
+            if (!input || !input.value.trim()) return;
+
+            const currentUser = getCurrentUser();
+            if (!currentUser) return;
+
+            const text = input.value.trim();
+            const allChats = getChatMessages();
+            if (!allChats[selectedForumId]) {
+                allChats[selectedForumId] = [];
+            }
+
+            const newMsg = {
+                author: currentUser.username,
+                uni: currentUser.university,
+                text: text,
+                date: new Date()
+            };
+
+            allChats[selectedForumId].push(newMsg);
+            saveChatMessages(allChats);
+
+            input.value = '';
+            renderChat(selectedForumId);
+        }
+
+        // Funciones para visualizar perfil en chats de charla
+        function getUserProfileData(username) {
+            // 1. Verificar en base de usuarios de localStorage
+            const users = JSON.parse(localStorage.getItem('ea_users') || '[]');
+            const user = users.find(u => u.username.toLowerCase() === username.toLowerCase());
+            if (user) {
+                return {
+                    username: user.username,
+                    university: user.university,
+                    age: user.age || 20,
+                    avatar: user.avatar || '',
+                    bio: user.bio || ''
+                };
+            }
+            
+            // 2. Diccionario de usuarios simulados
+            const mocks = {
+                'Zahir': { username: 'Zahir', university: 'UV', age: 20, avatar: '', bio: '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.' },
+                'Eduardo': { username: 'Eduardo', university: 'UNAM', age: 21, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Jack', bio: 'Estudiante de la UNAM enfocado en medicina y desarrollo científico. ¡Repasando historia universal!' },
+                'Laura_Poli': { username: 'Laura_Poli', university: 'IPN', age: 19, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Aneka', bio: 'Estudiante del IPN. Entusiasta de las matemáticas y la física aplicada. Siempre lista para un reto.' },
+                'Carlos_UV': { username: 'Carlos_UV', university: 'UV', age: 22, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Buster', bio: 'Estudiante de la UV. Aficionado de la lectura y la tecnología médica. Futuro doctor.' },
+                'Fer_Ciencias': { username: 'Fer_Ciencias', university: 'UNAM', age: 20, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Felix', bio: 'Preparándome para ingresar a la Facultad de Ciencias de la UNAM.' },
+                'Estudiante_UNAM': { username: 'Estudiante_UNAM', university: 'UNAM', age: 18, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Chloe', bio: 'Futura psicóloga de la UNAM. Interesada en comportamiento humano y neurociencia.' },
+                'Teacher_Sam': { username: 'Teacher_Sam', university: 'EXANI II', age: 34, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Sam', bio: 'Asesor oficial de inglés de EstudiandoAndo. Pregúntame sobre vocabulario y gramática.' }
+            };
+            
+            if (mocks[username]) {
+                return mocks[username];
+            }
+            
+            return {
+                username: username,
+                university: 'Otros',
+                age: 20,
+                avatar: '',
+                bio: 'Estudiante preparándose para el examen de ingreso.'
+            };
+        }
+
+        function showUserProfileCard(username) {
+            const data = getUserProfileData(username);
+            
+            const avatarEl = document.getElementById('user-card-avatar');
+            if (data.avatar) {
+                avatarEl.innerHTML = `<img src="${data.avatar}" class="w-full h-full object-cover" />`;
+            } else {
+                avatarEl.innerHTML = data.username.charAt(0).toUpperCase();
+            }
+            
+            document.getElementById('user-card-username').innerText = data.username;
+            document.getElementById('user-card-uni').innerText = data.university;
+            document.getElementById('user-card-age').innerText = `${data.age} Años`;
+            
+            const bioEl = document.getElementById('user-card-bio');
+            if (data.bio) {
+                bioEl.innerText = data.bio;
+                bioEl.classList.remove('opacity-40', 'italic');
+            } else {
+                bioEl.innerText = 'No hay descripción disponible.';
+                bioEl.classList.add('opacity-40', 'italic');
+            }
+            
+            const modal = document.getElementById('user-card-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function deleteChatMessage(forumId, index) {
+            const allChats = getChatMessages();
+            if (allChats[forumId] && allChats[forumId][index]) {
+                if (confirm('¿Estás seguro de que deseas eliminar este mensaje?')) {
+                    allChats[forumId].splice(index, 1);
+                    saveChatMessages(allChats);
+                    renderChat(forumId);
+                }
+            }
+        }
+
+        function closeUserCardModal() {
+            const modal = document.getElementById('user-card-modal');
+            if (modal) {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }
+        }
+
+        // Escuchar actualización de perfil del usuario activo para re-renderizar chat
+        window.addEventListener('profileUpdated', () => {
+            renderChat(selectedForumId);
+        });
+
+        // Inicializar Foro
+        renderSidebarLists();
+        selectForum('General');
+
+        // Dark mode toggle listener
+        document.getElementById('theme-toggle')?.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            if (isDark) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+            
+            // Re-renderizar filtros
+            selectForum(selectedForumId);
+        });
+    </script>
+</body>
+</html>

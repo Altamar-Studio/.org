@@ -1,0 +1,804 @@
+{
+  "language": "ja",
+  "level": "a1",
+  "unit": 5,
+  "title": "Comida (Tabemono)",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lección 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Chiizu (チーズ)",
+              "right": "Queso"
+            },
+            {
+              "left": "Mizu (水)",
+              "right": "Agua"
+            },
+            {
+              "left": "Toriniku (鶏肉)",
+              "right": "Pollo"
+            },
+            {
+              "left": "Sakana (魚)",
+              "right": "Pescado"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Pollo'",
+          "phrase": "Pollo",
+          "answer": "Toriniku (鶏肉)",
+          "target_vocab": "toriniku",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Pollo'",
+          "explanation": "Se dice 'Toriniku (鶏肉)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pescado'",
+          "answer": "Sakana (魚)",
+          "distractors": [
+            "Mizu (水)",
+            "Chiizu (チーズ)",
+            "Koohii (コーヒー)"
+          ],
+          "target_vocab": "sakana",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Pescado'",
+          "explanation": "'Sakana (魚)' significa 'Pescado'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga hoshii desu",
+          "answer": "Toriniku",
+          "options": [
+            "Toriniku",
+            "Pan",
+            "Gohan",
+            "Chiizu"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 6,
+          "spanish_translation": "Completa: 'Quiero pollo'",
+          "explanation": "Falta 'Toriniku'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ensalada'",
+          "answer": "Sarada (サラダ)",
+          "distractors": [
+            "Gyuunyuu (牛乳)",
+            "Toriniku (鶏肉)",
+            "Sakana (魚)"
+          ],
+          "target_vocab": "sarada",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Ensalada'",
+          "explanation": "'Sarada (サラダ)' significa 'Ensalada'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Pan'",
+          "phrase": "Pan",
+          "answer": "Pan (パン)",
+          "target_vocab": "pan",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Pan'",
+          "explanation": "Se dice 'Pan (パン)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero queso'",
+          "answer": "Watashi wa Chiizu ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Chiizu",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "chiizu",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero queso'",
+          "explanation": "La estructura correcta es: 'Watashi wa Chiizu ga hoshii desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero queso'",
+          "answer": "Watashi wa Chiizu ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Chiizu",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "chiizu",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero queso'",
+          "explanation": "La estructura correcta es: 'Watashi wa Chiizu ga hoshii desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Leche'",
+          "answer": "Gyuunyuu (牛乳)",
+          "distractors": [
+            "Sarada (サラダ)",
+            "Gohan (ご飯)",
+            "Koohii (コーヒー)"
+          ],
+          "target_vocab": "gyuunyuu",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Leche'",
+          "explanation": "'Gyuunyuu (牛乳)' significa 'Leche'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lección 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pollo'",
+          "answer": "Toriniku (鶏肉)",
+          "distractors": [
+            "Pan (パン)",
+            "Sakana (魚)",
+            "Chiizu (チーズ)"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Pollo'",
+          "explanation": "'Toriniku (鶏肉)' significa 'Pollo'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga hoshii desu",
+          "answer": "Toriniku",
+          "options": [
+            "Toriniku",
+            "Mizu",
+            "Pan",
+            "Gyuunyuu"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 6,
+          "spanish_translation": "Completa: 'Quiero pollo'",
+          "explanation": "Falta 'Toriniku'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Leche'",
+          "phrase": "Leche",
+          "answer": "Gyuunyuu (牛乳)",
+          "target_vocab": "gyuunyuu",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Leche'",
+          "explanation": "Se dice 'Gyuunyuu (牛乳)'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Ringo (りんご)",
+              "right": "Manzana"
+            },
+            {
+              "left": "Sakana (魚)",
+              "right": "Pescado"
+            },
+            {
+              "left": "Gohan (ご飯)",
+              "right": "Arroz"
+            },
+            {
+              "left": "Sarada (サラダ)",
+              "right": "Ensalada"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Manzana'",
+          "answer": "Ringo (りんご)",
+          "distractors": [
+            "Mizu (水)",
+            "Koohii (コーヒー)",
+            "Sarada (サラダ)"
+          ],
+          "target_vocab": "ringo",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Manzana'",
+          "explanation": "'Ringo (りんご)' significa 'Manzana'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Sarada (サラダ)",
+          "target_vocab": "sarada",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Ensalada'",
+          "explanation": "Se dice 'Sarada (サラダ)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Te gusta el pollo?'",
+          "answer": "Toriniku wa suki desu ka",
+          "options": [
+            "Toriniku",
+            "wa",
+            "suki",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: '¿Te gusta el pollo?'",
+          "explanation": "La estructura correcta es: 'Toriniku wa suki desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pescado'",
+          "answer": "Sakana (魚)",
+          "distractors": [
+            "Mizu (水)",
+            "Chiizu (チーズ)",
+            "Sarada (サラダ)"
+          ],
+          "target_vocab": "sakana",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Pescado'",
+          "explanation": "'Sakana (魚)' significa 'Pescado'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lección 3",
+      "exercises": [
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga hoshii desu",
+          "answer": "Chiizu",
+          "options": [
+            "Chiizu",
+            "Koohii",
+            "Pan",
+            "Toriniku"
+          ],
+          "target_vocab": "chiizu",
+          "difficulty": 6,
+          "spanish_translation": "Completa: 'Quiero queso'",
+          "explanation": "Falta 'Chiizu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Ensalada'",
+          "phrase": "Ensalada",
+          "answer": "Sarada (サラダ)",
+          "target_vocab": "sarada",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Ensalada'",
+          "explanation": "Se dice 'Sarada (サラダ)'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Manzana'",
+          "phrase": "Manzana",
+          "answer": "Ringo (りんご)",
+          "target_vocab": "ringo",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Manzana'",
+          "explanation": "Se dice 'Ringo (りんご)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Te gusta el queso?'",
+          "answer": "Chiizu wa suki desu ka",
+          "options": [
+            "Chiizu",
+            "wa",
+            "suki",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "chiizu",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: '¿Te gusta el queso?'",
+          "explanation": "La estructura correcta es: 'Chiizu wa suki desu ka'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Queso'",
+          "answer": "Chiizu (チーズ)",
+          "distractors": [
+            "Gohan (ご飯)",
+            "Ringo (りんご)",
+            "Koohii (コーヒー)"
+          ],
+          "target_vocab": "chiizu",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Queso'",
+          "explanation": "'Chiizu (チーズ)' significa 'Queso'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Chiizu (チーズ)",
+              "right": "Queso"
+            },
+            {
+              "left": "Mizu (水)",
+              "right": "Agua"
+            },
+            {
+              "left": "Pan (パン)",
+              "right": "Pan"
+            },
+            {
+              "left": "Gyuunyuu (牛乳)",
+              "right": "Leche"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Arroz'",
+          "answer": "Gohan (ご飯)",
+          "distractors": [
+            "Chiizu (チーズ)",
+            "Ringo (りんご)",
+            "Gyuunyuu (牛乳)"
+          ],
+          "target_vocab": "gohan",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Arroz'",
+          "explanation": "'Gohan (ご飯)' significa 'Arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ensalada'",
+          "answer": "Sarada (サラダ)",
+          "distractors": [
+            "Gyuunyuu (牛乳)",
+            "Sakana (魚)",
+            "Toriniku (鶏肉)"
+          ],
+          "target_vocab": "sarada",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Ensalada'",
+          "explanation": "'Sarada (サラダ)' significa 'Ensalada'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lección 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero pollo'",
+          "answer": "Watashi wa Toriniku ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Toriniku",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'Watashi wa Toriniku ga hoshii desu'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero pollo'",
+          "answer": "Watashi wa Toriniku ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Toriniku",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero pollo'",
+          "explanation": "La estructura correcta es: 'Watashi wa Toriniku ga hoshii desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Arroz'",
+          "answer": "Gohan (ご飯)",
+          "distractors": [
+            "Chiizu (チーズ)",
+            "Mizu (水)",
+            "Koohii (コーヒー)"
+          ],
+          "target_vocab": "gohan",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Arroz'",
+          "explanation": "'Gohan (ご飯)' significa 'Arroz'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Café'",
+          "answer": "Koohii (コーヒー)",
+          "distractors": [
+            "Pan (パン)",
+            "Mizu (水)",
+            "Chiizu (チーズ)"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Café'",
+          "explanation": "'Koohii (コーヒー)' significa 'Café'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Te gusta el pollo?'",
+          "answer": "Toriniku wa suki desu ka",
+          "options": [
+            "Toriniku",
+            "wa",
+            "suki",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: '¿Te gusta el pollo?'",
+          "explanation": "La estructura correcta es: 'Toriniku wa suki desu ka'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Gohan (ご飯)",
+              "right": "Arroz"
+            },
+            {
+              "left": "Ringo (りんご)",
+              "right": "Manzana"
+            },
+            {
+              "left": "Sarada (サラダ)",
+              "right": "Ensalada"
+            },
+            {
+              "left": "Mizu (水)",
+              "right": "Agua"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "Watashi wa _____ ga hoshii desu",
+          "answer": "Sakana",
+          "options": [
+            "Sakana",
+            "Gohan",
+            "Ringo",
+            "Chiizu"
+          ],
+          "target_vocab": "sakana",
+          "difficulty": 6,
+          "spanish_translation": "Completa: 'Quiero pescado'",
+          "explanation": "Falta 'Sakana'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Pollo'",
+          "answer": "Toriniku (鶏肉)",
+          "distractors": [
+            "Koohii (コーヒー)",
+            "Pan (パン)",
+            "Gohan (ご飯)"
+          ],
+          "target_vocab": "toriniku",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Pollo'",
+          "explanation": "'Toriniku (鶏肉)' significa 'Pollo'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Manzana'",
+          "phrase": "Manzana",
+          "answer": "Ringo (りんご)",
+          "target_vocab": "ringo",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Manzana'",
+          "explanation": "Se dice 'Ringo (りんご)'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Arroz'",
+          "phrase": "Arroz",
+          "answer": "Gohan (ご飯)",
+          "target_vocab": "gohan",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Arroz'",
+          "explanation": "Se dice 'Gohan (ご飯)'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lección 5",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Ensalada'",
+          "answer": "Sarada (サラダ)",
+          "distractors": [
+            "Mizu (水)",
+            "Sakana (魚)",
+            "Toriniku (鶏肉)"
+          ],
+          "target_vocab": "sarada",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Ensalada'",
+          "explanation": "'Sarada (サラダ)' significa 'Ensalada'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : '¿Te gusta el manzana?'",
+          "answer": "Ringo wa suki desu ka",
+          "options": [
+            "Ringo",
+            "wa",
+            "suki",
+            "desu",
+            "ka"
+          ],
+          "target_vocab": "ringo",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: '¿Te gusta el manzana?'",
+          "explanation": "La estructura correcta es: 'Ringo wa suki desu ka'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "_____ wa suki desu ka",
+          "answer": "Pan",
+          "options": [
+            "Pan",
+            "Gohan",
+            "Mizu",
+            "Gyuunyuu"
+          ],
+          "target_vocab": "pan",
+          "difficulty": 6,
+          "spanish_translation": "Completa: '¿Te gusta el pan?'",
+          "explanation": "Falta 'Pan'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero café'",
+          "answer": "Watashi wa Koohii ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Koohii",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero café'",
+          "explanation": "La estructura correcta es: 'Watashi wa Koohii ga hoshii desu'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Pollo'",
+          "phrase": "Pollo",
+          "answer": "Toriniku (鶏肉)",
+          "target_vocab": "toriniku",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Pollo'",
+          "explanation": "Se dice 'Toriniku (鶏肉)'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Escribe en japonés : 'Café'",
+          "phrase": "Café",
+          "answer": "Koohii (コーヒー)",
+          "target_vocab": "koohii",
+          "difficulty": 6,
+          "spanish_translation": "Traduce: 'Café'",
+          "explanation": "Se dice 'Koohii (コーヒー)'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Traduce : 'Quiero ensalada'",
+          "answer": "Watashi wa Sarada ga hoshii desu",
+          "options": [
+            "Watashi",
+            "wa",
+            "Sarada",
+            "ga",
+            "hoshii",
+            "desu"
+          ],
+          "target_vocab": "sarada",
+          "difficulty": 7,
+          "spanish_translation": "Ordena la frase: 'Quiero ensalada'",
+          "explanation": "La estructura correcta es: 'Watashi wa Sarada ga hoshii desu'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Café'",
+          "answer": "Koohii (コーヒー)",
+          "distractors": [
+            "Mizu (水)",
+            "Sarada (サラダ)",
+            "Pan (パン)"
+          ],
+          "target_vocab": "koohii",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Café'",
+          "explanation": "'Koohii (コーヒー)' significa 'Café'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Empareja los términos",
+          "pairs": [
+            {
+              "left": "Gyuunyuu (牛乳)",
+              "right": "Leche"
+            },
+            {
+              "left": "Koohii (コーヒー)",
+              "right": "Café"
+            },
+            {
+              "left": "Gohan (ご飯)",
+              "right": "Arroz"
+            },
+            {
+              "left": "Mizu (水)",
+              "right": "Agua"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 8,
+          "spanish_translation": "Relaciona japonés con español",
+          "explanation": "Cada término tiene su par equivalente."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la traducción correcta : 'Agua'",
+          "answer": "Mizu (水)",
+          "distractors": [
+            "Ringo (りんご)",
+            "Sakana (魚)",
+            "Gohan (ご飯)"
+          ],
+          "target_vocab": "mizu",
+          "difficulty": 5,
+          "spanish_translation": "Traducción de: 'Agua'",
+          "explanation": "'Mizu (水)' significa 'Agua'."
+        }
+      ]
+    }
+  ]
+}

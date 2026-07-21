@@ -1,0 +1,786 @@
+{
+  "language": "en",
+  "level": "a1",
+  "unit": 6,
+  "title": "Ropa y Compras",
+  "lessons": [
+    {
+      "lesson_id": 0,
+      "title": "Lesson 1",
+      "exercises": [
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Shirt",
+              "right": "Camisa"
+            },
+            {
+              "left": "Hat",
+              "right": "Sombrero"
+            },
+            {
+              "left": "Pants",
+              "right": "Pantalones"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "How much is this _____",
+          "answer": "pants",
+          "options": [
+            "pants",
+            "coat",
+            "shoes",
+            "t-shirt"
+          ],
+          "target_vocab": "pants",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este pantalones?'",
+          "explanation": "La palabra correcta es 'pants'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Vestido'",
+          "answer": "Dress",
+          "distractors": [
+            "Shirt",
+            "T-shirt",
+            "Jacket"
+          ],
+          "target_vocab": "dress",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Vestido'",
+          "explanation": "'Dress' significa 'Vestido'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Zapatos'",
+          "answer": "Shoes",
+          "distractors": [
+            "Jacket",
+            "Shirt",
+            "Hat"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Shoes' significa 'Zapatos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Falda'",
+          "phrase": "Falda",
+          "answer": "Skirt",
+          "target_vocab": "skirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Falda'",
+          "explanation": "Se escribe 'Skirt'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Camiseta'",
+          "phrase": "Camiseta",
+          "answer": "T-shirt",
+          "target_vocab": "t-shirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Camiseta'",
+          "explanation": "Se escribe 'T-shirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos camisa'",
+          "answer": "I like those shirt",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "shirt"
+          ],
+          "target_vocab": "shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos camisa'",
+          "explanation": "La estructura correcta es: 'I like those shirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos falda'",
+          "answer": "I like those skirt",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "skirt"
+          ],
+          "target_vocab": "skirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos falda'",
+          "explanation": "La estructura correcta es: 'I like those skirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este camiseta?'",
+          "answer": "How much is this t-shirt",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "t-shirt"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camiseta?'",
+          "explanation": "La estructura correcta es: 'How much is this t-shirt'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Camisa'",
+          "answer": "Shirt",
+          "distractors": [
+            "Jacket",
+            "Pants",
+            "Skirt"
+          ],
+          "target_vocab": "shirt",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camisa'",
+          "explanation": "'Shirt' significa 'Camisa'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 1,
+      "title": "Lesson 2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Sombrero'",
+          "answer": "Hat",
+          "distractors": [
+            "Socks",
+            "T-shirt",
+            "Skirt"
+          ],
+          "target_vocab": "hat",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Hat' significa 'Sombrero'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "How much is this _____",
+          "answer": "pants",
+          "options": [
+            "pants",
+            "dress",
+            "skirt",
+            "socks"
+          ],
+          "target_vocab": "pants",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este pantalones?'",
+          "explanation": "La palabra correcta es 'pants'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Falda'",
+          "answer": "Skirt",
+          "distractors": [
+            "Hat",
+            "Dress",
+            "Shoes"
+          ],
+          "target_vocab": "skirt",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Falda'",
+          "explanation": "'Skirt' significa 'Falda'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este camisa?'",
+          "answer": "How much is this shirt",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "shirt"
+          ],
+          "target_vocab": "shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camisa?'",
+          "explanation": "La estructura correcta es: 'How much is this shirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos camiseta'",
+          "answer": "I like those t-shirt",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "t-shirt"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos camiseta'",
+          "explanation": "La estructura correcta es: 'I like those t-shirt'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Camiseta'",
+          "phrase": "Camiseta",
+          "answer": "T-shirt",
+          "target_vocab": "t-shirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Camiseta'",
+          "explanation": "Se escribe 'T-shirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este falda?'",
+          "answer": "How much is this skirt",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "skirt"
+          ],
+          "target_vocab": "skirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'How much is this skirt'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Camisa'",
+          "phrase": "Camisa",
+          "answer": "Shirt",
+          "target_vocab": "shirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Camisa'",
+          "explanation": "Se escribe 'Shirt'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Jacket",
+              "right": "Chaqueta"
+            },
+            {
+              "left": "Skirt",
+              "right": "Falda"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Dress",
+              "right": "Vestido"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Zapatos'",
+          "answer": "Shoes",
+          "distractors": [
+            "Shirt",
+            "T-shirt",
+            "Socks"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Shoes' significa 'Zapatos'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "title": "Lesson 3",
+      "exercises": [
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Falda'",
+          "phrase": "Falda",
+          "answer": "Skirt",
+          "target_vocab": "skirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Falda'",
+          "explanation": "Se escribe 'Skirt'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Chaqueta'",
+          "answer": "Jacket",
+          "distractors": [
+            "Dress",
+            "Shirt",
+            "T-shirt"
+          ],
+          "target_vocab": "jacket",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Chaqueta'",
+          "explanation": "'Jacket' significa 'Chaqueta'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Calcetines'",
+          "phrase": "Calcetines",
+          "answer": "Socks",
+          "target_vocab": "socks",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Calcetines'",
+          "explanation": "Se escribe 'Socks'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este camiseta?'",
+          "answer": "How much is this t-shirt",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "t-shirt"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este camiseta?'",
+          "explanation": "La estructura correcta es: 'How much is this t-shirt'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Pantalones'",
+          "answer": "Pants",
+          "distractors": [
+            "Coat",
+            "Shirt",
+            "Jacket"
+          ],
+          "target_vocab": "pants",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Pantalones'",
+          "explanation": "'Pants' significa 'Pantalones'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este falda?'",
+          "answer": "How much is this skirt",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "skirt"
+          ],
+          "target_vocab": "skirt",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este falda?'",
+          "explanation": "La estructura correcta es: 'How much is this skirt'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "I like those _____",
+          "answer": "coat",
+          "options": [
+            "coat",
+            "pants",
+            "t-shirt",
+            "socks"
+          ],
+          "target_vocab": "coat",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: 'Me gustan esos abrigo'",
+          "explanation": "La palabra correcta es 'coat'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Dress",
+              "right": "Vestido"
+            },
+            {
+              "left": "Skirt",
+              "right": "Falda"
+            },
+            {
+              "left": "Coat",
+              "right": "Abrigo"
+            },
+            {
+              "left": "Jacket",
+              "right": "Chaqueta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Abrigo'",
+          "answer": "Coat",
+          "distractors": [
+            "Shoes",
+            "Skirt",
+            "Hat"
+          ],
+          "target_vocab": "coat",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Coat' significa 'Abrigo'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos abrigo'",
+          "answer": "I like those coat",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "coat"
+          ],
+          "target_vocab": "coat",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos abrigo'",
+          "explanation": "La estructura correcta es: 'I like those coat'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "title": "Lesson 4",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos vestido'",
+          "answer": "I like those dress",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "dress"
+          ],
+          "target_vocab": "dress",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos vestido'",
+          "explanation": "La estructura correcta es: 'I like those dress'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Sombrero'",
+          "answer": "Hat",
+          "distractors": [
+            "Coat",
+            "T-shirt",
+            "Shoes"
+          ],
+          "target_vocab": "hat",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Sombrero'",
+          "explanation": "'Hat' significa 'Sombrero'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Zapatos'",
+          "answer": "Shoes",
+          "distractors": [
+            "Jacket",
+            "Socks",
+            "Skirt"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Zapatos'",
+          "explanation": "'Shoes' significa 'Zapatos'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Vestido'",
+          "phrase": "Vestido",
+          "answer": "Dress",
+          "target_vocab": "dress",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Vestido'",
+          "explanation": "Se escribe 'Dress'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Jacket",
+              "right": "Chaqueta"
+            },
+            {
+              "left": "Skirt",
+              "right": "Falda"
+            },
+            {
+              "left": "Coat",
+              "right": "Abrigo"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este sombrero?'",
+          "answer": "How much is this hat",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "hat"
+          ],
+          "target_vocab": "hat",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este sombrero?'",
+          "explanation": "La estructura correcta es: 'How much is this hat'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Abrigo'",
+          "phrase": "Abrigo",
+          "answer": "Coat",
+          "target_vocab": "coat",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Abrigo'",
+          "explanation": "Se escribe 'Coat'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este zapatos?'",
+          "answer": "How much is this shoes",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "shoes"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este zapatos?'",
+          "explanation": "La estructura correcta es: 'How much is this shoes'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "How much is this _____",
+          "answer": "shoes",
+          "options": [
+            "shoes",
+            "t-shirt",
+            "shirt",
+            "pants"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este zapatos?'",
+          "explanation": "La palabra correcta es 'shoes'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Vestido'",
+          "answer": "Dress",
+          "distractors": [
+            "Jacket",
+            "Shoes",
+            "Hat"
+          ],
+          "target_vocab": "dress",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Vestido'",
+          "explanation": "'Dress' significa 'Vestido'."
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "title": "Lesson 5",
+      "exercises": [
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos zapatos'",
+          "answer": "I like those shoes",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "shoes"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos zapatos'",
+          "explanation": "La estructura correcta es: 'I like those shoes'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Falda'",
+          "phrase": "Falda",
+          "answer": "Skirt",
+          "target_vocab": "skirt",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Falda'",
+          "explanation": "Se escribe 'Skirt'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: 'Me gustan esos abrigo'",
+          "answer": "I like those coat",
+          "options": [
+            "I",
+            "like",
+            "those",
+            "coat"
+          ],
+          "target_vocab": "coat",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: 'Me gustan esos abrigo'",
+          "explanation": "La estructura correcta es: 'I like those coat'."
+        },
+        {
+          "type": "fill_in_blank",
+          "prompt": "How much is this _____",
+          "answer": "shoes",
+          "options": [
+            "shoes",
+            "jacket",
+            "dress",
+            "skirt"
+          ],
+          "target_vocab": "shoes",
+          "difficulty": 7,
+          "spanish_translation": "Completa la oración: '¿Cuánto cuesta este zapatos?'",
+          "explanation": "La palabra correcta es 'shoes'."
+        },
+        {
+          "type": "translate",
+          "prompt": "Type in English: 'Calcetines'",
+          "phrase": "Calcetines",
+          "answer": "Socks",
+          "target_vocab": "socks",
+          "difficulty": 7,
+          "spanish_translation": "Escribe en inglés: 'Calcetines'",
+          "explanation": "Se escribe 'Socks'."
+        },
+        {
+          "type": "order_words",
+          "prompt": "Translate: '¿Cuánto cuesta este pantalones?'",
+          "answer": "How much is this pants",
+          "options": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "pants"
+          ],
+          "target_vocab": "pants",
+          "difficulty": 8,
+          "spanish_translation": "Traduce: '¿Cuánto cuesta este pantalones?'",
+          "explanation": "La estructura correcta es: 'How much is this pants'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Abrigo'",
+          "answer": "Coat",
+          "distractors": [
+            "Pants",
+            "Hat",
+            "Jacket"
+          ],
+          "target_vocab": "coat",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Abrigo'",
+          "explanation": "'Coat' significa 'Abrigo'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Vestido'",
+          "answer": "Dress",
+          "distractors": [
+            "Hat",
+            "Coat",
+            "T-shirt"
+          ],
+          "target_vocab": "dress",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Vestido'",
+          "explanation": "'Dress' significa 'Vestido'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct translation: 'Camiseta'",
+          "answer": "T-shirt",
+          "distractors": [
+            "Jacket",
+            "Socks",
+            "Shirt"
+          ],
+          "target_vocab": "t-shirt",
+          "difficulty": 6,
+          "spanish_translation": "Elige la traducción correcta: 'Camiseta'",
+          "explanation": "'T-shirt' significa 'Camiseta'."
+        },
+        {
+          "type": "match_pairs",
+          "prompt": "Match the correct pairs",
+          "pairs": [
+            {
+              "left": "Dress",
+              "right": "Vestido"
+            },
+            {
+              "left": "Pants",
+              "right": "Pantalones"
+            },
+            {
+              "left": "T-shirt",
+              "right": "Camiseta"
+            },
+            {
+              "left": "Shirt",
+              "right": "Camisa"
+            }
+          ],
+          "target_vocab": "vocab_mix",
+          "difficulty": 9,
+          "spanish_translation": "Empareja las palabras correctas",
+          "explanation": "Relaciona cada palabra en inglés con su significado."
+        }
+      ]
+    }
+  ]
+}

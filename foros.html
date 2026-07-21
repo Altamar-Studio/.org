@@ -160,10 +160,19 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-10">
+        <div class="flex flex-col lg:flex-row gap-10 relative">
             
+            <!-- Botón Móvil para seleccionar salas -->
+            <button onclick="toggleSalas()" class="lg:hidden w-full flex items-center justify-between p-4 bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-2xl text-xs font-bold mb-2 shadow-sm active:scale-[0.99] transition-all cursor-pointer">
+                <span class="flex items-center gap-2 text-ea-dark dark:text-white">
+                    <span class="material-symbols-outlined text-blue-600 dark:text-blue-400">forum</span>
+                    Seleccionar Sala de Chat
+                </span>
+                <span id="salas-chevron" class="material-symbols-outlined transition-transform duration-200">keyboard_arrow_down</span>
+            </button>
+
             <!-- Barra Lateral: Selector de Salas de Chat -->
-            <aside class="w-full lg:w-72 xl:w-80 flex-shrink-0 flex flex-col gap-6 text-left">
+            <aside id="chat-sidebar" class="w-full lg:w-72 xl:w-80 flex-shrink-0 flex flex-col gap-6 text-left hidden lg:flex">
                 <!-- Indicador de estado de salas -->
                 <div class="bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[24px] px-5 py-4 flex items-center gap-3 shadow-sm">
                     <span class="relative flex h-2.5 w-2.5">
@@ -207,7 +216,7 @@
             </aside>
 
             <!-- Contenedor de Chat en Vivo (Centro y Completo) -->
-            <div class="flex-grow flex flex-col h-[750px] w-full lg:min-w-0 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] p-6 lg:p-8 justify-between shadow-sm">
+            <div class="chat-live-container flex-grow flex flex-col h-[750px] w-full lg:min-w-0 bg-white/50 dark:bg-neutral-900/50 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-[32px] p-6 lg:p-8 justify-between shadow-sm">
                 <!-- Chat Header -->
                 <div class="border-b border-black/5 dark:border-white/5 pb-4">
                     <div class="flex items-center justify-between">
@@ -439,6 +448,14 @@
             selectedForumId = forumId;
             renderSidebarLists(); // Refrescar selección activa en sidebar
             
+            // Cerrar sidebar de salas en móviles al seleccionar una
+            if (window.innerWidth < 1024) {
+                const sidebar = document.getElementById('chat-sidebar');
+                if (sidebar) sidebar.classList.add('hidden');
+                const chevron = document.getElementById('salas-chevron');
+                if (chevron) chevron.style.transform = 'rotate(0deg)';
+            }
+            
             await ensureFirebase();
             const db = window.firebase.firestore();
 
@@ -654,6 +671,19 @@
                 } catch (err) {
                     console.error("Error al borrar mensaje:", err);
                     alert("No tienes permisos suficientes para eliminar mensajes en este canal.");
+                }
+            }
+        }
+
+        function toggleSalas() {
+            const sidebar = document.getElementById('chat-sidebar');
+            const chevron = document.getElementById('salas-chevron');
+            if (sidebar) {
+                sidebar.classList.toggle('hidden');
+                if (sidebar.classList.contains('hidden')) {
+                    if (chevron) chevron.style.transform = 'rotate(0deg)';
+                } else {
+                    if (chevron) chevron.style.transform = 'rotate(180deg)';
                 }
             }
         }

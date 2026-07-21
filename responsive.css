@@ -46,19 +46,29 @@ img, video, svg {
         max-width: 94% !important;
     }
 
-    /* Hero title: ensure no overflow */
+    /* Hero title: make it stand out strongly on mobile */
     #hero-text h1.text-serif {
-        font-size: 2.25rem !important;
-        line-height: 1.15 !important;
+        font-size: 2.65rem !important;
+        line-height: 1.12 !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.03em !important;
     }
-
+ 
     /* Handwritten accent font on mobile */
     #hero-text h1 .text-handwritten {
-        font-size: 2rem !important;
-        display: block;
-        margin-top: 0.25rem;
+        font-size: 2.25rem !important;
+        display: inline-block !important;
+        margin-top: 0.15rem;
     }
-
+ 
+    /* Subtext description: softer and more readable hierarchy on mobile */
+    #hero-text p {
+        font-size: 0.85rem !important; /* smaller */
+        opacity: 0.55 !important; /* lighter */
+        line-height: 1.6 !important;
+        margin-top: 1.25rem !important;
+    }
+ 
     /* Body paragraphs don't get too wide */
     p {
         word-break: break-word;
@@ -90,10 +100,7 @@ img, video, svg {
     /* Footer grid: stack to 1 column */
     footer .grid.grid-cols-2 {
         grid-template-columns: 1fr !important;
-        gap: 2rem !important;
-    }
-
-    /* Pinned Full-Width Top Bar on mobile instead of floating pill */
+        gap: 2rem !importa    /* Pinned Full-Width Top Bar on mobile instead of floating pill */
     header.fixed {
         top: 0 !important;
         left: 0 !important;
@@ -116,13 +123,54 @@ img, video, svg {
         background-color: rgba(255, 255, 255, 0.85) !important;
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
     }
     .dark header.fixed nav {
         border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
         background-color: rgba(10, 10, 10, 0.85) !important;
+    }
+    
+    /* Ensure the items-center button group uses tight spacing on mobile */
+    header.fixed nav div.flex.items-center.gap-3,
+    header.fixed nav div.flex.items-center.gap-4 {
+        gap: 0.5rem !important; /* tight 8px gap on mobile to fit everything */
+    }
+    
+    /* Access Buttons mobile style overrides */
+    header.fixed nav a[href*="login"] {
+        display: inline-block !important; /* force visible on mobile */
+        font-size: 0.75rem !important; /* text-xs */
+        font-weight: 700 !important;
+        opacity: 0.8 !important;
+        padding: 0.4rem 0.5rem !important;
+        color: #0A0A0A !important;
+        white-space: nowrap !important;
+    }
+    .dark header.fixed nav a[href*="login"] {
+        color: #FFFFFF !important;
+    }
+    
+    header.fixed nav a[href*="registro"] {
+        background-color: #0A0A0A !important;
+        color: #FFFFFF !important;
+        font-weight: 700 !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.45rem !important;
+        font-size: 0.7rem !important; /* text-[11px] */
+        border-radius: 9999px !important;
+        white-space: nowrap !important;
+    }
+    .dark header.fixed nav a[href*="registro"] {
+        background-color: #FFFFFF !important;
+        color: #0A0A0A !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 0 4px 12px rgba(255,255,255,0.03) !important;
     }
     
     #theme-toggle, #mobile-menu-toggle {
@@ -132,37 +180,19 @@ img, video, svg {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
+        flex-shrink: 0 !important;
     }
     .dark #theme-toggle, .dark #mobile-menu-toggle {
         background-color: rgba(255, 255, 255, 0.05) !important;
         border: 1px solid rgba(255, 255, 255, 0.08) !important;
     }
     #theme-toggle {
-        width: 2.15rem !important;
-        height: 2.15rem !important;
+        width: 2rem !important;
+        height: 2rem !important;
     }
     #mobile-menu-toggle {
-        width: 2.15rem !important;
-        height: 2.15rem !important;
-    }
-    header.fixed nav a[href*="registro"] {
-        background-color: #0A0A0A !important;
-        color: #FFFFFF !important;
-        font-weight: 700 !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
-        padding-left: 0.95rem !important;
-        padding-right: 0.95rem !important;
-        padding-top: 0.45rem !important;
-        padding-bottom: 0.45rem !important;
-        font-size: 0.75rem !important; /* text-xs */
-        border-radius: 9999px !important;
-    }
-    .dark header.fixed nav a[href*="registro"] {
-        background-color: #FFFFFF !important;
-        color: #0A0A0A !important;
-        border: 1px solid rgba(0, 0, 0, 0.1) !important;
-        box-shadow: 0 4px 12px rgba(255,255,255,0.03) !important;
+        width: 2rem !important;
+        height: 2rem !important;
     }
 
     /* Hide large stacked mascot on mobile & tablets */
@@ -170,17 +200,51 @@ img, video, svg {
         display: none !important;
     }
 
-    /* Bottom mobile nav — pad for safe-area on notched devices */
+    /* Thinner & Narrower Floating Bottom Pill Nav Bar */
     nav.fixed.bottom-0 {
-        padding-bottom: env(safe-area-inset-bottom, 0px);
-        height: auto;
-        min-height: 4rem;
+        bottom: 0.75rem !important; /* float slightly */
+        left: 1.25rem !important; /* margins */
+        right: 1.25rem !important;
+        max-width: 360px !important; /* narrow container width */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 9999px !important; /* pill capsule */
+        height: 3.25rem !important; /* thinner (52px instead of 64px) */
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        padding-bottom: 0 !important; /* remove env safe padding for floating style */
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .dark nav.fixed.bottom-0 {
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        background-color: rgba(15, 15, 15, 0.9) !important;
+    }
+    
+    /* Optimize icons & labels inside the thinner floating nav */
+    nav.fixed.bottom-0 a {
+        padding: 0.15rem 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex: 1 !important;
+    }
+    nav.fixed.bottom-0 span.material-symbols-outlined {
+        font-size: 18px !important; /* smaller icons */
+    }
+    nav.fixed.bottom-0 span.text-\[9px\] {
+        font-size: 8px !important; /* smaller text */
+        margin-top: 1px !important;
     }
 
     /* Ensure main has bottom padding so content isn't hidden behind bottom nav */
     main {
-        padding-bottom: 5rem !important;
-        padding-top: 5.75rem !important; /* pt-23 clean space below fixed top-0 header */
+        padding-bottom: 5.5rem !important;
+        padding-top: 5.5rem !important; /* pt-22 clean space below fixed top-0 header */
     }
 
     /* Democratización box — tighter mobile spacing */
@@ -397,6 +461,44 @@ section h2.text-serif {
 /* -------------------------------------------------------
    11. FOROS PAGE — Chat bubbles and layout
    ------------------------------------------------------- */
+@media (max-width: 1023px) {
+    /* Limit chat height on mobile so it fits the viewport comfortably */
+    .chat-live-container {
+        height: 520px !important;
+        min-height: 520px !important;
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+    
+    /* Collapsed sidebar overlay panel */
+    #chat-sidebar {
+        position: absolute !important;
+        top: 4.5rem !important; /* right below toggle button */
+        left: 1rem !important;
+        right: 1rem !important;
+        width: auto !important;
+        z-index: 30 !important;
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        border-radius: 24px !important;
+        padding: 1.25rem !important;
+        box-shadow: 0 10px 45px rgba(0, 0, 0, 0.15) !important;
+        max-height: 400px !important;
+        overflow-y: auto !important;
+    }
+    .dark #chat-sidebar {
+        background-color: rgba(18, 18, 18, 0.98) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        box-shadow: 0 10px 45px rgba(0, 0, 0, 0.4) !important;
+    }
+    
+    #chat-sidebar h3 {
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
 @media (max-width: 639px) {
     .foro-message-bubble {
         max-width: 88% !important;

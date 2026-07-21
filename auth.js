@@ -455,7 +455,7 @@ function updateNavUI() {
         }
     }
 
-    const mobileNav = document.querySelector('nav.fixed.bottom-6');
+    const mobileNav = document.querySelector('nav.fixed.bottom-6') || document.querySelector('nav.fixed.bottom-0');
     if (mobileNav) {
         let mobileForosLink = mobileNav.querySelector('a[href="foros.html"]');
         if (user) {
@@ -517,7 +517,11 @@ function updateNavUI() {
         }
     }
 
-    const rightNavContainer = document.querySelector('header nav div.flex.items-center.gap-4');
+    const rightNavContainer = document.getElementById('nav-right-buttons') || 
+                              document.querySelector('header nav div.flex.items-center.gap-3') ||
+                              document.querySelector('header nav div.flex.items-center.gap-4') ||
+                              document.querySelector('header nav div.flex.items-center');
+                              
     if (rightNavContainer) {
         const existingProfileMenu = document.getElementById('profile-menu-container');
         if (existingProfileMenu) {
@@ -594,21 +598,39 @@ function updateNavUI() {
             if (!loginLink) {
                 loginLink = document.createElement('a');
                 loginLink.href = 'login.html';
-                loginLink.className = 'text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block';
+                loginLink.className = 'text-xs sm:text-sm font-bold opacity-75 sm:opacity-60 hover:opacity-100 transition-opacity';
                 loginLink.innerText = 'Iniciar sesión';
-                rightNavContainer.appendChild(loginLink);
+                const regBtn = rightNavContainer.querySelector('a[href*="registro"]');
+                if (regBtn) {
+                    rightNavContainer.insertBefore(loginLink, regBtn);
+                } else {
+                    rightNavContainer.appendChild(loginLink);
+                }
             }
             
             let registerLink = rightNavContainer.querySelector('a[href*="registro"]');
             if (!registerLink) {
                 registerLink = document.createElement('a');
                 registerLink.href = 'registro.html';
-                registerLink.className = 'bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 rounded-full text-sm font-bold shadow-sm hover:bg-neutral-800 dark:hover:bg-gray-200 transition-colors';
+                registerLink.className = 'bg-black dark:bg-white text-white dark:text-black px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-sm hover:bg-neutral-800 dark:hover:bg-gray-200 transition-colors';
                 registerLink.innerText = 'Registrarse';
                 rightNavContainer.appendChild(registerLink);
             }
         }
     }
+
+    const allForosLinks = document.querySelectorAll('a[href="foros.html"], a[href*="foros"]');
+    allForosLinks.forEach(link => {
+        if (!user) {
+            link.onclick = (e) => {
+                e.preventDefault();
+                alert("La sección de Foros está reservada para estudiantes registrados. Por favor, inicia sesión o crea una cuenta para charlar con la comunidad.");
+                window.location.href = 'login.html';
+            };
+        } else {
+            link.onclick = null;
+        }
+    });
 }
 
 function toggleProfileDropdown() {

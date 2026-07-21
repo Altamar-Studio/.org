@@ -389,100 +389,117 @@
             ]
         };
 
-        function getChatMessages() {
-            let data = localStorage.getItem(FORUM_CHAT_KEY);
-            if (!data) {
-                localStorage.setItem(FORUM_CHAT_KEY, JSON.stringify(DEFAULT_CHAT));
-                return DEFAULT_CHAT;
-            }
-            try {
-                let parsed = JSON.parse(data);
-                Object.keys(parsed).forEach(k => {
-                    parsed[k] = parsed[k].map(m => {
-                        m.date = new Date(m.date);
-                        return m;
-                    });
-                });
-                return parsed;
-            } catch (e) {
-                return DEFAULT_CHAT;
-            }
-        }
+        let activeUnsubscribe = null;
 
-        function saveChatMessages(chatObj) {
-            localStorage.setItem(FORUM_CHAT_KEY, JSON.stringify(chatObj));
-        }
+        // Carga y suscripción en tiempo real con Firestore
+        async function selectForum(forumId) {
+            selectedForumId = forumId;
+            renderSidebarLists(); // Refrescar selección activa en sidebar
+            
+            await ensureFirebase();
+            const db = window.firebase.firestore();
 
-        function renderChat(forumId) {
+            if (activeUnsubscribe) {
+                activeUnsubscribe();
+            }
+
             const container = document.getElementById('chat-messages-container');
+            if (!container) return;
+
+            // Indicador de carga
+            container.innerHTML = `
+                <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4 animate-pulse">
+                    Conectando con el foro en tiempo real...
+                </div>
+            `;
+
             const chatTitle = document.getElementById('chat-forum-name');
             const chatCount = document.getElementById('chat-count');
-            if (!container || !chatTitle) return;
+            if (chatTitle) chatTitle.innerText = forumId;
 
-            chatTitle.innerText = forumId;
+            // Escuchar cambios en tiempo real
+            activeUnsubscribe = db.collection("forum_messages")
+                .where("channel", "==", forumId)
+                .orderBy("timestamp", "asc")
+                .limit(100)
+                .onSnapshot((snapshot) => {
+                    container.innerHTML = '';
+                    const messages = [];
+                    
+                    snapshot.forEach((doc) => {
+                        const data = doc.data();
+                        messages.push({
+                            id: doc.id,
+                            author: data.author,
+                            uni: data.uni,
+                            avatar: data.avatar,
+                            text: data.text,
+                            date: data.timestamp ? data.timestamp.toDate() : new Date()
+                        });
+                    });
 
-            const allChats = getChatMessages();
-            const messages = allChats[forumId] || [];
+                    // Simular contador de usuarios activos específico del foro
+                    const numActivos = Math.floor(Math.random() * 8) + 5;
+                    if (chatCount) chatCount.innerText = `${numActivos} activos`;
 
-            // Simular contador de usuarios activos específico del foro
-            const numActivos = Math.floor(Math.random() * 8) + 5; // Entre 5 y 12
-            if (chatCount) chatCount.innerText = `${numActivos} activos`;
+                    if (messages.length === 0) {
+                        container.innerHTML = `
+                            <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4">
+                                Aún no hay mensajes en este chat. ¡Inicia la conversación!
+                            </div>
+                        `;
+                        return;
+                    }
 
-            container.innerHTML = '';
-            
-            if (messages.length === 0) {
-                container.innerHTML = `
-                    <div class="py-16 text-center opacity-30 italic text-xs font-semibold px-4">
-                        Aún no hay mensajes en este chat. ¡Inicia la conversación!
-                    </div>
-                `;
-                return;
-            }
+                    const currentUser = getCurrentUser();
+                    const isAdmin = currentUser && currentUser.role === 'admin';
 
-            const currentUser = getCurrentUser();
-            const isAdmin = currentUser && currentUser.role === 'admin';
+                    messages.forEach((msg) => {
+                        let uniConfig = universitiesList.find(u => u.code === msg.uni) || { color: '#6366F1' };
+                        const avatarHtml = msg.avatar 
+                            ? `<img src="${msg.avatar}" class="w-8 h-8 rounded-full object-cover shadow-sm" />` 
+                            : `<div class="w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-500 text-white font-bold flex items-center justify-center text-xs shadow-sm">${msg.author.charAt(0).toUpperCase()}</div>`;
 
-            messages.forEach((msg, idx) => {
-                let uniConfig = universitiesList.find(u => u.code === msg.uni) || { color: '#6366F1' };
-                let profileData = getUserProfileData(msg.author);
-                
-                const avatarHtml = profileData.avatar 
-                    ? `<img src="${profileData.avatar}" class="w-8 h-8 rounded-full object-cover shadow-sm" />` 
-                    : `<div class="w-8 h-8 rounded-full bg-blue-600 dark:bg-blue-500 text-white font-bold flex items-center justify-center text-xs shadow-sm">${msg.author.charAt(0).toUpperCase()}</div>`;
-                
-                container.innerHTML += `
-                    <div class="bg-black/5 dark:bg-white/5 p-3.5 rounded-2xl animate-fade-in flex items-start gap-3 text-left">
-                        <button onclick="showUserProfileCard('${msg.author}')" class="flex-shrink-0 focus:outline-none hover:scale-105 active:scale-95 transition-transform" title="Ver perfil de ${msg.author}">
-                            ${avatarHtml}
-                        </button>
-                        
-                        <div class="flex-grow min-w-0">
-                            <div class="flex items-center justify-between gap-2 mb-1">
-                                <div class="flex items-center gap-1.5 min-w-0 font-sans">
-                                    <button onclick="showUserProfileCard('${msg.author}')" class="font-bold text-xs truncate dark:text-white text-ea-dark hover:underline focus:outline-none text-left">
-                                        ${msg.author}
-                                    </button>
-                                    <span class="text-[8px] font-black px-1.5 py-0.5 rounded-full text-white uppercase tracking-wider scale-90" style="background-color: ${uniConfig.color};">
-                                        ${msg.uni}
-                                    </span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-[8px] opacity-40 font-bold tracking-wider">${formatChatTime(msg.date)}</span>
-                                    ${isAdmin ? `
-                                    <button onclick="deleteChatMessage('${forumId}', ${idx})" class="text-red-500 hover:text-red-700 opacity-60 hover:opacity-100 transition-opacity p-0.5 focus:outline-none flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Eliminar mensaje">
-                                        <span class="material-symbols-outlined text-[14px]">delete</span>
-                                    </button>
-                                    ` : ''}
+                        container.innerHTML += `
+                            <div class="bg-black/5 dark:bg-white/5 p-3.5 rounded-2xl animate-fade-in flex items-start gap-3 text-left">
+                                <button onclick="showUserProfileCard('${msg.author}')" class="flex-shrink-0 focus:outline-none hover:scale-105 active:scale-95 transition-transform" title="Ver perfil de ${msg.author}">
+                                    ${avatarHtml}
+                                </button>
+                                
+                                <div class="flex-grow min-w-0">
+                                    <div class="flex items-center justify-between gap-2 mb-1">
+                                        <div class="flex items-center gap-1.5 min-w-0 font-sans">
+                                            <button onclick="showUserProfileCard('${msg.author}')" class="font-bold text-xs truncate dark:text-white text-ea-dark hover:underline focus:outline-none text-left">
+                                                ${msg.author}
+                                            </button>
+                                            <span class="text-[8px] font-black px-1.5 py-0.5 rounded-full text-white uppercase tracking-wider scale-90" style="background-color: ${uniConfig.color};">
+                                                ${msg.uni}
+                                            </span>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[8px] opacity-40 font-bold tracking-wider">${formatChatTime(msg.date)}</span>
+                                            ${isAdmin ? `
+                                            <button onclick="deleteChatMessage('${msg.id}')" class="text-red-500 hover:text-red-700 opacity-60 hover:opacity-100 transition-opacity p-0.5 focus:outline-none flex items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Eliminar mensaje">
+                                                <span class="material-symbols-outlined text-[14px]">delete</span>
+                                            </button>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                    <p class="text-xs opacity-75 font-medium leading-relaxed dark:text-neutral-300 break-words">${msg.text}</p>
                                 </div>
                             </div>
-                            <p class="text-xs opacity-75 font-medium leading-relaxed dark:text-neutral-300 break-words">${msg.text}</p>
-                        </div>
-                    </div>
-                `;
-            });
+                        `;
+                    });
 
-            // Auto-scroll
-            container.scrollTop = container.scrollHeight;
+                    container.scrollTop = container.scrollHeight;
+                }, (error) => {
+                    console.error("Error en Snapshot de foro:", error);
+                    container.innerHTML = `
+                        <div class="py-16 text-center text-red-500 opacity-65 italic text-xs font-semibold px-4">
+                            Error al cargar el foro. Asegúrate de que la base de datos de Firestore esté creada.
+                        </div>
+                    `;
+                });
         }
 
         function formatChatTime(date) {
@@ -491,7 +508,7 @@
             return `${hours}:${minutes}`;
         }
 
-        function handleSendChatMessage(e) {
+        async function handleSendChatMessage(e) {
             e.preventDefault();
             const input = document.getElementById('chat-input');
             if (!input || !input.value.trim()) return;
@@ -500,99 +517,100 @@
             if (!currentUser) return;
 
             const text = input.value.trim();
-            const allChats = getChatMessages();
-            if (!allChats[selectedForumId]) {
-                allChats[selectedForumId] = [];
+            input.value = ''; // Limpiar campo inmediatamente para feedback rápido de UX
+
+            await ensureFirebase();
+            const db = window.firebase.firestore();
+
+            try {
+                await db.collection("forum_messages").add({
+                    author: currentUser.username,
+                    uni: currentUser.university,
+                    avatar: currentUser.avatar || '',
+                    text: text,
+                    channel: selectedForumId,
+                    timestamp: window.firebase.firestore.FieldValue.serverTimestamp()
+                });
+            } catch (err) {
+                console.error("Error al enviar mensaje:", err);
+                alert("Error al enviar el mensaje. Revisa las reglas de seguridad de Firestore.");
             }
-
-            const newMsg = {
-                author: currentUser.username,
-                uni: currentUser.university,
-                text: text,
-                date: new Date()
-            };
-
-            allChats[selectedForumId].push(newMsg);
-            saveChatMessages(allChats);
-
-            input.value = '';
-            renderChat(selectedForumId);
         }
 
-        // Funciones para visualizar perfil en chats de charla
-        function getUserProfileData(username) {
-            // 1. Verificar en base de usuarios de localStorage
-            const users = JSON.parse(localStorage.getItem('ea_users') || '[]');
-            const user = users.find(u => u.username.toLowerCase() === username.toLowerCase());
-            if (user) {
-                return {
-                    username: user.username,
-                    university: user.university,
-                    age: user.age || 20,
-                    avatar: user.avatar || '',
-                    bio: user.bio || ''
-                };
-            }
-            
-            // 2. Diccionario de usuarios simulados
-            const mocks = {
-                'Zahir': { username: 'Zahir', university: 'UV', age: 20, avatar: '', bio: '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.' },
-                'Eduardo': { username: 'Eduardo', university: 'UNAM', age: 21, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Jack', bio: 'Estudiante de la UNAM enfocado en medicina y desarrollo científico. ¡Repasando historia universal!' },
-                'Laura_Poli': { username: 'Laura_Poli', university: 'IPN', age: 19, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Aneka', bio: 'Estudiante del IPN. Entusiasta de las matemáticas y la física aplicada. Siempre lista para un reto.' },
-                'Carlos_UV': { username: 'Carlos_UV', university: 'UV', age: 22, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Buster', bio: 'Estudiante de la UV. Aficionado de la lectura y la tecnología médica. Futuro doctor.' },
-                'Fer_Ciencias': { username: 'Fer_Ciencias', university: 'UNAM', age: 20, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Felix', bio: 'Preparándome para ingresar a la Facultad de Ciencias de la UNAM.' },
-                'Estudiante_UNAM': { username: 'Estudiante_UNAM', university: 'UNAM', age: 18, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Chloe', bio: 'Futura psicóloga de la UNAM. Interesada en comportamiento humano y neurociencia.' },
-                'Teacher_Sam': { username: 'Teacher_Sam', university: 'EXANI II', age: 34, avatar: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Sam', bio: 'Asesor oficial de inglés de EstudiandoAndo. Pregúntame sobre vocabulario y gramática.' }
-            };
-            
-            if (mocks[username]) {
-                return mocks[username];
-            }
-            
-            return {
-                username: username,
-                university: 'Otros',
-                age: 20,
-                avatar: '',
-                bio: 'Estudiante preparándose para el examen de ingreso.'
-            };
-        }
-
-        function showUserProfileCard(username) {
-            const data = getUserProfileData(username);
-            
+        // Obtener perfil del usuario desde Firestore
+        async function showUserProfileCard(username) {
             const avatarEl = document.getElementById('user-card-avatar');
-            if (data.avatar) {
-                avatarEl.innerHTML = `<img src="${data.avatar}" class="w-full h-full object-cover" />`;
-            } else {
-                avatarEl.innerHTML = data.username.charAt(0).toUpperCase();
-            }
-            
-            document.getElementById('user-card-username').innerText = data.username;
-            document.getElementById('user-card-uni').innerText = data.university;
-            document.getElementById('user-card-age').innerText = `${data.age} Años`;
+            avatarEl.innerHTML = `...`;
+            document.getElementById('user-card-username').innerText = username;
+            document.getElementById('user-card-uni').innerText = 'Cargando...';
+            document.getElementById('user-card-age').innerText = '';
             
             const bioEl = document.getElementById('user-card-bio');
-            if (data.bio) {
-                bioEl.innerText = data.bio;
-                bioEl.classList.remove('opacity-40', 'italic');
-            } else {
-                bioEl.innerText = 'No hay descripción disponible.';
-                bioEl.classList.add('opacity-40', 'italic');
-            }
-            
+            bioEl.innerText = '';
+
             const modal = document.getElementById('user-card-modal');
             modal.classList.remove('hidden');
             modal.classList.add('flex');
+
+            await ensureFirebase();
+            const db = window.firebase.firestore();
+
+            try {
+                const snapshot = await db.collection("users").where("username", "==", username).limit(1).get();
+                if (!snapshot.empty) {
+                    const data = snapshot.docs[0].data();
+                    if (data.avatar) {
+                        avatarEl.innerHTML = `<img src="${data.avatar}" class="w-full h-full object-cover" />`;
+                    } else {
+                        avatarEl.innerHTML = username.charAt(0).toUpperCase();
+                    }
+                    document.getElementById('user-card-uni').innerText = data.university;
+                    document.getElementById('user-card-age').innerText = `${data.age || 20} Años`;
+                    
+                    if (data.bio) {
+                        bioEl.innerText = data.bio;
+                        bioEl.classList.remove('opacity-40', 'italic');
+                    } else {
+                        bioEl.innerText = 'Este usuario aún no tiene biografía.';
+                        bioEl.classList.add('opacity-40', 'italic');
+                    }
+                } else {
+                    // Fallback para cuentas demo estáticas predefinidas
+                    const mocks = {
+                        'Zahir': '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.',
+                        'Eduardo': 'Estudiante de la UNAM enfocado en medicina y desarrollo científico. ¡Repasando historia universal!',
+                        'Laura_Poli': 'Estudiante del IPN. Entusiasta de las matemáticas y la física aplicada. Siempre lista para un reto.',
+                        'Carlos_UV': 'Estudiante de la UV. Aficionado de la lectura y la tecnología médica. Futuro doctor.',
+                        'Fer_Ciencias': 'Preparándome para ingresar a la Facultad de Ciencias de la UNAM.',
+                        'Estudiante_UNAM': 'Futura psicóloga de la UNAM. Interesada en comportamiento humano y neurociencia.',
+                        'Teacher_Sam': 'Asesor oficial de inglés de EstudiandoAndo. Pregúntame sobre vocabulario y gramática.'
+                    };
+                    
+                    const listUnis = {
+                        'Zahir': 'UV', 'Eduardo': 'UNAM', 'Laura_Poli': 'IPN', 'Carlos_UV': 'UV', 
+                        'Fer_Ciencias': 'UNAM', 'Estudiante_UNAM': 'UNAM', 'Teacher_Sam': 'EXANI II'
+                    };
+                    
+                    avatarEl.innerHTML = username.charAt(0).toUpperCase();
+                    document.getElementById('user-card-uni').innerText = listUnis[username] || 'EstudiandoAndo';
+                    document.getElementById('user-card-age').innerText = `20 Años`;
+                    bioEl.innerText = mocks[username] || 'Estudiante preparándose para el examen de ingreso.';
+                    bioEl.classList.remove('opacity-40', 'italic');
+                }
+            } catch (err) {
+                console.error("Error cargando perfil del usuario:", err);
+            }
         }
 
-        function deleteChatMessage(forumId, index) {
-            const allChats = getChatMessages();
-            if (allChats[forumId] && allChats[forumId][index]) {
-                if (confirm('¿Estás seguro de que deseas eliminar este mensaje?')) {
-                    allChats[forumId].splice(index, 1);
-                    saveChatMessages(allChats);
-                    renderChat(forumId);
+        async function deleteChatMessage(messageId) {
+            if (confirm('¿Estás seguro de que deseas eliminar este mensaje?')) {
+                await ensureFirebase();
+                const db = window.firebase.firestore();
+                try {
+                    await db.collection("forum_messages").doc(messageId).delete();
+                } catch (err) {
+                    console.error("Error al borrar mensaje:", err);
+                    alert("No tienes permisos suficientes para eliminar mensajes en este canal.");
                 }
             }
         }
@@ -604,11 +622,6 @@
                 modal.classList.add('hidden');
             }
         }
-
-        // Escuchar actualización de perfil del usuario activo para re-renderizar chat
-        window.addEventListener('profileUpdated', () => {
-            renderChat(selectedForumId);
-        });
 
         // Inicializar Foro
         renderSidebarLists();

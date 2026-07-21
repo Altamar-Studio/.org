@@ -202,7 +202,7 @@
     <!-- Scripts de Autenticación -->
     <script src="auth.js"></script>
     <script>
-        function handleRegister(e) {
+        async function handleRegister(e) {
             e.preventDefault();
             const userEl = document.getElementById('username');
             const passEl = document.getElementById('password');
@@ -222,7 +222,7 @@
                 return;
             }
 
-            const res = register(userEl.value, passEl.value, uniEl.value, dateEl.value);
+            const res = await register(userEl.value, passEl.value, uniEl.value, dateEl.value);
             if (res.success) {
                 successBanner.classList.remove('hidden');
                 setTimeout(() => {

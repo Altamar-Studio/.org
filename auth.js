@@ -1,6 +1,6 @@
 /**
  * auth.js
- * Maneja el inicio de sesión, registro, sesión activa y actualización del header/footer nav.
+ * Maneja el inicio de sesión, registro, sesión activa y actualización del header/footer nav usando Firebase.
  */
 
 // Evitar parpadeo visual (Layout Shift) al cargar la página si el usuario ya inició sesión
@@ -19,7 +19,6 @@
                 }
             `;
             
-            // Inyectar también estilos para la animación suave del dropdown de perfil
             const dropdownStyle = document.createElement('style');
             dropdownStyle.id = 'ea-profile-dropdown-animation-style';
             dropdownStyle.innerHTML = `
@@ -39,7 +38,6 @@
             document.documentElement.appendChild(style);
             document.documentElement.appendChild(dropdownStyle);
         } else {
-            // Asegurar que si no hay sesión, al menos los estilos del dropdown existan por si acaso
             const dropdownStyle = document.createElement('style');
             dropdownStyle.id = 'ea-profile-dropdown-animation-style';
             dropdownStyle.innerHTML = `
@@ -63,41 +61,88 @@
 })();
 
 const SESSION_KEY = 'ea_session';
-const USERS_KEY = 'ea_users';
 
-// Usuario por defecto precargado: Zahir, Ea2026, UV, 20 años
-const PRELOADED_USER = {
-    username: 'Zahir',
-    password: 'Ea2026',
-    university: 'UV',
-    birthdate: '2006-07-20', // Hace exactamente 20 años en 2026
-    age: 20,
-    avatar: '',
-    bio: '¡Hola! Soy Zahir, estudiante de la Universidad Veracruzana. Me encanta aprender nuevos idiomas y colaborar en los foros.',
-    role: 'admin'
+// Configuración de Firebase obtenida de tu consola
+const firebaseConfig = {
+  apiKey: "AIzaSyDLjIlaeUqIUGnyKhfGZSmGxf3u_gPl8-c",
+  authDomain: "estudiandoando-6974d.firebaseapp.com",
+  projectId: "estudiandoando-6974d",
+  storageBucket: "estudiandoando-6974d.firebasestorage.app",
+  messagingSenderId: "489035398287",
+  appId: "1:489035398287:web:1228395c3508321f6044fa",
+  measurementId: "G-48C2TNWX6D"
 };
 
-// Inicializar base de datos de usuarios si no existe
-function initUsersDB() {
-    let usersStr = localStorage.getItem(USERS_KEY);
-    if (!usersStr) {
-        localStorage.setItem(USERS_KEY, JSON.stringify([PRELOADED_USER]));
-    } else {
-        try {
-            const users = JSON.parse(usersStr);
-            let zahir = users.find(u => u.username.toLowerCase() === 'zahir');
-            if (zahir && zahir.role !== 'admin') {
-                zahir.role = 'admin';
-                localStorage.setItem(USERS_KEY, JSON.stringify(users));
-            } else if (!zahir) {
-                users.push(PRELOADED_USER);
-                localStorage.setItem(USERS_KEY, JSON.stringify(users));
-            }
-        } catch (e) {
-            localStorage.setItem(USERS_KEY, JSON.stringify([PRELOADED_USER]));
-        }
-    }
+let firebasePromise = null;
+
+// Cargar scripts de Firebase de forma dinámica
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = src;
+        s.onload = resolve;
+        s.onerror = reject;
+        document.head.appendChild(s);
+    });
 }
+
+function ensureFirebase() {
+    if (firebasePromise) return firebasePromise;
+    
+    firebasePromise = new Promise(async (resolve) => {
+        if (window.firebase) {
+            resolve();
+            return;
+        }
+        try {
+            await loadScript("https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js");
+            await Promise.all([
+                loadScript("https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"),
+                loadScript("https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js")
+            ]);
+            window.firebase.initializeApp(firebaseConfig);
+            
+            // Listener para cambios de sesión de Firebase
+            window.firebase.auth().onAuthStateChanged(async (user) => {
+                if (user) {
+                    try {
+                        const doc = await window.firebase.firestore().collection("users").doc(user.uid).get();
+                        if (doc.exists) {
+                            const data = doc.data();
+                            const sessionUser = {
+                                username: data.username,
+                                university: data.university,
+                                birthdate: data.birthdate,
+                                age: data.age || calculateAge(data.birthdate),
+                                avatar: data.avatar || '',
+                                bio: data.bio || '',
+                                role: data.role || 'user',
+                                uid: user.uid
+                            };
+                            localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
+                            updateNavUI();
+                        }
+                    } catch (e) {
+                        console.error("Error sincronizando perfil:", e);
+                    }
+                } else {
+                    if (localStorage.getItem(SESSION_KEY)) {
+                        localStorage.removeItem(SESSION_KEY);
+                        updateNavUI();
+                    }
+                }
+            });
+
+            resolve();
+        } catch (e) {
+            console.error("Error al cargar Firebase:", e);
+        }
+    });
+    return firebasePromise;
+}
+
+// Carga asíncrona inmediata en segundo plano
+ensureFirebase();
 
 // Calcular edad desde fecha de nacimiento
 function calculateAge(birthdateString) {
@@ -111,73 +156,110 @@ function calculateAge(birthdateString) {
     return age;
 }
 
-// Obtener usuario actualmente autenticado
+// Obtener usuario actualmente autenticado (síncrono para prevenir FOUC)
 function getCurrentUser() {
-    initUsersDB();
     const session = localStorage.getItem(SESSION_KEY);
     if (!session) return null;
     try {
-        const sessUser = JSON.parse(session);
-        const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-        const dbUser = users.find(u => u.username.toLowerCase() === sessUser.username.toLowerCase());
-        if (dbUser) {
-            sessUser.role = dbUser.role || 'user';
-            sessUser.avatar = dbUser.avatar || '';
-            sessUser.bio = dbUser.bio || '';
-        } else {
-            sessUser.role = sessUser.role || 'user';
-        }
-        return sessUser;
+        return JSON.parse(session);
     } catch (e) {
         return null;
     }
 }
 
-// Iniciar sesión
-function login(username, password) {
-    initUsersDB();
-    const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-    const user = users.find(u => u.username.toLowerCase() === username.toLowerCase() && u.password === password);
-    if (!user) return { success: false, message: 'Usuario o contraseña incorrectos.' };
-    
-    // Guardar sesión (sin incluir la contraseña por seguridad simulada)
-    const sessionUser = {
-        username: user.username,
-        university: user.university,
-        birthdate: user.birthdate,
-        age: user.age || calculateAge(user.birthdate),
-        avatar: user.avatar || '',
-        bio: user.bio || '',
-        role: user.role || 'user'
-    };
-    localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
-    return { success: true };
+// Iniciar sesión (asíncrono con Firebase Auth)
+async function login(username, password) {
+    await ensureFirebase();
+    try {
+        const email = username.trim().toLowerCase() + "@estudiandoando.org";
+        const userCredential = await window.firebase.auth().signInWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+        
+        const doc = await window.firebase.firestore().collection("users").doc(user.uid).get();
+        if (!doc.exists) {
+            return { success: false, message: 'Perfil no encontrado en el servidor.' };
+        }
+        
+        const data = doc.data();
+        const sessionUser = {
+            username: data.username,
+            university: data.university,
+            birthdate: data.birthdate,
+            age: data.age || calculateAge(data.birthdate),
+            avatar: data.avatar || '',
+            bio: data.bio || '',
+            role: data.role || 'user',
+            uid: user.uid
+        };
+        localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
+        return { success: true };
+    } catch (e) {
+        console.error("Error al iniciar sesión:", e);
+        let msg = 'Usuario o contraseña incorrectos.';
+        if (e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password') {
+            msg = 'Usuario o contraseña incorrectos.';
+        } else if (e.code === 'auth/invalid-email') {
+            msg = 'Formato de usuario inválido.';
+        } else if (e.code === 'auth/network-request-failed') {
+            msg = 'Error de red. Revisa tu conexión a internet.';
+        }
+        return { success: false, message: msg };
+    }
 }
 
-// Registrar usuario
-function register(username, password, university, birthdate) {
-    initUsersDB();
-    const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-    const exists = users.some(u => u.username.toLowerCase() === username.toLowerCase());
-    if (exists) return { success: false, message: 'El nombre de usuario ya está registrado.' };
-    
-    const newUser = {
-        username: username,
-        password: password,
-        university: university,
-        birthdate: birthdate,
-        age: calculateAge(birthdate),
-        avatar: '',
-        bio: '',
-        role: 'user'
-    };
-    users.push(newUser);
-    localStorage.setItem(USERS_KEY, JSON.stringify(users));
-    return { success: true };
+// Registrar usuario (asíncrono con Firebase Auth + Firestore)
+async function register(username, password, university, birthdate) {
+    await ensureFirebase();
+    try {
+        const cleanUsername = username.trim();
+        // Verificar disponibilidad del nombre de usuario
+        const snapshot = await window.firebase.firestore().collection("users")
+            .where("username_lowercase", "==", cleanUsername.toLowerCase())
+            .limit(1).get();
+            
+        if (!snapshot.empty) {
+            return { success: false, message: 'El nombre de usuario ya está registrado.' };
+        }
+        
+        const email = cleanUsername.toLowerCase() + "@estudiandoando.org";
+        const userCredential = await window.firebase.auth().createUserWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+        
+        const age = calculateAge(birthdate);
+        const userData = {
+            username: cleanUsername,
+            username_lowercase: cleanUsername.toLowerCase(),
+            university: university,
+            birthdate: birthdate,
+            age: age,
+            avatar: '',
+            bio: '',
+            role: 'user',
+            createdAt: window.firebase.firestore.FieldValue.serverTimestamp()
+        };
+        
+        await window.firebase.firestore().collection("users").doc(user.uid).set(userData);
+        return { success: true };
+    } catch (e) {
+        console.error("Error al registrar:", e);
+        let msg = 'Error al registrar la cuenta.';
+        if (e.code === 'auth/email-already-in-use') {
+            msg = 'El nombre de usuario ya está registrado.';
+        } else if (e.code === 'auth/weak-password') {
+            msg = 'La contraseña es demasiado débil (mínimo 6 caracteres).';
+        }
+        return { success: false, message: msg };
+    }
 }
 
 // Cerrar sesión
-function logout() {
+async function logout() {
+    await ensureFirebase();
+    try {
+        await window.firebase.auth().signOut();
+    } catch (e) {
+        console.error("Error cerrando sesión en Firebase:", e);
+    }
     localStorage.removeItem(SESSION_KEY);
     window.location.href = 'index.html';
 }
@@ -186,7 +268,7 @@ function logout() {
 function updateNavUI() {
     const user = getCurrentUser();
     
-    // 1. Añadir/Quitar enlace de Foros en la navegación de escritorio
+    // 1. Enlace de Foros en la navegación de escritorio
     const navLinksContainer = document.querySelector('header nav .hidden.md\\:flex');
     if (navLinksContainer) {
         let forosLink = navLinksContainer.querySelector('a[href="foros.html"]');
@@ -309,7 +391,6 @@ function updateNavUI() {
             rightNavContainer.appendChild(profileDiv);
 
         } else {
-            // Asegurar que los botones existan sin duplicados
             let loginLink = rightNavContainer.querySelector('a[href*="login"]');
             if (!loginLink) {
                 loginLink = document.createElement('a');
@@ -348,9 +429,8 @@ document.addEventListener('click', (e) => {
     }
 });
 
-let selectedAvatarDataUrl = ''; // Variable global para guardar el avatar seleccionado temporalmente
+let selectedAvatarDataUrl = '';
 
-// Inyectar el modal de perfil de usuario si no existe en el DOM
 function injectUserProfileModal() {
     if (document.getElementById('user-profile-modal')) return;
     
@@ -364,7 +444,6 @@ function injectUserProfileModal() {
             <h3 class="font-serif text-2xl font-bold text-ea-dark dark:text-white mb-6">Mi Perfil</h3>
             
             <div class="overflow-y-auto no-scrollbar flex-grow space-y-6">
-                <!-- Info de Registro (Solo lectura) -->
                 <div class="bg-black/5 dark:bg-white/5 p-4 rounded-2xl flex items-center gap-4">
                     <div id="profile-modal-avatar-preview" class="w-16 h-16 rounded-full relative flex items-center justify-center text-white font-bold text-2xl shadow-md bg-blue-600 dark:bg-blue-500 overflow-hidden flex-shrink-0">
                         Z
@@ -378,11 +457,9 @@ function injectUserProfileModal() {
                     </div>
                 </div>
                 
-                <!-- Cambiar Foto de Perfil -->
                 <div class="space-y-3">
                     <label class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Foto de Perfil</label>
                     <div class="flex flex-col gap-3">
-                        <!-- Avatares Prediseñados -->
                         <div class="grid grid-cols-6 gap-2 w-full">
                             <button onclick="selectPresetAvatar('avatar1')" class="avatar-preset-btn w-11 h-11 rounded-full border-2 border-transparent hover:scale-105 active:scale-95 transition-all overflow-hidden bg-neutral-100 dark:bg-neutral-800" title="Avatar Estudioso 1">
                                 <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix" class="w-full h-full object-cover" />
@@ -439,7 +516,7 @@ function injectUserProfileModal() {
                                 <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Max" class="w-full h-full object-cover" />
                             </button>
                         </div>
-                        <div class="w-full flex items-center justify-between gap-4 mt-1 border-t border-black/5 dark:border-white/5 pt-3">
+                        <div class="w-full flex items-center justify-between gap-4 mt-1 border-t border-black/5 pt-3">
                             <span class="text-xs opacity-60 text-ea-dark dark:text-neutral-300">O sube una imagen personalizada:</span>
                             <label class="bg-black dark:bg-white text-white dark:text-black text-xs font-bold py-1.5 px-3 rounded-xl cursor-pointer hover:opacity-90 transition-all text-center">
                                 Explorar
@@ -449,15 +526,14 @@ function injectUserProfileModal() {
                     </div>
                 </div>
                 
-                <!-- Descripción Breve / Biografía -->
                 <div class="space-y-2">
                     <label for="profile-modal-bio" class="block text-xs font-bold uppercase tracking-widest opacity-60 text-ea-dark dark:text-white">Descripción Breve</label>
                     <textarea id="profile-modal-bio" maxlength="160" placeholder="Escribe algo sobre ti... (máx. 160 caracteres)" class="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 resize-none h-24 text-ea-dark dark:text-white placeholder:opacity-50"></textarea>
-                    <div class="text-right text-[10px] opacity-40 text-ea-dark dark:text-white/60" id="bio-char-count">0/160</div>
+                    <div class="text-right text-[10px] opacity-40" id="bio-char-count">0/160</div>
                 </div>
             </div>
             
-            <div class="border-t border-black/5 dark:border-white/5 pt-4 mt-6 flex justify-end gap-3">
+            <div class="border-t border-black/5 pt-4 mt-6 flex justify-end gap-3">
                 <button onclick="closeUserProfile()" class="bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-ea-dark dark:text-white transition-colors">
                     Cancelar
                 </button>
@@ -472,7 +548,6 @@ function injectUserProfileModal() {
     div.innerHTML = modalHTML;
     document.body.appendChild(div.firstElementChild);
     
-    // Contador de caracteres
     const bioTextarea = document.getElementById('profile-modal-bio');
     if (bioTextarea) {
         bioTextarea.addEventListener('input', (e) => {
@@ -482,40 +557,32 @@ function injectUserProfileModal() {
     }
 }
 
-// Abrir el modal de perfil con los datos actuales
 function openUserProfile() {
     injectUserProfileModal();
     
     const user = getCurrentUser();
     if (!user) return;
     
-    // Obtener los datos más actualizados de la base de usuarios
-    const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-    const latestUser = users.find(u => u.username.toLowerCase() === user.username.toLowerCase()) || user;
-    
-    document.getElementById('profile-modal-username').innerText = latestUser.username;
-    document.getElementById('profile-modal-uni').innerText = latestUser.university;
-    document.getElementById('profile-modal-age').innerText = `${latestUser.age || 20} Años`;
+    document.getElementById('profile-modal-username').innerText = user.username;
+    document.getElementById('profile-modal-uni').innerText = user.university;
+    document.getElementById('profile-modal-age').innerText = `${user.age || 20} Años`;
     
     const bioTextarea = document.getElementById('profile-modal-bio');
-    bioTextarea.value = latestUser.bio || '';
+    bioTextarea.value = user.bio || '';
     document.getElementById('bio-char-count').innerText = `${bioTextarea.value.length}/160`;
     
-    selectedAvatarDataUrl = latestUser.avatar || '';
-    updateModalAvatarPreview(latestUser.username, selectedAvatarDataUrl);
+    selectedAvatarDataUrl = user.avatar || '';
+    updateModalAvatarPreview(user.username, selectedAvatarDataUrl);
     highlightPresetAvatar(selectedAvatarDataUrl);
     
-    // Mostrar modal
     const modal = document.getElementById('user-profile-modal');
     modal.classList.remove('hidden');
     modal.classList.add('flex');
     
-    // Cerrar dropdown
     const dropdown = document.getElementById('profile-dropdown');
     if (dropdown) dropdown.classList.add('hidden');
 }
 
-// Cerrar el modal
 function closeUserProfile() {
     const modal = document.getElementById('user-profile-modal');
     if (modal) {
@@ -524,7 +591,6 @@ function closeUserProfile() {
     }
 }
 
-// Actualizar la vista previa del avatar en el modal
 function updateModalAvatarPreview(username, avatar) {
     const preview = document.getElementById('profile-modal-avatar-preview');
     if (!preview) return;
@@ -535,7 +601,6 @@ function updateModalAvatarPreview(username, avatar) {
     }
 }
 
-// Seleccionar un avatar predeterminado
 function selectPresetAvatar(presetName) {
     const presets = {
         avatar1: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Felix',
@@ -567,7 +632,6 @@ function selectPresetAvatar(presetName) {
     }
 }
 
-// Resaltar el botón del avatar predeterminado activo
 function highlightPresetAvatar(avatarUrl) {
     const presetButtons = document.querySelectorAll('.avatar-preset-btn');
     const presets = {
@@ -601,7 +665,6 @@ function highlightPresetAvatar(avatarUrl) {
     });
 }
 
-// Subir una imagen local y procesarla a Base64
 function handleProfileImageUpload(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -616,47 +679,59 @@ function handleProfileImageUpload(event) {
         selectedAvatarDataUrl = e.target.result;
         const user = getCurrentUser();
         updateModalAvatarPreview(user ? user.username : 'Z', selectedAvatarDataUrl);
-        highlightPresetAvatar(''); // Deseleccionar predeterminados
+        highlightPresetAvatar('');
     };
     reader.readAsDataURL(file);
 }
 
-// Guardar los cambios del perfil
-function saveUserProfile() {
+async function saveUserProfile() {
     const user = getCurrentUser();
     if (!user) return;
     
     const bioText = document.getElementById('profile-modal-bio').value;
     
-    // 1. Guardar en la base de usuarios global
-    const users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-    const userIdx = users.findIndex(u => u.username.toLowerCase() === user.username.toLowerCase());
-    if (userIdx !== -1) {
-        users[userIdx].avatar = selectedAvatarDataUrl;
-        users[userIdx].bio = bioText;
-        localStorage.setItem(USERS_KEY, JSON.stringify(users));
+    await ensureFirebase();
+    const currentUser = window.firebase.auth().currentUser;
+    if (currentUser) {
+        try {
+            await window.firebase.firestore().collection("users").doc(currentUser.uid).update({
+                avatar: selectedAvatarDataUrl,
+                bio: bioText
+            });
+            
+            user.avatar = selectedAvatarDataUrl;
+            user.bio = bioText;
+            localStorage.setItem(SESSION_KEY, JSON.stringify(user));
+            
+            closeUserProfile();
+            updateNavUI();
+            
+            window.dispatchEvent(new CustomEvent('profileUpdated'));
+        } catch (e) {
+            console.error("Error saving profile:", e);
+            alert("Hubo un error al guardar los cambios en el servidor.");
+        }
+    } else {
+        alert("Sesión no activa en Firebase.");
     }
-    
-    // 2. Guardar en la sesión activa
-    user.avatar = selectedAvatarDataUrl;
-    user.bio = bioText;
-    localStorage.setItem(SESSION_KEY, JSON.stringify(user));
-    
-    // 3. Cerrar el modal y refrescar la UI
-    closeUserProfile();
-    updateNavUI();
-    
-    // Notificar a otras pestañas o scripts que el perfil ha sido editado
-    window.dispatchEvent(new CustomEvent('profileUpdated'));
 }
 
+// Exponer funciones globales para compatibilidad de los HTML antiguos
+window.getCurrentUser = getCurrentUser;
+window.login = login;
+window.register = register;
+window.logout = logout;
+window.updateNavUI = updateNavUI;
+window.toggleProfileDropdown = toggleProfileDropdown;
+window.openUserProfile = openUserProfile;
+window.closeUserProfile = closeUserProfile;
+window.selectPresetAvatar = selectPresetAvatar;
+window.handleProfileImageUpload = handleProfileImageUpload;
+window.saveUserProfile = saveUserProfile;
 
-
-initUsersDB();
 document.addEventListener('DOMContentLoaded', () => {
     updateNavUI();
 });
-// También llamarlo inmediatamente en caso de carga rápida
 if (document.readyState === 'interactive' || document.readyState === 'complete') {
     updateNavUI();
 }

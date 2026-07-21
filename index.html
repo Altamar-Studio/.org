@@ -284,8 +284,8 @@
                     <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
                     <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
                 </button>
-                <a class="text-sm font-medium opacity-60 hover:opacity-100 transition-opacity hidden sm:block" href="login.html">Iniciar sesión</a>
-                <a class="btn-dark dark:bg-white dark:text-black dark:hover:bg-gray-200 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold shadow-sm transition-colors" href="registro.html">Registrarse</a>
+                
+                
                 <button id="mobile-menu-toggle" aria-label="Abrir menú" class="md:hidden w-9 h-9 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-80 flex items-center justify-center">
                     <span class="material-symbols-outlined text-[24px]">menu</span>
                 </button>
@@ -321,15 +321,9 @@
                 <span class="flex items-center gap-3"><span class="material-symbols-outlined text-amber-400">article</span> Blog</span>
                 <span class="material-symbols-outlined opacity-40">chevron_right</span>
             </a>
-            <a id="mobile-foros-link" class="hover:text-white transition-colors py-3 px-3 rounded-2xl hover:bg-white/5 flex items-center justify-between hidden" href="foros.html">
-                <span class="flex items-center gap-3"><span class="material-symbols-outlined text-cyan-400">forum</span> Foros</span>
-                <span class="material-symbols-outlined opacity-40">chevron_right</span>
-            </a>
+            
         </div>
-        <div class="flex flex-col gap-3 pt-4 border-t border-white/10" id="mobile-drawer-auth">
-            <a class="w-full text-center py-3 rounded-full text-white font-medium bg-white/10 hover:bg-white/20 transition-colors block" href="login.html">Iniciar sesión</a>
-            <a class="w-full text-center py-3 rounded-full text-black bg-white font-bold hover:bg-gray-200 transition-colors block" href="registro.html">Registrarse</a>
-        </div>
+        
     </div>
 
     <main class="pt-36 md:pt-40">
@@ -614,48 +608,53 @@
             </div>
         </section>
 
-        <!-- AVATARS AND PROFILES SHOWCASE -->
+        <!-- GRUPOS DE ESTUDIO OFICIALES -->
         <section class="max-w-6xl mx-auto px-6 mb-32 reveal-section text-center">
             <div class="max-w-2xl mx-auto mb-12 space-y-4">
-                <h2 class="text-4xl md:text-5xl text-serif font-medium tracking-tight">Tu Perfil en la Comunidad</h2>
-                <p class="text-sm opacity-60 font-medium">Crea un perfil para poder acceder a la sección de Foros y poder charlar con más miembros de la comunidad Estudi<span class="text-neutral-400 dark:text-neutral-500 font-bold">ando</span></p>
+                <h2 class="text-4xl md:text-5xl text-serif font-medium tracking-tight text-ea-dark dark:text-white">Únete a nuestra Comunidad</h2>
+                <p class="text-sm opacity-60 font-medium max-w-lg mx-auto text-ea-dark dark:text-neutral-300">
+                    Colabora con miles de estudiantes, comparte apuntes, resuelve dudas y entérate de convocatorias oficiales al instante en nuestros canales.
+                </p>
             </div>
             
-            <!-- Horizontal Avatars Row -->
-            <div class="flex flex-wrap items-center justify-center gap-6 py-6 px-4 bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/5 rounded-[32px] max-w-4xl mx-auto shadow-sm">
-                <!-- Avatars list (adventurer SVGs matching the profile modal) -->
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Felix">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Felix" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Aneka">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Aneka" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Jack">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jack" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Liam">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Liam" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Buster">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Buster" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer bg-black text-white" title="Nando (Mascota EA)">
-                    <img src="cropped_assets/logo_mascot.png" class="w-full h-full object-contain p-1 dark:invert">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Bella">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bella" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Sasha">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Sasha" class="w-full h-full object-cover">
-                </div>
-                <div class="w-12 h-12 rounded-full border-2 border-white dark:border-neutral-900 shadow-md bg-neutral-200 avatar-pop overflow-hidden cursor-pointer" title="Avatar Chloe">
-                    <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Chloe" class="w-full h-full object-cover">
-                </div>
-            </div>
-            
-            <div class="mt-8 flex items-center justify-center gap-4">
-                <a href="login.html" class="px-6 py-2.5 rounded-full border border-black/10 dark:border-white/10 text-sm font-bold hover:bg-black/5 dark:hover:bg-white/5 transition-all text-ea-dark dark:text-white">Iniciar Sesión</a>
-                <a href="registro.html" class="bg-black dark:bg-white text-white dark:text-black px-6 py-2.5 rounded-full text-sm font-bold shadow-md hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 transition-all">Registrarse</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <!-- WhatsApp Group Card -->
+                <a href="https://chat.whatsapp.com/invite/tu-grupo" target="_blank" rel="noopener noreferrer" 
+                   class="group relative overflow-hidden flex flex-col items-center p-8 bg-[#25D366]/5 dark:bg-[#25D366]/10 border border-[#25D366]/20 rounded-[32px] hover:bg-[#25D366]/10 dark:hover:bg-[#25D366]/15 hover:scale-[1.02] hover:shadow-xl active:scale-[0.98] transition-all duration-300 select-none">
+                    <!-- Brand Icon -->
+                    <div class="w-16 h-16 rounded-2xl bg-[#25D366] text-white flex items-center justify-center mb-5 shadow-lg shadow-[#25D366]/20 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.805-9.805.001-2.597-1.008-5.038-2.842-6.874-1.834-1.836-4.272-2.848-6.871-2.849-5.41 0-9.808 4.396-9.81 9.809-.001 1.52.41 3.003 1.189 4.3L1.517 21.05l5.13-1.896zm12.015-6.52c-.156-.262-.576-.419-1.205-.733-.629-.313-3.714-1.833-4.279-2.039-.564-.206-.975-.312-1.39.313-.414.624-1.6 2.039-1.961 2.455-.362.416-.724.469-1.353.156-.629-.313-2.655-1.002-5.061-3.15-1.87-1.668-3.132-3.734-3.498-4.36-.367-.626-.039-.964.276-1.275.282-.279.629-.733.943-1.1.313-.367.418-.629.629-1.047.21-.417.104-.783-.052-1.096-.156-.313-1.39-3.349-1.907-4.599-.504-1.218-.992-1.052-1.39-1.072-.358-.019-.769-.022-1.18-.022-.412 0-1.082.155-1.649.78-.567.625-2.164 2.115-2.164 5.158 0 3.043 2.215 5.977 2.523 6.393.308.416 4.359 6.657 10.56 9.333 1.474.637 2.625.101 3.513-.028 1.439-.21 3.714-1.515 4.237-2.98.522-1.464.522-2.715.366-2.977z"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-bold text-ea-dark dark:text-white mb-2 font-serif">Grupo de WhatsApp</span>
+                    <p class="text-xs opacity-60 text-center font-medium max-w-[240px] leading-relaxed">
+                        Charla con otros aspirantes en tiempo real y comparte recursos de estudio.
+                    </p>
+                    <span class="mt-6 text-xs font-black uppercase tracking-widest text-[#25D366] flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Unirse al grupo
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </span>
+                </a>
+                
+                <!-- Facebook Group Card -->
+                <a href="https://www.facebook.com/groups/tu-grupo" target="_blank" rel="noopener noreferrer" 
+                   class="group relative overflow-hidden flex flex-col items-center p-8 bg-[#1877F2]/5 dark:bg-[#1877F2]/10 border border-[#1877F2]/20 rounded-[32px] hover:bg-[#1877F2]/10 dark:hover:bg-[#1877F2]/15 hover:scale-[1.02] hover:shadow-xl active:scale-[0.98] transition-all duration-300 select-none">
+                    <!-- Brand Icon -->
+                    <div class="w-16 h-16 rounded-2xl bg-[#1877F2] text-white flex items-center justify-center mb-5 shadow-lg shadow-[#1877F2]/20 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </div>
+                    <span class="text-lg font-bold text-ea-dark dark:text-white mb-2 font-serif">Grupo de Facebook</span>
+                    <p class="text-xs opacity-60 text-center font-medium max-w-[240px] leading-relaxed">
+                        Publica dudas, accede a guías completas y participa en dinámicas de estudio.
+                    </p>
+                    <span class="mt-6 text-xs font-black uppercase tracking-widest text-[#1877F2] flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Unirse a la comunidad
+                        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+                    </span>
+                </a>
             </div>
         </section>
 
@@ -703,7 +702,7 @@
                 <div>
                     <h5 class="text-[10px] font-bold opacity-40 uppercase tracking-widest mb-6">Comunidad</h5>
                     <ul class="space-y-4 text-sm font-medium opacity-60">
-                        <li><a class="hover:opacity-100 transition-opacity" href="foros.html">Foros de Charla</a></li>
+                        
                         <li><a class="hover:opacity-100 transition-opacity" href="blog.html">Blog Oficial</a></li>
                     </ul>
                 </div>

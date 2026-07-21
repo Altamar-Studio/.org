@@ -93,6 +93,39 @@ img, video, svg {
         gap: 2rem !important;
     }
 
+    /* Header / Floating Pill top bar mobile optimizations */
+    header.fixed {
+        top: 0.5rem !important; /* top-2 for more screen space */
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    header.fixed nav {
+        height: 3.25rem !important; /* h-13 compact */
+        padding-left: 0.85rem !important;
+        padding-right: 0.85rem !important;
+        border-radius: 9999px !important;
+    }
+    header.fixed nav a[href*="registro"] {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+        font-size: 0.75rem !important; /* text-xs */
+    }
+    #theme-toggle {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+    #mobile-menu-toggle {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    /* Hide large stacked mascot on mobile & tablets */
+    #hero-mascot {
+        display: none !important;
+    }
+
     /* Bottom mobile nav — pad for safe-area on notched devices */
     nav.fixed.bottom-0 {
         padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -103,6 +136,7 @@ img, video, svg {
     /* Ensure main has bottom padding so content isn't hidden behind bottom nav */
     main {
         padding-bottom: 5rem !important;
+        padding-top: 6.5rem !important; /* adjust for top-2 header */
     }
 
     /* Democratización box — tighter mobile spacing */

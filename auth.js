@@ -75,7 +75,6 @@ const firebaseConfig = {
 
 let firebasePromise = null;
 
-// Cargar scripts de Firebase de forma dinámica
 function loadScript(src) {
     return new Promise((resolve, reject) => {
         const s = document.createElement('script');
@@ -111,10 +110,11 @@ function ensureFirebase() {
                             const data = doc.data();
                             const sessionUser = {
                                 username: data.username,
+                                email: data.email || user.email,
                                 university: data.university,
                                 birthdate: data.birthdate,
                                 age: data.age || calculateAge(data.birthdate),
-                                avatar: data.avatar || '',
+                                avatar: data.avatar || user.photoURL || '',
                                 bio: data.bio || '',
                                 role: data.role || 'user',
                                 uid: user.uid
@@ -141,11 +141,10 @@ function ensureFirebase() {
     return firebasePromise;
 }
 
-// Carga asíncrona inmediata en segundo plano
 ensureFirebase();
 
-// Calcular edad desde fecha de nacimiento
 function calculateAge(birthdateString) {
+    if (!birthdateString) return 20;
     const today = new Date();
     const birthDate = new Date(birthdateString);
     let age = today.getFullYear() - birthDate.getFullYear();
@@ -153,10 +152,9 @@ function calculateAge(birthdateString) {
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-    return age;
+    return age || 20;
 }
 
-// Obtener usuario actualmente autenticado (síncrono para prevenir FOUC)
 function getCurrentUser() {
     const session = localStorage.getItem(SESSION_KEY);
     if (!session) return null;
@@ -167,11 +165,73 @@ function getCurrentUser() {
     }
 }
 
-// Iniciar sesión (asíncrono con Firebase Auth)
-async function login(username, password) {
+// Iniciar sesión (admite usuario o correo electrónico y auto-crea la cuenta Zahir si es necesario)
+async function login(identifier, password) {
     await ensureFirebase();
     try {
-        const email = username.trim().toLowerCase() + "@estudiandoando.org";
+        let email = identifier.trim().toLowerCase();
+        
+        // Soporte para la cuenta especial de administración Zahir
+        if (email === 'zahir' && password === 'Ea2026') {
+            email = 'zahir@estudiandoando.org';
+            try {
+                // Intentar iniciar sesión primero
+                const userCredential = await window.firebase.auth().signInWithEmailAndPassword(email, password);
+                const user = userCredential.user;
+                const doc = await window.firebase.firestore().collection("users").doc(user.uid).get();
+                if (doc.exists) {
+                    const data = doc.data();
+                    const sessionUser = {
+                        username: data.username,
+                        email: data.email,
+                        university: data.university,
+                        birthdate: data.birthdate,
+                        age: data.age,
+                        avatar: data.avatar || '',
+                        bio: data.bio || '',
+                        role: 'admin',
+                        uid: user.uid
+                    };
+                    localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
+                    return { success: true };
+                }
+            } catch (e) {
+                // Si la cuenta Zahir no existía en Firebase, crearla automáticamente ahora
+                if (e.code === 'auth/user-not-found' || e.code === 'auth/invalid-credential') {
+                    const userCredential = await window.firebase.auth().createUserWithEmailAndPassword(email, password);
+                    const user = userCredential.user;
+                    const userData = {
+                        username: 'Zahir',
+                        username_lowercase: 'zahir',
+                        email: email,
+                        university: 'UV',
+                        birthdate: '2006-07-20',
+                        age: 20,
+                        avatar: '',
+                        bio: '¡Hola! Soy Zahir, creador de EstudiandoAndo.',
+                        role: 'admin',
+                        createdAt: window.firebase.firestore.FieldValue.serverTimestamp()
+                    };
+                    await window.firebase.firestore().collection("users").doc(user.uid).set(userData);
+                    localStorage.setItem(SESSION_KEY, JSON.stringify({ ...userData, uid: user.uid }));
+                    return { success: true };
+                }
+            }
+        }
+        
+        // Inicio de sesión normal por usuario o correo
+        if (!email.includes('@')) {
+            const snapshot = await window.firebase.firestore().collection("users")
+                .where("username_lowercase", "==", email)
+                .limit(1).get();
+                
+            if (snapshot.empty) {
+                return { success: false, message: 'Usuario o contraseña incorrectos.' };
+            }
+            const userData = snapshot.docs[0].data();
+            email = userData.email || (email + "@estudiandoando.org");
+        }
+
         const userCredential = await window.firebase.auth().signInWithEmailAndPassword(email, password);
         const user = userCredential.user;
         
@@ -183,10 +243,11 @@ async function login(username, password) {
         const data = doc.data();
         const sessionUser = {
             username: data.username,
+            email: data.email || email,
             university: data.university,
             birthdate: data.birthdate,
             age: data.age || calculateAge(data.birthdate),
-            avatar: data.avatar || '',
+            avatar: data.avatar || user.photoURL || '',
             bio: data.bio || '',
             role: data.role || 'user',
             uid: user.uid
@@ -196,10 +257,10 @@ async function login(username, password) {
     } catch (e) {
         console.error("Error al iniciar sesión:", e);
         let msg = 'Usuario o contraseña incorrectos.';
-        if (e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password') {
-            msg = 'Usuario o contraseña incorrectos.';
+        if (e.code === 'auth/user-not-found' || e.code === 'auth/wrong-password' || e.code === 'auth/invalid-credential') {
+            msg = 'Usuario/correo o contraseña incorrectos.';
         } else if (e.code === 'auth/invalid-email') {
-            msg = 'Formato de usuario inválido.';
+            msg = 'El formato de correo no es válido.';
         } else if (e.code === 'auth/network-request-failed') {
             msg = 'Error de red. Revisa tu conexión a internet.';
         }
@@ -207,12 +268,67 @@ async function login(username, password) {
     }
 }
 
-// Registrar usuario (asíncrono con Firebase Auth + Firestore)
-async function register(username, password, university, birthdate) {
+// Iniciar sesión / Registro rápido con GOOGLE
+async function loginWithGoogle() {
+    await ensureFirebase();
+    const provider = new window.firebase.auth.GoogleAuthProvider();
+    try {
+        const result = await window.firebase.auth().signInWithPopup(provider);
+        const user = result.user;
+        
+        const docRef = window.firebase.firestore().collection("users").doc(user.uid);
+        const doc = await docRef.get();
+        
+        if (!doc.exists) {
+            const baseUsername = user.displayName || user.email.split('@')[0];
+            const userData = {
+                username: baseUsername,
+                username_lowercase: baseUsername.toLowerCase(),
+                email: user.email,
+                university: 'UV',
+                birthdate: '2006-01-01',
+                age: 20,
+                avatar: user.photoURL || '',
+                bio: '¡Hola! Me uní a la comunidad mediante Google.',
+                role: 'user',
+                createdAt: window.firebase.firestore.FieldValue.serverTimestamp()
+            };
+            await docRef.set(userData);
+        }
+        
+        const finalDoc = await docRef.get();
+        const data = finalDoc.data();
+        const sessionUser = {
+            username: data.username,
+            email: data.email || user.email,
+            university: data.university,
+            birthdate: data.birthdate,
+            age: data.age || 20,
+            avatar: data.avatar || user.photoURL || '',
+            bio: data.bio || '',
+            role: data.role || 'user',
+            uid: user.uid
+        };
+        
+        localStorage.setItem(SESSION_KEY, JSON.stringify(sessionUser));
+        return { success: true };
+    } catch (e) {
+        console.error("Error autenticación Google:", e);
+        let msg = 'No se pudo iniciar sesión con Google.';
+        if (e.code === 'auth/popup-closed-by-user') {
+            msg = 'Cancelaste el inicio de sesión con Google.';
+        }
+        return { success: false, message: msg };
+    }
+}
+
+// Registrar usuario con Formulario
+async function register(username, email, password, university, birthdate) {
     await ensureFirebase();
     try {
         const cleanUsername = username.trim();
-        // Verificar disponibilidad del nombre de usuario
+        const cleanEmail = email ? email.trim().toLowerCase() : (cleanUsername.toLowerCase() + "@estudiandoando.org");
+
         const snapshot = await window.firebase.firestore().collection("users")
             .where("username_lowercase", "==", cleanUsername.toLowerCase())
             .limit(1).get();
@@ -221,14 +337,14 @@ async function register(username, password, university, birthdate) {
             return { success: false, message: 'El nombre de usuario ya está registrado.' };
         }
         
-        const email = cleanUsername.toLowerCase() + "@estudiandoando.org";
-        const userCredential = await window.firebase.auth().createUserWithEmailAndPassword(email, password);
+        const userCredential = await window.firebase.auth().createUserWithEmailAndPassword(cleanEmail, password);
         const user = userCredential.user;
         
         const age = calculateAge(birthdate);
         const userData = {
             username: cleanUsername,
             username_lowercase: cleanUsername.toLowerCase(),
+            email: cleanEmail,
             university: university,
             birthdate: birthdate,
             age: age,
@@ -244,9 +360,11 @@ async function register(username, password, university, birthdate) {
         console.error("Error al registrar:", e);
         let msg = 'Error al registrar la cuenta.';
         if (e.code === 'auth/email-already-in-use') {
-            msg = 'El nombre de usuario ya está registrado.';
+            msg = 'El correo electrónico ya está registrado por otra cuenta.';
+        } else if (e.code === 'auth/invalid-email') {
+            msg = 'El correo electrónico no tiene un formato válido.';
         } else if (e.code === 'auth/weak-password') {
-            msg = 'La contraseña es demasiado débil (mínimo 6 caracteres).';
+            msg = 'La contraseña debe tener al menos 6 caracteres.';
         }
         return { success: false, message: msg };
     }
@@ -264,11 +382,9 @@ async function logout() {
     window.location.href = 'index.html';
 }
 
-// Actualizar barra de navegación de forma dinámica en base al estado de la sesión
 function updateNavUI() {
     const user = getCurrentUser();
     
-    // 1. Enlace de Foros en la navegación de escritorio
     const navLinksContainer = document.querySelector('header nav .hidden.md\\:flex');
     if (navLinksContainer) {
         let forosLink = navLinksContainer.querySelector('a[href="foros.html"]');
@@ -292,7 +408,6 @@ function updateNavUI() {
         }
     }
 
-    // 2. Modificar la navegación móvil (footer bar) para inyectar la pestaña de Foros si corresponde
     const mobileNav = document.querySelector('nav.fixed.bottom-6');
     if (mobileNav) {
         let mobileForosLink = mobileNav.querySelector('a[href="foros.html"]');
@@ -317,7 +432,6 @@ function updateNavUI() {
         }
     }
 
-    // 3. Modificar la sección de inicio de sesión / botones de auth en el Header
     const rightNavContainer = document.querySelector('header nav div.flex.items-center.gap-4');
     if (rightNavContainer) {
         const existingProfileMenu = document.getElementById('profile-menu-container');
@@ -716,9 +830,24 @@ async function saveUserProfile() {
     }
 }
 
+// Función para alternar visibilidad de contraseña
+function togglePasswordVisibility(inputId, btn) {
+    const input = document.getElementById(inputId);
+    if (!input || !btn) return;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (input.type === 'password') {
+        input.type = 'text';
+        if (icon) icon.innerText = 'visibility_off';
+    } else {
+        input.type = 'password';
+        if (icon) icon.innerText = 'visibility';
+    }
+}
+
 // Exponer funciones globales para compatibilidad de los HTML antiguos
 window.getCurrentUser = getCurrentUser;
 window.login = login;
+window.loginWithGoogle = loginWithGoogle;
 window.register = register;
 window.logout = logout;
 window.updateNavUI = updateNavUI;
@@ -728,6 +857,7 @@ window.closeUserProfile = closeUserProfile;
 window.selectPresetAvatar = selectPresetAvatar;
 window.handleProfileImageUpload = handleProfileImageUpload;
 window.saveUserProfile = saveUserProfile;
+window.togglePasswordVisibility = togglePasswordVisibility;
 
 document.addEventListener('DOMContentLoaded', () => {
     updateNavUI();

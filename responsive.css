@@ -267,10 +267,6 @@ img, video, svg {
         gap: 1rem !important;
     }
 
-    /* Blog article cards */
-    article .rounded-\[32px\] {
-        border-radius: 1.25rem !important;
-    }
 
     /* Simulador: fixed top bar adjustments */
     .fixed.top-0.left-0.right-0 {
@@ -547,19 +543,6 @@ section h2.text-serif {
     }
 }
 
-/* -------------------------------------------------------
-   14. BLOG — Article cards responsive
-   ------------------------------------------------------- */
-@media (max-width: 639px) {
-    .blog-article-card {
-        border-radius: 1.25rem !important;
-    }
-    
-    .blog-article-card img {
-        height: 160px !important;
-        object-fit: cover;
-    }
-}
 
 /* -------------------------------------------------------
    15. DARK-MODE SPECIFIC FIXES

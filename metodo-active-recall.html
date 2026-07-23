@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
     <link href="responsive.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
     <script>
         tailwind.config = {
@@ -39,10 +40,16 @@
             localStorage.setItem('theme', 'light');
         }
     </script>
+
     <script src="userProfile.js"></script>
     <script src="auth.js"></script>
 </head>
-<body class="antialiased bg-ea-bg dark:bg-neutral-950 text-ea-dark dark:text-white selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black flex flex-col min-h-screen transition-colors duration-300">
+<body class="antialiased bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black flex flex-col min-h-screen transition-colors duration-300 relative">
+
+    <!-- AMBIENT BACKGROUND 3D CANVAS -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-25 dark:opacity-40">
+        <canvas id="recall-bg-3d-canvas" class="w-full h-full"></canvas>
+    </div>
 
     <!-- HEADER -->
     <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
@@ -52,12 +59,16 @@
                     <img src="cropped_assets/logo_mascot.png" class="w-8 h-8 object-contain dark:invert transition-transform hover:scale-105" alt="EA Logo">
                     <span class="font-bold tracking-tight hidden sm:block">Estudi<span class="text-neutral-400 dark:text-neutral-500">ando</span></span>
                 </a>
-                <div class="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white bg-white/10 px-3 py-1 rounded-full border border-white/20">
+                <div class="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-ea-dark dark:text-white bg-black/5 dark:bg-white/10 px-3 py-1 rounded-full border border-black/10 dark:border-white/20">
                     <span class="material-symbols-outlined text-sm">psychology</span>
                     <span>Guía de Estudio</span>
                 </div>
             </div>
             <div class="flex items-center gap-3">
+                <button id="theme-toggle" class="w-8 h-8 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors opacity-60 hover:opacity-100 flex items-center justify-center">
+                    <span class="material-symbols-outlined dark:hidden text-[20px]">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block text-[20px]">light_mode</span>
+                </button>
                 <a href="metodos.html" class="bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 text-ea-dark dark:text-white px-4 py-2 rounded-full text-xs font-bold transition-colors flex items-center gap-1.5 border border-black/10 dark:border-white/10">
                     <span class="material-symbols-outlined text-sm">arrow_back</span>
                     <span>Volver a Métodos</span>
@@ -67,11 +78,11 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="pt-36 md:pt-40 flex-grow max-w-4xl mx-auto px-6 mb-24">
+    <main class="pt-36 md:pt-40 flex-grow max-w-4xl mx-auto px-6 mb-24 relative z-10">
         
         <!-- HERO -->
         <div class="text-center mb-14 space-y-4">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-ea-dark dark:text-white text-xs font-bold uppercase tracking-widest">
                 <span class="material-symbols-outlined text-sm">psychology</span>
                 <span>Recuerdo Activo</span>
             </div>
@@ -79,83 +90,94 @@
                 Método Active Recall
             </h1>
             <p class="text-base sm:text-lg opacity-70 max-w-2xl mx-auto font-medium italic">
-                "La memoria no se fortalece al ingresar información a la cabeza, sino al obligar al cerebro a extraerla activamente."
+                "La memoria se fortalece cuando obligas a tu cerebro a recuperar información activamente a ciegas."
             </p>
         </div>
 
         <!-- EXPLICACIÓN PRINCIPAL -->
         <div class="space-y-10">
             
-            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-4 shadow-xl">
+            <div class="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-4 shadow-xl">
                 <h2 class="text-2xl font-serif font-bold text-ea-dark dark:text-white flex items-center gap-3">
-                    <span class="w-8 h-8 rounded-xl bg-white/10 border border-white/20 text-white flex items-center justify-center text-sm font-bold">1</span>
-                    <span>¿Qué es el Active Recall (Recuerdo Activo)?</span>
+                    <span class="w-8 h-8 rounded-xl bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-ea-dark dark:text-white flex items-center justify-center text-sm font-bold">1</span>
+                    <span>¿Qué es el Active Recall?</span>
                 </h2>
                 <p class="text-sm opacity-80 leading-relaxed font-medium">
-                    El **Active Recall** es la técnica con mayor evidencia científica en psicología cognitiva para retener información. A diferencia de la lectura pasiva (donde tus ojos recorren las líneas y tu cerebro solo reconoce los datos), el recuerdo activo te obliga a **cerrar el material y responder preguntas o escribir de memoria**, creando conexiones neuronales duraderas.
+                    El **Active Recall** es la técnica con mayor respaldo empírico en neurociencia. Releer pasivamente crea la falsa ilusión de que dominas el tema porque lo ves en la hoja. El recuerdo activo te obliga a **cerrar el cuaderno y forzar al cerebro a reconstruir los datos**, fijando la información en la memoria de largo plazo.
                 </p>
             </div>
 
             <!-- PASOS -->
-            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-6 shadow-xl">
+            <div class="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-6 shadow-xl">
                 <h2 class="text-2xl font-serif font-bold text-ea-dark dark:text-white flex items-center gap-3">
-                    <span class="w-8 h-8 rounded-xl bg-white/10 border border-white/20 text-white flex items-center justify-center text-sm font-bold">2</span>
-                    <span>Cómo Implementar el Recuerdo Activo</span>
+                    <span class="w-8 h-8 rounded-xl bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-ea-dark dark:text-white flex items-center justify-center text-sm font-bold">2</span>
+                    <span>Cómo Aplicarlo Paso a Paso</span>
                 </h2>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 space-y-2">
-                        <span class="text-xs font-bold text-white uppercase tracking-wider">Paso 1</span>
-                        <h4 class="font-bold text-sm">Lectura enfocada</h4>
-                        <p class="text-xs opacity-75">Lee una subsección del temario con atención durante 10 o 15 minutos sin tomar apuntes copiados textualmente.</p>
+                        <span class="text-xs font-bold text-ea-dark dark:text-white uppercase tracking-wider">Paso 1</span>
+                        <h4 class="font-bold text-sm">Lectura atenta inicial</h4>
+                        <p class="text-xs opacity-75">Lee una sección del tema con concentración absoluta durante 10 o 15 minutos sin subrayar ni copiar nada.</p>
                     </div>
 
                     <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 space-y-2">
-                        <span class="text-xs font-bold text-white uppercase tracking-wider">Paso 2</span>
-                        <h4 class="font-bold text-sm">Cierra la fuente</h4>
-                        <p class="text-xs opacity-75">Cierra el libro o la pantalla. Coloca una hoja en blanco frente a ti o abre una lista de preguntas sin respuestas.</p>
+                        <span class="text-xs font-bold text-ea-dark dark:text-white uppercase tracking-wider">Paso 2</span>
+                        <h4 class="font-bold text-sm">Cierra los apuntes</h4>
+                        <p class="text-xs opacity-75">Oculta el libro o pantalla por completo. Agarra una hoja en blanco o libreta de autoevaluación.</p>
                     </div>
 
                     <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 space-y-2">
-                        <span class="text-xs font-bold text-white uppercase tracking-wider">Paso 3</span>
-                        <h4 class="font-bold text-sm">Recuerda de memoria</h4>
-                        <p class="text-xs opacity-75">Escribe o recita de memoria todo lo que recuerdes del tema: fórmulas, fechas, conceptos e ideas principales.</p>
+                        <span class="text-xs font-bold text-ea-dark dark:text-white uppercase tracking-wider">Paso 3</span>
+                        <h4 class="font-bold text-sm">Recuerda a ciegas</h4>
+                        <p class="text-xs opacity-75">Escribe o recita de memoria todo lo que recuerdes del tema: conceptos, fórmulas, causas, consecuencias y ejemplos.</p>
                     </div>
 
                     <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 space-y-2">
-                        <span class="text-xs font-bold text-white uppercase tracking-wider">Paso 4</span>
-                        <h4 class="font-bold text-sm">Verifica y corrige</h4>
-                        <p class="text-xs opacity-75">Abre nuevamente el libro y compara. Marca en rojo lo que olvidaste o respondiste mal y enfócate en eso.</p>
+                        <span class="text-xs font-bold text-ea-dark dark:text-white uppercase tracking-wider">Paso 4</span>
+                        <h4 class="font-bold text-sm">Audita y corrige</h4>
+                        <p class="text-xs opacity-75">Abre nuevamente la guía oficial, compara tus respuestas y corrige con pluma de otro color los olvidos puntuales.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- EJEMPLO PRÁCTICO REAL -->
-            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-6 shadow-xl">
+            <!-- EJEMPLOS PRÁCTICOS REALES (3 CASOS) -->
+            <div class="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-3xl p-8 space-y-8 shadow-xl">
                 <div class="flex items-center justify-between border-b border-black/5 dark:border-white/10 pb-4">
                     <h2 class="text-2xl font-serif font-bold text-ea-dark dark:text-white flex items-center gap-3">
-                        <span class="w-8 h-8 rounded-xl bg-white/10 border border-white/20 text-white flex items-center justify-center text-sm font-bold">3</span>
-                        <span>Ejemplo Práctico para Examen de Admisión</span>
+                        <span class="w-8 h-8 rounded-xl bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 text-ea-dark dark:text-white flex items-center justify-center text-sm font-bold">3</span>
+                        <span>3 Ejemplos Prácticos para Exámenes de Admisión</span>
                     </h2>
-                    <span class="text-xs font-bold uppercase tracking-wider text-white/60">Historia de México</span>
+                    <span class="text-xs font-bold uppercase tracking-wider opacity-60">Historia, Español & Trigonometría</span>
                 </div>
 
-                <div class="space-y-4">
-                    <h4 class="text-sm font-bold text-white">Tema: La Revolución Mexicana (1910)</h4>
-                    
-                    <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-3 text-xs opacity-90">
-                        <p class="font-semibold text-white">❌ Método Pasivo Ineficaz:</p>
-                        <p class="italic opacity-70">Releer 5 veces el capítulo del libro destacando frases con marca-textos amarillo.</p>
-                        
-                        <p class="font-semibold text-white pt-2">✅ Método Active Recall (Eficaz):</p>
-                        <div class="space-y-2 leading-relaxed">
-                            <p>Creas un cuestionario de recuerdo en tu cuaderno sin mirar el texto:</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>1. ¿En qué fecha y con qué plan inició la Revolución Mexicana? ➔ <em>(Cierras cuaderno y respondes: 20 de nov de 1910, Plan de San Luis por Madero).</em></li>
-                                <li>2. ¿Qué documento proclamó Emiliano Zapata en 1911 y qué exigía? ➔ <em>(Cierras cuaderno y respondes: Plan de Ayala, restitución de tierras campesinas).</em></li>
-                                <li>3. ¿Qué constitución resultó de este periodo y qué artículos destacan? ➔ <em>(Cierras cuaderno y respondes: Constitución de 1917, Art. 3°, 27° y 123°).</em></li>
-                            </ul>
-                        </div>
+                <!-- Caso 1: Historia -->
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase text-ea-dark dark:text-white tracking-widest bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 px-3 py-1 rounded-full">Caso 1: Historia de México — La Constitución de 1917</span>
+                    <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-2 text-xs opacity-90 leading-relaxed">
+                        <p class="font-bold text-ea-dark dark:text-white">Prueba de Recuerdo a Ciegas:</p>
+                        <p>1. ¿Quién convocó el Congreso Constituyente de Querétaro? ➔ <em>(Cierras el libro y respondes de memoria: Venustiano Carranza).</em></p>
+                        <p>2. ¿Cuáles son los 3 artículos fundamentales aprobados? ➔ <em>(Cierras el libro y respondes: Art. 3° Educación laica y gratuita, Art. 27° Propiedad de tierras y agua nacional, Art. 123° Derecho laboral de 8 hrs).</em></p>
+                    </div>
+                </div>
+
+                <!-- Caso 2: Español -->
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase text-ea-dark dark:text-white tracking-widest bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 px-3 py-1 rounded-full">Caso 2: Lengua y Español — Funciones del Lenguaje</span>
+                    <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-2 text-xs opacity-90 leading-relaxed">
+                        <p class="font-bold text-ea-dark dark:text-white">Prueba de Recuerdo a Ciegas:</p>
+                        <p>• Escribe en la hoja 4 funciones del lenguaje con sus ejemplos sin mirar la guía:</p>
+                        <p class="opacity-75"><em>1) Referencial (Informar datos objetivos), 2) Apelativa (Convencer o persuadir al lector), 3) Poética (Estética del mensaje), 4) Fática (Verificar el canal de comunicación).</em></p>
+                    </div>
+                </div>
+
+                <!-- Caso 3: Matemáticas -->
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase text-ea-dark dark:text-white tracking-widest bg-black/5 dark:bg-white/10 border border-black/10 dark:border-white/20 px-3 py-1 rounded-full">Caso 3: Trigonometría — Razones Trigonométricas</span>
+                    <div class="p-5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 space-y-2 text-xs opacity-90 leading-relaxed">
+                        <p class="font-bold text-ea-dark dark:text-white">Prueba de Recuerdo a Ciegas:</p>
+                        <p>• Dibuja un triángulo rectángulo de memoria y escribe las 3 razones fundamentales usando el mnemónico <strong>SOH-CAH-TOA</strong>:</p>
+                        <p class="opacity-75"><em>Sin(θ) = Opuesto / Hipotenusa | Cos(θ) = Adyacente / Hipotenusa | Tan(θ) = Opuesto / Adyacente.</em></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +189,7 @@
                     <span>Volver al Catálogo de Métodos</span>
                 </a>
 
-                <a href="simulador-metodos.html" class="bg-white text-black font-bold text-xs px-6 py-3.5 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center gap-2">
+                <a href="simulador-metodos.html" class="bg-ea-dark dark:bg-white text-white dark:text-black font-bold text-xs px-6 py-3.5 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center gap-2">
                     <span>Probar Simulador Diagnóstico</span>
                     <span class="material-symbols-outlined text-sm">auto_awesome</span>
                 </a>
@@ -177,10 +199,61 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white dark:bg-neutral-900 border-t border-black/5 dark:border-white/5 transition-colors duration-300">
+    <footer class="bg-white dark:bg-neutral-900 border-t border-black/5 dark:border-white/5 transition-colors duration-300 relative z-10">
         <div class="max-w-6xl mx-auto px-6 py-12 text-center text-xs opacity-40 font-bold">
             © EstudiandoAndo 2026. Todos los derechos reservados.
         </div>
     </footer>
+
+    <!-- THREE.JS 3D AMBIENT BACKGROUND SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bgCanvas = document.getElementById('recall-bg-3d-canvas');
+            if (bgCanvas && window.THREE) {
+                const bgScene = new THREE.Scene();
+                const bgCamera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+                bgCamera.position.z = 5;
+
+                const bgRenderer = new THREE.WebGLRenderer({ canvas: bgCanvas, alpha: true, antialias: true });
+                bgRenderer.setSize(window.innerWidth, window.innerHeight);
+
+                const geo = new THREE.IcosahedronGeometry(2.5, 1);
+                let isDark = document.documentElement.classList.contains("dark");
+                const mat = new THREE.MeshBasicMaterial({ color: isDark ? 0xffffff : 0x121212, wireframe: true, transparent: true, opacity: 0.8 });
+                const sphere = new THREE.Mesh(geo, mat);
+                bgScene.add(sphere);
+
+                function animateBg() {
+                    requestAnimationFrame(animateBg);
+                    sphere.rotation.x += 0.003;
+                    sphere.rotation.y += 0.003;
+                    bgRenderer.render(bgScene, bgCamera);
+                }
+                animateBg();
+
+                function update3DTheme() {
+                    const darkNow = document.documentElement.classList.contains("dark");
+                    mat.color.setHex(darkNow ? 0xffffff : 0x121212);
+                }
+
+                document.getElementById('theme-toggle')?.addEventListener('click', () => {
+                    if (document.documentElement.classList.contains('dark')) {
+                        document.documentElement.classList.remove('dark');
+                        localStorage.theme = 'light';
+                    } else {
+                        document.documentElement.classList.add('dark');
+                        localStorage.theme = 'dark';
+                    }
+                    update3DTheme();
+                });
+
+                window.addEventListener('resize', () => {
+                    bgCamera.aspect = window.innerWidth / window.innerHeight;
+                    bgCamera.updateProjectionMatrix();
+                    bgRenderer.setSize(window.innerWidth, window.innerHeight);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

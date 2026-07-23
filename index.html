@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
     <link href="responsive.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
     <script>
         // Configuración inicial de Tailwind con darkMode
@@ -263,7 +264,13 @@
     </script>
     <script src="auth.js"></script>
 </head>
-<body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
+
+    <!-- AMBIENT HERO 3D BACKGROUND CANVAS -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-20 dark:opacity-35 overflow-hidden">
+        <canvas id="index-hero-3d-canvas" class="w-full h-full"></canvas>
+    </div>
+
+    <body class="bg-[#F9F9F9] dark:bg-neutral-950 text-ea-dark dark:text-white font-sans selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
 
     <header class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
         <nav class="pointer-events-auto w-full max-w-5xl h-16 bg-white/70 dark:bg-neutral-900/80 backdrop-blur-xl border border-black/10 dark:border-white/10 rounded-full flex items-center justify-between px-6 shadow-[0_8px_30px_rgb(0,0,0,0.06)] transition-all">
@@ -325,7 +332,7 @@
         
     </div>
 
-    <main class="pt-36 md:pt-40">
+    <main class="pt-24 md:pt-28">
         <!-- HERO SECTION -->
         <section id="hero-section" class="relative max-w-[90%] 2xl:max-w-[1650px] mx-auto px-4 sm:px-6 mb-24 lg:mb-36 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[50vh] lg:min-h-[60vh] overflow-visible">
             <!-- Mobile Mascot (Half-body bleeding off right edge with smooth fade) -->
@@ -337,31 +344,19 @@
                      alt="Mascot Mobile">
             </div>
 
-            <div id="hero-text" class="lg:col-span-7 space-y-6 sm:space-y-8 text-left animate-fade-in relative z-10">
-                <h1 class="text-serif leading-[1.08] font-medium tracking-tight text-ea-dark dark:text-white">
-                    Tu preparación<br class="hidden sm:inline"> académica para la <span class="text-handwritten italic text-ea-dark dark:text-white inline-block mt-2">universidad.</span>
+            <div id="hero-text" class="lg:col-span-7 space-y-4 sm:space-y-6 text-left animate-fade-in relative z-10 -mt-2">
+                <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-[4.2rem] text-serif leading-[1.05] font-semibold tracking-tight text-ea-dark dark:text-white">
+                    Tu preparación<br class="hidden sm:inline"> académica para la <span class="text-5xl sm:text-7xl md:text-8xl lg:text-[6.5rem] xl:text-[7.2rem] font-bold text-handwritten italic text-ea-dark dark:text-white block mt-2 drop-shadow-xl">universidad.</span>
                 </h1>
                 
-                <p class="text-base sm:text-lg md:text-xl opacity-60 max-w-2xl font-medium leading-relaxed">
+                <p class="text-xs sm:text-sm text-neutral-400 dark:text-neutral-400 font-normal leading-relaxed opacity-80 max-w-xl">
                     La plataforma de preparación definitiva para tu examen. Explora nuestra biblioteca virtual con eBooks teóricos oficiales, practica con los simuladores de exámenes reales, domina lenguas con la sección de idiomas (Inglés, Francés, Portugués, Japonés) y conéctate a nuestros grupos de estudio oficiales de forma 100% gratuita.
                 </p>
             </div>
             
-            <div id="hero-mascot" class="lg:col-span-5 flex justify-center lg:justify-end items-center relative z-0 mt-4 lg:mt-0">
-                <!-- Floating Glow Backing -->
-                <div class="absolute w-[80%] h-[80%] bg-blue-600/10 dark:bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
-                <!-- Mascot Image -->
-                <div class="hero-mascot-container relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px] 2xl:max-w-[480px] flex items-center justify-center overflow-visible select-none">
-                    <img src="cropped_assets/logo_mascot.png" 
-                         class="w-full h-auto object-contain dark:invert animate-float pointer-events-auto transition-transform hover:scale-[1.02] duration-300" 
-                         style="mask-image: radial-gradient(circle at 40% 40%, black 50%, transparent 85%);
-                                -webkit-mask-image: radial-gradient(circle at 40% 40%, black 50%, transparent 85%);"
-                         alt="Nando - EA Mascot">
-                    <!-- Floating label for Nando's name -->
-                    <div class="absolute bottom-4 left-4 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-2xl border border-black/5 dark:border-white/5 text-xs font-bold shadow-lg opacity-85 select-none pointer-events-none tracking-tight flex items-center gap-1.5 text-ea-dark dark:text-white z-10">
-                        <span>🐾 Hola, soy Nando</span>
-                    </div>
-                </div>
+                                    <div id="hero-university-3d" class="lg:col-span-5 flex flex-col justify-center items-center relative z-10 h-[500px] sm:h-[560px] lg:h-[620px] w-full overflow-visible">
+                <div class="absolute w-[90%] h-[90%] bg-blue-600/10 dark:bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+                <canvas id="university-building-3d-canvas" class="w-full h-full cursor-grab active:cursor-grabbing rounded-3xl relative z-10"></canvas>
             </div>
         </section>
 
@@ -498,6 +493,9 @@
                 </div>
             </div>
         </section>
+
+        
+        
 
         <!-- ECOSISTEMA DE ESTUDIO (SECCIONES REALES) -->
         <section class="max-w-[90%] 2xl:max-w-[1650px] mx-auto px-6 mb-32 reveal-section">
@@ -653,18 +651,30 @@
 
 
 
-        <!-- democratizacion BOX -->
+        
+        
+
+                <!-- democratizacion BOX -->
         <section class="max-w-[90%] 2xl:max-w-[1650px] mx-auto px-6 py-10 reveal-section">
-            <div class="bg-black dark:bg-neutral-900 rounded-[48px] py-20 px-8 md:px-12 text-center text-white overflow-hidden relative shadow-2xl transition-colors">
-                <div class="absolute inset-0 flex items-center justify-center opacity-5 select-none pointer-events-none">
-                    <span class="text-[12vw] font-bold text-white tracking-tighter">GRATUITO</span>
+            <div class="bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-[48px] py-20 px-8 md:px-12 text-center text-ea-dark dark:text-white overflow-hidden relative shadow-2xl transition-colors duration-300">
+                
+                <!-- Background Mascot Nando Left (Flipped Facing Right) -->
+                <div class="absolute left-0 bottom-0 top-0 w-1/2 md:w-1/3 opacity-10 dark:opacity-20 pointer-events-none select-none overflow-hidden flex items-center justify-start z-0">
+                    <div class="h-full w-full flex items-center justify-start" style="transform: scaleX(-1);">
+                        <img src="cropped_assets/logo_mascot.png" class="h-[135%] w-auto object-contain dark:invert translate-x-1/4 animate-float" alt="Nando Mascot Left">
+                    </div>
+                </div>
+
+                <!-- Background Mascot Nando Right (Default Facing Left) -->
+                <div class="absolute right-0 bottom-0 top-0 w-1/2 md:w-1/3 opacity-10 dark:opacity-20 pointer-events-none select-none overflow-hidden flex items-center justify-end z-0">
+                    <img src="cropped_assets/logo_mascot.png" class="h-[135%] w-auto object-contain dark:invert translate-x-1/4 animate-float" alt="Nando Mascot Right">
                 </div>
                 
-                <h2 class="text-4xl md:text-5xl text-serif mb-6 leading-tight font-medium relative z-10">
-                    Educación de calidad, <br>siempre <span class="italic text-handwritten text-4xl md:text-6xl text-white">gratuita</span>.
+                <h2 class="text-4xl md:text-5xl text-serif mb-6 leading-tight font-medium relative z-10 text-ea-dark dark:text-white">
+                    Educación de calidad, <br>siempre <span class="italic text-handwritten text-4xl md:text-6xl text-ea-dark dark:text-white">gratuita</span>.
                 </h2>
                 
-                <p class="text-base opacity-70 max-w-2xl mx-auto font-medium leading-relaxed relative z-10">
+                <p class="text-base opacity-70 max-w-2xl mx-auto font-medium leading-relaxed relative z-10 text-ea-dark dark:text-white">
                     Nuestra misión es democratizar el acceso a la educación superior en México. Todos los resúmenes, lecciones de idiomas y foros de charla activa están a tu disposición sin ningún costo. Tu único límite es tu dedicación.
                 </p>
             </div>
@@ -745,12 +755,8 @@
         </a>
     </nav>
 
-    <!-- SCRIPTS -->
+        <!-- SCRIPTS -->
     <script>
-
-
-
-
         // --- 3. SCROLL REVEAL ANIMATIONS (IntersectionObserver) ---
         function initScrollReveal() {
             const sections = document.querySelectorAll('.reveal-section');
@@ -770,10 +776,343 @@
 
         // --- 4. INITIALIZATION ---
         document.addEventListener('DOMContentLoaded', () => {
+            initIndex3DCanvas();
             initScrollReveal();
         });
 
-        // Dark mode toggle listener
+                // --- 5. THREE.JS 3D CANVAS ANIMATIONS (WITH INSTANT LIGHT/DARK THEME SYNCHRONIZATION) ---
+        const g3DMaterials = [];
+        const g3DParticleMaterials = [];
+        const g3DTranslucentMaterials = [];
+
+        window.update3DThemeColors = function() {
+            const isDark = document.documentElement.classList.contains('dark');
+            const wireColorHex = isDark ? 0xffffff : 0x0a0a0a;
+            const particleColorHex = isDark ? 0xffffff : 0x111111;
+            const transColorHex = isDark ? 0xffffff : 0x000000;
+
+            g3DMaterials.forEach(m => {
+                if (m && m.color) {
+                    m.color.setHex(wireColorHex);
+                    m.needsUpdate = true;
+                }
+            });
+            g3DParticleMaterials.forEach(m => {
+                if (m && m.color) {
+                    m.color.setHex(particleColorHex);
+                    m.needsUpdate = true;
+                }
+            });
+            g3DTranslucentMaterials.forEach(m => {
+                if (m && m.color) {
+                    m.color.setHex(transColorHex);
+                    m.needsUpdate = true;
+                }
+            });
+        };
+
+        function initIndex3DCanvas() {
+            if (!window.THREE) return;
+
+            g3DMaterials.length = 0;
+            g3DParticleMaterials.length = 0;
+            g3DTranslucentMaterials.length = 0;
+
+            const isDarkInit = document.documentElement.classList.contains('dark');
+            const initialWireColor = isDarkInit ? 0xffffff : 0x0a0a0a;
+            const initialParticleColor = isDarkInit ? 0xffffff : 0x111111;
+            const initialTransColor = isDarkInit ? 0xffffff : 0x000000;
+
+            // A. Fullscreen Academic Background Canvas
+            const bgCanvas = document.getElementById('index-hero-3d-canvas');
+            if (bgCanvas) {
+                const bgScene = new THREE.Scene();
+                const bgCamera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+                bgCamera.position.z = 9;
+
+                const bgRenderer = new THREE.WebGLRenderer({ canvas: bgCanvas, alpha: true, antialias: true });
+                bgRenderer.setSize(window.innerWidth, window.innerHeight);
+                bgRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+                const bgGroup = new THREE.Group();
+                bgScene.add(bgGroup);
+
+                const capsArray = [];
+
+                function createMortarboardCap(scale = 1.0) {
+                    const capGroup = new THREE.Group();
+                    const capMat = new THREE.MeshBasicMaterial({ color: initialWireColor, wireframe: true, transparent: true, opacity: 0.85 });
+                    g3DMaterials.push(capMat);
+
+                    const topGeo = new THREE.BoxGeometry(1.6 * scale, 0.06 * scale, 1.6 * scale);
+                    const topMesh = new THREE.Mesh(topGeo, capMat);
+                    capGroup.add(topMesh);
+
+                    const baseGeo = new THREE.CylinderGeometry(0.48 * scale, 0.48 * scale, 0.5 * scale, 16);
+                    const baseMesh = new THREE.Mesh(baseGeo, capMat);
+                    baseMesh.position.y = -0.26 * scale;
+                    capGroup.add(baseMesh);
+
+                    const buttonGeo = new THREE.SphereGeometry(0.08 * scale, 8, 8);
+                    const buttonMesh = new THREE.Mesh(buttonGeo, capMat);
+                    buttonMesh.position.y = 0.05 * scale;
+                    capGroup.add(buttonMesh);
+
+                    return capGroup;
+                }
+
+                for (let i = 0; i < 45; i++) {
+                    const scale = 0.45 + Math.random() * 0.65;
+                    const cap = createMortarboardCap(scale);
+                    
+                    cap.position.x = (Math.random() - 0.5) * 28;
+                    cap.position.y = (Math.random() - 0.5) * 22;
+                    cap.position.z = (Math.random() - 0.5) * 8;
+
+                    cap.rotation.x = Math.random() * Math.PI;
+                    cap.rotation.y = Math.random() * Math.PI;
+                    cap.rotation.z = Math.random() * Math.PI;
+
+                    cap.userData = {
+                        rotSpeedX: (Math.random() - 0.5) * 0.006,
+                        rotSpeedY: (Math.random() - 0.5) * 0.008,
+                        floatSpeed: 0.002 + Math.random() * 0.003,
+                        floatOffset: Math.random() * Math.PI * 2
+                    };
+
+                    capsArray.push(cap);
+                    bgGroup.add(cap);
+                }
+
+                const particlesGeo = new THREE.BufferGeometry();
+                const count = 300;
+                const posArray = new Float32Array(count * 3);
+                for(let i=0; i<count*3; i+=3) {
+                    posArray[i] = (Math.random() - 0.5) * 32;
+                    posArray[i+1] = (Math.random() - 0.5) * 24;
+                    posArray[i+2] = (Math.random() - 0.5) * 10;
+                }
+                particlesGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+                const particlesMat = new THREE.PointsMaterial({ size: 0.035, color: initialParticleColor, transparent: true, opacity: 0.65 });
+                g3DParticleMaterials.push(particlesMat);
+                const particlesMesh = new THREE.Points(particlesGeo, particlesMat);
+                bgGroup.add(particlesMesh);
+
+                let mouseX = 0, mouseY = 0;
+                window.addEventListener('mousemove', (e) => {
+                    mouseX = (e.clientX / window.innerWidth - 0.5) * 0.35;
+                    mouseY = (e.clientY / window.innerHeight - 0.5) * 0.35;
+                });
+
+                function animateBg() {
+                    requestAnimationFrame(animateBg);
+                    bgGroup.rotation.y += mouseX * 0.004;
+                    bgGroup.rotation.x += mouseY * 0.004;
+
+                    capsArray.forEach(cap => {
+                        cap.rotation.x += cap.userData.rotSpeedX;
+                        cap.rotation.y += cap.userData.rotSpeedY;
+                        cap.position.y += Math.sin(Date.now() * 0.001 + cap.userData.floatOffset) * 0.002;
+                    });
+
+                    bgRenderer.render(bgScene, bgCamera);
+                }
+                animateBg();
+
+                window.addEventListener('resize', () => {
+                    bgCamera.aspect = window.innerWidth / window.innerHeight;
+                    bgCamera.updateProjectionMatrix();
+                    bgRenderer.setSize(window.innerWidth, window.innerHeight);
+                });
+            }
+
+            // B. High-Precision 360° Architectural 3D University Building
+            const uniCanvas = document.getElementById('university-building-3d-canvas');
+            if (uniCanvas) {
+                const scene = new THREE.Scene();
+                const camera = new THREE.PerspectiveCamera(35, uniCanvas.clientWidth / uniCanvas.clientHeight, 0.1, 1000);
+                camera.position.set(0, 0.15, 15.2);
+
+                const renderer = new THREE.WebGLRenderer({ canvas: uniCanvas, alpha: true, antialias: true });
+                renderer.setSize(uniCanvas.clientWidth, uniCanvas.clientHeight);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+                const uniGroup = new THREE.Group();
+                uniGroup.scale.set(0.68, 0.68, 0.68);
+                uniGroup.position.set(0, -0.2, 0);
+                scene.add(uniGroup);
+
+                const wireMat = new THREE.MeshBasicMaterial({ color: initialWireColor, wireframe: true, transparent: true, opacity: 0.85 });
+                const transMat = new THREE.MeshBasicMaterial({ color: initialTransColor, wireframe: false, transparent: true, opacity: 0.12 });
+                g3DMaterials.push(wireMat);
+                g3DTranslucentMaterials.push(transMat);
+
+                // 1. Multi-Tiered Foundation Platform
+                for (let i = 0; i < 4; i++) {
+                    const stepGeo = new THREE.BoxGeometry(7.5 - (i * 0.4), 0.14, 4.2 - (i * 0.3));
+                    const stepMesh = new THREE.Mesh(stepGeo, wireMat);
+                    stepMesh.position.y = (i * 0.14) - 1.5;
+                    uniGroup.add(stepMesh);
+                }
+
+                // 2. Central Building Body
+                const mainBodyGeo = new THREE.BoxGeometry(4.4, 2.6, 3.0);
+                const mainBodyMesh = new THREE.Mesh(mainBodyGeo, wireMat);
+                mainBodyMesh.position.y = 0.3;
+                uniGroup.add(mainBodyMesh);
+
+                // 3. Left Wing
+                const leftWingGeo = new THREE.BoxGeometry(1.6, 2.2, 2.6);
+                const leftWingMesh = new THREE.Mesh(leftWingGeo, wireMat);
+                leftWingMesh.position.set(-2.9, 0.1, 0);
+                uniGroup.add(leftWingMesh);
+
+                // 4. Right Wing
+                const rightWingGeo = new THREE.BoxGeometry(1.6, 2.2, 2.6);
+                const rightWingMesh = new THREE.Mesh(rightWingGeo, wireMat);
+                rightWingMesh.position.set(2.9, 0.1, 0);
+                uniGroup.add(rightWingMesh);
+
+                // 5. Front Colonnade
+                for (let c = 0; c < 8; c++) {
+                    const colGeo = new THREE.CylinderGeometry(0.1, 0.12, 2.4, 16);
+                    const colMesh = new THREE.Mesh(colGeo, wireMat);
+                    colMesh.position.x = -2.1 + (c * 0.6);
+                    colMesh.position.y = 0.3;
+                    colMesh.position.z = 1.6;
+                    uniGroup.add(colMesh);
+                }
+
+                // 6. Rear Colonnade
+                for (let c = 0; c < 6; c++) {
+                    const rearColGeo = new THREE.CylinderGeometry(0.09, 0.11, 2.4, 16);
+                    const rearColMesh = new THREE.Mesh(rearColGeo, wireMat);
+                    rearColMesh.position.x = -1.5 + (c * 0.6);
+                    rearColMesh.position.y = 0.3;
+                    rearColMesh.position.z = -1.6;
+                    uniGroup.add(rearColMesh);
+                }
+
+                // 7. Triangular Pediment Roof
+                const pedimentGeo = new THREE.ConeGeometry(3.0, 1.1, 4);
+                const pedimentMesh = new THREE.Mesh(pedimentGeo, wireMat);
+                pedimentMesh.position.set(0, 2.15, 0.8);
+                pedimentMesh.rotation.y = Math.PI / 4;
+                uniGroup.add(pedimentMesh);
+
+                // 8. Roof Balustrades
+                const roofLedgeGeo = new THREE.BoxGeometry(7.4, 0.12, 3.4);
+                const roofLedgeMesh = new THREE.Mesh(roofLedgeGeo, wireMat);
+                roofLedgeMesh.position.y = 1.65;
+                uniGroup.add(roofLedgeMesh);
+
+                // 9. Central Cupola & Bell/Clock Tower
+                const cupolaBaseGeo = new THREE.CylinderGeometry(0.9, 1.0, 0.9, 8);
+                const cupolaBaseMesh = new THREE.Mesh(cupolaBaseGeo, wireMat);
+                cupolaBaseMesh.position.y = 2.2;
+                uniGroup.add(cupolaBaseMesh);
+
+                const domeGeo = new THREE.SphereGeometry(0.8, 16, 12, 0, Math.PI * 2, 0, Math.PI / 2);
+                const domeMesh = new THREE.Mesh(domeGeo, wireMat);
+                domeMesh.position.y = 2.65;
+                uniGroup.add(domeMesh);
+
+                const clockGeo = new THREE.CylinderGeometry(0.35, 0.35, 0.1, 24);
+                const clockMesh = new THREE.Mesh(clockGeo, wireMat);
+                clockMesh.rotation.x = Math.PI / 2;
+                clockMesh.position.set(0, 2.2, 0.95);
+                uniGroup.add(clockMesh);
+
+                // 10. 360° Symmetrical Windows
+                const windowsGroup = new THREE.Group();
+                for (let floor = 0; floor < 2; floor++) {
+                    for (let col = 0; col < 6; col++) {
+                        if (!(floor === 0 && (col === 2 || col === 3))) {
+                            const fWinGeo = new THREE.BoxGeometry(0.38, 0.55, 0.05);
+                            const fWin = new THREE.Mesh(fWinGeo, wireMat);
+                            fWin.position.set(-2.0 + (col * 0.8), (floor * 0.9) - 0.3, 1.53);
+                            windowsGroup.add(fWin);
+                        }
+                        const bWinGeo = new THREE.BoxGeometry(0.38, 0.55, 0.05);
+                        const bWin = new THREE.Mesh(bWinGeo, wireMat);
+                        bWin.position.set(-2.0 + (col * 0.8), (floor * 0.9) - 0.3, -1.53);
+                        windowsGroup.add(bWin);
+                    }
+                }
+
+                for (let floor = 0; floor < 2; floor++) {
+                    for (let side = 0; side < 3; side++) {
+                        const sWinGeo = new THREE.BoxGeometry(0.05, 0.55, 0.38);
+                        const lWin = new THREE.Mesh(sWinGeo, wireMat);
+                        lWin.position.set(-3.73, (floor * 0.9) - 0.3, -0.7 + (side * 0.7));
+                        windowsGroup.add(lWin);
+                        const rWin = new THREE.Mesh(sWinGeo, wireMat);
+                        rWin.position.set(3.73, (floor * 0.9) - 0.3, -0.7 + (side * 0.7));
+                        windowsGroup.add(rWin);
+                    }
+                }
+                uniGroup.add(windowsGroup);
+
+                // 11. Glass Portals
+                const portalGeo = new THREE.BoxGeometry(1.2, 1.3, 0.1);
+                const frontPortal = new THREE.Mesh(portalGeo, wireMat);
+                frontPortal.position.set(0, -0.3, 1.53);
+                uniGroup.add(frontPortal);
+
+                const backPortal = new THREE.Mesh(portalGeo, wireMat);
+                backPortal.position.set(0, -0.3, -1.53);
+                uniGroup.add(backPortal);
+
+                // 12. Floating Graduation Cap Emblem
+                const capEmblemGroup = new THREE.Group();
+                const emblemTopGeo = new THREE.BoxGeometry(1.4, 0.06, 1.4);
+                const emblemTop = new THREE.Mesh(emblemTopGeo, wireMat);
+                capEmblemGroup.add(emblemTop);
+
+                const emblemBaseGeo = new THREE.CylinderGeometry(0.4, 0.4, 0.45, 16);
+                const emblemBase = new THREE.Mesh(emblemBaseGeo, wireMat);
+                emblemBase.position.y = -0.22;
+                capEmblemGroup.add(emblemBase);
+
+                capEmblemGroup.position.set(0, 3.7, 0);
+                uniGroup.add(capEmblemGroup);
+
+                let isDragging = false;
+                let previousMousePosition = { x: 0, y: 0 };
+
+                uniCanvas.addEventListener('mousedown', () => { isDragging = true; });
+                uniCanvas.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        const deltaMove = { x: e.offsetX - previousMousePosition.x, y: e.offsetY - previousMousePosition.y };
+                        uniGroup.rotation.y += deltaMove.x * 0.008;
+                        uniGroup.rotation.x += deltaMove.y * 0.005;
+                    }
+                    previousMousePosition = { x: e.offsetX, y: e.offsetY };
+                });
+                window.addEventListener('mouseup', () => { isDragging = false; });
+
+                function animateUni() {
+                    requestAnimationFrame(animateUni);
+                    if (!isDragging) {
+                        uniGroup.rotation.y += 0.005;
+                        capEmblemGroup.rotation.y -= 0.015;
+                    }
+                    renderer.render(scene, camera);
+                }
+                animateUni();
+
+                window.addEventListener('resize', () => {
+                    camera.aspect = uniCanvas.clientWidth / uniCanvas.clientHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize(uniCanvas.clientWidth, uniCanvas.clientHeight);
+                });
+            }
+
+            // Sync initial state
+            window.update3DThemeColors();
+        }
+
+        // Theme toggle listener
         document.getElementById('theme-toggle')?.addEventListener('click', () => {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
@@ -781,6 +1120,9 @@
             } else {
                 document.documentElement.classList.add('dark');
                 localStorage.theme = 'dark';
+            }
+            if (typeof window.update3DThemeColors === 'function') {
+                window.update3DThemeColors();
             }
         });
     </script>
